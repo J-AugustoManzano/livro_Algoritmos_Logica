@@ -67,7 +67,6 @@ sub MAIN {
         say "";
         print "Escolha uma opcao: ";
         $OPCAO = prompt;
-        
         if $OPCAO != 5 {
             given $OPCAO {
                 when 1 { rotcalc('+') }
