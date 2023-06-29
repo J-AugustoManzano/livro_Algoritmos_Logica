@@ -1,0 +1,102 @@
+Apêndice A - Correções.
+=======================
+
+-----------------------------
+- Capítulo 3 - Exercício 4a -
+-----------------------------
+
+programa TEMPERATURA
+var
+  C, F : real
+inicio
+  leia C
+  F ← C * 9 / 5 + 32
+  escreva F
+fim
+
+-----------------------------
+- Capítulo 4 - Exercício 3c -
+-----------------------------
+
+programa MÉDIA
+var
+  MD, N1, N2, N3, N4 : real
+inicio
+  leia N1, N2, N3, N4 
+  MD ← (N1 + N2 + N3 + N4) / 4
+  se (MD >= 5) então
+    escreva "Aluno aprovado com média: ", MD
+  senão
+    escreva "Aluno reprovado com média: ", MD
+  fim_se
+fim
+
+-----------------------------
+- Capítulo 5 - Exercício 1c -
+-----------------------------
+
+programa SOMATÓRIO
+var
+  SOMA, CONTADOR : inteiro
+inicio
+  SOMA ← 0
+  para CONTADOR de 1 até 100 passo 1 faça
+    SOMA ← SOMA + CONTADOR
+  fim_para 
+  escreva SOMA
+fim
+
+-----------------------------
+- Capítulo 6 - Exercício 1g -
+-----------------------------
+
+programa JUNÇÃO
+var
+  A : conjunto[1..20] de inteiro 
+  B : conjunto[1..30] de inteiro
+  C : conjunto[1..50] de inteiro
+  I : inteiro
+inicio
+  para I de 1 até 20 passo 1 faça
+    leia A[I] 
+  fim_para
+  para I de 1 até 30 passo 1 faça
+    leia B[I] 
+  fim_para
+  para I de 1 até 50 passo 1 faça
+    se (I <= 20) então
+      C[I] ← A[I] 
+    senão
+      C[I] ← B[I – 20]
+    fim_se
+  fim_para
+  para I de 1 até 50 passo 1 faça
+    escreva C[I]
+  fim_para
+fim
+
+-----------------------------
+- Capítulo 7 - Exercício 1a -
+-----------------------------
+
+programa CLASSIFICAÇÃO
+var
+  A : conjunto[1..12] de inteiro 
+  I, X, J : inteiro
+inicio
+  para I de 1 até 12 passo 1 faça
+    leia A[I] 
+  fim_para
+  para I de 1 até 11 passo 1 faça
+    para J de I + 1 até 12 passo 1 faça
+      se (A[I] < A[J]) então
+         X ← A[I]
+         A[I] ← A[J]
+         A[J] ← X
+      fim_se
+    fim_para
+  fim_para
+  para I de 1 até 12 passo 1 faça
+    escreva A[I]
+  fim_para
+fim

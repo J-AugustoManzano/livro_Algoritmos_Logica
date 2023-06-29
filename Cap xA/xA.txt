@@ -1,0 +1,18 @@
+Neste diretório encontra-se exemplificado em algumas linguagens de programação as respostas de três exercícios de fixação do livro.
+
+O exercício 1G do capítulo 6 é aqui adaptado para um tamanho de entrada de dados menor. Na versão orginal o exercício opera com as matrizes:
+
+A : conjunto[1..20] de inteiro 
+B : conjunto[1..30] de inteiro
+C : conjunto[1..50] de inteiro
+
+Nas demonstrações de código nas lingaugens de programação formais as matrizes estão definidas com am etade dos dados previstos no exercício:
+
+A : conjunto[1..10] de inteiro 
+B : conjunto[1..15] de inteiro
+C : conjunto[1..25] de inteiro
+
+Esta atitude foi tomada apenas para permitir a entrada de dados mais confortável com uma quantidade menor de interação com o programa.
+
+
+
