@@ -8,20 +8,26 @@
  * 
  * Capitulo ..: 4 - Topico 4.4
  * 
- * Programa ..: ADICAO DE NÚMEROS - DECISAO COMPOSTA
+ * Programa ..: ADICAO DE NUMEROS - DECISAO COMPOSTA
  *}
 
 program decisao_composta;
+
 var
   A, B, X, R: real;
+  
 begin
   writeln('DECISAO COMPOSTA - ADICAO DE DOIS NUMEROS');
   writeln;
+  
   write('Entre valor <A>: ');
   readln(A);
+  
   write('Entre valor <B>: ');
   readln(B);
+  
   X := A + B;
+  
   if (X >= 10) then
   begin
     R := X + 5;
@@ -30,6 +36,8 @@ begin
   begin
     R := X - 7;
   end;
+  
   writeln('Resultado da adicao quando maior ou igual a dez = ', R:6:2);
+  
 end.
 

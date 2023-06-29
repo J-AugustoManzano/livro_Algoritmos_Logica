@@ -8,25 +8,33 @@
  *
  * Capitulo ..: 4 - Topico 4.4
  * 
- * Programa ..: ADICAO DE NÚMEROS - DECISAO COMPOSTA
+ * Programa ..: ADICAO DE NUMEROS - DECISAO COMPOSTA
  * 
  */
  
 import 'dart:io';
 
 void main() {
+
   double A, B, X, R;
+  
   print('DECISAO COMPOSTA - ADICAO DE DOIS NUMEROS');
   print('');
+  
   stdout.write('Entre valor <A>: ');
   A = double.parse(stdin.readLineSync()!);
+  
   stdout.write('Entre valor <B>: ');
   B = double.parse(stdin.readLineSync()!);
+  
   X = A + B;
+  
   if (X >= 10) {
     R = X + 5;
   } else {
     R = X - 7;
   }
+  
   print('Resultado da adicao quando maior ou igual a dez = ${R.toStringAsFixed(2).padLeft(6)}');
+  
 }

@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 4 - Topico 4.4
  * 
- * Programa ..: ADICAO DE NÚMEROS - DECISAO COMPOSTA
+ * Programa ..: ADICAO DE NUMEROS - DECISAO COMPOSTA
  * 
  */
 
@@ -23,10 +23,15 @@ void main()
 
   writeln("DECISAO COMPOSTA - ADICAO DE DOIS NUMEROS");
   writeln();
+  
   write("Entre valor <A>: ");
   readf(" %f\n", &A);
+  
   write("Entre valor <B>: ");
-  readf(" %f\n", &B);  X = A + B;
+  readf(" %f\n", &B); 
+   
+  X = A + B;
+  
   if (X >= 10)
   {
     R = X + 5;
@@ -35,5 +40,7 @@ void main()
   {
     R = X - 7;
   }
+  
   writeln("Resultado da adicao quando maior ou igual a dez = ", format!"%6.2f"(R));
+  
 }
