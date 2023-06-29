@@ -32,19 +32,25 @@ end
 -- Nao e necessario definir variaveis de controle dos lacos.
 
 print("REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n")
+
 for I = 1, 8, 1 do
   print("ALUNO " .. I)
+  
   io.write("Entre o nome ......: ")
   ALUNO[I].NOME = io.read()
+  
   io.write("Entre a turma .....: ")
   ALUNO[I].TURMA = io.read()
+  
   io.write("Entre a sala ......: ")
   ALUNO[I].SALA = tonumber(io.read())
+  
   for J = 1, 4, 1 do
     io.write("Entre a ", J, "a. nota ..: ")
     ALUNO[I].NOTAS[J] = tonumber(io.read())
   end
   print()
+  
 end
 
 print("\nDADOS DOS ALUNOS")

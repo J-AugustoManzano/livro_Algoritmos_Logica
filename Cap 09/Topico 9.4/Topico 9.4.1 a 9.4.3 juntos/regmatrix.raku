@@ -29,12 +29,16 @@ say 'REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)';
 say '';
 for 1..8 -> $I {
     say "ALUNO $I";
+    
     print 'Entre o nome ......: ';
     my $nome = prompt;
+    
     print 'Entre a turma .....: ';
     my $turma = prompt;
+    
     print 'Entre a sala ......: ';
     my $sala = prompt;
+    
     my $notas = BIMESTRE.new;
     for 1..4 -> $J {
         print "Entre a $J\a. nota ...: ";

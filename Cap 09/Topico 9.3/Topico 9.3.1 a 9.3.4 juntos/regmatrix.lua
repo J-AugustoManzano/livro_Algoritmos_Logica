@@ -22,12 +22,16 @@ local CAD_ALUNO = {
 local ALUNO = CAD_ALUNO
 
 print("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
+
 io.write("Entre o nome ......: ")
 ALUNO.NOME = io.read()
+
 io.write("Entre a turma .....: ")
 ALUNO.TURMA = io.read()
+
 io.write("Entre a sala ......: ")
 ALUNO.SALA = tonumber(io.read())
+
 for I = 1, 4, 1 do
   io.write("Entre a ", I, "a. nota ..: ")
   ALUNO.NOTAS[I] = tonumber(io.read())

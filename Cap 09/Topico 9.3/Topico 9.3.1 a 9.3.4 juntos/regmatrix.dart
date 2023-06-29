@@ -29,12 +29,16 @@ var I;
 void main() {
 
   print('REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n');
+  
   stdout.write('Entre o nome ......: ');
   ALUNO.NOME = stdin.readLineSync()!;
+  
   stdout.write('Entre a turma .....: ');
   ALUNO.TURMA = stdin.readLineSync()!;
+  
   stdout.write('Entre a sala ......: ');
   ALUNO.SALA = int.parse(stdin.readLineSync()!);
+  
   ALUNO.NOTAS = [];
   for (I = 0; I <= 3; I++) {
     stdout.write('Entre a ${I + 1}a. nota ..: ');

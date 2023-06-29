@@ -32,18 +32,25 @@ var ALUNO CadAluno
 func main() {
   
   fmt.Println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
+  
   fmt.Print("Entre o nome ......: ")
   fmt.Scanln(&ALUNO.NOME)
+  
   fmt.Print("Entre a turma .....: ")
   fmt.Scanln(&ALUNO.TURMA)
+  
   fmt.Print("Entre a sala ......: ")
   fmt.Scanln(&ALUNO.SALA)
+  
   fmt.Print("Entre a 1a. nota ..: ")
   fmt.Scanln(&ALUNO.NOTA1)
+  
   fmt.Print("Entre a 2a. nota ..: ")
   fmt.Scanln(&ALUNO.NOTA2)
+  
   fmt.Print("Entre a 3a. nota ..: ")
   fmt.Scanln(&ALUNO.NOTA3)
+  
   fmt.Print("Entre a 4a. nota ..: ")
   fmt.Scanln(&ALUNO.NOTA4)
 

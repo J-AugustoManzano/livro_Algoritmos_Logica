@@ -15,20 +15,27 @@ BEGIN {
 
   print "REGISTRO ESCOLAR - SIMPLES (1 ALUNO)"
   print ""
+  
   printf "Entre o nome ......: "
-  getline ALUNO_NOME < "/dev/tty"
+  getline ALUNO_NOME < "-"
+  
   printf "Entre a turma .....: "
-  getline ALUNO_TURMA < "/dev/tty"
+  getline ALUNO_TURMA < "-"
+  
   printf "Entre a sala ......: "
-  getline ALUNO_SALA < "/dev/tty"
+  getline ALUNO_SALA < "-"
+  
   printf "Entre a 1a. nota ..: "
-  getline ALUNO_NOTA1 < "/dev/tty"
+  getline ALUNO_NOTA1 < "-"
+  
   printf "Entre a 2a. nota ..: "
-  getline ALUNO_NOTA2 < "/dev/tty"
+  getline ALUNO_NOTA2 < "-"
+  
   printf "Entre a 3a. nota ..: "
-  getline ALUNO_NOTA3 < "/dev/tty"
+  getline ALUNO_NOTA3 < "-"
+  
   printf "Entre a 4a. nota ..: "
-  getline ALUNO_NOTA4 < "/dev/tty"
+  getline ALUNO_NOTA4 < "-"
     
   printf "\n"
   printf "Nome ..............: %s\n", ALUNO_NOME

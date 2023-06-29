@@ -28,18 +28,25 @@ object Main {
     val ALUNO = new CAD_ALUNO("", "", 0, 0.0, 0.0, 0.0, 0.0)
 
     println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
+    
     print("Entre o nome ......: ")
     ALUNO.NOME = scala.io.StdIn.readLine()
+    
     print("Entre a turma .....: ")
     ALUNO.TURMA = scala.io.StdIn.readLine()
+    
     print("Entre a sala ......: ")
     ALUNO.SALA = scala.io.StdIn.readInt()
+    
     print("Entre a 1a. nota ..: ")
     ALUNO.NOTA1 = scala.io.StdIn.readDouble()
+    
     print("Entre a 2a. nota ..: ")
     ALUNO.NOTA2 = scala.io.StdIn.readDouble()
+    
     print("Entre a 3a. nota ..: ")
     ALUNO.NOTA3 = scala.io.StdIn.readDouble()
+    
     print("Entre a 4a. nota ..: ")
     ALUNO.NOTA4 = scala.io.StdIn.readDouble()
 

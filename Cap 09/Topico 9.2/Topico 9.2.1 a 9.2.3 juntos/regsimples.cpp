@@ -33,18 +33,25 @@ CAD_ALUNO ALUNO;
 int main(void) {
 
   cout << "REGISTRO ESCOLAR - SIMPLES (1 ALUNO)" << endl << endl;
+  
   cout << "Entre o nome ......: ";
   getline(cin, ALUNO.NOME);
+  
   cout << "Entre a turma .....: ";
   cin >> ALUNO.TURMA;
+  
   cout << "Entre a sala ......: ";
   cin >> ALUNO.SALA;
+  
   cout << "Entre a 1a. nota ..: ";
   cin >> ALUNO.NOTA1;
+  
   cout << "Entre a 2a. nota ..: ";
   cin >> ALUNO.NOTA2;
+  
   cout << "Entre a 3a. nota ..: ";
   cin >> ALUNO.NOTA3;
+  
   cout << "Entre a 4a. nota ..: ";
   cin >> ALUNO.NOTA4;
 

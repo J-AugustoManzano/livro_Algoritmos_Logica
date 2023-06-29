@@ -24,12 +24,16 @@ end
 ALUNO = CAD_ALUNO("", ' ', 0, zeros(Float64, 4))
 
 println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
+
 print("Entre o nome ......: ")
 ALUNO.NOME = readline()
+
 print("Entre a turma .....: ")
 ALUNO.TURMA = first(readline())
+
 print("Entre a sala ......: ")
 ALUNO.SALA = parse(Int, readline())
+
 ALUNO.NOTAS = zeros(Float64, 4)
 for I = 1:1:4
   print("Entre a ", I, "a. nota ..: ")

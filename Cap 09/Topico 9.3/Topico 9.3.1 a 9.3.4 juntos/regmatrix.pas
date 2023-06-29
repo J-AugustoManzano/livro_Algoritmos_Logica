@@ -31,12 +31,16 @@ begin
 
   writeln('REGISTRO ESCOLAR - SIMPLES (1 ALUNO)');
   writeln;
+  
   write('Entre o nome ......: ');
   readln(ALUNO.NOME);
+  
   write('Entre a turma .....: ');
   readln(ALUNO.TURMA);
+  
   write('Entre a sala ......: ');
   readln(ALUNO.SALA);
+  
   for I := 1 to 4 do
   begin
     write('Entre a ', I, 'a, nota ..: ');

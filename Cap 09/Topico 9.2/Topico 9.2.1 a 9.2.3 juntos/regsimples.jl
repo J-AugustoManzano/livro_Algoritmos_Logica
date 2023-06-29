@@ -24,18 +24,25 @@ end
 ALUNO = CAD_ALUNO("", ' ', 0, 0.0, 0.0, 0.0, 0.0)
 
 println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
+
 print("Entre o nome ......: ")
 ALUNO.NOME = chomp(readline())
+
 print("Entre a turma .....: ")
 ALUNO.TURMA = first(chomp(readline()))
+
 print("Entre a sala ......: ")
 ALUNO.SALA = parse(Int, chomp(readline()))
+
 print("Entre a 1a. nota ..: ")
 ALUNO.NOTA1 = parse(Float64, chomp(readline()))
+
 print("Entre a 2a. nota ..: ")
 ALUNO.NOTA2 = parse(Float64, chomp(readline()))
+
 print("Entre a 3a. nota ..: ")
 ALUNO.NOTA3 = parse(Float64, chomp(readline()))
+
 print("Entre a 4a. nota ..: ")
 ALUNO.NOTA4 = parse(Float64, chomp(readline()))
 

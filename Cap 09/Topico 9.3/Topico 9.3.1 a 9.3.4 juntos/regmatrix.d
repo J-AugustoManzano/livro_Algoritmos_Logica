@@ -30,13 +30,17 @@ int I;
 void main() {
   
   writeln("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n");
+  
   write("Entre o nome ......: ");
   ALUNO.NOME = readln().chomp();
+  
   write("Entre a turma .....: ");
   readf(" %c", &ALUNO.TURMA);
   stdin.readln(); // Limpa buffer teclado apos entrada do caracter
+  
   write("Entre a sala ......: ");
   string ENTRAAUX = readln().strip();
+  
   ALUNO.SALA = to!int(ENTRAAUX);
   for (I = 0; I <= 3; I++) {
     writef("Entre a %da. nota ..: ", I + 1);

@@ -34,17 +34,23 @@ var ALUNO CAD_ALUNO
 var I int
 
 func main() {
+	
   reader := bufio.NewReader(os.Stdin)
+  
   fmt.Println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
+  
   fmt.Print("Entre o nome ......: ")
   ALUNO.NOME, _ = reader.ReadString('\n')
   ALUNO.NOME = strings.TrimSpace(ALUNO.NOME)
+  
   fmt.Print("Entre a turma .....: ")
   ALUNO.TURMA, _ = reader.ReadString('\n')
   ALUNO.TURMA = strings.TrimSpace(ALUNO.TURMA)
+  
   fmt.Print("Entre a sala ......: ")
   salaStr, _ := reader.ReadString('\n')
   salaStr = strings.TrimSpace(salaStr)
+  
   ALUNO.SALA, _ = strconv.Atoi(salaStr)
   for I = 0; I <= 3; I++ {
     fmt.Printf("Entre a %da. nota ..: ", I+1)

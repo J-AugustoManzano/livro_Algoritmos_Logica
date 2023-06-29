@@ -31,14 +31,19 @@ int I, J;
 void main() {
 	
   writeln("REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n");
+  
   for (I = 0; I <= 7; I++) {
     writeln("ALUNO ", I + 1);
+    
     write("Entre o nome ......: ");
     ALUNO[I].NOME = chomp(readln());
+    
     write("Entre a turma .....: ");
     readf("%c\n", &ALUNO[I].TURMA);
+    
     write("Entre a sala ......: ");
     ALUNO[I].SALA = to!int(chomp(readln()));
+    
     for (J = 0; J <= 3; J++) {
       write("Entre a ", J + 1, "a. nota ..: ");
       ALUNO[I].NOTAS[J] = to!float(chomp(readln()));

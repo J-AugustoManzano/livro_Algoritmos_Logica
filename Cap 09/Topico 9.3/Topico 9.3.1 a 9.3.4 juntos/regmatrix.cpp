@@ -31,12 +31,16 @@ int I;
 
 int main() {
   cout << "REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n\n";
+  
   cout << "Entre o nome ......: ";
   getline(cin, ALUNO.NOME);
+  
   cout << "Entre a turma .....: ";
   cin >> ALUNO.TURMA;
+  
   cout << "Entre a sala ......: ";
   cin >> ALUNO.SALA;
+  
   for (I = 0; I <= 3; I++) {
     cout << "Entre a " << I + 1 << "a. nota ..: ";
     cin >> ALUNO.NOTAS[I];

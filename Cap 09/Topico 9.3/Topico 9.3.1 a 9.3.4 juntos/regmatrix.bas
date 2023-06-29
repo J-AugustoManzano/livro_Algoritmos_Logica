@@ -25,12 +25,16 @@ Dim I As Integer
 
 Print "REGISTRO ESCOLAR - SIMPLES (1 ALUNO)"
 Print
+
 Print "Entre o nome ......: ";
 Input "", ALUNO.NOME
+
 Print "Entre a turma .....: ";
 Input "", ALUNO.TURMA
+
 Print "Entre a sala ......: ";
 Input "", ALUNO.SALA
+
 For I = 1 To 4
   Print "Entre a " + Str(I) + "a. nota ..: ";
   Input "", ALUNO.NOTAS(I)

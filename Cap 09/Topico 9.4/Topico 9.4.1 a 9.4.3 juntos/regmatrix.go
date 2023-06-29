@@ -42,15 +42,19 @@ func main() {
 
   for I := 0; I <= 7; I++ {
     fmt.Printf("ALUNO %d\n", I + 1)
+    
     fmt.Print("Entre o nome ......: ")
     NOME, _ := entrada.ReadString('\n')
     ALUNO[I].NOME = strings.TrimSpace(NOME)
+    
     fmt.Print("Entre a turma .....: ")
     TURMA, _ := entrada.ReadString('\n')
     ALUNO[I].TURMA = strings.TrimSpace(TURMA)
+    
     fmt.Print("Entre a sala ......: ")
     SALAstr, _ := entrada.ReadString('\n')
     SALA, _ := strconv.Atoi(strings.TrimSpace(SALAstr))
+    
     ALUNO[I].SALA = SALA
     for J := 0; J <= 3; J++ {
       fmt.Printf("Entre a %da. nota ..: ", J+1)

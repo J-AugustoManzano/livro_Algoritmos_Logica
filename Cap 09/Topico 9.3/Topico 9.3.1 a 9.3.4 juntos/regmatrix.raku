@@ -25,13 +25,17 @@ my $ALUNO = CAD_ALUNO.new;
 my $I;
 
 say 'REGISTRO ESCOLAR - SIMPLES (1 ALUNO)';
+
 say '';
 print 'Entre o nome ......: ';
 $ALUNO.NOME = prompt;
+
 print 'Entre a turma .....: ';
 $ALUNO.TURMA = prompt;
+
 print 'Entre a sala ......: ';
 $ALUNO.SALA = prompt;
+
 for (1..4) -> $I {
     print "Entre a {$I}a. nota ..: ";
     $ALUNO.NOTAS[$I] = prompt;

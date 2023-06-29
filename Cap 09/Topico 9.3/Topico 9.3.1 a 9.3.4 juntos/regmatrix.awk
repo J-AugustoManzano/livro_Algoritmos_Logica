@@ -9,20 +9,22 @@
 # 
 # Programa ..: MANIPULACAO DE REGISTRO DE MATRIZ
 
-#!/usr/bin/awk -f
-
 BEGIN {
 
   // Em AWK nao se define registro como CAD_ALUNO 
 
   print "REGISTRO ESCOLAR - SIMPLES (1 ALUNO)"
   print ""
+  
   printf "Entre o nome ......: "
   getline ALUNO_NOME
+  
   printf "Entre a turma .....: "
   getline ALUNO_TURMA
+  
   printf "Entre a sala ......: "
   getline ALUNO_SALA
+  
   for (I = 1; I <= 4; I++) {
     printf "Entre a %da. nota ..: ", I
     getline ALUNO_NOTAS[I]

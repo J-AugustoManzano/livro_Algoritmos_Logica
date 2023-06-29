@@ -22,18 +22,25 @@ CAD_ALUNO = {
 }
 
 print("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
+
 io.write("Entre o nome ......: ")
 CAD_ALUNO.NOME = io.read()
+
 io.write("Entre a turma .....: ")
 CAD_ALUNO.TURMA = io.read()
+
 io.write("Entre a sala ......: ")
 CAD_ALUNO.SALA = tonumber(io.read())
+
 io.write("Entre a 1a. nota ..: ")
 CAD_ALUNO.NOTA1 = tonumber(io.read())
+
 io.write("Entre a 2a. nota ..: ")
 CAD_ALUNO.NOTA2 = tonumber(io.read())
+
 io.write("Entre a 3a. nota ..: ")
 CAD_ALUNO.NOTA3 = tonumber(io.read())
+
 io.write("Entre a 4a. nota ..: ")
 CAD_ALUNO.NOTA4 = tonumber(io.read())
 

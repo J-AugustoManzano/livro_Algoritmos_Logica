@@ -29,18 +29,25 @@ late final ALUNO = CadAluno();
 void main() {
 
   stdout.writeln('REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n\n');
+  
   stdout.write('Entre o nome ......: ');
   ALUNO.NOME = stdin.readLineSync() ?? '';
+  
   stdout.write('Entre a turma .....: ');
   ALUNO.TURMA = stdin.readLineSync() ?? '';
+  
   stdout.write('Entre a sala ......: ');
   ALUNO.SALA = int.parse(stdin.readLineSync() ?? '');
+  
   stdout.write('Entre a 1a. nota ..: ');
   ALUNO.NOTA1 = double.parse(stdin.readLineSync() ?? '');
+  
   stdout.write('Entre a 2a. nota ..: ');
   ALUNO.NOTA2 = double.parse(stdin.readLineSync() ?? '');
+  
   stdout.write('Entre a 3a. nota ..: ');
   ALUNO.NOTA3 = double.parse(stdin.readLineSync() ?? '');
+  
   stdout.write('Entre a 4a. nota ..: ');
   ALUNO.NOTA4 = double.parse(stdin.readLineSync() ?? '');
 

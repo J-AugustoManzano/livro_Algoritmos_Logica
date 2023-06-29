@@ -40,12 +40,16 @@ class Program
     {
       ALUNO[I] = new CAD_ALUNO();
       Console.WriteLine($"ALUNO {I + 1}");
+      
       Console.Write("Entre o nome ......: ");
       ALUNO[I].NOME = Console.ReadLine();
+      
       Console.Write("Entre a turma .....: ");
       ALUNO[I].TURMA = Console.ReadLine()[0];
+      
       Console.Write("Entre a sala ......: ");
       ALUNO[I].SALA = int.Parse(Console.ReadLine());
+      
       ALUNO[I].NOTAS = new float[4];
       for (int J = 0; J <= 3; J++)
       {

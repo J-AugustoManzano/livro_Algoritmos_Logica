@@ -23,23 +23,29 @@ mutable struct CAD_ALUNO
 end
 
 ALUNO = Array{CAD_ALUNO}(undef, 8)
-# Nao e necessario definir variaveis de controle dos lacos.
 
 println("REGISTRO ESCOLAR - MATRIZ (8 ALUNOS)");
+
 for I in 1:1:8
+
   ALUNO[I] = CAD_ALUNO("", ' ', 0, zeros(Float64, 4))
   println("ALUNO ", I)
+  
   print("Entre o nome ......: ")
   ALUNO[I].NOME = readline()
+  
   print("Entre a turma .....: ")
   ALUNO[I].TURMA = readline()[1]
+  
   print("Entre a sala ......: ")
   ALUNO[I].SALA = parse(Int, readline())
+  
   for J in 1:1:4
     print("Entre a ", J, "a. nota ..: ")
     ALUNO[I].NOTAS[J] = parse(Float64, readline())
   end
   println()
+  
 end
 
 println("\nDADOS DOS ALUNOS")

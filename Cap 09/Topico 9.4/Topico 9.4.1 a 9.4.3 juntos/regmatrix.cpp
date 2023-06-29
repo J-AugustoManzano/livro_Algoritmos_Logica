@@ -35,14 +35,18 @@ int main(void) {
   cout << "REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n\n";
   for (I = 0; I < 8; I++) {
     cout << "ALUNO " << I + 1 << endl;
+    
     cout << "Entre o nome ......: ";
     cin.getline(ALUNO[I].NOME, sizeof(ALUNO[I].NOME));
+    
     cout << "Entre a turma .....: ";
     cin >> ALUNO[I].TURMA;
+    
     cin.ignore();
     cout << "Entre a sala ......: ";
     cin >> ALUNO[I].SALA;
     cin.ignore();
+    
     for (J = 0; J < 4; J++) {
       cout << "Entre a " << J + 1 << "a. nota ..: ";
       cin >> ALUNO[I].NOTAS[J];

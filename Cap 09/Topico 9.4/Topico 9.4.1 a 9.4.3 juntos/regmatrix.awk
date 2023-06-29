@@ -9,8 +9,6 @@
 # 
 # Programa ..: MANIPULACAO DE REGISTRO DE MATRIZ
 
-#!/usr/bin/awk -f
-
 BEGIN {
 
   // Em AWK nao se define registro como CAD_ALUNO e tipo BIMESTRE
@@ -19,17 +17,22 @@ BEGIN {
   print ""
   for (I = 1; I <= 8; I++) {
     printf "ALUNO %d\n", I
+    
     printf "Entre o nome ......: "
     getline ALUNO_NOME[I]
+    
     printf "Entre a turma .....: "
     getline ALUNO_TURMA[I]
+    
     printf "Entre a sala ......: "
     getline ALUNO_SALA[I]
+    
     for (J = 1; J <= 4; J++) {
       printf "Entre a %da. nota ..: ", J
       getline ALUNO_NOTAS[I, J]
     }
     print ""
+    
   }
 
   print "DADOS DOS ALUNOS"

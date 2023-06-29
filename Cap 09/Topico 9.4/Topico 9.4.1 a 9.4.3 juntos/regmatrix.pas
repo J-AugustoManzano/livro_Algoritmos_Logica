@@ -33,21 +33,28 @@ var
 begin
   writeln('REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)');
   writeln;  
+  
   for I := 1 to 8 do
   begin
+  
     writeln('ALUNO ', I);
+    
     write('Entre o nome ......: ');
     readln(ALUNO[I].NOME);
+    
     write('Entre a turma .....: ');
     readln(ALUNO[I].TURMA);
+    
     write('Entre a sala ......: ');
     readln(ALUNO[I].SALA);
+    
     for J := 1 to 4 do
     begin
       write('Entre a ', J, 'a. nota ..: ');
       readln(ALUNO[I].NOTAS[J]);
     end;
     writeln;
+    
   end;
 
   writeln;

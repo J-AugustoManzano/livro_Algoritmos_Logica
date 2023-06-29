@@ -35,13 +35,17 @@ object Main {
     var I = 0
 
     println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
+    
     print("Entre o nome ......: ")
     ALUNO = ALUNO.copy(NOME = StdIn.readLine())
+    
     print("Entre a turma .....: ")
     ALUNO = ALUNO.copy(TURMA = StdIn.readLine().charAt(0))
+    
     print("Entre a sala ......: ")
     ALUNO = ALUNO.copy(SALA = StdIn.readInt())
     ALUNO = ALUNO.copy(NOTAS = Array.fill[Float](4)(0))
+    
     for (I <- 0 to 3 by 1) {
       print(s"Entre a ${I + 1}a. nota ..: ")
       ALUNO.NOTAS(I) = StdIn.readFloat()

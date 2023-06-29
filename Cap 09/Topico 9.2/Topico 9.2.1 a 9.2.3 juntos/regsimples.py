@@ -24,6 +24,7 @@ class CAD_ALUNO:
 ALUNO = CAD_ALUNO()
 
 print("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n\n")
+
 ALUNO.NOME = input("Entre o nome ......: ")
 ALUNO.TURMA = input("Entre a turma .....: ")
 ALUNO.SALA = int(input("Entre a sala ......: "))

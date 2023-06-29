@@ -26,14 +26,18 @@ struct CAD_ALUNO {
 var ALUNO = CAD_ALUNO(NOME: "", TURMA: " ", SALA: 0, NOTAS: Array(repeating: 0.0, count: 4))
 
 print("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
+
 print("Entre o nome ......: ", terminator: "")
 ALUNO.NOME = readLine(strippingNewline: true) ?? ""
+
 print("Entre a turma .....: ", terminator: "")
 let turmaInput = readLine(strippingNewline: true) ?? ""
 ALUNO.TURMA = turmaInput.first ?? " "
+
 print("Entre a sala ......: ", terminator: "")
 let salaInput = readLine(strippingNewline: true) ?? ""
 ALUNO.SALA = Int(salaInput) ?? 0
+
 for I in 0...3 {
     print("Entre a \(I+1)a. nota ..: ", terminator: "")
     let notaInput = readLine(strippingNewline: true) ?? ""

@@ -30,19 +30,27 @@ public class Main {
   public static void main(String[] args) {
 
     Scanner entrada = new Scanner(System.in);
+    
     System.out.println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n");
+    
     System.out.print("Entre o nome ......: ");
     ALUNO.NOME = entrada.nextLine();
+    
     System.out.print("Entre a turma .....: ");
     ALUNO.TURMA = entrada.nextLine();
+    
     System.out.print("Entre a sala ......: ");
     ALUNO.SALA = entrada.nextInt();
+    
     System.out.print("Entre a 1a. nota ..: ");
     ALUNO.NOTA1 = entrada.nextDouble();
+    
     System.out.print("Entre a 2a. nota ..: ");
     ALUNO.NOTA2 = entrada.nextDouble();
+    
     System.out.print("Entre a 3a. nota ..: ");
     ALUNO.NOTA3 = entrada.nextDouble();
+    
     System.out.print("Entre a 4a. nota ..: ");
     ALUNO.NOTA4 = entrada.nextDouble();
 

@@ -25,18 +25,25 @@ Dim ALUNO As Cad_Aluno
 
 Print "REGISTRO ESCOLAR - SIMPLES (1 ALUNO)"
 Print
+
 Print "Entre o nome ......: ";
 Input "", ALUNO.NOME
+
 Print "Entre a turma .....: ";
 Input "", ALUNO.TURMA
+
 Print "Entre a sala ......: ";
 Input "", ALUNO.SALA
+
 Print "Entre a 1a. nota ..: ";
 Input "", ALUNO.NOTA1
+
 Print "Entre a 2a. nota ..: ";
 Input "", ALUNO.NOTA2
+
 Print "Entre a 3a. nota ..: ";
 Input "", ALUNO.NOTA3
+
 Print "Entre a 4a. nota ..: ";
 Input "", ALUNO.NOTA4
 

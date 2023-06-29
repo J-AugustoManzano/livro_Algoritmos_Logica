@@ -28,17 +28,22 @@ Print
 
 For I = 1 To 8 Step 1
   Print "ALUNO " & I
+  
   Print "Entre o nome ......: ";
   Input "", ALUNO(I).NOME
+  
   Print "Entre a turma .....: ";
   Input "", ALUNO(I).TURMA
+  
   Print "Entre a sala ......: ";
   Input "", ALUNO(I).SALA
+  
   For J = 1 To 4 Step 1
     Print "Entre a " & Str(J) & "a. nota ..: ";
     Input "", ALUNO(I).NOTAS(J)
   Next J
   Print
+  
 Next I
 
 Print

@@ -33,12 +33,16 @@ public class Main {
     Scanner entrada = new Scanner(System.in);
 
     System.out.println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n");
+    
     System.out.print("Entre o nome ......: ");
     ALUNO.NOME = entrada.nextLine();
+    
     System.out.print("Entre a turma .....: ");
     ALUNO.TURMA = entrada.nextLine().charAt(0);
+    
     System.out.print("Entre a sala ......: ");
     ALUNO.SALA = Integer.parseInt(entrada.nextLine());
+    
     ALUNO.NOTAS = new float[4];
     for (I = 0; I <= 3; I++) {
       System.out.printf("Entre a %da. nota ..: ", I + 1);

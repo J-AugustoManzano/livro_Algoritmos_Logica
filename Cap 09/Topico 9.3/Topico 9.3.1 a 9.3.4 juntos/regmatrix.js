@@ -23,12 +23,16 @@ const ALUNO = {
 
 let I;
 console.log("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n");
+
 process.stdout.write("Entre o nome ......: ");
 ALUNO.NOME = readline.question();
+
 process.stdout.write("Entre a turma .....: ");
 ALUNO.TURMA = readline.question()[0];
+
 process.stdout.write("Entre a sala ......: ");
 ALUNO.SALA = parseInt(readline.question());
+
 for (I = 0; I <= 3; I++) {
   process.stdout.write(`Entre a ${I + 1}a. nota ..: `);
   ALUNO.NOTAS[I] = parseFloat(readline.question());

@@ -34,21 +34,27 @@ public class Main {
     Scanner entrada = new Scanner(System.in);
 
     System.out.println("REGISTRO ESCOLAR - MATRIZ (8 ALUNOS)\n");
+    
     for (I = 0; I <= 7; I++) {
       ALUNO[I] = new CAD_ALUNO();
+      
       System.out.printf("ALUNO %d\n", I + 1);
       System.out.print("Entre o nome ......: ");
       ALUNO[I].NOME = entrada.nextLine();
+      
       System.out.print("Entre a turma .....: ");
       ALUNO[I].TURMA = entrada.nextLine().charAt(0);
+      
       System.out.print("Entre a sala ......: ");
       ALUNO[I].SALA = Integer.parseInt(entrada.nextLine());
+      
       ALUNO[I].NOTAS = new float[4];
       for (J = 0; J <= 3; J++) {
         System.out.printf("Entre a %da. nota ..: ", J + 1);
         ALUNO[I].NOTAS[J] = Float.parseFloat(entrada.nextLine());
       }
       System.out.println();
+      
     }
 
     System.out.println("DADOS DOS ALUNOS");

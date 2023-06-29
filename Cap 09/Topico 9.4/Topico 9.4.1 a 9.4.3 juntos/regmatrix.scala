@@ -31,14 +31,19 @@ object Main {
     // neste caso as variaveis "I" e "J".
 
     println("REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n")
+    
     for (I <- 0 to 7 by 1) {
       println(s"ALUNO ${I + 1}")
+      
       print("Entre o NOME ......: ")
       val NOME = StdIn.readLine()
+      
       print("Entre a TURMA .....: ")
       val TURMA = StdIn.readLine().charAt(0)
+      
       print("Entre a SALA ......: ")
       val SALA = StdIn.readInt()
+      
       val NOTAS = new Array[Float](4)
       for (J <- 0 until 3 by 1) {
         print(f"Entre a ${J + 1}a. NOTA ..: ")

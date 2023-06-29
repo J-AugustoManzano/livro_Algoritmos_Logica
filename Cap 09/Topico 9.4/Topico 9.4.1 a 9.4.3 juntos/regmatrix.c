@@ -30,15 +30,20 @@ int I, J;
 int main() {
 	
   printf("REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n");
+  
   for (I = 0; I < 8; I++) {
     printf("ALUNO %d\n", I + 1);
+    
     printf("Entre o nome ......: ");
     fgets(ALUNO[I].NOME, sizeof(ALUNO[I].NOME), stdin);
     ALUNO[I].NOME[strcspn(ALUNO[I].NOME, "\n")] = '\0'; // Remove o caractere de nova linha
+    
     printf("Entre a turma .....: ");
     scanf("%c%*c", &ALUNO[I].TURMA);
+    
     printf("Entre a sala ......: ");
     scanf("%d%*c", &ALUNO[I].SALA);
+    
     for (J = 0; J < 4; J++) {
       printf("Entre a %da. nota ..: ", J + 1);
       scanf("%f%*c", &ALUNO[I].NOTAS[J]);

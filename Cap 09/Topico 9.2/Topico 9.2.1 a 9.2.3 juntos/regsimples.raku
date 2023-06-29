@@ -22,19 +22,26 @@ class CAD_ALUNO {
 my $ALUNO = CAD_ALUNO.new;
 
 say 'REGISTRO ESCOLAR - SIMPLES (1 ALUNO)';
+
 say '';
 print 'Entre o nome ......: ';
 $ALUNO.NOME = prompt;
+
 print 'Entre a turma .....: ';
 $ALUNO.TURMA = prompt;
+
 print 'Entre a sala ......: ';
 $ALUNO.SALA = prompt;
+
 print 'Entre a 1a. nota ..: ';
 $ALUNO.NOTA1 = prompt;
+
 print 'Entre a 2a. nota ..: ';
 $ALUNO.NOTA2 = prompt;
+
 print 'Entre a 3a. nota ..: ';
 $ALUNO.NOTA3 = prompt;
+
 print 'Entre a 4a. nota ..: ';
 $ALUNO.NOTA4 = prompt;
 

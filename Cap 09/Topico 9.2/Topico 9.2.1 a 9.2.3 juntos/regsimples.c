@@ -28,18 +28,25 @@ struct CAD_ALUNO ALUNO;
 int main(void) {
   
   printf("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n\n");
+  
   printf("Entre o nome ......: ");
   scanf("%s", ALUNO.NOME);
+  
   printf("Entre a turma .....: ");
   scanf(" %c", &ALUNO.TURMA);
+  
   printf("Entre a sala ......: ");
   scanf("%d", &ALUNO.SALA);
+  
   printf("Entre a 1a. nota ..: ");
   scanf("%f", &ALUNO.NOTA1);
+  
   printf("Entre a 2a. nota ..: ");
   scanf("%f", &ALUNO.NOTA2);
+  
   printf("Entre a 3a. nota ..: ");
   scanf("%f", &ALUNO.NOTA3);
+  
   printf("Entre a 4a. nota ..: ");
   scanf("%f", &ALUNO.NOTA4);
 

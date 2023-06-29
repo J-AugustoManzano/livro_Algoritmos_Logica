@@ -24,11 +24,14 @@ ALUNO = [CAD_ALUNO.copy() for _ in range(8)]
 # Nao e necessario definir variaveis de controle dos lacos.
 
 print("REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n")
+
 for I in range(8):
   print("ALUNO", I + 1)
+  
   ALUNO[I]["NOME"] = input("Entre o nome ......: ")
   ALUNO[I]["TURMA"] = input("Entre a turma .....: ")
   ALUNO[I]["SALA"] = int(input("Entre a sala ......: "))
+  
   for J in range(4):
     nota_num = J + 1
     ALUNO[I]["NOTAS"][J] = float(input("Entre a {}a. nota ..: ".format(nota_num)))

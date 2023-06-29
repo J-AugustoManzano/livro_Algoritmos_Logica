@@ -28,12 +28,16 @@ int I;
 int main(void) {
 
   printf("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n\n");
+  
   printf("Entre o nome ......: ");
   fgets(ALUNO.NOME, sizeof(ALUNO.NOME), stdin);
+  
   printf("Entre a turma .....: ");
   scanf(" %c", &ALUNO.TURMA);
+  
   printf("Entre a sala ......: ");
   scanf("%d", &ALUNO.SALA);
+  
   for (I = 0; I <= 3; I++) {
     printf("Entre a %da. nota ..: ", I + 1);
     scanf("%f", &ALUNO.NOTAS[I]);

@@ -23,9 +23,11 @@ CAD_ALUNO = {
 ALUNO = CAD_ALUNO
 
 print("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
+
 ALUNO["NOME"] = input("Entre o nome ......: ")
 ALUNO["TURMA"] = input("Entre a turma .....: ")
 ALUNO["SALA"] = int(input("Entre a sala ......: "))
+
 for I in range(0, 4):
   nota_num = I + 1
   ALUNO["NOTAS"][I] = float(input("Entre a {}a. nota ..: ".format(nota_num)))

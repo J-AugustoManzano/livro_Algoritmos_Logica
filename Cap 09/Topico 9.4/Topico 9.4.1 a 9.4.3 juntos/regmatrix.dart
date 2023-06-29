@@ -29,15 +29,20 @@ var I, J;
 void main() {
 
   print('REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n');
+  
   for (I = 0; I <= 7; I++) {
     ALUNO[I] = CAD_ALUNO();
     print('ALUNO ${I + 1}');
+    
     stdout.write('Entre o nome ......: ');
     ALUNO[I].NOME = stdin.readLineSync() ?? '';
+    
     stdout.write('Entre a turma .....: ');
     ALUNO[I].TURMA = stdin.readLineSync()?.substring(0, 1) ?? '';
+    
     stdout.write('Entre a sala ......: ');
     ALUNO[I].SALA = int.parse(stdin.readLineSync() ?? '');
+    
     ALUNO[I].NOTAS = List<double>.filled(4, 0.0);
     for (J = 0; J <= 3; J++) {
       stdout.write('Entre a ${J + 1}a. nota ..: ');

@@ -24,15 +24,21 @@ const CAD_ALUNO = {
 
 let I, J;
 console.log("REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n");
+
 for (I = 0; I < 8; I++) {
+	
   console.log(`ALUNO ${I + 1}`);
+  
   process.stdout.write("Entre o nome ......: ");
   ALUNO[I] = Object.assign({}, CAD_ALUNO);
   ALUNO[I].NOME = readline.question();
+  
   process.stdout.write("Entre a turma .....: ");
   ALUNO[I].TURMA = readline.question()[0];
+  
   process.stdout.write("Entre a sala ......: ");
   ALUNO[I].SALA = parseInt(readline.question());
+  
   ALUNO[I].NOTAS = [];
   for (J = 0; J < 4; J++) {
     process.stdout.write(`Entre a ${J + 1}a. nota ..: `);

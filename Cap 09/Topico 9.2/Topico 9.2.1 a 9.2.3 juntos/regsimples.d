@@ -34,18 +34,25 @@ void main()
   CAD_ALUNO ALUNO;
 
   writeln("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n");
+  
   write("Entre o nome ......: ");
   ALUNO.NOME = readln().chomp();
+  
   write("Entre a turma .....: ");
   ALUNO.TURMA = readln()[0];
+  
   write("Entre a sala ......: ");
   ALUNO.SALA = readln().chomp().to!int;
+  
   write("Entre a 1a. nota ..: ");
   ALUNO.NOTA1 = readln().chomp().to!float;
+  
   write("Entre a 2a. nota ..: ");
   ALUNO.NOTA2 = readln().chomp().to!float;
+  
   write("Entre a 3a. nota ..: ");
   ALUNO.NOTA3 = readln().chomp().to!float;
+  
   write("Entre a 4a. nota ..: ");
   ALUNO.NOTA4 = readln().chomp().to!float;
 

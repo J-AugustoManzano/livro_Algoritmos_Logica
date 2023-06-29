@@ -13,28 +13,45 @@
 
 const readline = require('readline-sync');
 
+console.log('REGISTRO ESCOLAR - SIMPLES (1 ALUNO)');
+
+console.log();
 const ALUNO = {
-  NOME: "",
-  TURMA: "",
+  NOME: '',
+  TURMA: '',
   SALA: 0,
-  NOTAS: new Array(4)
+  NOTA1: 0,
+  NOTA2: 0,
+  NOTA3: 0,
+  NOTA4: 0
 };
 
-console.log("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n");
-process.stdout.write("Entre o nome ......: ");
-ALUNO.NOME = readline.question();
-process.stdout.write("Entre a turma .....: ");
-ALUNO.TURMA = readline.question()[0];
-process.stdout.write("Entre a sala ......: ");
-ALUNO.SALA = parseInt(readline.question());
-for (let i = 0; i < 4; i++) {
-  process.stdout.write(`Entre a ${i + 1}a. nota ..: `);
-  ALUNO.NOTAS[i] = parseFloat(readline.question());
-}
-console.log("\nDADOS DO ALUNO");
-console.log(`Nome ..............: ${ALUNO.NOME}`);
-console.log(`Turma .............: ${ALUNO.TURMA}`);
-console.log(`Sala ..............: ${ALUNO.SALA.toString().padStart(4)}`);
-for (let i = 0; i < 4; i++) {
-  console.log(`Nota ${i + 1} ............: ${ALUNO.NOTAS[i].toFixed(1).padStart(4)}`);
-}
+process.stdout.write('Entre o nome ......: ');
+ALUNO.NOME = readline.prompt();
+
+process.stdout.write('Entre a turma .....: ');
+ALUNO.TURMA = readline.prompt();
+
+process.stdout.write('Entre a sala ......: ');
+ALUNO.SALA = parseInt(readline.prompt());
+
+process.stdout.write('Entre a 1a. nota ..: ');
+ALUNO.NOTA1 = parseFloat(readline.prompt());
+
+process.stdout.write('Entre a 2a. nota ..: ');
+ALUNO.NOTA2 = parseFloat(readline.prompt());
+
+process.stdout.write('Entre a 3a. nota ..: ');
+ALUNO.NOTA3 = parseFloat(readline.prompt());
+
+process.stdout.write('Entre a 4a. nota ..: ');
+ALUNO.NOTA4 = parseFloat(readline.prompt());
+
+console.log();
+console.log('Nome ..............: ', ALUNO.NOME);
+console.log('Turma .............: ', ALUNO.TURMA);
+console.log('Sala ..............: ', ALUNO.SALA);
+console.log('Nota 1 ............: ', ALUNO.NOTA1.toFixed(1));
+console.log('Nota 2 ............: ', ALUNO.NOTA2.toFixed(1));
+console.log('Nota 3 ............: ', ALUNO.NOTA3.toFixed(1));
+console.log('Nota 4 ............: ', ALUNO.NOTA4.toFixed(1));

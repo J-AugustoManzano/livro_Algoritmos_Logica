@@ -33,18 +33,25 @@ public class Program
   {
 
     Console.WriteLine("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n");
+    
     Console.Write("Entre o nome ......: ");
     ALUNO.NOME = Console.ReadLine();
+    
     Console.Write("Entre a turma .....: ");
     ALUNO.TURMA = Console.ReadLine()[0];
+    
     Console.Write("Entre a sala ......: ");
     ALUNO.SALA = int.Parse(Console.ReadLine());
+    
     Console.Write("Entre a 1a. nota ..: ");
     ALUNO.NOTA1 = float.Parse(Console.ReadLine());
+    
     Console.Write("Entre a 2a. nota ..: ");
     ALUNO.NOTA2 = float.Parse(Console.ReadLine());
+    
     Console.Write("Entre a 3a. nota ..: ");
     ALUNO.NOTA3 = float.Parse(Console.ReadLine());
+    
     Console.Write("Entre a 4a. nota ..: ");
     ALUNO.NOTA4 = float.Parse(Console.ReadLine());
 

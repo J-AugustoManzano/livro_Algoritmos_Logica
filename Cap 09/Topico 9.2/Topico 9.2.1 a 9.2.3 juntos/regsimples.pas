@@ -30,19 +30,26 @@ var
 begin
 
   writeln('REGISTRO ESCOLAR - SIMPLES (1 ALUNO)');
+  
   writeln;
   write('Entre o nome ......: ');
   readln(ALUNO.NOME);
+  
   write('Entre a turma .....: ');
   readln(ALUNO.TURMA);
+  
   write('Entre a sala ......: ');
   readln(ALUNO.SALA);
+  
   write('Entre a 1a. nota ..: ');
   readln(ALUNO.NOTA1);
+  
   write('Entre a 2a. nota ..: ');
   readln(ALUNO.NOTA2);
+  
   write('Entre a 3a. nota ..: ');
   readln(ALUNO.NOTA3);
+  
   write('Entre a 4a. nota ..: ');
   readln(ALUNO.NOTA4);
 
