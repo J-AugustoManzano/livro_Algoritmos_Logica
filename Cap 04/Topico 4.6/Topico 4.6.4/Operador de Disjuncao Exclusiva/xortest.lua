@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 4 - Topico 4.6.4
  *
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO EXCLUSIVA ".XOU. / XOR" (SIMULADA)
+ * Programa ..: OPERACAO DE DISJUNCAO EXCLUSIVA ".XOU. / XOR" (SIMULADA)
  *
  *              Use ..: ((P1 = 1 and P2 <> 1) or (P1 <> 1 and P2 = 1))
  *
@@ -17,14 +17,18 @@
 
 print("TESTE LOGICO OPERADOR: XOR")
 print()
+
 print("Entre \"1\" se atleta pontuou na 1a. prova")
 print("Entre \"1\" se atleta pontuou na 2a. prova")
 print("Qualquer outro valor se nao pontuou nas provas")
 print()
+
 io.write("Prova 1: ")
 P1 = tonumber(io.read())
+
 io.write("Prova 2: ")
 P2 = tonumber(io.read())
+
 if (P1 == 1 and P2 ~= 1) or (P1 ~= 1 and P2 == 1) then
   print("Atleta participa da terceira prova.")
 else

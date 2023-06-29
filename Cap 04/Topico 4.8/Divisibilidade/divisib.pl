@@ -21,6 +21,7 @@ my $R4;
 my $R5;
 
 print "DIVISIBILIDADE\n\n";
+
 print "Entre valor inteiro: ";
 $N = <STDIN>;
 chomp($N);

@@ -7,11 +7,13 @@
 # 
 # Capitulo ..: 4 - Topico 4.6.1
 # 
-# Programa ..: OPERAÇÃO DE CONJUNÇÃO ".E. / AND"
+# Programa ..: OPERACAO DE CONJUNCAO ".E. / AND"
 
 sub MAIN() {
+
     say 'TESTE LOGICO OPERADOR: AND';
     say '';
+    
     print 'Entre um numero inteiro: ';
     my Int $NUMERO = prompt.Int;
 
@@ -21,4 +23,5 @@ sub MAIN() {
     else {
         say 'O numero esta fora da faixa de 20 a 90';
     }
+    
 }

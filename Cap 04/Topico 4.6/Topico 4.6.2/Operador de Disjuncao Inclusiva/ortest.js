@@ -8,12 +8,14 @@
  * 
  * Capitulo ..: 4 - Topico 4.6.2
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO INCLUSIVA ".OU. / OR"
+ * Programa ..: OPERACAO DE DISJUNCAO INCLUSIVA ".OU. / OR"
  */
 
 console.log('TESTE LOGICA OPERADOR: OR');
 console.log();
+
 const TRANSP = prompt('Entre o modo de transporte: ');
+
 if (TRANSP === 'M' || TRANSP === 'S') {
   console.log('Transporte valido');
 } else {

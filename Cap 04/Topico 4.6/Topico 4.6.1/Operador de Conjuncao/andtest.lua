@@ -8,13 +8,15 @@
  *
  * Capitulo ..: 4 - Topico 4.6.1
  *
- * Programa ..: OPERAÇÃO DE CONJUNÇÃO ".E. / AND"
+ * Programa ..: OPERACAO DE CONJUNCAO ".E. / AND"
 --]]
 
 print("TESTE LOGICO OPERADOR: AND")
 print()
+
 io.write("Entre um numero inteiro: ")
 NUMERO = tonumber(io.read())
+
 if (NUMERO >= 20) and (NUMERO <= 90) then
   print("O numero esta na faixa de 20 a 90")
 else

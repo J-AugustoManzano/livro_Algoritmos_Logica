@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 4 - Topico 4.6.1
  * 
- * Programa ..: OPERAÇÃO DE CONJUNÇÃO ".E. / AND"
+ * Programa ..: OPERACAO DE CONJUNCAO ".E. / AND"
  */
 
 package main
@@ -18,11 +18,14 @@ import (
 )
 
 var NUMERO int
+
 func main() {
+	
   fmt.Println("TESTE LOGICO OPERADOR: AND")
   fmt.Println()
   fmt.Print("Entre um numero inteiro: ")
   fmt.Scan(&NUMERO)
+  
   if NUMERO >= 20 && NUMERO <= 90 {
     fmt.Println("O numero esta na faixa de 20 a 90")
   } else {

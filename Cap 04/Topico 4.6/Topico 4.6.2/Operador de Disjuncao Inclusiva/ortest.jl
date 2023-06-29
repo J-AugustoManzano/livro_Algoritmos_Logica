@@ -8,13 +8,15 @@
  *
  * Capitulo ..: 4 - 4 - Topico 4.6.2
  *
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO INCLUSIVA ".OU. / OR"
+ * Programa ..: OPERACAO DE DISJUNCAO INCLUSIVA ".OU. / OR"
 =#
 
 println("TESTE LOGICO OPERADOR: OR")
 println()
+
 print("Entre o modo de transporte: ")
 global TRANSP = readline()
+
 if (TRANSP == "M") || (TRANSP == "S")
   println("Transporte valido")
 else

@@ -8,14 +8,17 @@
  *
  * Capitulo ..: 4 - 4 - Topico 4.6.1
  *
- * Programa ..: OPERAÇÃO DE CONJUNÇÃO ".E. / AND"
+ * Programa ..: OPERACAO DE CONJUNCAO ".E. / AND"
 =#
 
 global NUMERO
+
 println("TESTE LOGICO OPERADOR: AND")
 println()
+
 print("Entre um numero inteiro: ")
 NUMERO = parse(Int64, readline())
+
 if (NUMERO >= 20 && NUMERO <= 90)
   println("O numero esta na faixa de 20 a 90")
 else

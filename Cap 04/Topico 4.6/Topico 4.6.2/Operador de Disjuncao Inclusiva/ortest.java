@@ -8,24 +8,32 @@
  *
  * Capitulo ..: 4 - Topico 4.6.2
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO INCLUSIVA ".OU. / OR"
+ * Programa ..: OPERACAO DE DISJUNCAO INCLUSIVA ".OU. / OR"
  */
 
 import java.util.Scanner;
 
 public class Main {
+	
   private static String TRANSP;
+  
   public static void main(String[] args) {
+	  
     Scanner entrada = new Scanner(System.in);
+    
     System.out.println("TESTE LOGICO OPERADOR: OR");
     System.out.println();
+    
     System.out.print("Entre o modo de transporte: ");
     TRANSP = entrada.nextLine();
+    
     if (TRANSP.equals("M") || TRANSP.equals("S")) {
       System.out.println("Transporte valido");
     } else {
       System.out.println("Transporte invalido");
     }
-      entrada.close();
+    
+    entrada.close();
+    
   }
 }

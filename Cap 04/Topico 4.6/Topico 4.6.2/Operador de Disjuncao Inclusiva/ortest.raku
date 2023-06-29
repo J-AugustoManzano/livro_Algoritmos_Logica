@@ -7,11 +7,13 @@
 # 
 # Capitulo ..: 4 - Topico 4.6.2
 # 
-# Programa ..: OPERAÇÃO DE DISJUNÇÃO INCLUSIVA ".OU. / OR"
+# Programa ..: OPERACAO DE DISJUNCAO INCLUSIVA ".OU. / OR"
 
 sub MAIN() {
+
     say 'TESTE LOGICA OPERADOR: OR';
     say '';
+    
     print 'Entre o modo de transporte: ';
     my $TRANSP = prompt.Str;
 
@@ -21,4 +23,5 @@ sub MAIN() {
     else {
         say 'Transporte invalido';
     }
+    
 }

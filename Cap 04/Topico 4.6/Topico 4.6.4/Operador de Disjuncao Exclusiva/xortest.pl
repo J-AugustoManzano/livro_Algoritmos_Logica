@@ -9,11 +9,9 @@
  *
  * Capitulo ..: 4 - Topico 4.6.4
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO EXCLUSIVA ".XOU. / XOR"
+ * Programa ..: OPERACAO DE DISJUNCAO EXCLUSIVA ".XOU. / XOR"
 
 =cut
-
-#!/usr/bin/perl
 
 use strict;
 use warnings;
@@ -21,11 +19,14 @@ use warnings;
 my ($P1, $P2);
 
 print "TESTE LOGICO OPERADOR: XOR\n\n";
+
 print "Entre \"1\" se atleta pontuou na 1a. prova\n";
 print "Entre \"1\" se atleta pontuou na 2a. prova\n";
 print "Qualquer outro valor se nao pontuou nas provas\n\n";
+
 print "Prova 1: ";
 $P1 = <STDIN>;
+
 print "Prova 2: ";
 $P2 = <STDIN>;
 
@@ -40,4 +41,3 @@ if (($P1 == 1) xor ($P2 == 1)) {
     }
 }
 
-exit 0;

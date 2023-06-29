@@ -9,11 +9,9 @@
  *
  * Capitulo ..: 4 - Topico 4.6.3
  * 
- * Programa ..: OPERAÇÃO DE NEGAÇÃO ".NÃO. / NOT"
+ * Programa ..: OPERACAO DE NEGACAO ".NAO. / NOT"
  
 =cut
-
-#!/usr/bin/perl
 
 use strict;
 use warnings;
@@ -21,10 +19,13 @@ use warnings;
 my ($A, $B, $X, $C);
 
 print "TESTE LOGICO OPERADOR: NOT\n\n";
+
 print "Entre valor inteiro <A>: ";
 $A = <STDIN>;
+
 print "Entre valor inteiro <B>: ";
 $B = <STDIN>;
+
 print "Entre valor inteiro <X>: ";
 $X = <STDIN>;
 
@@ -35,5 +36,3 @@ if (not ($X > 5)) {
 }
 
 print "O valor de C = $C\n";
-
-exit 0;

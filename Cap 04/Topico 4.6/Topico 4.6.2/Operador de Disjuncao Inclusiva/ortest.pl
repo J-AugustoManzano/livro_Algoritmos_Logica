@@ -9,11 +9,9 @@
  *
  * Capitulo ..: 4 - Topico 4.6.2
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO INCLUSIVA ".OU. / OR"
+ * Programa ..: OPERACAO DE DISJUNCAO INCLUSIVA ".OU. / OR"
  
 =cut
-
-#!/usr/bin/perl
 
 use strict;
 use warnings;
@@ -27,6 +25,7 @@ sub trim {
 my $TRANSP;
 
 print "TESTE LOGICO OPERADOR: OR\n\n";
+
 print "Entre o modo de transporte: ";
 $TRANSP = <STDIN>;
 
@@ -37,5 +36,3 @@ if ($TRANSP eq 'M' or $TRANSP eq 'S') {
 } else {
     print "Transporte invalido\n";
 }
-
-exit 0;

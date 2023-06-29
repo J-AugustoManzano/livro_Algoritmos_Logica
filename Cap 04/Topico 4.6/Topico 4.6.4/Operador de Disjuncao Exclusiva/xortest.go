@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 4 - Topico 4.6.4
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO EXCLUSIVA ".XOU. / XOR" (SIMULADA)
+ * Programa ..: OPERACAO DE DISJUNCAO EXCLUSIVA ".XOU. / XOR" (SIMULADA)
  *
  *              Use ..: (P1 == 1 && P2 != 1) || (P1 != 1 && P2 == 1)
  *
@@ -22,17 +22,23 @@ import (
 )
 
 func main() {
+	
   var P1, P2 int
+  
   fmt.Println("TESTE LOGICO OPERADOR: XOR")
   fmt.Println()
+  
   fmt.Println("Entre \"1\" se atleta pontuou na 1a. prova")
   fmt.Println("Entre \"1\" se atleta pontuou na 2a. prova")
   fmt.Println("Qualquer outro valor se nao pontuou nas provas")
   fmt.Println()
+  
   fmt.Print("Prova 1: ")
   fmt.Scanln(&P1)
+  
   fmt.Print("Prova 2: ")
   fmt.Scanln(&P2)
+  
   if (P1 == 1 && P2 != 1) || (P1 != 1 && P2 == 1) {
     fmt.Println("Atleta participa da terceira prova.")
   } else {

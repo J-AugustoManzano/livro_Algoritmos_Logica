@@ -8,18 +8,21 @@
  *
  * Capitulo ..: 4 - Topico 4.6.2
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO INCLUSIVA ".OU. / OR"
+ * Programa ..: OPERACAO DE DISJUNCAO INCLUSIVA ".OU. / OR"
  * 
  */
 
 import std.stdio;
 
 char TRANSP;
+
 void main()
 {
   write("TESTE LOGICO OPERADOR: OR\n\n");
+  
   write("Entre o modo de transporte: ");
   readf(" %c", &TRANSP);
+  
   if (TRANSP == 'M' || TRANSP == 'S')
   {
     write("Transporte valido");
@@ -28,4 +31,5 @@ void main()
   {
     write("Transporte invalido");
   }
+  
 }

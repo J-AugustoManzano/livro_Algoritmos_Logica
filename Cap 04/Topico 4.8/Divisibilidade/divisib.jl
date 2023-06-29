@@ -13,10 +13,13 @@
 
 println("DIVISIBILIDADE")
 println()
+
 print("Entre valor inteiro: ")
 global N = parse(Int, readline())
+
 global R4 = N - 4 * div(N, 4)
 global R5 = N - 5 * div(N, 5)
+
 if (R4 == 0 && R5 == 0)
   println(N)
 else

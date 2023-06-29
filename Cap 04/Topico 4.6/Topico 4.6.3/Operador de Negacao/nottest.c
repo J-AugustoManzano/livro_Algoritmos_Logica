@@ -8,25 +8,33 @@
  *
  * Capitulo ..: 4 - Topico 4.6.3
  * 
- * Programa ..: OPERAÇÃO DE NEGAÇÃO ".NÃO. / NOT"
+ * Programa ..: OPERACAO DE NEGACAO ".NAO. / NOT"
  */
 
 #include <stdio.h>
 
 int A, B, X, C;
+
 int main(void) {
+	
   printf("TESTE LOGICO OPERADOR: NOT\n\n");
+  
   printf("Entre valor inteiro <A>: ");
   scanf("%d", &A);
+  
   printf("Entre valor inteiro <B>: ");
   scanf("%d", &B);
+  
   printf("Entre valor inteiro <X>: ");
   scanf("%d", &X);
+  
   if (!(X > 5)) {
     C = A + B;
   } else {
     C = A - B;
   }
+  
   printf("O valor de C = %d\n", C);
+  
   return 0;
 }

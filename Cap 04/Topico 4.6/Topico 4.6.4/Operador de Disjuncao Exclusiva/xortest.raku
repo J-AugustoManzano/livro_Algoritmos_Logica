@@ -7,11 +7,13 @@
 # 
 # Capitulo ..: 4 - Topico 4.6.4
 # 
-# Programa ..: OPERAÇÃO DE DISJUNÇÃO EXCLUSIVA ".XOU. / XOR"
+# Programa ..: OPERACAO DE DISJUNCAO EXCLUSIVA ".XOU. / XOR"
 
 sub MAIN() {
+
     say 'TESTE LOGICO OPERADOR: XOR';
     say '';
+    
     say 'Entre "1" se atleta pontuou na 1a. prova';
     say 'Entre "1" se atleta pontuou na 2a. prova';
     say 'Qualquer outro valor se nao pontuou nas provas';
@@ -19,6 +21,7 @@ sub MAIN() {
 
     print 'Prova 1: ';
     my $P1 = prompt.Int;
+    
     print 'Prova 2: ';
     my $P2 = prompt.Int;
 
@@ -34,4 +37,5 @@ sub MAIN() {
             say 'Desclassificado da competicao.';
         }
     }
+    
 }

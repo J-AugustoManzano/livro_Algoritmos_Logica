@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 4 - Topico 4.6.1
  * 
- * Programa ..: OPERAÇÃO DE CONJUNÇÃO ".E. / AND"
+ * Programa ..: OPERACAO DE CONJUNCAO ".E. / AND"
  */
 
 import Foundation
@@ -16,10 +16,12 @@ import Foundation
 var NUMERO: Int = 0
 
 print("TESTE LOGICO OPERADOR: AND\n\n")
+
 print("Entre um numero: ", terminator: "")
 if let inputNUMERO = readLine() {
     NUMERO = Int(inputNUMERO) ?? 0
 }
+
 if NUMERO >= 20 && NUMERO <= 90 {
     print("O numero esta na faixa de 20 a 90")
 } else {

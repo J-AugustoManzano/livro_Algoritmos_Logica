@@ -13,9 +13,12 @@
 
 console.log('DIVISIBILIDADE');
 console.log();
+
 const N = parseInt(prompt('Entre valor inteiro: '));
+
 const R4 = N - 4 * Math.floor(N / 4);
 const R5 = N - 5 * Math.floor(N / 5);
+
 if (R4 === 0 && R5 === 0) {
   console.log(N);
 } else {

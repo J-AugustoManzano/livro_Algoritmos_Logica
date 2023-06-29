@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 4 - Topico 4.6.3
  * 
- * Programa ..: OPERAÇÃO DE NEGAÇÃO ".NÃO. / NOT"
+ * Programa ..: OPERACAO DE NEGACAO ".NAO. / NOT"
  */
 
 package main
@@ -20,18 +20,25 @@ import (
 var (
   A, B, X, C int
 )
+
 func main() {
+	
   fmt.Println("TESTE LOGICO OPERADOR: NOT\n")
+  
   fmt.Print("Entre valor inteiro <A>: ")
   fmt.Scan(&A)
+  
   fmt.Print("Entre valor inteiro <B>: ")
   fmt.Scan(&B)
+  
   fmt.Print("Entre valor inteiro <X>: ")
   fmt.Scan(&X)
+  
   if !(X > 5) {
     C = A + B
   } else {
     C = A - B
   }
+  
   fmt.Println("O valor de C =", C)
 }

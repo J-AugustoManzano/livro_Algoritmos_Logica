@@ -8,25 +8,33 @@
  *
  * Capitulo ..: 4 - Topico 4.6.4
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO EXCLUSIVA ".XOU. / XOR"
+ * Programa ..: OPERACAO DE DISJUNCAO EXCLUSIVA ".XOU. / XOR"
  */
 
 import java.util.Scanner;
 
 public class Main {
+	
   static int P1, P2;
+  
   public static void main(String[] args) {
+
+    Scanner entrada = new Scanner(System.in);
+    	  
     System.out.println("TESTE LOGICO OPERADOR: XOR");
     System.out.println();
+    
     System.out.println("Entre \"1\" se atleta pontuou na 1a. prova");
     System.out.println("Entre \"1\" se atleta pontuou na 2a. prova");
     System.out.println("Qualquer outro valor se nao pontuou nas provas");
-    System.out.println();
-    Scanner entrada = new Scanner(System.in);
+    System.out.println();  
+
     System.out.print("Prova 1: ");
     P1 = entrada.nextInt();
+    
     System.out.print("Prova 2: ");
     P2 = entrada.nextInt();
+    
     if ((P1 == 1) ^ (P2 == 1)) {
       System.out.println("Atleta participa da terceira prova.");
     } else {
@@ -37,6 +45,9 @@ public class Main {
         System.out.println("Desclassificado da competicao.");
       }
     }
+    
     entrada.close();
+    
   }
+  
 }

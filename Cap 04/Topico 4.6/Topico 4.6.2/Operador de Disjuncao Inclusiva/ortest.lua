@@ -8,14 +8,16 @@
  *
  * Capitulo ..: 4 - Topico 4.6.2
  *
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO INCLUSIVA ".OU. / OR"
+ * Programa ..: OPERACAO DE DISJUNCAO INCLUSIVA ".OU. / OR"
 --]]
 
 print("TESTE LOGICA OPERADOR: OR")
 print("\n")
+
 io.write("Entre o modo de transporte: ")
 io.flush()
 TRANSP = io.read()
+
 if (TRANSP == "M") or (TRANSP == "S") then
   print("Transporte valido")
 else

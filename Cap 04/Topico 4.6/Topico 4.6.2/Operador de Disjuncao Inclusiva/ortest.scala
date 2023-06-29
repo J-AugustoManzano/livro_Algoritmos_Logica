@@ -8,16 +8,21 @@
  *
  * Capitulo ..: 4 - Topico 4.6.2
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO INCLUSIVA ".OU. / OR"
+ * Programa ..: OPERACAO DE DISJUNCAO INCLUSIVA ".OU. / OR"
  * 
  */
 
 object Main {
+	
   var TRANSP: String = _
+  
   def main(args: Array[String]): Unit = {
+	  
     println("TESTE LOGICO OPERADOR: OR\n\n")
+    
     print("Entre o modo de transporte: ")
     TRANSP = scala.io.StdIn.readLine()
+    
     if (TRANSP == "M" || TRANSP == "S") {
       println("Transporte valido")
     } else {

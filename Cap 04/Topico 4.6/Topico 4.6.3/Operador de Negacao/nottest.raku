@@ -7,15 +7,19 @@
 # 
 # Capitulo ..: 4 - Topico 4.6.3
 # 
-# Programa ..: OPERAÇÃO DE NEGAÇÃO ".NÃO. / NOT"
+# Programa ..: OPERACAO DE NEGACAO ".NAO. / NOT"
 
 sub MAIN() {
+
     say 'TESTE LOGICO OPERADOR: NOT';
     say '';
+    
     print 'Entre valor inteiro <A>: ';
     my $A = prompt.Int;
+    
     print 'Entre valor inteiro <B>: ';
     my $B = prompt.Int;
+    
     print 'Entre valor inteiro <X>: ';
     my $X = prompt.Int;
 
@@ -28,4 +32,5 @@ sub MAIN() {
     }
 
     say 'O valor de C = ' ~ $C;
+    
 }

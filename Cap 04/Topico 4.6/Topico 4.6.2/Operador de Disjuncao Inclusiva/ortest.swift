@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 4 - Topico 4.6.2
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO INCLUSIVA ".OU. / OR"
+ * Programa ..: OPERACAO DE DISJUNCAO INCLUSIVA ".OU. / OR"
  */
 
 import Foundation
@@ -16,10 +16,12 @@ import Foundation
 var TRANSP: Character = " "
 
 print("TESTE LOGICO OPERADOR: OR\n\n")
+
 print("Entre o modo de transporte: ", terminator: "")
 if let inputTRANSP = readLine(), let firstChar = inputTRANSP.first {
     TRANSP = firstChar
 }
+
 if TRANSP == "M" || TRANSP == "S" {
     print("Transporte valido")
 } else {

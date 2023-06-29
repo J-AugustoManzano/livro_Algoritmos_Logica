@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 4 - Topico 4.6.4
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO EXCLUSIVA ".XOU. / XOR"
+ * Programa ..: OPERACAO DE DISJUNCAO EXCLUSIVA ".XOU. / XOR"
 */
 
 using System;
@@ -17,19 +17,26 @@ namespace TesteLogicoXOR
 {
   class Program
   {
+	  
     static int P1, P2;
+    
     static void Main()
     {
+		
       Console.WriteLine("TESTE LOGICO OPERADOR: XOR");
       Console.WriteLine();
+      
       Console.WriteLine("Entre \"1\" se atleta pontuou na 1a. prova");
       Console.WriteLine("Entre \"1\" se atleta pontuou na 2a. prova");
       Console.WriteLine("Qualquer outro valor se nao pontuou nas provas");
       Console.WriteLine();
+      
       Console.Write("Prova 1: ");
       P1 = int.Parse(Console.ReadLine());
+      
       Console.Write("Prova 2: ");
       P2 = int.Parse(Console.ReadLine());
+      
       if ((P1 == 1) ^ (P2 == 1))
       {
         Console.WriteLine("Atleta participa da terceira prova.");
@@ -47,5 +54,6 @@ namespace TesteLogicoXOR
         }
       }
     }
+    
   }
 }

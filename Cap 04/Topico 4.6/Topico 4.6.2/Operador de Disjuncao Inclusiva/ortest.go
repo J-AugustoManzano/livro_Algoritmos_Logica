@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 4 - Topico 4.6.2
  * 
- * Programa ..: OPERAÇÃO DE DISJUNÇÃO INCLUSIVA ".OU. / OR"
+ * Programa ..: OPERACAO DE DISJUNCAO INCLUSIVA ".OU. / OR"
  */
 
 package main
@@ -18,14 +18,19 @@ import (
 )
 
 var TRANSP string
+
 func main() {
+	
   fmt.Println("TESTE LOGICO OPERADOR: OR")
   fmt.Println()
+  
   fmt.Print("Entre o modo de transporte: ")
   fmt.Scanln(&TRANSP)
+  
   if (TRANSP == "M") || (TRANSP == "S") {
     fmt.Println("Transporte valido")
   } else {
     fmt.Println("Transporte invalido")
   }
+  
 }

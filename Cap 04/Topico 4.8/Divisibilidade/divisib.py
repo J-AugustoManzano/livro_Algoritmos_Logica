@@ -12,9 +12,12 @@
 '''
 
 print("DIVISIBILIDADE\n")
+
 N = int(input("Entre valor inteiro: "))
+
 R4 = N - 4 * (N // 4)
 R5 = N - 5 * (N // 5)
+
 if (R4 == 0) and (R5 == 0):
   print(N)
 else:

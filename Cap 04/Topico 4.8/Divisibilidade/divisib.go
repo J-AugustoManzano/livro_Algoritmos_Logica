@@ -22,11 +22,15 @@ var (
 )
 
 func main() {
+	
   fmt.Println("DIVISIBILIDADE\n")
+  
   fmt.Print("Entre valor inteiro: ")
   fmt.Scan(&N)
+  
   R4 = N - 4 * (N / 4)
   R5 = N - 5 * (N / 5)
+  
   if (R4 == 0 && R5 == 0) {
     fmt.Println(N)
   } else {
