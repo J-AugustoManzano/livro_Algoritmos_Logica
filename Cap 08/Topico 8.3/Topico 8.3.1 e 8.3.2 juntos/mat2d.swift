@@ -26,6 +26,7 @@ for I in 0...7 {
     }
     print()
 }
+
 print("\nRELATORIO DE NOTAS\n")
 print("Aluno Nota1 Nota2 Nota3 Nota4")
 print("----- ----- ----- ----- -----")

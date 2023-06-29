@@ -19,7 +19,6 @@ int I, J;
 int main(void) {
 
   printf("MATRIZ 2D - ENTRADA E SAIDA\n\n");
-
   for (I = 0; I <= 7; I++) {
     printf("Entre as notas do aluno %d:\n", I + 1);
     for (J = 0; J < 4; J++) {
@@ -32,7 +31,6 @@ int main(void) {
   printf("\nRELATORIO DE NOTAS\n\n");
   printf("Aluno Nota1 Nota2 Nota3 Nota4\n");
   printf("----- ----- ----- ----- -----\n");
-
   for (I = 0; I <= 7; I++) {
     printf("%5d", I + 1);
     for (J = 0; J < 4; J++) {

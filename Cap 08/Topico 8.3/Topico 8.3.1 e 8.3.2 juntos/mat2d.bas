@@ -30,7 +30,6 @@ Print "RELATORIO DE NOTAS"
 Print
 Print "Aluno Nota1 Nota2 Nota3 Nota4"
 Print "----- ----- ----- ----- -----"
-
 For I = 1 To 8 Step 1
   Print Using "    #"; I;
   For J = 1 To 4 Step 1

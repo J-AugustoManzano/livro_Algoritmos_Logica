@@ -14,7 +14,6 @@
 NOTAS = [[0.0] * 4 for _ in range(8)]
 
 print("MATRIZ 2D - ENTRADA E SAIDA\n")
-
 for I in range(8):
   print(f"Entre as notas do aluno {I + 1}:")
   for J in range(4):
@@ -25,7 +24,6 @@ for I in range(8):
 print("\nRELATORIO DE NOTAS\n")
 print("Aluno Nota1 Nota2 Nota3 Nota4")
 print("----- ----- ----- ----- -----")
-
 for I in range(8):
   print(f"{I + 1:5d}", end="")
   for J in range(4):

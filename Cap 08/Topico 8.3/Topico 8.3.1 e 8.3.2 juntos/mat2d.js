@@ -14,6 +14,7 @@
 const readline = require('readline-sync');
 const NOTAS = [];
 let I, J;
+
 console.log("MATRIZ 2D - ENTRADA E SAIDA\n");
 for (I = 0; I <= 7; I++) {
   console.log(`Entre as notas do aluno ${I + 1}: `);
@@ -24,6 +25,7 @@ for (I = 0; I <= 7; I++) {
   }
   console.log();
 }
+
 console.log("\nRELATORIO DE NOTAS\n");
 console.log("Aluno Nota1 Nota2 Nota3 Nota4");
 console.log("----- ----- ----- ----- -----");

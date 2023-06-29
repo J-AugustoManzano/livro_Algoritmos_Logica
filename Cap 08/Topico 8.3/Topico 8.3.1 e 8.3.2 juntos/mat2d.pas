@@ -21,7 +21,6 @@ begin
 
   Writeln('MATRIZ 2D - ENTRADA E SAIDA');
   Writeln;
-
   for I := 1 to 8 do
   begin
     Writeln('Entre as notas do aluno ', I, ':');
@@ -38,7 +37,6 @@ begin
   Writeln;
   Writeln('Aluno Nota1 Nota2 Nota3 Nota4');
   Writeln('----- ----- ----- ----- -----');
-
   for I := 1 to 8 do
   begin
     Write(I:5);

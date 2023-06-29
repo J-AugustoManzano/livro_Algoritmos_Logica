@@ -27,7 +27,6 @@ BEGIN {
   printf("\nRELATORIO DE NOTAS\n\n")
   printf("Aluno Nota1 Nota2 Nota3 Nota4\n")
   printf("----- ----- ----- ----- -----\n")
-  
   for (I = 1; I <= 8; I++) {
     printf("%4d", I)
     for (J = 1; J <= 4; J++) {

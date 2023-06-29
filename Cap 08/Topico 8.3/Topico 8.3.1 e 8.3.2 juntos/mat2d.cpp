@@ -23,7 +23,6 @@ int I, J;
 int main(void) {
 
   cout << "MATRIZ 2D - ENTRADA E SAIDA" << endl << endl;
-
   for (I = 0; I <= 7; I++) {
     cout << "Entre as notas do aluno " << I + 1 << ":" << endl;
     for (J = 0; J <= 3; J++) {
@@ -37,7 +36,6 @@ int main(void) {
   cout << "RELATORIO DE NOTAS" << endl << endl;
   cout << "Aluno Nota1 Nota2 Nota3 Nota4" << endl;
   cout << "----- ----- ----- ----- -----" << endl;
-
   for (I = 0; I <= 7; I++) {
     cout << setw(5) << I + 1;
     for (J = 0; J <= 3; J++) {

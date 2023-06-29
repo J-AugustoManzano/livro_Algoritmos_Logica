@@ -14,7 +14,6 @@
 MD = Array{Float64}(undef, 8, 4)
 
 println("MATRIZ 2D - ENTRADA E SAIDA\n")
-
 for I = 1:1:8
   println("Entre as notas do aluno ", I, ":")
   for J = 1:4
@@ -28,7 +27,6 @@ println()
 println("RELATORIO DE NOTAS\n")
 println("Aluno Nota1 Nota2 Nota3 Nota4")
 println("----- ----- ----- ----- -----")
-
 for I = 1:1:8
   print("    ", I, " ")
   for J = 1:4

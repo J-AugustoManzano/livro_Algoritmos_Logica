@@ -13,7 +13,6 @@ my @NOTAS;
 
 say 'MATRIZ 2D - ENTRADA E SAIDA';
 say '';
-
 for 1..8 -> $i {
     say "Entre as notas do aluno $i:";
     for 1..4 -> $j {
@@ -28,7 +27,6 @@ say 'RELATORIO DE NOTAS';
 say '';
 say 'Aluno Nota1 Nota2 Nota3 Nota4';
 say '----- ----- ----- ----- -----';
-
 for 1..8 -> $i {
     printf "%5d", $i;
     for 1..4 -> $j {

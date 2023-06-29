@@ -23,7 +23,6 @@ func main() {
 
   fmt.Println("MATRIZ 2D - ENTRADA E SAIDA")
   fmt.Println()
-
   for I := 0; I < 8; I++ {
     fmt.Printf("Entre as notas do aluno %d:\n", I+1)
     for J := 0; J < 4; J++ {
@@ -36,7 +35,6 @@ func main() {
   fmt.Println("\nRELATORIO DE NOTAS\n")
   fmt.Println("Aluno Nota1 Nota2 Nota3 Nota4")
   fmt.Println("----- ----- ----- ----- -----")
-
   for I := 0; I <= 7; I++ {
     fmt.Printf("%5d", I+1)
     for J := 0; J <= 3; J++ {
