@@ -20,15 +20,21 @@ begin
 
   writeln('MEDIA ESCOLAR - CALCULO');
   writeln;
+  
   write('Entre a 1a. nota ...........: ');
   readln(N1);
+  
   write('Entre a 2a. nota ...........: ');
   readln(N2);
+  
   write('Entre a 3a. nota ...........: ');
   readln(N3);
+  
   write('Entre a 4a. nota ...........: ');
   readln(N4);
+  
   MD := (N1 + N2 + N3 + N4) / 4;
+  
   writeln;
   if (MD >= 5) then
     writeln('Aluno aprovado com media ...: ', MD:4:1)

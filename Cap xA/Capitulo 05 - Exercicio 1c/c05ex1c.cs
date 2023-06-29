@@ -26,6 +26,7 @@ class SOMATORIO
     {
       SOMA = SOMA + CONTADOR;
     }
+    
     Console.WriteLine("Somatorio de 1 a 100 = " + SOMA);
     
   }

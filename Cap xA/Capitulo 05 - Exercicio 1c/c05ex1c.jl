@@ -15,4 +15,5 @@ SOMA, CONTADOR = Ref{Int}(0), Ref{Int}(0)
 for CONTADOR[] = 1:1:100
   SOMA[] = SOMA[] + CONTADOR[]
 end
+
 println("Somatorio de 1 a 100 = ", SOMA[])

@@ -10,6 +10,7 @@
 # Programa ..: LISTA CLASSIFICADA POR NUMERO - DECRESCENTE
 
 sub MAIN {
+
     my @A;
     my $I;
     my $J;
@@ -17,7 +18,7 @@ sub MAIN {
 
     say 'CLASSIFICACAO (DECRESCENTE)';
     say '';
-
+    
     for 1..12 -> $I {
         my $formatted_number = sprintf('%2s', $I);
         print "Entre o {$formatted_number}o. numero: ";
@@ -37,7 +38,6 @@ sub MAIN {
     say '';
     say 'NUMEROS CLASSIFICADOS';
     say '';
-
     for 1..12 -> $I {
         say @A[$I];
     }

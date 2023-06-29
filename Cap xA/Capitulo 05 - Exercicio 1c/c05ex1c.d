@@ -25,6 +25,7 @@ void main()
   {
     SOMA = SOMA + CONTADOR;
   }
+  
   writeln("Somatorio de 1 a 100 = ", SOMA);
   
 }

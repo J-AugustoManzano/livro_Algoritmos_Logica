@@ -23,9 +23,12 @@ func main() {
 	
   fmt.Println("CONVERSAO DE TEMPERATURA")
   fmt.Println()
+  
   fmt.Print("Entre temperatura em Celsius ..: ")
   fmt.Scan(&C)
+  
   F = C * 9 / 5 + 32
+  
   fmt.Printf("Em Fahrenheit equivale a ......: %0.1f\n", F)
   
 }

@@ -22,6 +22,7 @@ void main() {
   for (CONTADOR = 1; CONTADOR <= 100; CONTADOR++) {
     SOMA = SOMA + CONTADOR;
   }
+  
   print('Somatorio de 1 a 100 = $SOMA');
   
 }

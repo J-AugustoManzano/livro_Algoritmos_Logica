@@ -10,10 +10,15 @@
 # Programa ..: CONVERSAO DE TEMPERATURA
 
 sub MAIN() {
+
     say 'CONVERSAO DE TEMPERATURA';
     say '';
+    
     print 'Entre temperatura em Celsius ..: ';
     my $C = prompt;
+    
     my $F = $C * 9 / 5 + 32;
+    
     say 'Em Fahrenheit equivale a ......: ', $F.fmt('%.1f');
+    
 }

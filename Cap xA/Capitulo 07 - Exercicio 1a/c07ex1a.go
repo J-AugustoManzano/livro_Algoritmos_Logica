@@ -27,6 +27,7 @@ func main() {
   var A = make([]int, 12)
 
   fmt.Println("CLASSIFICACAO (DECRESCENTE)\n")
+  
   leia := bufio.NewReader(os.Stdin)
   for I = 0; I <= 11; I++ {
     fmt.Printf("Entre o %do. numero: ", I + 1)
@@ -35,6 +36,7 @@ func main() {
     numero, _ := strconv.Atoi(entrada)
     A[I] = numero
   }
+  
   for I = 0; I <= 10; I++ {
     for J = I + 1; J <= 11; J++ {
       if (A[I] < A[J]) {
@@ -44,6 +46,7 @@ func main() {
       }
     }
   }
+  
   fmt.Println("\nNUMEROS CLASSIFICADOS\n")
   for I = 0; I <= 11; I++ {
     fmt.Println(A[I])

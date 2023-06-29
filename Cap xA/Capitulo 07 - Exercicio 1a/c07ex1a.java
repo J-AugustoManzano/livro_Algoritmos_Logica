@@ -15,15 +15,19 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
+	  
     int[] A = new int[12];
     int X;
+    Scanner scanner = new Scanner(System.in);
+        
     System.out.println("CLASSIFICACAO (DECRESCENTE)");
     System.out.println();
-    Scanner scanner = new Scanner(System.in);
+    
     for (int I = 0; I <= 11; I++) {
       System.out.printf("Entre o %2do. numero: ", I + 1);
       A[I] = scanner.nextInt();
     }
+    
     for (int I = 0; I <= 10; I++) {
       for (int J = I + 1; J <= 11; J++) {
         if (A[I] < A[J]) {
@@ -33,6 +37,7 @@ public class Main {
         }
       }
     }
+    
     System.out.println();
     System.out.println("NUMEROS CLASSIFICADOS");
     System.out.println();

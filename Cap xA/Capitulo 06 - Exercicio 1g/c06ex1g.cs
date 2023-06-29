@@ -27,6 +27,7 @@ public class MainClass
     Console.WriteLine(">>> Para maior comodidade, entre valores entre 0 e 9999 <<<");
     Console.WriteLine();
     Console.WriteLine();
+    
     Console.WriteLine("Entre 10 elementos para a matriz [A]:");
     Console.WriteLine();
     for (I = 0; I <= 9; I++)
@@ -34,9 +35,11 @@ public class MainClass
       Console.Write("Entre o " + string.Format("{0,2}", I + 1) + "o. elemento de [A] --> ");
       A[I] = Convert.ToInt32(Console.ReadLine());
     }
+    
     Console.WriteLine();
     Console.Write("Tecle <ENTER> para proxima entrada ");
     Console.ReadLine();
+    
     Console.WriteLine();
     Console.WriteLine("Entre 15 elementos para a matriz [B]:");
     Console.WriteLine();
@@ -45,9 +48,11 @@ public class MainClass
       Console.Write("Entre o " + string.Format("{0,2}", I + 1) + "o. elemento de [B] --> ");
       B[I] = Convert.ToInt32(Console.ReadLine());
     }
+    
     Console.WriteLine();
     Console.Write("Tecle <ENTER> para ver juncao ");
     Console.ReadLine();
+    
     for (I = 0; I <= 24; I++)
     {
       if (I <= 9)
@@ -55,6 +60,7 @@ public class MainClass
       else
         C[I] = B[I - 10];
     }
+    
     Console.WriteLine();
     Console.WriteLine("Conteudo da matriz [C] juncao das matrizes [A] e [B]:");
     Console.WriteLine();
@@ -62,6 +68,7 @@ public class MainClass
     {
       Console.WriteLine("C[" + string.Format("{0,2}", I + 1) + "] = " + string.Format("{0,4}", C[I]));
     }
+    
     Console.WriteLine();
     Console.Write("Tecle <ENTER> para encerrar o programa... ");
     Console.ReadLine();

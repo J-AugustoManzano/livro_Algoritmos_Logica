@@ -22,9 +22,12 @@ int main(void) {
 	
   cout << "CONVERSAO DE TEMPERATURA" << endl;
   cout << endl;
+  
   cout << "Entre temperatura em Celsius ..: ";
   cin >> C;
+  
   F = C * 9 / 5 + 32;
+  
   cout << setprecision(1) << fixed;
   cout << "Em Fahrenheit equivale a ......: " << F << endl;
   

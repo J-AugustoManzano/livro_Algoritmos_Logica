@@ -23,6 +23,7 @@ int main(void) {
   for (CONTADOR = 1; CONTADOR <= 100; CONTADOR++) {
     SOMA = SOMA + CONTADOR;
   }
+  
   cout << "Somatorio de 1 a 100 = " << SOMA << endl;
   
   return 0;

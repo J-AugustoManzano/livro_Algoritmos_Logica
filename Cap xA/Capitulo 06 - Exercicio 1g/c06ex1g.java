@@ -25,19 +25,23 @@ public class Main {
 	  
     Scanner entrada = new Scanner(System.in);
     Console teclado = System.console();
+    
     System.out.println("JUNCAO DE MATRIZES 1D");
     System.out.println(">>> Para maior comodidade, entre valores entre 0 e 9999 <<<");
     System.out.println();
     System.out.println();
+    
     System.out.println("Entre 10 elementos para a matriz [A]:");
     System.out.println();
     for (I = 0; I <= 9; I++) {
       System.out.print("Entre o " + String.format("%2d", I + 1) + "o. elemento de [A] --> ");
       A[I] = entrada.nextInt();
     }
+    
     System.out.println();
     System.out.print("Tecle <ENTER> para proxima entrada ");
     if (teclado != null) {teclado.readLine();}
+    
     System.out.println();
     System.out.println("Entre 15 elementos para a matriz [B]:");
     System.out.println();
@@ -45,9 +49,11 @@ public class Main {
       System.out.print("Entre o " + String.format("%2d", I + 1) + "o. elemento de [B] --> ");
       B[I] = entrada.nextInt();
     }
+    
     System.out.println();
     System.out.print("Tecle <ENTER> para ver juncao ");
     if (teclado != null) {teclado.readLine();}
+    
     for (I = 0; I <= 24; I++) {
       if (I <= 9)
         C[I] = A[I];
@@ -60,9 +66,11 @@ public class Main {
     for (I = 0; I <= 24; I++) {
       System.out.println("C[" + String.format("%2d", I + 1) + "] = " + String.format("%4d", C[I]));
     }
+    
     System.out.println();
     System.out.print("Tecle <ENTER> para encerrar o programa... ");
     if (teclado != null) {teclado.readLine();}
+    
     entrada.close();
     
   }

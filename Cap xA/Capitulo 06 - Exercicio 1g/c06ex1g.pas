@@ -25,6 +25,7 @@ begin
   writeln('>>> Para maior comodidade, entre valores entre 0 e 9999 <<<');
   writeln;
   writeln;
+  
   writeln('Entre 10 elementos para a matriz [A]:');
   writeln;
   for I := 1 to 10 do
@@ -32,9 +33,11 @@ begin
     write('Entre o ', I:2, 'o. elemento de [A] --> ');
     readln(A[I]);
   end;
+  
   writeln;
   write('Tecle <ENTER> para proxima entrada ');
   readln;
+  
   writeln;
   writeln('Entre 15 elementos para a matriz [B]:');
   writeln;
@@ -43,9 +46,11 @@ begin
     write('Entre o ', I:2, 'o. elemento de [B] --> ');
     readln(B[I]);
   end;
+  
   writeln;
   write('Tecle <ENTER> para ver juncao ');
   readln;
+  
   for I := 1 to 25 do
   begin
     if (I <= 10) then
@@ -53,6 +58,7 @@ begin
     else
       C[I] := B[I - 10];
   end;
+  
   writeln;
   writeln('Conteudo da matriz [C] juncao das matrizes [A] e [B]:');
   writeln;
@@ -60,6 +66,7 @@ begin
   begin
     writeln('C[', I:2, '] = ', C[I]:4);
   end;
+  
   writeln;
   write('Tecle <ENTER> para encerrar o programa... ');
   readln;

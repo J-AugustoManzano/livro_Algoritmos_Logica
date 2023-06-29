@@ -13,13 +13,16 @@
 
 let I, J, X;
 let A = [];
+
 console.log("CLASSIFICACAO (DECRESCENTE)\n");
+
 for (I = 0; I <= 11; I++) {
   A[I] = parseInt(prompt("Entre o " + (I + 1) + "o. número: "));
   while (isNaN(A[I])) {
     A[I] = parseInt(prompt("Valor inválido. Entre o " + (I + 1) + "º número novamente: "));
   }
 }
+
 for (I = 0; I <= 10; I++) {
   for (J = I + 1; J <= 11; J++) {
     if (A[I] < A[J]) {
@@ -29,6 +32,7 @@ for (I = 0; I <= 10; I++) {
     }
   }
 }
+
 console.log("\nNUMEROS CLASSIFICADOS\n");
 for (I = 0; I <= 11; I++) {
   console.log(A[I]);

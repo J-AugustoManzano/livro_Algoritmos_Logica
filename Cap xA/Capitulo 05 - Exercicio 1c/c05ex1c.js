@@ -15,5 +15,6 @@ let SOMA = 0;
 for (let CONTADOR = 1; CONTADOR <= 100; CONTADOR++) {
   SOMA = SOMA + CONTADOR;
 }
+
 console.log("Somatorio de 1 a 100 =", SOMA);
 

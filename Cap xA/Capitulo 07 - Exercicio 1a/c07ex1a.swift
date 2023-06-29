@@ -14,12 +14,14 @@
 var A = [Int](repeating: 0, count: 12)
 
 print("CLASSIFICACAO (DECRESCENTE)\n\n")
+
 for i in 0...11 {
   print("Entre o \(i + 1)o. numero: ", terminator: "")
   if let input = readLine(), let number = Int(input) {
     A[i] = number
   }
 }
+
 for i in 0...10 {
   for j in (i + 1)...11 {
     if A[i] < A[j] {
@@ -29,6 +31,7 @@ for i in 0...10 {
     }
   }
 }
+
 print("\nNUMEROS CLASSIFICADOS\n\n")
 for i in 0...11 {
   print(A[i])

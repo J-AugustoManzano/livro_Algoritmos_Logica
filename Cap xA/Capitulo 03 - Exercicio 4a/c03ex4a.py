@@ -13,7 +13,10 @@
 
 print("CONVERSAO DE TEMPERATURA")
 print()
+
 C = float(input("Entre temperatura em Celsius ..: "))
+
 F = C * 9 / 5 + 32
+
 print("Em Fahrenheit equivale a ......: {:0.1f}".format(F))
 

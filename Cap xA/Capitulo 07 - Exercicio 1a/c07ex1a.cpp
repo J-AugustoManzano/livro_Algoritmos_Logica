@@ -21,11 +21,14 @@ int I, J, X;
 int A[12];
   
 int main(void) {
+	
   cout << "CLASSIFICACAO (DECRESCENTE)\n\n";
   for (I = 0; I <= 11; I++) {
+	  
     cout << "Entre o " << setw(2) << I + 1 << "o. numero: ";
     cin >> A[I];
   }
+  
   for (I = 0; I <= 10; I++) {
     for (J = I + 1; J <= 11; J++) {
       if (A[I] < A[J]) {
@@ -35,9 +38,11 @@ int main(void) {
       }
     }
   }
+  
   cout << "\nNUMEROS CLASSIFICADOS\n\n";
   for (I = 0; I <= 11; I++) {
     cout << A[I] << endl;
   }
+  
   return 0;
 }

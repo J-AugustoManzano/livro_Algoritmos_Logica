@@ -23,9 +23,12 @@ class Temperatura
 	  
     Console.WriteLine("CONVERSAO DE TEMPERATURA");
     Console.WriteLine();
+    
     Console.Write("Entre temperatura em Celsius ..: ");
     C = double.Parse(Console.ReadLine());
+    
     F = C * 9 / 5 + 32;
+    
     Console.WriteLine("Em Fahrenheit equivale a ......: " + F.ToString("0.0"));
     
   }

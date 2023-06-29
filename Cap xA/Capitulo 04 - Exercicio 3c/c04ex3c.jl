@@ -21,16 +21,22 @@ global N4 = 0.0
 
 println("MEDIA ESCOLAR - CALCULO")
 println()
+
 print("Entre a 1a. nota ...........: ")
 N1 = parse(Float64, readline())
+
 print("Entre a 2a. nota ...........: ")
 N2 = parse(Float64, readline())
+
 print("Entre a 3a. nota ...........: ")
 N3 = parse(Float64, readline())
+
 print("Entre a 4a. nota ...........: ")
 N4 = parse(Float64, readline())
-println()
+
 MD = (N1 + N2 + N3 + N4) / 4
+
+println()
 if (MD >= 5)
   @printf("Aluno aprovado com media ...: %4.1f", round(MD, digits=1))
 else

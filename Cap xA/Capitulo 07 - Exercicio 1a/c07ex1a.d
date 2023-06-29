@@ -20,11 +20,13 @@ int[12] A;
 void main()
 {
   writeln("CLASSIFICACAO (DECRESCENTE)\n");
+  
   for (I = 0; I <= 11; I++)
   {
     writef("Entre o %2do. numero: ", I + 1);
     readf(" %d\n", &A[I]);
   }
+  
   for (I = 0; I <= 10; I++)
   {
     for (J = I + 1; J <= 11; J++)
@@ -37,6 +39,7 @@ void main()
       }
     }
   }
+  
   writeln("\nNUMEROS CLASSIFICADOS\n");
   for (I = 0; I <= 11; I++)
   {

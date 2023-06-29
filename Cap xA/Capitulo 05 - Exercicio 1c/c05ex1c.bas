@@ -15,5 +15,7 @@ SOMA = 0
 For CONTADOR = 1 To 100 Step 1
   SOMA = SOMA + CONTADOR
 Next CONTADOR
+
 Print "Somatorio de 1 a 100 = "; SOMA
+
 End

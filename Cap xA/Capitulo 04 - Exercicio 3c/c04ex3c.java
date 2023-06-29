@@ -19,19 +19,26 @@ public class Main {
   
   public static void main(String[] args) {
 	  
+    Scanner entrada = new Scanner(System.in); 
+    
     System.out.println("MEDIA ESCOLAR - CALCULO");
     System.out.println();
-    Scanner entrada = new Scanner(System.in);    
+       
     System.out.print("Entre a 1a. nota ...........: ");
     N1 = entrada.nextDouble();
+    
     System.out.print("Entre a 2a. nota ...........: ");
     N2 = entrada.nextDouble();
+    
     System.out.print("Entre a 3a. nota ...........: ");
     N3 = entrada.nextDouble();
+    
     System.out.print("Entre a 4a. nota ...........: ");
     N4 = entrada.nextDouble();
-    System.out.println();
+    
     MD = (N1 + N2 + N3 + N4) / 4;
+
+    System.out.println();
     if (MD >= 5)
       System.out.printf("Aluno aprovado com media ...: %4.1f%n", MD);
     else

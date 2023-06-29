@@ -17,20 +17,25 @@ C = zeros(Int, 25)
 
 println("JUNCAO DE MATRIZES 1D")
 println(">>> Para maior comodidade, entre valores entre 0 e 9999 <<<\n\n")
+
 println("Entre 10 elementos para a matriz [A]:\n")
 for I = 1:1:10
   print("Entre o ", lpad(I, 2), "o. elemento de [A] --> ")
   A[I] = parse(Int, readline())
 end
+
 print("\nTecle <ENTER> para proxima entrada ")
 readline()
+
 println("\nEntre 15 elementos para a matriz [B]:\n")
 for I = 1:1:15
   print("Entre o ", lpad(I, 2), "o. elemento de [B] --> ")
   B[I] = parse(Int, readline())
 end
+
 print("\nTecle <ENTER> para ver juncao ")
 readline()
+
 for I = 1:1:25
   if I <= 10
     C[I] = A[I]
@@ -38,9 +43,11 @@ for I = 1:1:25
     C[I] = B[I - 10]
   end
 end
+
 println("\nConteudo da matriz [C] juncao das matrizes [A] e [B]:\n")
 for I = 1:1:25
   println("C[", lpad(I, 2), "] = ", lpad(C[I], 4))
 end
+
 print("\nTecle <ENTER> para encerrar o programa... ")
 readline()

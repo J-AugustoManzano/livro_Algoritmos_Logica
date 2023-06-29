@@ -23,16 +23,22 @@ class Media
 	  
     Console.WriteLine("MEDIA ESCOLAR - CALCULO");
     Console.WriteLine();
+    
     Console.Write("Entre a 1a. nota ...........: ");
     N1 = double.Parse(Console.ReadLine());
+    
     Console.Write("Entre a 2a. nota ...........: ");
     N2 = double.Parse(Console.ReadLine());
+    
     Console.Write("Entre a 3a. nota ...........: ");
     N3 = double.Parse(Console.ReadLine());
+    
     Console.Write("Entre a 4a. nota ...........: ");
     N4 = double.Parse(Console.ReadLine());
-    Console.WriteLine();
+    
     MD = (N1 + N2 + N3 + N4) / 4;
+
+    Console.WriteLine();
     if (MD >= 5)
       Console.WriteLine("Aluno aprovado com media ...: {0,4:0.0}", MD);
     else

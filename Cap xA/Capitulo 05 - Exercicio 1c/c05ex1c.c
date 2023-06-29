@@ -21,6 +21,7 @@ int main(void) {
   for (CONTADOR = 1; CONTADOR <= 100; CONTADOR++) {
     SOMA = SOMA + CONTADOR;
   }
+  
   printf("Somatorio de 1 a 100 = %d\n", SOMA);
   
   return 0;

@@ -15,12 +15,16 @@
 
 int I, J, X;
 int A[12];
+
 int main(void) {
+	
   printf("CLASSIFICACAO (DECRESCENTE)\n\n");
+  
   for (I = 0; I <= 11; I++) {
     printf("Entre o %2o. numero: ", I + 1);
     scanf("%d", &A[I]);
   }
+  
   for (I = 0; I <= 10; I++) {
     for (J = I + 1; J <= 11; J++) {
       if (A[I] < A[J]) {
@@ -30,9 +34,11 @@ int main(void) {
       }
     }
   }
+  
   printf("\nNUMEROS CLASSIFICADOS\n\n");
   for (I = 0; I <= 11; I++) {
     printf("%d\n", A[I]);
   }
+  
   return 0;
 }

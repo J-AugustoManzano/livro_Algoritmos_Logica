@@ -23,6 +23,7 @@ begin
   begin
     SOMA := SOMA + CONTADOR;
   end;
+  
   writeln('Somatorio de 1 a 100 = ', SOMA);
   
 end.

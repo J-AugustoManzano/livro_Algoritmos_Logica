@@ -20,16 +20,22 @@ void main() {
 
   print('MEDIA ESCOLAR - CALCULO');
   print('');
+  
   stdout.write('Entre a 1a. nota ...........: ');
   N1 = double.parse(stdin.readLineSync()!);
+  
   stdout.write('Entre a 2a. nota ...........: ');
   N2 = double.parse(stdin.readLineSync()!);
+  
   stdout.write('Entre a 3a. nota ...........: ');
   N3 = double.parse(stdin.readLineSync()!);
+  
   stdout.write('Entre a 4a. nota ...........: ');
   N4 = double.parse(stdin.readLineSync()!);
-  print('');
+
   MD = (N1 + N2 + N3 + N4) / 4;
+  
+  print('');
   if (MD >= 5) {
     print('Aluno aprovado com media ...: ${MD.toStringAsFixed(1).padLeft(4)}');
   } else {

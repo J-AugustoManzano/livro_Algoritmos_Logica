@@ -13,13 +13,17 @@
 
 object Main {
   def main(args: Array[String]): Unit = {
+	  
     var A: Array[Int] = new Array[Int](12)
     var I, J, X: Int = 0
+    
     println("CLASSIFICACAO (DECRESCENTE)\n")
+    
     for (I <- 0 to 11 by 1) {
       print(s"Entre o ${I + 1}o. numero: ")
       A(I) = scala.io.StdIn.readInt()
     }
+    
     for (I <- 0 to 10 by 1) {
       for (J <- I + 1 to 11 by 1) {
         if (A(I) < A(J)) {
@@ -29,6 +33,7 @@ object Main {
         }
       }
     }
+    
     println("\nNUMEROS CLASSIFICADOS\n")
     for (I <- 0 to 11 by 1) {
       println(A(I))

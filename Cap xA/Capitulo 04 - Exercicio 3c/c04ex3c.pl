@@ -24,18 +24,24 @@ my $N4;
 
 print "MEDIA ESCOLAR - CALCULO\n";
 print "\n";
+
 print "Entre a 1a. nota ...........: ";
 $N1 = <STDIN>;
 chomp($N1);
+
 print "Entre a 2a. nota ...........: ";
 $N2 = <STDIN>;
 chomp($N2);
+
 print "Entre a 3a. nota ...........: ";
 $N3 = <STDIN>;
 chomp($N3);
+
 print "Entre a 4a. nota ...........: ";
 $N4 = <STDIN>;
 chomp($N4);
-print "\n";
+
 $MD = ($N1 + $N2 + $N3 + $N4) / 4;
+
+print "\n";
 printf "Aluno " . ($MD >= 5 ? "aprovado" : "reprovado") . " com media ..: %4.1f\n", $MD;

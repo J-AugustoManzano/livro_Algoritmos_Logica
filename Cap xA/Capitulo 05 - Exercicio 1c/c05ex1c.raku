@@ -10,9 +10,12 @@
 # Programa ..: RESULTADO DO SOMATÓRIO DE ATE 100
 
 sub MAIN {
+
     my $SOMA = 0;
     for 1..100 -> $CONTADOR {
         $SOMA += $CONTADOR;
     }
+    
     say "Somatorio de 1 a 100 = $SOMA";
+    
 }

@@ -19,15 +19,21 @@ int main(void) {
 	
   printf("MEDIA ESCOLAR - CALCULO\n");
   printf("\n");
+  
   printf("Entre a 1a. nota ...........: ");
   scanf("%f", &N1);
+  
   printf("Entre a 2a. nota ...........: ");
   scanf("%f", &N2);
+  
   printf("Entre a 3a. nota ...........: ");
   scanf("%f", &N3);
+  
   printf("Entre a 4a. nota ...........: ");
   scanf("%f", &N4);
+  
   MD = (N1 + N2 + N3 + N4) / 4;
+  
   printf("\n");
   if (MD >= 5)
     printf("Aluno aprovado com media ...: %4.1f\n", MD);

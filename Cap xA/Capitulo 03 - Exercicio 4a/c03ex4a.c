@@ -18,9 +18,12 @@ float C, F;
 int main(void) {
 	
   printf("CONVERSAO DE TEMPERATURA\n\n");
+  
   printf("Entre temperatura em Celsius ..: ");
   scanf("%f", &C);
+  
   F = C * 9 / 5 + 32;
+  
   printf("Em Fahrenheit equivale a ......: %0.1f\n", F);
   
   return 0;

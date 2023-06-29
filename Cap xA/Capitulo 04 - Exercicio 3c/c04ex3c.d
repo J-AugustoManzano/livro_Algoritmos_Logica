@@ -22,16 +22,22 @@ void main()
 	
   writeln("MEDIA ESCOLAR - CALCULO");
   writeln();
+  
   write("Entre a 1a. nota ...........: ");
   readf(" %f", &N1);
+  
   write("Entre a 2a. nota ...........: ");
   readf(" %f", &N2);
+  
   write("Entre a 3a. nota ...........: ");
   readf(" %f", &N3);
+  
   write("Entre a 4a. nota ...........: ");
   readf(" %f", &N4);
-  writeln();
+  
   MD = (N1 + N2 + N3 + N4) / 4;
+
+  writeln();
   if (MD >= 5)
     writeln("Aluno aprovado com media ...: ", format("%4.1f", MD));
   else

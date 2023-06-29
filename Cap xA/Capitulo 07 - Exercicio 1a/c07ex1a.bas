@@ -13,10 +13,12 @@ Dim I As Integer, J As Integer, X As Integer
 Dim A(1 To 12) As Integer
 Print "CLASSIFICACAO (DECRESCENTE)"
 Print
+
 For I = 1 To 12 Step 1
   Print "Entre o " & Right$(" " + Str$(I), 2) & "o. numero: ";
   Input "", A(I)
 Next I
+
 For I = 1 To 11 Step 1
   For J = I + 1 To 12 Step 1
     If (A(I) < A(J)) Then
@@ -26,11 +28,13 @@ For I = 1 To 11 Step 1
     End If
   Next J
 Next I
+
 Print
 Print "NUMEROS CLASSIFICADOS"
 Print
 For I = 1 To 12 Step 1
   Print A(I)
 Next I
+
 End
 

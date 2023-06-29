@@ -20,9 +20,12 @@ void main() {
 
   print('CONVERSAO DE TEMPERATURA');
   print('');
+  
   stdout.write('Entre temperatura em Celsius ..: ');
   C = double.parse(stdin.readLineSync()!);
+  
   F = C * 9 / 5 + 32;
+  
   print('Em Fahrenheit equivale a ......: ${F.toStringAsFixed(1)}');
   
 }

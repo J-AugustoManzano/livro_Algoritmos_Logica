@@ -17,11 +17,14 @@ var C: Float = 0.0
 var F: Float = 0.0
 
 print("CONVERSAO DE TEMPERATURA\n\n")
+
 print("Entre temperatura em Celsius ..: ", terminator: "")
 if let inputC = readLine() {
     C = Float(inputC) ?? 0.0
 }
+
 F = C * 9 / 5 + 32
+
 print("Em Fahrenheit equivale a ......: \(F)")
 
 

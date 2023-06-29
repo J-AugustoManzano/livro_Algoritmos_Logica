@@ -13,16 +13,22 @@
 
 print('MEDIA ESCOLAR - CALCULO')
 print()
+
 io.write('Entre a 1a. nota ...........: ')
 N1 = tonumber(io.read())
+
 io.write('Entre a 2a. nota ...........: ')
 N2 = tonumber(io.read())
+
 io.write('Entre a 3a. nota ...........: ')
 N3 = tonumber(io.read())
+
 io.write('Entre a 4a. nota ...........: ')
 N4 = tonumber(io.read())
-print()
+
 MD = (N1 + N2 + N3 + N4) / 4
+
+print()
 if (MD >= 5) then
   print('Aluno aprovado com media ...: ' .. string.format('%4.1f', MD))
 else

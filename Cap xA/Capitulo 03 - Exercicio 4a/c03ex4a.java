@@ -18,14 +18,19 @@ public class Main {
   static double C, F;
   
   public static void main(String[] args) {
-	  
+
+    Scanner entrada = new Scanner(System.in);
+    	  
     System.out.println("CONVERSAO DE TEMPERATURA");
     System.out.println();
+    
     System.out.print("Entre temperatura em Celsius ..: ");
-    Scanner entrada = new Scanner(System.in);
     C = entrada.nextDouble();
+    
     F = C * 9 / 5 + 32;
+    
     System.out.printf("Em Fahrenheit equivale a ......: %.1f%n", F);
+    
     entrada.close();
     
   }

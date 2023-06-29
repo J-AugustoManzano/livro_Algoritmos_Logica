@@ -15,7 +15,10 @@ using Printf
 
 println("CONVERSAO DE TEMPERATURA")
 println()
+
 print("Entre temperatura em Celsius ..: ")
 C = parse(Float64, readline())
+
 F = C * 9 / 5 + 32
+
 @printf("Em Fahrenheit equivale a ......: %0.1f", round(F, digits=1))

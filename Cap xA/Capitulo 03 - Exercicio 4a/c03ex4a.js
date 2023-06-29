@@ -12,10 +12,13 @@
  */
 
 const readline = require('readline-sync');
+let C, F;
 
 console.log("CONVERSAO DE TEMPERATURA\n");
-let C, F;
+
 C = parseFloat(readline.question("Entre temperatura em Celsius ..: "));
+
 F = C * 9 / 5 + 32;
+
 console.log("Em Fahrenheit equivale a ......:", F.toFixed(1));
 

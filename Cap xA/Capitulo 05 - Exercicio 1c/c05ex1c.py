@@ -14,4 +14,5 @@
 SOMA = 0
 for CONTADOR in range(1, 101, 1):  # de 1 ate 100 de 1 em 1 (inicio, fim+1, incremento)
   SOMA = SOMA + CONTADOR
+  
 print('Somatorio de 1 a 100 =', SOMA)

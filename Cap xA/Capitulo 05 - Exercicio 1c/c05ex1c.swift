@@ -18,4 +18,5 @@ SOMA = 0
 for CONTADOR in 1...100 {
     SOMA += CONTADOR
 }
+
 print("Somatorio de 1 a 100 = \(SOMA)")

@@ -22,9 +22,12 @@ void main()
 	
   writeln("CONVERSAO DE TEMPERATURA");
   writeln();
+  
   write("Entre temperatura em Celsius ..: ");
   readf("%f", &C);
+  
   F = C * 9 / 5 + 32;
+  
   writeln("Em Fahrenheit equivale a ......: ", format("%0.1f", F));
   
 }

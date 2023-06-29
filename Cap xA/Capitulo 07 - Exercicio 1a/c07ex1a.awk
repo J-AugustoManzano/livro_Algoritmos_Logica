@@ -12,10 +12,12 @@
 BEGIN {
   
   printf("CLASSIFICACAO (DECRESCENTE)\n\n");
+  
   for (I = 1; I <= 12; I++) {
     printf("Entre o %2do. numero: ", I);
     getline A[I] < "-";
   }
+  
   for (I = 1; I <= 11; I++) {
     for (J = I + 1; J <= 12; J++) {
       if (A[I] < A[J]) {
@@ -25,6 +27,7 @@ BEGIN {
       }
     }
   }
+  
   printf("\nNUMEROS CLASSIFICADOS\n\n");
   for (I = 1; I <= 12; I++) {
     printf("%d\n", A[I]);

@@ -13,8 +13,12 @@ Dim C As Single, F As Single
 
 Print "CONVERSAO DE TEMPERATURA"
 Print
+
 Print "Entre temperatura em Celsius ..: ";
 Input "", C
+
 F = C * 9 / 5 + 32
+
 Print Using "Em Fahrenheit equivale a ......: ###.#"; F
+
 End

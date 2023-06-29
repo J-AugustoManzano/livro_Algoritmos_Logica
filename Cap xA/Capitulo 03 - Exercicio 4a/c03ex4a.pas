@@ -20,9 +20,12 @@ begin
 
   writeln('CONVERSAO DE TEMPERATURA');
   writeln;
+  
   write('Entre temperatura em Celsius ..: ');
   readln(C);
+  
   F := C * 9 / 5 + 32;
+  
   writeln('Em Fahrenheit equivale a ......: ', F:0:1);
   
 end.

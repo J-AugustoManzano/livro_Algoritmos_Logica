@@ -16,10 +16,12 @@ public class Main {
   static int SOMA, CONTADOR;
   
   public static void main(String[] args) {
+	  
     SOMA = 0;
     for (CONTADOR = 1; CONTADOR <= 100; CONTADOR++) {
       SOMA = SOMA + CONTADOR;
     }
+    
     System.out.println("Somatorio de 1 a 100 = " + SOMA);
     
   }

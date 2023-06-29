@@ -1,3 +1,4 @@
+
 /*
  * Livro .....: Algoritmos
  *              Logica para Desenvolvimento de Programacao de
@@ -26,6 +27,7 @@ void main()
   writeln(">>> Para maior comodidade, entre valores entre 0 e 9999 <<<");
   writeln();
   writeln();
+  
   writeln("Entre 10 elementos para a matriz [A]:");
   writeln();
   for (int I = 0; I <= 9; ++I)
@@ -33,9 +35,11 @@ void main()
     write("Entre o ", format("%2d", I + 1), "o. elemento de [A] --> ");
     readf(" %d\n", &A[I]);
   }
+  
   writeln();
   write("Tecle <ENTER> para proxima entrada ");
   readln();
+  
   writeln();
   writeln("Entre 15 elementos para a matriz [B]:");
   writeln();
@@ -44,9 +48,11 @@ void main()
     write("Entre o ", format("%2d", I + 1), "o. elemento de [B] --> ");
     readf(" %d\n", &B[I]);
   }
+  
   writeln();
   write("Tecle <ENTER> para ver juncao ");
   readln();
+  
   for (int I = 0; I <= 24; ++I)
   {
     if (I <= 9)
@@ -61,6 +67,7 @@ void main()
   {
     writeln("C[", format("%2d", I + 1), "] = ", format("%4d", C[I]));
   }
+  
   writeln();
   write("Tecle <ENTER> para encerrar o programa... ");
   readln();

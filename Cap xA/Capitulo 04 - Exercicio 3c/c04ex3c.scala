@@ -20,16 +20,22 @@ object Main {
 	  
     println("MEDIA ESCOLAR - CALCULO")
     println("")
+    
     print("Entre a 1a. nota ...........: ")
     N1 = scala.io.StdIn.readDouble()
+    
     print("Entre a 2a. nota ...........: ")
     N2 = scala.io.StdIn.readDouble()
+    
     print("Entre a 3a. nota ...........: ")
     N3 = scala.io.StdIn.readDouble()
+    
     print("Entre a 4a. nota ...........: ")
     N4 = scala.io.StdIn.readDouble()
-    println("")
+
     MD = (N1 + N2 + N3 + N4) / 4
+        
+    println("")
     if (MD >= 5)
       println(f"Aluno aprovado com media ...: $MD%4.1f")
     else

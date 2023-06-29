@@ -13,16 +13,21 @@
 
 program CLASSIFICACAO;
 var
+
   I, J, X: Integer;
   A: array[1..12] of Integer;
+  
 begin
+
   WriteLn('CLASSIFICACAO (DECRESCENTE)');
   WriteLn;
+  
   for I := 1 to 12 do
   begin
     Write('Entre o ', I, 'o. numero: ');
     ReadLn(A[I]);
   end;
+  
   for I := 1 to 11 do 
   begin
     for J := I + 1 to 12 do
@@ -35,6 +40,7 @@ begin
       end;
     end;
   end;
+  
   WriteLn;
   WriteLn('NUMEROS CLASSIFICADOS');
   WriteLn;

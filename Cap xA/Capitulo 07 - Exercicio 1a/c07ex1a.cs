@@ -17,15 +17,19 @@ public class ArranjoNumerosClassificado
 {
   public static void Main(string[] args)
   {
+	  
     int[] A = new int[12];
     int X;
+    
     Console.WriteLine("CLASSIFICACAO (DECRESCENTE)");
     Console.WriteLine();
+    
     for (int I = 0; I <= 11; I++)
     {
       Console.Write("Entre o {0,2}o. numero: ", I + 1);
       A[I] = Convert.ToInt32(Console.ReadLine());
     }
+    
     for (int I = 0; I <= 10; I++)
     {
       for (int J = I + 1; J <= 11; J++)
@@ -38,6 +42,7 @@ public class ArranjoNumerosClassificado
         }
       }
     }
+    
     Console.WriteLine();
     Console.WriteLine("NUMEROS CLASSIFICADOS");
     Console.WriteLine();

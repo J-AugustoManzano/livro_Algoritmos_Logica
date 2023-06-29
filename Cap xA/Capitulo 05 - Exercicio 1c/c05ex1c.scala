@@ -18,10 +18,13 @@ object Main {
   var CONTADOR: Int = 0
   
   def main(args: Array[String]): Unit = {
+	  
     for (CONTADOR <- 1 to 100 by 1) {
       SOMA = SOMA + CONTADOR
     }
+    
     println("Somatorio de 1 a 100 = " + SOMA)
+    
   }
   
 }
