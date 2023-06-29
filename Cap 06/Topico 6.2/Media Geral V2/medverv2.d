@@ -17,16 +17,21 @@ import std.stdio;
 int I;
 float[8] MD;
 float SOMA = 0, MEDIA = 0;
+
 void main()
 {
+	
   writeln("MEDIA GERAL - V2\n");
+  
   for (I = 0; I <= 7; I++)
   {
     write("Entre a nota ", I + 1, ": ");
     readf(" %f", &MD[I]);
     SOMA = SOMA + MD[I];
   }
+  
   MEDIA = SOMA / 8;
   writefln("Resultado da media = %5.1f", MEDIA);
+  
 }
 

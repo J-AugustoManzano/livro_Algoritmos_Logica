@@ -12,13 +12,17 @@
  *}
 
 program MediaGeralV2;
+
 var
   I: Integer;
   MD: array[1..8] of Real;
   SOMA, MEDIA: Real;
+  
 begin
+
   writeln('MEDIA GERAL - V2');
   writeln;
+  
   SOMA := 0;
   for I := 1 to 8 do
   begin
@@ -26,6 +30,9 @@ begin
     readln(MD[I]);
     SOMA := SOMA + MD[I];
   end;
+  
   MEDIA := SOMA / 8;
+  
   writeln('Resultado da media = ', MEDIA:5:1);
+  
 end.

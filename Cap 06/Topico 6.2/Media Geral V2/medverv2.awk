@@ -9,18 +9,21 @@
 #
 # Programa ..: MEDIA GERAL - VERSAO 2
 
-#!/usr/bin/awk -f
-
 BEGIN {
+
   print "MEDIA GERAL - V2"
   print ""
+  
   SOMA = 0
   for (I = 1; I <= 8; I++) {
     printf "Entre a nota %d: ", I
     getline MD[I]
     SOMA = SOMA + MD[I]
   }
+  
   MEDIA = SOMA / 8
+  
   printf "Resultado da media = %5.1f\n", MEDIA
+  
 }
 

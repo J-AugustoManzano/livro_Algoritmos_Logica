@@ -13,15 +13,20 @@
 
 SOMA = 0
 MD = {}
+
 print("MEDIA GERAL - V3\n")
+
 for I = 1, 8, 1 do
   io.write("Entre a nota ", I, ": ")
   MD[I] = tonumber(io.read())
   SOMA = SOMA + MD[I]
 end
+
 MEDIA = SOMA / 8
+
 for I = 1, 8 do
   print("A[" .. string.format("%2d", I) .. "] = " .. string.format("%.1f", MD[I]))
 end
+
 io.write(string.format("Resultado da media = %5.1f", MEDIA))
 

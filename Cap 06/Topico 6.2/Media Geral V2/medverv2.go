@@ -18,16 +18,22 @@ import (
 )
 
 func main() {
+	
   MD := make([]float64, 8)
   SOMA := 0.0
+  
   fmt.Println("MEDIA GERAL - V2\n")
+  
   for i := 0; i <= 7; i++ {
     fmt.Printf("Entre a nota %d: ", i+1)
     fmt.Scanln(&MD[i])
     SOMA = SOMA + MD[i]
   }
+  
   MEDIA := SOMA / 8
+  
   fmt.Printf("Resultado da media = %5.1f\n", MEDIA)
+  
 }
 
 

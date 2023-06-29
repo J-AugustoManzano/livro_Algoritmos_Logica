@@ -15,11 +15,14 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
+	  
     System.out.println("MEDIA GERAL - V2\n");
+    
     int I;
     double[] MD = new double[8];
     double SOMA, MEDIA;
     Scanner entrada = new Scanner(System.in);
+    
     SOMA = 0;
     for (I = 0; I <= 7; I++) {
       System.out.print("Entre a nota " + (I + 1) + ": ");
@@ -27,7 +30,9 @@ public class Main {
       SOMA = SOMA + MD[I];
     }
     entrada.close();
+    
     MEDIA = SOMA / 8;
+    
     System.out.printf("Resultado da media = %5.1f%n", MEDIA);
   }
 }

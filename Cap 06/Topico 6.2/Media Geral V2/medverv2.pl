@@ -22,11 +22,14 @@ my $SOMA = 0;
 my $MEDIA;
 
 say "MEDIA GERAL - V2\n";
+
 for my $I (0..7) {
   print "Entre a nota ", $I + 1, ": ";
   $MD[$I] = <STDIN>;
   chomp $MD[$I];
   $SOMA += $MD[$I];
 }
+
 $MEDIA = $SOMA / 8;
+
 say "Resultado da media = ", sprintf("%.1f", $MEDIA);

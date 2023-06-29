@@ -24,6 +24,7 @@ my $SOMA = 0;
 my $MEDIA;
 
 say "MEDIA GERAL - V3\n";
+
 $SOMA = 0;
 for my $I (0..7) {
   print "Entre a nota ", $I + 1, ": ";
@@ -31,8 +32,11 @@ for my $I (0..7) {
   chomp $MD[$I];
   $SOMA += $MD[$I];
 }
+
 $MEDIA = $SOMA / 8;
+
 for my $I (0..7) {
   say "A[", sprintf("%2d", $I), "] = ", sprintf("%.1f", $MD[$I]);
 }
+
 say "Resultado da media = ", sprintf("%.1f", $MEDIA);

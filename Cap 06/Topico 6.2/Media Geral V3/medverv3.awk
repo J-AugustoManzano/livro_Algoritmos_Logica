@@ -9,20 +9,24 @@
 #
 # Programa ..: MEDIA GERAL - VERSAO 3
 
-#!/usr/bin/awk -f
-
 BEGIN {
+
   print "MEDIA GERAL - V3"
   print ""
+  
   SOMA = 0
   for (I = 1; I <= 8; I++) {
     printf "Entre a nota %d: ", I
     getline MD[I]
     SOMA = SOMA + MD[I]
   }
+  
   MEDIA = SOMA / 8
+  
   for (I = 1; I <= 8; I++) {
     printf "A[%2d] = %5.1f\n", I, MD[I]
   }   
+  
   printf "Resultado da media = %5.1f\n", MEDIA
+  
 }

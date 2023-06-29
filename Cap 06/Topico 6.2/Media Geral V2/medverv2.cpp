@@ -20,17 +20,23 @@ using namespace std;
 int I;
 float MD[8];
 float SOMA = 0, MEDIA;
+
 int main(void) {
+	
   cout << "MEDIA GERAL - V2\n\n";
+  
   SOMA = 0;
   for (I = 0; I <= 7; I++) {
     cout << "Entre a nota " << I + 1 << ": ";
     cin >> MD[I];
     SOMA = SOMA + MD[I];
   }
+  
   MEDIA = SOMA / 8;
+  
   cout << fixed << setprecision(1);
   cout << "Resultado da media = " << setw(5) << right << MEDIA;
+  
   return 0;
 }
 

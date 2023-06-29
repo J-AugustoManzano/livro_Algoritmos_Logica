@@ -25,6 +25,7 @@ sub MediaGeralV2 {
     }
 
     $MEDIA = $SOMA / 8;
+    
     say "Resultado da media = {sprintf('%5.1f', $MEDIA)}";
 }
 

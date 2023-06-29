@@ -12,6 +12,7 @@
 '''
 
 print("MEDIA GERAL - V1\n")
+
 MD1 = float(input("Entre a nota 1: "))
 MD2 = float(input("Entre a nota 2: "))
 MD3 = float(input("Entre a nota 3: "))
@@ -20,6 +21,8 @@ MD5 = float(input("Entre a nota 5: "))
 MD6 = float(input("Entre a nota 6: "))
 MD7 = float(input("Entre a nota 7: "))
 MD8 = float(input("Entre a nota 8: "))
+
 MEDIA = (MD1 + MD2 + MD3 + MD4 + MD5 + MD6 + MD7 + MD8) / 8
+
 print("Resultado da media = {:5.1f}".format(MEDIA))
 

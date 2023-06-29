@@ -10,6 +10,7 @@
 # Programa ..: MEDIA GERAL - VERSAO 3
 
 sub MediaGeralV3 {
+
     my @MD = ();
     my $I;
     my $SOMA = 0;
@@ -31,6 +32,7 @@ sub MediaGeralV3 {
     }
 
     say sprintf("Resultado da media = %5.1f", $MEDIA);
+    
 }
 
 MediaGeralV3();

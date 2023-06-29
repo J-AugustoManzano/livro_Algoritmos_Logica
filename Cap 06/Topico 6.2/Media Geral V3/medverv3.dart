@@ -15,10 +15,13 @@
 import 'dart:io';
 
 void main() {
+
   int I;
   List<double> MD = List.filled(8, 0.0);
   double SOMA, MEDIA;
+  
   print("MEDIA GERAL - V3\n");
+  
   SOMA = 0.0;
   for (I = 0; I <= 7; I++) {
     stdout.write("Entre a nota ${I + 1}: ");
@@ -26,10 +29,13 @@ void main() {
     MD[I] = double.parse(input);
     SOMA = SOMA + MD[I];
   }
+  
   MEDIA = SOMA / 8;
+  
   for (I = 0; I <= 7; I++) {
     print('A[${I.toString().padLeft(2)}] = ${MD[I].toStringAsFixed(1).padLeft(5)}');
   }  
   
   print('Resultado da media = ${MEDIA.toStringAsFixed(1).padLeft(5)}');
+  
 }

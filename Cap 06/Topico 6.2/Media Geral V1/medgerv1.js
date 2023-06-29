@@ -12,6 +12,7 @@
  */
 
 console.log("MEDIA GERAL - V1\n\n");
+
 let MD1 = parseFloat(prompt("Entre a nota 1: "));
 let MD2 = parseFloat(prompt("Entre a nota 2: "));
 let MD3 = parseFloat(prompt("Entre a nota 3: "));
@@ -20,5 +21,7 @@ let MD5 = parseFloat(prompt("Entre a nota 5: "));
 let MD6 = parseFloat(prompt("Entre a nota 6: "));
 let MD7 = parseFloat(prompt("Entre a nota 7: "));
 let MD8 = parseFloat(prompt("Entre a nota 8: "));
+
 let MEDIA = (MD1 + MD2 + MD3 + MD4 + MD5 + MD6 + MD7 + MD8) / 8;
+
 console.log("Resultado da media = " + MEDIA.toFixed(1));
