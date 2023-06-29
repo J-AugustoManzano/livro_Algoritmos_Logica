@@ -1,0 +1,1 @@
+Neste diretório encontra-se exemplificado em algumas linguagens computacionais os exemplos de apresentação dos conceitos de classificação e pesquisa do capítulo 7.
