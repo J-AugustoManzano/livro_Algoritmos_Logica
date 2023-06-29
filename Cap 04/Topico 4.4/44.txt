@@ -1,0 +1,21 @@
+Material do tópico 4.4.
+=======================
+
+-----------------------
+- Adição de Números 2 -
+-----------------------
+
+programa ADIÇÃO_DE_NÚMEROS_2
+var
+  A, B, X, R : real
+início
+  leia A, B
+  X ← A + B
+  se (X >= 10) então
+    R ← X + 5
+  senão
+    R ← X – 7
+  fim_se
+  escreva R
+fim
+

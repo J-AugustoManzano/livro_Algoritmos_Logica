@@ -1,0 +1,17 @@
+Material do tópico 4.3.
+=======================
+
+-----------------------
+- Adição de Números 1 -
+-----------------------
+
+programa ADIÇÃO_DE_NÚMEROS_1
+var
+  A, B, X : real
+início
+  leia A, B
+  X ← A + B
+  se (X > 10) então
+    escreva X
+  fim_se
+fim
