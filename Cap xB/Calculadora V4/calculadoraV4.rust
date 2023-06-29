@@ -1,0 +1,81 @@
+use std::io::{self, Write};
+
+fn entrada() -> (f64, f64) {
+    print!("Entre o 1o. valor: ");
+    io::stdout().flush().unwrap();
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+    let a: f64 = input.trim().parse().unwrap();
+    print!("Entre o 2o. valor: ");
+    io::stdout().flush().unwrap();
+    input.clear();
+    io::stdin().read_line(&mut input).unwrap();
+    let b: f64 = input.trim().parse().unwrap();
+    (a, b)
+}
+
+fn saida(resultado: f64) {
+    println!("\nO resultado da operacao equivale a: {:.2}.\n", resultado);
+}
+
+fn calculo(x: f64, y: f64, operador: char) -> f64 {
+    match operador {
+        '+' => x + y,
+        '-' => x - y,
+        '*' => x * y,
+        '/' => x / y,
+        _ => panic!("\nOperador invalido!\n"),
+    }
+}
+
+fn rotcalc(operacao: char) {
+    match operacao {
+        '+' => println!("\nRotina de Adicao\n"),
+        '-' => println!("\nRotina de Subtracao\n"),
+        '*' => println!("\nRotina de Multiplicacao\n"),
+        '/' => println!("\nRotina de Divisao\n"),
+        _ => panic!("\nOperacao invalida!\n"),
+    }
+    let (a, b) = entrada();
+    if operacao == '/' {
+        if b == 0.0 {
+            println!("\nO resultado da operacao equivale a: ERRO.");
+            println!();
+        } else {
+            let r = calculo(a, b, '/');
+            saida(r);
+        }
+    } else {
+        let r = calculo(a, b, operacao);
+        saida(r);
+    }
+}
+
+fn main() {
+    let mut opcao: i32 = 0;
+    while opcao != 5 {
+        println!("CALCULADORA - V4");
+        println!("================");
+        println!();
+        println!("1 - Adicao");
+        println!("2 - Subtracao");
+        println!("3 - Multiplicacao");
+        println!("4 - Divisao");
+        println!("5 - Fim de Programa");
+        println!();
+        print!("Escolha uma opcao: ");
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        opcao = input.trim().parse().unwrap();
+        if opcao != 5 {
+            match opcao {
+                1 => rotcalc('+'),
+                2 => rotcalc('-'),
+                3 => rotcalc('*'),
+                4 => rotcalc('/'),
+                _ => println!("\nOpcao invalida - Tente novamente.\n"),
+            }
+        }
+    }
+}
