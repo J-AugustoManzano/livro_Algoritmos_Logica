@@ -1,0 +1,58 @@
+Material do tópico 12.4.
+========================
+
+
+--------------------------
+- Método Interno: CMÉDIA -
+--------------------------
+
+programa CLASSE_OBJETO_MÉTODO_INTERNO
+
+tipo 
+  CLS_ALUNO = classe 
+              seção_pública
+                  NOME  : cadeia
+                  NOTAS : conjunto[1..4] de real
+                  MÉDIA : real
+                  função CMÉDIA : real
+                  var
+                    I : inteiro
+                    SOMA : real
+                  início
+                    SOMA ← 0
+                    para I de 1 até 4 passo 1 faça
+                      SOMA ← SOMA + ALUNO.NOTAS[I]
+                    fim_para
+                    MÉDIA ← SOMA / 4
+                    CMÉDIA ← MÉDIA
+                  fim
+              fim_classe 	
+
+objeto
+  ALUNO : cls_aluno
+
+var
+  I : inteiro
+
+início
+
+  // *** Trecho de entrada dos dados ***
+
+  escreva "Informe o nome: " 
+  leia ALUNO.NOME
+  escreva "Informe as notas: "
+  para I de 1 até 4 passo 1 faça
+    escreva I, "a. nota: " 
+    leia ALUNO.NOTAS[I]
+  fim_para
+  ALUNO.CMÉDIA
+
+  // *** Trecho de saída dos dados ***
+
+  escreva "Nome: ", ALUNO.NOME
+  para I de 1 até 4 passo 1 faça
+    escreva I, "a. nota: ", ALUNO.NOTAS[I]
+  fim_para
+  escreva "Média: ", ALUNO.MÉDIA
+
+fim
