@@ -1,0 +1,62 @@
+Material do tópico 10.8.
+========================
+
+------------------------
+- Recursvidade Simples -
+------------------------
+
+programa CALC_FAT_V4
+
+  função FATORIAL(N : inteiro) : inteiro
+  início
+    se (N = 0) então
+      FATORIAL ← 1
+    senão
+      FATORIAL ← N * FATORIAL(N – 1)
+    fim_se
+  fim
+
+var
+ LIMITE : inteiro
+
+início
+  escreva "Qual fatorial: " leia LIMITE
+  escreva FATORIAL(LIMITE)
+fim
+
+-------------------------
+- Recursvidade de Cauda -
+-------------------------
+
+programa CALC_FAT_V5
+
+  função FATORIALBASE(N, P : inteiro) : inteiro
+  início
+    se (N = 0) então
+      FATORIALBASE ← P
+    senão
+      FATORIALBASE ← FATORIALBASE(N - 1, N * P) 
+    fim_se
+  fim
+
+  função FATORIAL(N : inteiro) : inteiro
+  início
+    FATORIAL ← FATORIALBASE(N, 1) 
+  fim
+
+var
+ LIMITE : inteiro
+
+início
+  escreva "Qual fatorial: " leia LIMITE
+  escreva FATORIAL(LIMITE)
+fim
+
+
+
+
+
+
+
+
+
