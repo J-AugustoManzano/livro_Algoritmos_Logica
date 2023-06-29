@@ -13,14 +13,13 @@
  
 =cut
 
-#!/usr/bin/perl
-
 use strict;
 use warnings;
 
 my $N;
 
 print "DECISAO SEQUENCIAL\n\n";
+
 print "Entre valor inteiro <N>: ";
 $N = <STDIN>;
 

@@ -9,22 +9,27 @@
 #
 # Programa ..: OPERACAO COM DECISAO SEQUENCIAL
 
-#!/usr/bin/awk -f
-
 BEGIN {
+
   printf("DECISAO SEQUENCIAL\n\n");
+  
   printf("Entre valor inteiro <N>: ");
-  getline N < "/dev/tty";
+  getline N < "-";
+  
   if (N == 1) {
     printf("voce entrou o valor 1\n");
   }
+  
   if (N == 2) {
     printf("voce entrou o valor 2\n");
   }
+  
   if (N < 1) {
     printf("voce entrou valor muito baixo\n");
   }
+  
   if (N > 2) {
     printf("voce entrou valor muito alto\n");
   }
+  
 }

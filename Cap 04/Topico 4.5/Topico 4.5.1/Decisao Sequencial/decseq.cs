@@ -20,23 +20,29 @@ public class Program
   {
     Console.WriteLine("DECISAO SEQUENCIAL");
     Console.WriteLine();
+    
     Console.Write("Entre valor inteiro <N>: ");
     N = int.Parse(Console.ReadLine());
+    
     if (N == 1)
     {
       Console.WriteLine("voce entrou o valor 1");
     }
+    
     if (N == 2)
     {
       Console.WriteLine("voce entrou o valor 2");
     }
+    
     if (N < 1)
     {
       Console.WriteLine("voce entrou valor muito baixo");
     }
+    
     if (N > 2)
     {
       Console.WriteLine("voce entrou valor muito alto");
     }
+    
   }
 }

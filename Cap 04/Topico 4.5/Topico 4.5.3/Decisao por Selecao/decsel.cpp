@@ -17,10 +17,14 @@
 using namespace std;
 
 int MES;
+
 int main(void) {
+	
   cout << "MES POR EXTENSO" << endl << endl;
+  
   cout << "Entre o numero do mes: ";
   cin >> MES;
+  
   switch (MES) {
     case 1:
       cout << "Janeiro" << endl;
@@ -62,5 +66,6 @@ int main(void) {
       cout << "Valor invalido" << endl;
       break;
   }
+  
   return 0;
 }

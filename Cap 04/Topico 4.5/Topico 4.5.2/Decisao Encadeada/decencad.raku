@@ -10,8 +10,10 @@
 # Programa ..: OPERACAO COM DECISAO ENCADEADA
 
 sub MAIN() {
+
     say 'DECISAO ENCADEADA - SALARIO';
     say '';
+    
     print 'Entre salario atual: ';
     my Num $SA = prompt.Num;
 
@@ -30,4 +32,5 @@ sub MAIN() {
     }
 
     say "Novo salario: {sprintf('%.2f', $NS)}";
+    
 }

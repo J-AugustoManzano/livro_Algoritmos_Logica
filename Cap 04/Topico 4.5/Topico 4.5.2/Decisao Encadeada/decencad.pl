@@ -35,5 +35,3 @@ if ($SA < 500) {
 }
 
 printf "Novo salario: %10.2f\n", $NS;
-
-exit 0;

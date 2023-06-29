@@ -9,11 +9,9 @@
  *
  * Capitulo ..: 4 - Topico 4.5.3
  * 
- * Programa ..: OPERACAO COM DECISAO SELETIVA
+ * Programa ..: OPERACAO COM DECISAO SELETIVA (SIMULADA)
  
 =cut
-
-#!/usr/bin/perl
 
 use strict;
 use warnings;
@@ -21,6 +19,7 @@ use warnings;
 my $MES;
 
 print "MES POR EXTENSO\n\n";
+
 print "Entre o numero do mes: ";
 $MES = <STDIN>;
 
@@ -65,5 +64,3 @@ elsif ($MES == 12) {
 else {
     print "Valor invalido\n";
 }
-
-exit 0;

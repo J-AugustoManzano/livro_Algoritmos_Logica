@@ -17,13 +17,17 @@ namespace MesPorExtenso
 {
   class Program
   {
+	  
     static int MES;
     static void Main(string[] args)
+    
     {
       Console.WriteLine("MES POR EXTENSO\n");
+      
       Console.Write("Entre o numero do mes: ");
       MES = Convert.ToInt32(Console.ReadLine());
       switch (MES)
+      
       {
         case 1:
           Console.WriteLine("Janeiro");
@@ -65,6 +69,8 @@ namespace MesPorExtenso
           Console.WriteLine("Valor invalido");
           break;
       }
+      
     }
+    
   }
 }

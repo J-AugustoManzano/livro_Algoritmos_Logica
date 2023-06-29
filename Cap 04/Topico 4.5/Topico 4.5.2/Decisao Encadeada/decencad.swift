@@ -18,9 +18,11 @@ var NS: Float = 0
 
 print("DECISAO ENCADEADA - SALARIO\n\n")
 print("Entre salario atual: ", terminator: "")
+
 if let inputSA = readLine() {
     SA = Float(inputSA) ?? 0
 }
+
 if SA < 500 {
     NS = SA * 1.15
 } else {
@@ -30,4 +32,5 @@ if SA < 500 {
         NS = SA * 1.05
     }
 }
+
 print("Novo salario: \(String(format: "%10.2f", NS))")

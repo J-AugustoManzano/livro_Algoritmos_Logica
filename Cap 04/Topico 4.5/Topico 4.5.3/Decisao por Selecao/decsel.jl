@@ -12,8 +12,10 @@
 =#
 
 println("MES POR EXTENSO\n")
+
 print("Entre o numero do mes: ")
 MES = parse(Int64, readline())
+
 if (MES == 1)
   println("Janeiro")
 elseif (MES == 2)

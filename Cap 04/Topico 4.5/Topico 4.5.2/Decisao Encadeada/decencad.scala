@@ -13,13 +13,18 @@
  */
 
 object Main {
+	
   var SA: Double = 0.0
   var NS: Double = 0.0
+  
   def main(args: Array[String]): Unit = {
+	  
     println("DECISAO ENCADEADA - SALARIO")
     println()
+    
     print("Entre salario atual: ")
     SA = scala.io.StdIn.readDouble()
+    
     if (SA < 500) {
       NS = SA * 1.15
     } else {
@@ -29,6 +34,8 @@ object Main {
         NS = SA * 1.05
       }
     }
+    
     println("Novo salario: %10.2f".format(NS))
+    
   }
 }

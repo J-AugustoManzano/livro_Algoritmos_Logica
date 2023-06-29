@@ -12,8 +12,10 @@
 --]]
 
 print("DECISAO ENCADEADA - SALARIO\n")
+
 io.write("Entre salario atual: ")
 SA = tonumber(io.read())
+
 if (SA < 500) then
   NS = SA * 1.15
 else
@@ -23,4 +25,5 @@ else
     NS = SA * 1.05
   end
 end
+
 print("Novo salario: " .. string.format("%10.2f", NS))

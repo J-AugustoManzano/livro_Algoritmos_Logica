@@ -13,12 +13,17 @@
  */
 
 object Main {
+	
   var MES: Int = 0
+  
   def main(args: Array[String]): Unit = {
+	  
     println("MES POR EXTENSO")
     println()
+    
     print("Entre o numero do mes: ")
     MES = scala.io.StdIn.readInt()
+    
     MES match {
       case  1 => println("Janeiro")
       case  2 => println("Fevereiro")
@@ -34,5 +39,7 @@ object Main {
       case 12 => println("Dezembro")
       case  _ => println("Valor invalido")
     }
+    
   }
+  
 }

@@ -14,10 +14,14 @@
 #include <stdio.h>
 
 int MES;
+
 int main(void) {
+	
   printf("MES POR EXTENSO\n\n");
+  
   printf("Entre o numero do mes: ");
   scanf("%d", &MES);
+  
   switch (MES) {
     case 1:
       printf("Janeiro\n");
@@ -59,5 +63,6 @@ int main(void) {
       printf("Valor invalido\n");
       break;
   }
+  
   return 0;
 }

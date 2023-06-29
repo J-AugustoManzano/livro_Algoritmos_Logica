@@ -9,12 +9,13 @@
 #
 # Programa ..: OPERACAO COM DECISAO ENCADEADA
 
-#!/usr/bin/awk -f
-
 BEGIN {
+
   printf("DECISAO ENCADEADA - SALARIO\n\n");
+  
   printf("Entre salario atual: ")
   getline SA < "-"
+  
   if (SA < 500) {
     NS = SA * 1.15
   } else {
@@ -24,5 +25,7 @@ BEGIN {
       NS = SA * 1.05
     }
   }
+  
   printf("Novo salario: %10.2f\n", NS)
+  
 }

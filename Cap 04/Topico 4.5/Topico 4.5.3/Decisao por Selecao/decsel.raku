@@ -10,8 +10,10 @@
 # Programa ..: OPERACAO COM DECISAO SELETIVA
 
 sub MAIN() {
+
     say 'MES POR EXTENSO';
     say '';
+    
     print 'Entre o numero do mes: ';
     my Int $MES = prompt.Int;
 
@@ -30,4 +32,5 @@ sub MAIN() {
         when 12 { say 'Dezembro' }
         default { say 'Valor invalido' }
     }
+    
 }

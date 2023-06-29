@@ -13,16 +13,21 @@
 
 console.log('DECISAO SEQUENCIAL');
 console.log();
+
 const N = parseInt(prompt('Entre valor inteiro <N>: '));
+
 if (N === 1) {
   console.log('voce entrou o valor 1');
 }
+
 if (N === 2) {
   console.log('voce entrou o valor 2');
 }
+
 if (N < 1) {
   console.log('voce entrou valor muito baixo');
 }
+
 if (N > 2) {
   console.log('voce entrou valor muito alto');
 }

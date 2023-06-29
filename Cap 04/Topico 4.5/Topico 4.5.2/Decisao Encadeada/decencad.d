@@ -16,11 +16,15 @@ import std.stdio;
 import std.format;
 
 float SA, NS;
+
 void main()
 {
+	
   writeln("DECISAO ENCADEADA - SALARIO\n");
+  
   write("Entre salario atual: ");
   readf(" %f", &SA);
+  
   if (SA < 500)
   {
     NS = SA * 1.15;
@@ -36,5 +40,7 @@ void main()
       NS = SA * 1.05;
     }
   }
+  
   writeln("Novo salario: ", format("%10.2f", NS));
+  
 }

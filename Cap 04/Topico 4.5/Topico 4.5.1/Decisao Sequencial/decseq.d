@@ -18,22 +18,28 @@ int N;
 void main()
 {
   writeln("DECISAO SEQUENCIAL\n");
+  
   write("Entre valor inteiro <N>: ");
   readf(" %d", &N);
+  
   if (N == 1)
   {
     writeln("voce entrou o valor 1");
   }
+  
   if (N == 2)
   {
     writeln("voce entrou o valor 2");
   }
+  
   if (N < 1)
   {
     writeln("voce entrou valor muito baixo");
   }
+  
   if (N > 2)
   {
     writeln("voce entrou valor muito alto");
   }
+  
 }

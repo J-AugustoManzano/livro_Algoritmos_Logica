@@ -15,10 +15,14 @@
 import 'dart:io';
 
 int MES = 0;
+
 void main() {
+
   print('MES POR EXTENSO\n');
+  
   stdout.write('Entre o numero do mes: ');
   MES = int.parse(stdin.readLineSync()!);
+  
   switch (MES) {
     case 1:
       print('Janeiro');
@@ -60,4 +64,5 @@ void main() {
       print('Valor invalido');
       break;
   }
+  
 }

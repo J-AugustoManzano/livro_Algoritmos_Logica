@@ -13,7 +13,9 @@
 
 console.log('DECISAO ENCADEADA - SALARIO');
 console.log();
+
 const SA = parseFloat(prompt('Entre salario atual: '));
+
 let NS;
 if (SA < 500) {
   NS = SA * 1.15;
@@ -24,4 +26,5 @@ if (SA < 500) {
     NS = SA * 1.05;
   }
 }
+
 console.log('Novo salario: ', NS.toFixed(2));

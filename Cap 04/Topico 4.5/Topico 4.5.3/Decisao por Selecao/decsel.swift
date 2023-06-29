@@ -16,10 +16,12 @@ import Foundation
 var MES: Int = 0
 
 print("MES POR EXTENSO\n\n")
+
 print("Entre o numero do mes: ", terminator: "")
 if let inputMES = readLine() {
     MES = Int(inputMES) ?? 0
 }
+
 switch MES {
 case 1:
     print("Janeiro")

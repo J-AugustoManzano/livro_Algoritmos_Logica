@@ -14,12 +14,18 @@
 import java.util.Scanner;
 
 public class Main {
+	
   static float SA, NS;
+  
   public static void main(String[] args) {
+	  
     Scanner entrada = new Scanner(System.in);
+    
     System.out.println("DECISAO SELETIVA - SALARIO\n");
     System.out.print("Entre salario atual: ");
+    
     SA = entrada.nextFloat();
+    
     if (SA < 500) {
       NS = SA * 1.15f;
     } else {
@@ -29,7 +35,9 @@ public class Main {
         NS = SA * 1.05f;
       }
     }
+    
     System.out.printf("Novo salario: %10.2f\n", NS);
     entrada.close();
+    
   }
 }

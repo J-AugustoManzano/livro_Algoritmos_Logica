@@ -12,7 +12,9 @@
 '''
 
 print("DECISAO ENCADEADA - SALARIO\n")
+
 SA = float(input("Entre salario atual: "))
+
 if (SA < 500):
   NS = SA * 1.15
 else:
@@ -20,5 +22,6 @@ else:
     NS = SA * 1.10
   else:
     NS = SA * 1.05
+    
 print("Novo salario: {:10.2f}".format(NS))
 

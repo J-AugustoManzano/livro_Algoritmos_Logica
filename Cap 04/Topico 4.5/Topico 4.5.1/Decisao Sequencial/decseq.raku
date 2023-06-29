@@ -10,23 +10,29 @@
 # Programa ..: OPERACAO COM DECISAO SEQUENCIAL
 
 sub MAIN() {
+
     my Int $N;
 
     say 'DECISAO SEQUENCIAL';
     say '';
+    
     print 'Entre valor inteiro <N>: ';
     $N = prompt.Int;
 
     if $N == 1 {
         say 'voce entrou o valor 1';
     }
+    
     if $N == 2 {
         say 'voce entrou o valor 2';
     }
+    
     if $N < 1 {
         say 'voce entrou valor muito baixo';
     }
+    
     if $N > 2 {
         say 'voce entrou valor muito alto';
     }
+    
 }

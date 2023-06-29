@@ -15,6 +15,7 @@ dim MES as integer
 
 print "MES POR EXTENSO"
 print
+
 print "Entre o numero do mes: ";
 input "", MES
 

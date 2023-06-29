@@ -12,17 +12,22 @@
 --]]
 
 print("DECISAO SEQUENCIAL\n\n")
+
 io.write("Entre valor inteiro <N>: ")
 N = tonumber(io.read())
+
 if (N == 1) then
   print("voce entrou o valor 1")
 end
+
 if (N == 2) then
   print("voce entrou o valor 2")
 end
+
 if (N < 1) then
   print("voce entrou valor muito baixo")
 end
+
 if (N > 2) then
   print("voce entrou valor muito alto")
 end

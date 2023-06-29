@@ -20,7 +20,9 @@ import (
 var SA, NS float64
 
 func main() {
+	
 	fmt.Println("DECISAO SELETIVA - SALARIO\n")
+	
 	fmt.Print("Entre salario atual: ")
 	fmt.Scan(&SA)
 
@@ -33,5 +35,7 @@ func main() {
 			NS = SA * 1.05
 		}
 	}
+	
 	fmt.Printf("Novo salario: %10.2f\n", NS)
+	
 }

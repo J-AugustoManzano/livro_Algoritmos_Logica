@@ -13,7 +13,9 @@
 
 console.log('MES POR EXTENSO');
 console.log();
+
 const MES = parseInt(prompt('Entre o numero do mes: '));
+
 switch (MES) {
   case 1:
     console.log('Janeiro');

@@ -14,10 +14,14 @@
 #include <stdio.h>
 
 float SA, NS;
+
 int main(void) {
+	
   printf("DECISAO ENCADEADA - SALARIO\n\n");
+  
   printf("Entre salario atual: ");
   scanf("%f", &SA);
+  
   if (SA < 500) {
     NS = SA * 1.15;
   } else {
@@ -27,7 +31,9 @@ int main(void) {
       NS = SA * 1.05;
     }
   }
+  
   printf("Novo salario: %10.2f\n", NS);
+  
   return 0;
 }
 

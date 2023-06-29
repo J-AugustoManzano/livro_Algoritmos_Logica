@@ -15,11 +15,14 @@
 import std.stdio;
 
 int MES;
+
 void main()
 {
   writeln("MES POR EXTENSO\n");
+  
   write("Entre o numero do mes: ");
   readf(" %d", &MES);
+  
   switch (MES)
   {
     case 1:
@@ -62,4 +65,5 @@ void main()
       writeln("Valor invalido");
       break;
   }
+  
 }

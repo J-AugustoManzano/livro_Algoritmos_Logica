@@ -9,12 +9,13 @@
 #
 # Programa ..: OPERACAO COM DECISAO SELETIVA (SIMULADA)
 
-#!/usr/bin/awk -f
-
 BEGIN {
+
   printf("MES POR EXTENSO\n\n")
+  
   printf("Entre o numero do mes: ")
   getline MES < "-"
+  
   if (MES == 1) {
     print "Janeiro"
   } else if (MES == 2) {
@@ -42,4 +43,5 @@ BEGIN {
   } else {
     print "Valor invalido"
   }
+  
 }

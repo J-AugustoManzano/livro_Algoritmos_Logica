@@ -12,8 +12,10 @@
 --]]
 
 print("MES POR EXTENSO\n")
+
 io.write("Entre o numero do mes: ")
 MES = tonumber(io.read())
+
 if (MES == 1) then
   print("Janeiro")
 elseif (MES == 2) then

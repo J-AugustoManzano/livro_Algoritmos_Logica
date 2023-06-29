@@ -14,25 +14,34 @@
 import java.util.Scanner;
 
 public class Main {
+	
   public static int N;
   public static void main(String[] args) {
+	  
+    Scanner entrada = new Scanner(System.in);
+    
     System.out.println("DECISAO SEQUENCIAL");
     System.out.println("");
+    
     System.out.print("Entre valor inteiro <N>: ");
-    Scanner entrada = new Scanner(System.in);
     N = entrada.nextInt();
+    
     if (N == 1) {
       System.out.println("voce entrou o valor 1");
     }
+    
     if (N == 2) {
       System.out.println("voce entrou o valor 2");
     }
+    
     if (N < 1) {
       System.out.println("voce entrou valor muito baixo");
     }
     if (N > 2) {
       System.out.println("voce entrou valor muito alto");
     }
+    
     entrada.close();
+    
   }
 }

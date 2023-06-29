@@ -12,13 +12,18 @@
  *}
 
 program REAJUSTA_SALARIO;
+
 var
   SA, NS: real;
+  
 begin
+
   writeln('DECISAO ENCADEADA - SALARIO');
   writeln;
+  
   write('Entre salario atual: ');
   readln(SA);
+  
   if (SA < 500) then
   begin
     NS := SA * 1.15;
@@ -34,6 +39,8 @@ begin
       NS := SA * 1.05;
     end;
   end;
+  
   writeln('Novo salario: ', NS:10:2);
+  
 end.
 

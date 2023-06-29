@@ -20,9 +20,12 @@ import (
 var MES int
 
 func main() {
+	
   fmt.Println("MES POR EXTENSO\n")
+  
   fmt.Print("Entre o numero do mes: ")
   fmt.Scan(&MES)
+  
   switch (MES) {
   case 1:
     fmt.Println("Janeiro")
@@ -51,4 +54,5 @@ func main() {
   default:
     fmt.Println("Valor invalido")
   }
+  
 }

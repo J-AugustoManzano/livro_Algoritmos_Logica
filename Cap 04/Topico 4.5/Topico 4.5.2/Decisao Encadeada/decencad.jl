@@ -14,8 +14,10 @@
 using Printf
 
 println("DECISAO ENCADEADA - SALARIO\n")
+
 print("Entre salario atual: ")
 global SA = parse(Float64, readline())
+
 if (SA < 500)
   global NS = SA * 1.15
 else
@@ -25,4 +27,5 @@ else
     global NS = SA * 1.05
   end
 end
+
 println("Novo salario: $(@sprintf("%10.2f", NS))")

@@ -13,7 +13,9 @@
 
 print("MES POR EXTENSO")
 print()
+
 MES = int(input("Entre o numero do mes: "))
+
 if (MES == 1):
   print("Janeiro")
 elif (MES == 2):

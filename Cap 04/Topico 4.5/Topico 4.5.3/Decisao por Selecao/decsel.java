@@ -14,12 +14,17 @@
 import java.util.Scanner;
 
 public class Main {
+	
   public static void main(String[] args) {
+	  
     int MES;
     Scanner entrada = new Scanner(System.in);
+    
     System.out.println("MES POR EXTENSO\n");
+    
     System.out.print("Entre o numero do mes: ");
     MES = entrada.nextInt();
+    
       switch (MES) {
       case 1:
         System.out.println("Janeiro");
@@ -61,6 +66,8 @@ public class Main {
         System.out.println("Valor invalido");
         break;
     }
+    
     entrada.close();
+    
   }
 }

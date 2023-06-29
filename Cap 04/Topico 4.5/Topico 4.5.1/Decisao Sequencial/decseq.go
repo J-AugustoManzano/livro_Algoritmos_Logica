@@ -18,21 +18,29 @@ import (
 )
 
 var N int
+
 func main() {
+	
   fmt.Println("DECISAO SEQUENCIAL")
   fmt.Println("")
+  
   fmt.Print("Entre valor inteiro <N>: ")
   fmt.Scan(&N)
+  
   if (N == 1) {
     fmt.Println("voce entrou o valor 1")
   }
+  
   if (N == 2) {
     fmt.Println("voce entrou o valor 2")
   }
+  
   if (N < 1) {
     fmt.Println("voce entrou valor muito baixo")
   }
+  
   if (N > 2) {
     fmt.Println("voce entrou valor muito alto")
   }
+  
 }

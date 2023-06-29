@@ -13,17 +13,22 @@
 
 println("DECISAO SEQUENCIAL")
 println("")
+
 print("Entre valor inteiro <N>: ")
 N = parse(Int, readline())
+
 if (N == 1)
   println("voce entrou o valor 1")
 end
+
 if (N == 2)
   println("voce entrou o valor 2")
 end
+
 if (N < 1)
   println("voce entrou valor muito baixo")
 end
+
 if (N > 2)
   println("voce entrou valor muito alto")
 end

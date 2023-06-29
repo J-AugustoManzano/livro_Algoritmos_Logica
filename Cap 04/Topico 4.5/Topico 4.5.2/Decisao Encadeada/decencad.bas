@@ -13,10 +13,13 @@
 
 Dim SA As Single
 Dim NS As Single
+
 Print "DECISAO ENCADEADA - SALARIO"
 Print
+
 Print "Entre salario atual: ";
 Input "", SA
+
 If (SA < 500) Then
   NS = SA * 1.15
 Else
@@ -26,6 +29,8 @@ Else
     NS = SA * 1.05
   End If
 End If
+
 Print "Novo salario: ";
 Print Using "#######.##"; NS
+
 End

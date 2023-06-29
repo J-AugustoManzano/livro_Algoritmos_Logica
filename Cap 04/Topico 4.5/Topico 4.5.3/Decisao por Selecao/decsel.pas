@@ -12,13 +12,18 @@
  *}
 
 program MES_POR_EXTENSO;
+
 var
   MES: integer;
+  
 begin
+
   writeln('MES POR EXTENSO');
   writeln;
+  
   write('Entre o numero do mes: ');
   readln(MES);
+  
   case (MES) of
      1: writeln('Janeiro');
      2: writeln('Fevereiro');
@@ -35,4 +40,5 @@ begin
   else
     writeln('Valor invalido');
   end;
+  
 end.

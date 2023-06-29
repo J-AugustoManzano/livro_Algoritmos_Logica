@@ -18,10 +18,14 @@
 using namespace std;
 
 float SA, NS;
+
 int main(void) {
+	
   cout << "DECISAO ENCADEADA - SALARIO" << endl << endl;
+  
   cout << "Entre salario atual: ";
   cin >> SA;
+  
   if (SA < 500) {
     NS = SA * 1.15;
   } else {
@@ -31,7 +35,9 @@ int main(void) {
       NS = SA * 1.05;
     }
   }
+  
   cout << fixed << setprecision(2);
   cout << "Novo salario: " << setw(10) << right << NS << endl;
+  
   return 0;
 }

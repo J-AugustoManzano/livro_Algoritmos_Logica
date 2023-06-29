@@ -15,10 +15,14 @@
 import 'dart:io';
 
 double SA = 0.0, NS = 0.0;
+
 void main() {
+
   stdout.write('DECISAO ENCADEADA - SALARIO\n\n');
+  
   stdout.write('Entre salario atual: ');
   SA = double.parse(stdin.readLineSync()!);
+  
   if (SA < 500) {
     NS = SA * 1.15;
   }
@@ -30,7 +34,9 @@ void main() {
       NS = SA * 1.05;
     }
   }
+  
   stdout.write('Novo salario: ${NS.toStringAsFixed(2).padLeft(10)}\n');
+  
 }
 
 
