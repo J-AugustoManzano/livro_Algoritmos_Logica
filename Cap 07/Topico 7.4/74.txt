@@ -1,0 +1,28 @@
+Material do tópico 7.4.
+=======================
+
+-------------------
+- Matriz Dinâmica -
+-------------------
+
+programa MATRIZ_DINÂMICA
+
+var
+  I, N : inteiro
+  A : conjunto[1..N] de cadeia
+
+início
+
+  leia N 
+  
+  A[1..N]
+
+  para I de 1 até N passo 1 faça
+    leia A[I] 
+  fim_para
+
+  para I de 1 até N passo 1 faça
+    escreva A[I] 
+  fim_para
+
+fim
