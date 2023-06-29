@@ -1,0 +1,29 @@
+Material do tópico 5.6.
+=======================
+
+---------------------------------------------
+- Laço "Determinístico" (somente iterativo) -
+---------------------------------------------
+
+programa LAÇO_INCONDICIONAL
+var
+  I, N, R : inteiro
+início
+  para I de 1 até 5 passo 1 faça
+    leia N
+    R ← N * 3
+    escreva R
+  fim_para 
+fim
+
+
+
+
+
+
+
+
+
+
+
+
