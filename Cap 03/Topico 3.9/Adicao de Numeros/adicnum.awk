@@ -9,17 +9,19 @@
 #
 # Programa ..: ADICAO DE DOIS NÚMEROS INTEIROS
 
-#!/usr/bin/awk -f
-
 BEGIN {
 
   print "ADICAO DE NUMEROS"
   print ""
+  
   printf "Entre o 1o. valor numerico inteiro: "
   getline A < "-"
+  
   printf "Entre o 2o. valor numerico inteiro: "
   getline B < "-"
+  
   X = A + B
+  
   print "Resultado da adicao =", X
   
 }

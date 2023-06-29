@@ -22,12 +22,16 @@ public class Main {
     
     System.out.println("ADICAO DE NUMEROS");
     System.out.println();
+    
     System.out.print("Entre o 1o. valor numerico inteiro: ");
     Scanner entrada = new Scanner(System.in);
     A = entrada.nextInt();
+    
     System.out.print("Entre o 2o. valor numerico inteiro: ");
     B = entrada.nextInt();
+    
     X = A + B;
+    
     System.out.println("Resultado da adicao = " + X);
     
   }

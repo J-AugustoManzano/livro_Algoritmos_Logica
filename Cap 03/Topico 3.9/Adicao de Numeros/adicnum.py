@@ -13,7 +13,10 @@
 
 print("ADICAO DE NUMEROS")
 print()
+
 A = int(input("Entre o 1o. valor numerico inteiro: "))
 B = int(input("Entre o 2o. valor numerico inteiro: "))
+
 X = A + B
+
 print("Resultado da adicao = ", X)

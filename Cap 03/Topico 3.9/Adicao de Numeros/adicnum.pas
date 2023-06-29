@@ -22,11 +22,15 @@ begin
 
   writeln('ADICAO DE NUMEROS');
   writeln;
+  
   write('Entre o 1o. valor numerico inteiro: ');
   readln(A);
+  
   write('Entre o 2o. valor numerico inteiro: ');
   readln(B);
+  
   X := A + B;
+  
   writeln('Resultado da adicao = ', X);
   
 end.

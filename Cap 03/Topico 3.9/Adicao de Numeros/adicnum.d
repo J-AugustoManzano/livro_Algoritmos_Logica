@@ -23,11 +23,15 @@ void main()
 	
   writeln("ADICAO DE NUMEROS");
   writeln();
+  
   write("Entre o 1o. valor numerico inteiro: ");
   readf(" %d", &A);
+  
   write("Entre o 2o. valor numerico inteiro: ");
   readf(" %d", &B);
+  
   X = A + B;
+  
   writeln("Resultado da adicao = ", X);
   
 }

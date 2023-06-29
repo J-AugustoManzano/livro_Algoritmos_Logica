@@ -21,11 +21,15 @@ object Main {
     
     println("ADICAO DE NUMEROS")
     println()
+    
     print("Entre o 1o. valor numerico inteiro: ")
     A = scala.io.StdIn.readInt()
+    
     print("Entre o 2o. valor numerico inteiro: ")
     B = scala.io.StdIn.readInt()
+    
     X = A + B
+    
     println("Resultado da adicao = " + X)
     
   }

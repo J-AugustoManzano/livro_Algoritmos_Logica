@@ -25,11 +25,15 @@ func main() {
 	
   fmt.Println("ADICAO DE NUMEROS")
   fmt.Println()
+  
   fmt.Print("Entre o 1o. valor numerico inteiro: ")
   fmt.Scan(&A)
+  
   fmt.Print("Entre o 2o. valor numerico inteiro: ")
   fmt.Scan(&B)
+  
   X = A + B
+  
   fmt.Println("Resultado da adicao =", X)
   
 }

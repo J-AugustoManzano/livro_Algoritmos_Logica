@@ -19,13 +19,17 @@ var B: Int = 0
 
 print("ADICAO DE NUMEROS")
 print()
+
 print("Entre o 1o. valor numerico inteiro: ", terminator: "")
 if let inputA = readLine() {
     A = Int(inputA) ?? 0
 }
+
 print("Entre o 2o. valor numerico inteiro: ", terminator: "")
 if let inputB = readLine() {
     B = Int(inputB) ?? 0
 }
+
 X = A + B
+
 print("Resultado da adicao = \(X)")

@@ -13,9 +13,13 @@
 
 println("ADICAO DE NUMEROS")
 println()
+
 print("Entre o 1o. valor numerico inteiro: ")
 A = parse(Int, readline())
+
 print("Entre o 2o. valor numerico inteiro: ")
 B = parse(Int, readline())
+
 X = A + B
+
 println("Resultado da adicao = ", X)

@@ -21,11 +21,15 @@ int main(void) {
 	
   printf("ADICAO DE NUMEROS\n");
   printf("\n");
+  
   printf("Entre o 1o. valor numerico inteiro: ");
   scanf("%d", &A);
+  
   printf("Entre o 2o. valor numerico inteiro: ");
   scanf("%d", &B);
+  
   X = A + B;
+  
   printf("Resultado da adicao = %d\n", X);
   
   return 0;

@@ -17,10 +17,14 @@ Dim B As Integer
 
 Print "ADICAO DE NUMEROS"
 Print
+
 Print "Entre o 1o. valor numerico inteiro: ";
 Input "", A
+
 Print "Entre o 1o. valor numerico inteiro: ";
 Input "", B
+
 X = A + B
+
 Print Using "Resultado da adicao = #"; X
 End

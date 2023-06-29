@@ -13,9 +13,13 @@
 
 print("ADICAO DE NUMEROS")
 print()
+
 io.write("Entre o 1o. valor numerico inteiro: ")
 A = tonumber(io.read())
+
 io.write("Entre o 2o. valor numerico inteiro: ")
 B = tonumber(io.read())
+
 X = A + B
+
 print("Resultado da adicao = " .. X)

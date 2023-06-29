@@ -10,7 +10,12 @@
  * Programa ..: ADICAO DE DOIS NÚMEROS INTEIROS
  */
 
+console.log('ADICAO DE NUMEROS');
+console.log();
+
 const A = parseInt(prompt('Entre o 1o. valor numerico inteiro: '));
 const B = parseInt(prompt('Entre o 2o. valor numerico inteiro: '));
+
 const X = A + B;
+
 console.log('Resultado da adicao = ', X);

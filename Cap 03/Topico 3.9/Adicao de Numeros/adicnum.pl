@@ -13,8 +13,6 @@
   
 =cut
 
-#!/usr/bin/perl
-
 use strict;
 use warnings;
 
@@ -23,11 +21,15 @@ my $A;
 my $B;
 
 print "ADICAO DE NUMEROS\n\n";
+
 print "Entre o 1o. valor numerico inteiro: ";
 $A = <STDIN>;
+
 print "Entre o 2o. valor numerico inteiro: ";
 $B = <STDIN>;
+
 $X = $A + $B;
+
 print "Resultado da adicao = $X\n";
 
 exit 0;
