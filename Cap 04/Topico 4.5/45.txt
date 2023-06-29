@@ -1,0 +1,87 @@
+Material do tópico 4.5.
+=======================
+
+----------------------
+- Decisão Sequencial -
+----------------------
+
+programa DECISÃO_SEQUENCIAL
+var
+  N : inteiro
+início
+  leia N
+  se (N = 1) então
+    escreva "você entrou o valor 1"
+  fim_se
+  se (N = 2) então
+    escreva "você entrou o valor 2"
+  fim_se
+  se (N < 1) então
+    escreva "você entrou valor muito baixo"
+  fim_se
+  se (N > 2) então
+    escreva "você entrou valor muito alto"
+  fim_se
+fim
+
+---------------------
+- Decisão Encadeada -
+---------------------
+
+programa REAJUSTA_SALÁRIO
+var
+  SA, NS : real
+início
+  leia SA
+  se (SA < 500) então
+    NS ← SA * 1.15
+  senão
+    se (SA <= 1000) então
+      NS ← SA * 1.10
+    senão
+      NS ← SA * 1.05
+    fim_se
+  fim_se
+  escreva NS
+fim
+
+-----------------------
+- Decisão por Seleção -
+-----------------------
+
+programa MÊS_POR_EXTENSO
+var
+  MÊS : inteiro
+início
+  leia MÊS
+  caso MÊS 
+    seja 1 faça 
+      escreva "Janeiro"
+    seja 2 faça 
+      escreva "Fevereiro"
+    seja 3 faça 
+      escreva "Março"
+    seja 4 faça 
+      escreva "Abril"
+    seja 5 faça 
+      escreva "Maio"
+    seja 6 faça 
+      escreva "Junho"
+    seja 7 faça 
+      escreva "Julho"
+    seja 8 faça 
+      escreva "Agosto"
+    seja 9 faça 
+      escreva "Setembro"
+    seja 10 faça 
+      escreva "Outubro"
+    seja 11 faça 
+      escreva "Novembro"
+    seja 12 faça 
+      escreva "Dezembro"
+  senão 
+    escreva "Valor inválido"
+  fim_caso
+fim
+
+
