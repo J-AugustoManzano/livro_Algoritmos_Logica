@@ -1,0 +1,68 @@
+Material do tópico 10.6.
+========================
+
+-----------------------------------
+- Passagem de Parâmetro por Valor -
+-----------------------------------
+
+programa CALC_FAT_V1
+
+  procedimento FATORIAL(N : inteiro)
+  var
+    I, FAT : inteiro
+  início
+    FAT ← 1
+    para I de 1 até N passo 1 faça
+      FAT ← FAT * I
+    fim_para
+    escreva FAT
+  fim
+
+var
+ LIMITE : inteiro
+
+início
+  escreva "Qual fatorial: " leia LIMITE
+  FATORIAL(LIMITE)
+fim
+
+----------------------------------------
+- Passagem de Parâmetro por Referência -
+----------------------------------------
+
+programa CALC_FAT_V2
+
+  procedimento FATORIAL(N : inteiro; var FAT : inteiro)
+  var
+   I : inteiro
+  início
+    para I de 1 até N passo 1 faça
+      FAT ← FAT * I
+    fim_para
+  fim
+
+var
+ LIMITE, RESP : inteiro
+
+início
+  RESP ← 1
+  escreva "Qual fatorial: "
+  leia LIMITE
+  FATORIAL(LIMITE, RESP)
+  escreva RESP
+fim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
