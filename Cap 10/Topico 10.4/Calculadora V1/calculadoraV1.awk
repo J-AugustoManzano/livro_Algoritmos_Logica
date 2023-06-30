@@ -9,10 +9,6 @@
 # 
 # Programa ..: SUBROTINA: PROCEDIMENTO
 
-#!/usr/bin/awk -f
-
-#!/usr/bin/awk -f
-
 BEGIN {
   OPCAO = 0
   while (OPCAO != 5) {

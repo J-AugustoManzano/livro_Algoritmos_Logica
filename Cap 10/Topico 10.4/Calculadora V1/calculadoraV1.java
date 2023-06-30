@@ -17,11 +17,11 @@ public class Main {
 
   public static void ROTSOMA() {
     double R1, A1, B1;
+    Scanner entrada = new Scanner(System.in);
     System.out.println();
     System.out.println("Rotina de Adicao");
     System.out.println();
     System.out.print("Entre o 1o. valor: ");
-    Scanner entrada = new Scanner(System.in);
     A1 = entrada.nextDouble();
     System.out.print("Entre o 2o. valor: ");
     B1 = entrada.nextDouble();
@@ -33,11 +33,11 @@ public class Main {
 
   public static void ROTSUBTRACAO() {
     double R2, A2, B2;
+    Scanner entrada = new Scanner(System.in);
     System.out.println();
     System.out.println("Rotina de Subtracao");
     System.out.println();
     System.out.print("Entre o 1o. valor: ");
-    Scanner entrada = new Scanner(System.in);
     A2 = entrada.nextDouble();
     System.out.print("Entre o 2o. valor: ");
     B2 = entrada.nextDouble();
@@ -49,11 +49,11 @@ public class Main {
 
   public static void ROTMULTIPLICACAO() {
     double R3, A3, B3;
+    Scanner entrada = new Scanner(System.in);
     System.out.println();
     System.out.println("Rotina de Multiplicacao");
     System.out.println();
     System.out.print("Entre o 1o. valor: ");
-    Scanner entrada = new Scanner(System.in);
     A3 = entrada.nextDouble();
     System.out.print("Entre o 2o. valor: ");
     B3 = entrada.nextDouble();
@@ -65,11 +65,11 @@ public class Main {
 
   public static void ROTDIVISAO() {
     double R4, A4, B4;
+    Scanner entrada = new Scanner(System.in);
     System.out.println();
     System.out.println("Rotina de Divisao");
     System.out.println();
     System.out.print("Entre o 1o. valor: ");
-    Scanner entrada = new Scanner(System.in);
     A4 = entrada.nextDouble();
     System.out.print("Entre o 2o. valor: ");
     B4 = entrada.nextDouble();
