@@ -17,13 +17,15 @@ var MD: [Float] = [Float](repeating: 0.0, count: 8)
 var SOMA: Float = 0.0
 var MEDIA: Float = 0.0
 
-print("MEDIA GERAL - V2\n\n")
+print("MEDIA GERAL - V2\n")
 
 SOMA = 0.0
 for I in 0...7 {
     print("Entre a nota \(I + 1): ", terminator: "")
-    MD[I] = Float(readLine()!) ?? 0.0
-    SOMA += MD[I]
+    if let mdInput = readLine(), let md = Float(mdInput) {
+        MD[I] = md
+        SOMA += MD[I]
+    }
 }
 
 MEDIA = SOMA / 8
