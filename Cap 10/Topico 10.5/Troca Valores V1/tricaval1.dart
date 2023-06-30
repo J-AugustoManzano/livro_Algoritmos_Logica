@@ -15,19 +15,26 @@
 import 'dart:io';
 
 void main() {
+
+  int X, A, B;
+  
   print('TROCA DE VALORES - V1');
   print('');
-  int X, A, B;
+  
   stdout.write('Entre valor para variavel <A>: ');
   A = int.parse(stdin.readLineSync()!);
+  
   stdout.write('Entre valor para variavel <B>: ');
   B = int.parse(stdin.readLineSync()!);
+  
   X = A;
   A = B;
   B = X;
+  
   print('');
   print('Os valores trocados sao:');
   print('');
   print('<A> = $A');
   print('<B> = $B');
+  
 }

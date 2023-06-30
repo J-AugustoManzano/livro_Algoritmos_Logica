@@ -19,9 +19,12 @@ def TROCA():
 
 print('TROCA DE VALORES - V2')
 print()
+
 A = int(input('Entre valor para variavel <A>: '))
 B = int(input('Entre valor para variavel <B>: '))
+
 TROCA()
+
 print()
 print('Os valores trocados sao:')
 print()

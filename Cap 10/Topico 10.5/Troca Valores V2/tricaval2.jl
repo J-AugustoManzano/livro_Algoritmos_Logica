@@ -21,11 +21,15 @@ end
 
 println("TROCA DE VALORES - V2")
 println()
+
 print("Entre valor para variavel <A>: ")
 A = parse(Int64, readline())
+
 print("Entre valor para variavel <B>: ")
 B = parse(Int64, readline())
+
 TROCA()
+
 println()
 println("Os valores trocados sao:")
 println()

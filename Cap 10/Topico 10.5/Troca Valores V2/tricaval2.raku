@@ -17,11 +17,15 @@ sub TROCA($A is rw, $B is rw) {
 
 say 'TROCA DE VALORES - V2';
 say '';
+
 print 'Entre valor para variavel <A>: ';
 my $A = prompt;
+
 print 'Entre valor para variavel <B>: ';
 my $B = prompt;
+
 TROCA($A, $B);
+
 say '';
 say 'Os valores trocados sao:';
 say '';

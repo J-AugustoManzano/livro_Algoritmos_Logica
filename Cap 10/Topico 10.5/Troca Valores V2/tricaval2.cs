@@ -27,18 +27,24 @@ class Program
 
   static void Main(string[] args)
   {
+	  
     Console.WriteLine("TROCA DE VALORES - V2");
     Console.WriteLine();
+	
     Console.Write("Entre valor para variavel <A>: ");
     A = int.Parse(Console.ReadLine());
+	
     Console.Write("Entre valor para variavel <B>: ");
     B = int.Parse(Console.ReadLine());
+	
     TROCA();
+	
     Console.WriteLine();
     Console.WriteLine("Os valores trocados sao:");
     Console.WriteLine();
     Console.WriteLine("<A> = " + A);
     Console.WriteLine("<B> = " + B);
+	
   }
   
 }

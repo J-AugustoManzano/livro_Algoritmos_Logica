@@ -22,9 +22,12 @@ function TROCA() {
 }
 
 console.log("TROCA DE VALORES - V2\n");
+
 A = parseInt(readline.question("Entre valor para variavel <A>: "));
 B = parseInt(readline.question("Entre valor para variavel <B>: "));
+
 TROCA();
+
 console.log("\nOs valores trocados sao:\n");
 console.log("<A> = " + A);
 console.log("<B> = " + B);

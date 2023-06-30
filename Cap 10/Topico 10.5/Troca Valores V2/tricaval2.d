@@ -26,16 +26,22 @@ int A, B;
 
 void main()
 {
+
   writeln("TROCA DE VALORES - V2");
   writeln();
+  
   write("Entre valor para variavel <A>: ");
   readf(" %d", &A);
+  
   write("Entre valor para variavel <B>: ");
   readf(" %d", &B);
+  
   TROCA();
+  
   writeln();
   writeln("Os valores trocados sao:");
   writeln();
   writeln("<A> = ", A);
   writeln("<B> = ", B);
+  
 }

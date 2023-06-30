@@ -24,15 +24,21 @@ int A, B;
 
 int main(void)
 {
+	
   printf("TROCA DE VALORES - V2\n\n");
+  
   printf("Entre valor para variavel <A>: ");
   scanf("%d", &A);
+  
   printf("Entre valor para variavel <B>: ");
   scanf("%d", &B);
+  
   TROCA();
+  
   printf("\n");
   printf("Os valores trocados sao:\n\n");
   printf("<A> = %d\n", A);
   printf("<B> = %d\n", B);
+  
   return 0;
 }

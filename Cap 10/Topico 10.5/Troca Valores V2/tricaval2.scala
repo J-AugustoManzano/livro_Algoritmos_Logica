@@ -17,18 +17,24 @@ object Main {
   var A, B: Int = _
 
   def main(args: Array[String]): Unit = {
+  
     println("TROCA DE VALORES - V2")
     println()
+	
     print("Entre valor para variavel <A>: ")
     A = scala.io.StdIn.readInt()
+	
     print("Entre valor para variavel <B>: ")
     B = scala.io.StdIn.readInt()
+	
     troca()
+	
     println()
     println("Os valores trocados sao:")
     println()
     println("<A> = " + A)
     println("<B> = " + B)
+	
   }
 
   def troca(): Unit = {

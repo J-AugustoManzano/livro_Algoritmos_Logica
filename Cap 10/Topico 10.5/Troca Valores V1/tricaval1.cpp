@@ -15,17 +15,24 @@
 using namespace std;
 
 int X, A, B;
+
 int main() {
+	
   cout << "TROCA DE VALORES - V1" << endl << endl;
+  
   cout << "Entre valor para variavel <A>: ";
   cin >> A;
+  
   cout << "Entre valor para variavel <B>: ";
   cin >> B;
+  
   X = A;
   A = B;
   B = X;
+  
   cout << endl << "Os valores trocados sao:" << endl << endl;
   cout << "<A> = " << A << endl;
   cout << "<B> = " << B << endl;
+  
   return 0;
 }

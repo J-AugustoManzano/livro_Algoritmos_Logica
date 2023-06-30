@@ -11,13 +11,17 @@
 
 say 'TROCA DE VALORES - V1';
 say '';
+
 print 'Entre valor para variavel <A>: ';
 my $A = prompt;
+
 print 'Entre valor para variavel <B>: ';
 my $B = prompt;
+
 my $X = $A;
 $A = $B;
 $B = $X;
+
 say '';
 say 'Os valores trocados sao:';
 say '';

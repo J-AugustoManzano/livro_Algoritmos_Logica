@@ -28,12 +28,16 @@ End Sub
 
 Print "TROCA DE VALORES - V2"
 Print
+
 Input "Entre valor para variavel <A>: ", A
 Input "Entre valor para variavel <B>: ", B
+
 TROCA()
+
 print
 Print "Os valores trocados sao:"
 Print
 Print "<A> = " + Str(A)
 Print "<B> = " + Str(B)
+
 End

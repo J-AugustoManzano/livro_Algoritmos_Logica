@@ -20,19 +20,26 @@ import (
 var (
   X, A, B int
 )
+
 func main() {
+
   fmt.Println("TROCA DE VALORES - V1")
   fmt.Println()
+  
   fmt.Print("Entre valor para variavel <A>: ")
   fmt.Scanln(&A)
+  
   fmt.Print("Entre valor para variavel <B>: ")
   fmt.Scanln(&B)
+  
   X = A
   A = B
   B = X
+  
   fmt.Println()
   fmt.Println("Os valores trocados sao:")
   fmt.Println()
   fmt.Println("<A> =", A)
   fmt.Println("<B> =", B)
+  
 }

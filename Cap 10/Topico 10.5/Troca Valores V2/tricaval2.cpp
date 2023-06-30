@@ -26,15 +26,21 @@ int A, B;
 
 int main(void)
 {
+	
   cout << "TROCA DE VALORES - V2" << endl << endl;
+  
   cout << "Entre valor para variavel <A>: ";
   cin >> A;
+  
   cout << "Entre valor para variavel <B>: ";
   cin >> B;
+  
   TROCA();
+  
   cout << endl;
   cout << "Os valores trocados sao:" << endl << endl;
   cout << "<A> = " << A << endl;
   cout << "<B> = " << B << endl;
+  
   return 0;
 }

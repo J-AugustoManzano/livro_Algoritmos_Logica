@@ -23,16 +23,22 @@ int A = 0, B = 0;
   }
 
 void main() {
+
   print('TROCA DE VALORES - V2');
   print('');
+  
   stdout.write('Entre valor para variavel <A>: ');
   A = int.parse(stdin.readLineSync()!);
+  
   stdout.write('Entre valor para variavel <B>: ');
   B = int.parse(stdin.readLineSync()!);
+  
   troca();
+  
   print('');
   print('Os valores trocados sao:');
   print('');
   print('<A> = $A');
   print('<B> = $B');
+  
 }

@@ -14,6 +14,7 @@
 program TROCA_VALORES_V2;
 
 var
+
   A, B: integer;
 
   procedure TROCA;
@@ -26,16 +27,22 @@ var
   end;
 
 begin
+
   writeln('TROCA DE VALORES - V2');
   writeln;
+  
   write('Entre valor para variavel <A>: ');
   readln(A);
+  
   write('Entre valor para variavel <B>: ');
   readln(B);
+  
   TROCA;
+  
   writeln;
   writeln('Os valores trocados sao:');
   writeln;
   writeln('<A> = ', A);
   writeln('<B> = ', B);
+  
 end.

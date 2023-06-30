@@ -24,19 +24,27 @@ public class Main {
   }
 
   public static void main(String[] args) {
+
+    Scanner entrada = new Scanner(System.in);
+	  
     System.out.println("TROCA DE VALORES - V2");
     System.out.println();
+	
     System.out.print("Entre valor para variavel <A>: ");
-    Scanner scanner = new Scanner(System.in);
-    A = scanner.nextInt();
+	
+    A = entrada.nextInt();
     System.out.print("Entre valor para variavel <B>: ");
-    B = scanner.nextInt();
+    B = entrada.nextInt();
+	
     troca();
+	
     System.out.println();
     System.out.println("Os valores trocados sao:");
     System.out.println();
     System.out.println("<A> = " + A);
     System.out.println("<B> = " + B);
+	entrada.close();
+	
   }
   
 }

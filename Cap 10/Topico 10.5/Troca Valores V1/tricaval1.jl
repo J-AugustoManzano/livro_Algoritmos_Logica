@@ -12,20 +12,26 @@
 =#
 
 function troca_valores_v1()
+
   println("TROCA DE VALORES - V1")
   println()
+  
   print("Entre valor para variavel <A>: ")
   A = parse(Int64, readline())
+  
   print("Entre valor para variavel <B>: ")
   B = parse(Int64, readline())
+  
   X = A
   A = B
   B = X
+  
   println()
   println("Os valores trocados sao:")
   println()
   println("<A> = ", A)
   println("<B> = ", B)
+  
 end
 
 troca_valores_v1()

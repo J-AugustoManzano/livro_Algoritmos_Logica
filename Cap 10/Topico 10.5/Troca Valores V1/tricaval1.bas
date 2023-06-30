@@ -14,16 +14,21 @@
 Dim X As Integer
 Dim A As Integer
 Dim B As Integer
+
 Print "TROCA DE VALORES - V1"
 Print
+
 Input "Entre valor para variavel <A>: ", A
 Input "Entre valor para variavel <B>: ", B
+
 X = A
 A = B
 B = X
+
 Print
 Print "Os valores trocados sao:"
 Print
 Print "<A> = "; A
 Print "<B> = "; B
+
 End

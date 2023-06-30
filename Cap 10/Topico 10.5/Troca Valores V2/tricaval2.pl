@@ -25,13 +25,17 @@ sub TROCA {
 }
 
 print "TROCA DE VALORES - V2\n\n";
+
 print "Entre valor para variavel <A>: ";
 $A = <STDIN>;
 chomp($A);
+
 print "Entre valor para variavel <B>: ";
 $B = <STDIN>;
 chomp($B);
+
 TROCA();
+
 print "\nOs valores trocados sao:\n\n";
 print "<A> = $A\n";
 print "<B> = $B\n";

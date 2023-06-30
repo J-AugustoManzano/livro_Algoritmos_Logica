@@ -13,13 +13,17 @@
 
 print("TROCA DE VALORES - V1")
 print()
+
 io.write("Entre valor para variavel <A>: ")
 A = tonumber(io.read())
+
 io.write("Entre valor para variavel <B>: ")
 B = tonumber(io.read())
+
 X = A
 A = B
 B = X
+
 print()
 print("Os valores trocados sao:")
 print()
