@@ -44,5 +44,3 @@ while (RESP == "SIM"):
     print(f"{PESQ} nao foi localizado")
   print()
   RESP = input("Deseja continuar? (SIM/NAO): ").upper()
-
-# *** fim do trecho de pesquisa sequencial ***

@@ -7,7 +7,7 @@
 --
 -- Capitulo ..: 7 - Topico 7.3
 --
-
+--
 -- Programa PESQUISA_SEQUENCIAL_NOME
 
 NOME = {}

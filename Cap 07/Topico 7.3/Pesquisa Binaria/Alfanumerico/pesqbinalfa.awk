@@ -9,10 +9,6 @@
 #
 # Programa ..: PESQUISA BINARIA DE NOMES
 
-# Programa PESQUISA_BINARIA_NOME
-
-#!/usr/bin/awk -f
-
 BEGIN {
 
   print "PESQUISA BINARIA - NOME"

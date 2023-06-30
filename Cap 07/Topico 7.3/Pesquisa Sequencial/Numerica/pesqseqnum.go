@@ -63,6 +63,4 @@ func main() {
     RESP = strings.ToUpper(RESP)
   }
 
-  // *** Fim do trecho de pesquisa sequencial ***
-
 }

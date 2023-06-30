@@ -52,5 +52,3 @@ while (RESP == "SIM") do
   RESP = io.read()
   RESP = string.upper(RESP)
 end
-
--- *** fim do trecho de pesquisa sequencial ***

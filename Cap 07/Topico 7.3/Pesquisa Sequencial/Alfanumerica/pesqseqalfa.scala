@@ -28,6 +28,8 @@ object Main {
       NOME(I) = scala.io.StdIn.readLine().trim()
     }
 
+    // *** Inicio do trecho de pesquisa sequencial ***
+
     RESP = "SIM"
     while (RESP == "SIM") {
       println()
@@ -55,3 +57,5 @@ object Main {
 	  
   }
 }
+
+// *** Fim do trecho de pesquisa sequencial ***

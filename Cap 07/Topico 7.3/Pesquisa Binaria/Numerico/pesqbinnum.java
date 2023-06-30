@@ -24,11 +24,10 @@ public class PesquisaBinariaNome {
     System.out.println("PESQUISA BINARIA - NUMERO");
     System.out.println();
 
-     Scanner entrada = new Scanner(System.in);
+    Scanner entrada = new Scanner(System.in);
 
     for (I = 0; I <= 9; I++) {
       System.out.printf("Entre o %2do. numero: ", I + 1);
-      //Scanner scanner = new Scanner(System.in);
       NUMERO[I] = Integer.parseInt(entrada.nextLine());
     }
 

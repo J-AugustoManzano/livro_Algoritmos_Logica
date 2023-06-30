@@ -63,7 +63,5 @@ class Program
       RESP = Console.ReadLine().ToUpper();
     }
 
-    // *** Fim do trecho de pesquisa sequencial ***
-
   }
 }

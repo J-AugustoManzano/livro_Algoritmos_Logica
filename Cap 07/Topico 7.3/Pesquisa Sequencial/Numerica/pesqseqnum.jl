@@ -52,5 +52,3 @@ while (RESP == "SIM")
   print("Deseja continuar? (SIM/NAO): ")
   global RESP = uppercase(readline())
 end
-
-# *** Fim do trecho de pesquisa sequencial ***

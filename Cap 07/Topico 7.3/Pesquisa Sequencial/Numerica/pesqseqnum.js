@@ -49,5 +49,3 @@ while (RESP === "SIM") {
     RESP[i] = RESP[i].toUpperCase();
   }
 }
-
-// *** Fim do trecho de pesquisa sequencial ***

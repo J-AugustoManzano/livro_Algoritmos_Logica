@@ -66,6 +66,4 @@ void main()
     RESP = toUpper(readln().chomp);
   }
 
-  // *** Fim do trecho de pesquisa sequencial ***
-  
 }

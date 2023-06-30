@@ -9,10 +9,6 @@
 #
 # Programa ..: PESQUISA BINARIA DE NUMEROS
 
-# Programa PESQUISA_BINARIA_NUMERO
-
-#!/usr/bin/awk -f
-
 BEGIN {
 
   print "PESQUISA BINARIA - NUMERO"

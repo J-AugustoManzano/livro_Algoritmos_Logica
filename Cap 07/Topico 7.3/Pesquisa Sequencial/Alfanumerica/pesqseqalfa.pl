@@ -23,8 +23,6 @@ my $PESQ;
 my $RESP;
 my $ACHA;
 
-# *** Trecho de entrada de dados ***
-
 say "PESQUISA SEQUENCIAL DE NOMES\n";
 for ($I = 0; $I <= 9; $I++) {
   print "Entre o ", sprintf("%2d", $I + 1), "o. nome: ";

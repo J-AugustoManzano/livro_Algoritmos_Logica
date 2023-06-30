@@ -49,6 +49,4 @@ While RESP = "SIM"
   RESP = UCase$(RESP)
 Wend
 
-' *** Fim do trecho de pesquisa sequencial ***
-
 End

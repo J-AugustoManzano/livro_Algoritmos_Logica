@@ -6,7 +6,7 @@
 // Editora ...: Erica
 //
 // Capitulo ..: 7 - Topico 7.3
-
+//
 // Programa PESQUISA_SEQUENCIAL_NUMERO
 
 program PESQUISA_SEQUENCIAL_NUMERO;
@@ -61,7 +61,5 @@ begin
     readln(RESP);
     RESP := upcase(RESP);
   end;
-  
-  // *** fim do trecho de pesquisa sequencial ***
   
 end.

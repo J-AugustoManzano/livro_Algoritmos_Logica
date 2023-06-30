@@ -6,10 +6,8 @@
 # Editora ...: Erica
 #
 # Capitulo ..: 7 - Topico 7.3
-
+#
 # Programa PESQUISA_SEQUENCIAL_NUMERO
-
-#!/usr/bin/awk -f
 
 BEGIN {
 
@@ -53,7 +51,5 @@ BEGIN {
     getline RESP
     RESP = toupper(RESP)
   }
-  
-  # *** Fim do trecho de pesquisa sequencial ***
   
 }

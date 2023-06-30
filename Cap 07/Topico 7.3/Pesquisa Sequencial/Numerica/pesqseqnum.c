@@ -54,8 +54,6 @@ int main(void) {
         RESP[I] = toupper(RESP[I]);
     }   
   }
-  
-  // *** fim do trecho de pesquisa sequencial ***
 
   return 0;
 }

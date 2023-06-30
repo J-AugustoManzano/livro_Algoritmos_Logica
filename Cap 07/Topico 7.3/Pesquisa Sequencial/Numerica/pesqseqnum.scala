@@ -27,6 +27,8 @@ object Main {
       NUMERO(I) = scala.io.StdIn.readLine().toInt
     }
 
+    // *** Inicio do trecho de pesquisa sequencial ***
+
     RESP = "SIM"
     while (RESP == "SIM") {
       println()

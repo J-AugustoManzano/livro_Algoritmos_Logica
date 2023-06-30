@@ -54,7 +54,5 @@ void main() {
     stdout.write('Deseja continuar? (SIM/NAO): ');
     RESP = stdin.readLineSync()!.toUpperCase();
   }
-
-  // *** Fim do trecho de pesquisa sequencial ***
   
 }
