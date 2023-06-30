@@ -43,4 +43,4 @@ for ($I = 0; $I <= ($N - 1); $I++) {
   say "Nome " . ($I + 1) . " = " . $A[$I];
 }
 
-# Nao e necessario liberar a memoria alocada em Perl
+# Nao e necessario liberar a memoria alocada

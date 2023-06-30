@@ -37,5 +37,7 @@ void main() {
 
   for (var I = 0; I <= (N - 1); I++)
     print('Nome ${I + 1} = ${A[I]}');
-  
+
+  // Nao e necessario liberar a memoria alocada
+ 
 }

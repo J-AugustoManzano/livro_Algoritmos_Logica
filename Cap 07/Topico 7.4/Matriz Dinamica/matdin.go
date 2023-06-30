@@ -45,5 +45,7 @@ func main() {
     fmt.Printf("Nome %3d = %s\n", I + 1, A[I])
   }
 
+  // Nao e necessario liberar a memoria alocada
+ 
 }
 

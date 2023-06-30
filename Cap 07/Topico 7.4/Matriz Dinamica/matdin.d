@@ -44,4 +44,6 @@ void main()
   for (int I = 0; I <= (N - 1); I++)
     writeln("Nome ", format("%3d", I + 1), " = ", A[I]);
 
+  // Nao e necessario liberar a memoria alocada
+ 
 }

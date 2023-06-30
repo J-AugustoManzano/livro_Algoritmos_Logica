@@ -37,5 +37,7 @@ object Main {
     for (I <- 0 to (N - 1) by 1) 
       println(s"Nome ${(I + 1).formatted("%3d")} = ${A(I)}")
 
+    // Nao e necessario liberar a memoria alocada
+	
   }
 }

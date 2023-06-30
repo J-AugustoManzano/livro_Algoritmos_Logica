@@ -41,6 +41,8 @@ class MatrizDinamica
     for (int I = 0; I <= (N - 1); I++)
       Console.WriteLine("Nome {0,3} = {1}", I + 1, A[I]);
     
+    // Nao e necessario liberar a memoria alocada
+  
   }
 }
 

@@ -36,4 +36,7 @@ For I = 1 To N
   FORMATO = Right$("  " + Str$(I), 3)
   Print "Nome " + FORMATO + " = " + A(I)
 Next I
+
+' Nao e necessario liberar a memoria alocada
+  
 End

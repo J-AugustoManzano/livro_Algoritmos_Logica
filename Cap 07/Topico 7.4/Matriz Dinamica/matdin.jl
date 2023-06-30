@@ -33,3 +33,5 @@ println()
 for I = 1:1:N
   println("Nome ", lpad(I, 3), " = ", A[I])
 end
+
+# Nao e necessario liberar a memoria alocada

@@ -42,5 +42,8 @@ public class Main {
     }
 
     entrada.close();
+	
+	// Nao e necessario liberar a memoria alocada
+	 
   }
 }

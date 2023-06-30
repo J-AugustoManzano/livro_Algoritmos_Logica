@@ -47,5 +47,6 @@ int main(void) {
 
   // Liberar a memoria alocada
   delete[] A;
+  
   return 0;
 }

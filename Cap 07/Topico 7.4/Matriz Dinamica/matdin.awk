@@ -9,8 +9,6 @@
 #
 # Programa ..: MATRIZ DINAMICA
 
-#!/usr/bin/awk -f
-
 BEGIN {
 
   print "MATRIZ DINAMICA"
@@ -32,5 +30,5 @@ BEGIN {
 
   for (I = 0; I <= (N - 1); I++)
     printf "Nome %3d = %s\n", I + 1, A[I]
-  
+
 }
