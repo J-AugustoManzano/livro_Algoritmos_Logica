@@ -61,7 +61,7 @@ Neste momento são disponibilizados os algoritmos convertidos em programas nas l
 - Pascal (1970) - Niklaus Wirth
 - Perl (1988) - Larry Wall
 - Python (1991) - Guido van Rossum
-- Raku (2019) - Larry Wall |antes Perl6|
+- Raku (2019) - Larry Wall |antes linguagem Perl6|
 - Scala (2204) - Martin Odersky
 - Swift (2014) - Apple Inc. (liderado por Chris Lattner)
 
