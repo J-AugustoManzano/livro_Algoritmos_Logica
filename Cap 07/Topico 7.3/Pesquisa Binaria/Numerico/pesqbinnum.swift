@@ -1,20 +1,8 @@
-/*
- * Livro .....: Algoritmos
- *              Logica para Desenvolvimento de Programacao de
- *              Computadores
- * Autores ...: Jose Augusto N. G. Manzano
- *              Jayr Figueiredo de Oliveira
- * Editora ...: Erica
- *
- * Capitulo ..: 7 - Topico 7.3
- * 
- * Programa ..: PESQUISA BINARIA POR NUMERO
- */
-
 import Foundation
 
 var NUMERO: [Int] = Array(repeating: 0, count: 10)
-var I, J, COMECO, FINAL, MEIO, PESQ, X: Int
+var I, J, COMECO, FINAL, MEIO, X: Int
+var PESQ = 0
 var RESP: String = ""
 var ACHA: Bool
 
@@ -22,7 +10,9 @@ print("PESQUISA BINARIA - NUMERO\n")
 
 for I in 0...9 {
     print(String(format: "Entre o %2do. numero: ", I + 1), terminator: "")
-    NUMERO[I] = Int(readLine(strippingNewline: true) ?? "") ?? 0
+    if let input = readLine(strippingNewline: true) {
+        NUMERO[I] = Int(input) ?? 0
+    }
 }
 
 // *** inicio trecho de classificacao ***
@@ -44,11 +34,13 @@ for I in 0...8 {
 RESP = "SIM"
 while RESP == "SIM" {
     print("\nEntre o numero a ser pesquisado: ", terminator: "")
-    PESQ = Int(readLine(strippingNewline: true) ?? "") ?? 0
+    if let input = readLine(strippingNewline: true) {
+        PESQ = Int(input) ?? 0
+    }
     COMECO = 0
     FINAL = 9
     ACHA = false
-    MEIO = 0 // Inicialize a variavel MEIO
+    MEIO = 0
     while COMECO <= FINAL && !ACHA {
         MEIO = (COMECO + FINAL) / 2
         if PESQ == NUMERO[MEIO] {
@@ -61,13 +53,15 @@ while RESP == "SIM" {
             }
         }
     }
-    if ACHA {
+    if ACHA == true {
         print("\n\(PESQ) foi localizado na posicao \(MEIO + 1)\n")
     } else {
         print("\n\(PESQ) nao foi localizado\n")
     }
     print("Deseja continuar? (SIM/NAO): ", terminator: "")
-    RESP = readLine(strippingNewline: true)?.uppercased() ?? ""
+    if let input = readLine(strippingNewline: true) {
+        RESP = input.uppercased()
+    }
 }
 
 // *** fim trecho de pesquisa binaria ***

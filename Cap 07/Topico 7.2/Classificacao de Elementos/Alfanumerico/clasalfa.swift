@@ -20,11 +20,12 @@ var X: String = ""
 
 // Trecho de entrada de dados
 
-print("CLASSIFICACAO DE NOMES (ASCENDENTE)\n\n")
+print("CLASSIFICACAO DE NOMES (ASCENDENTE)\n")
 for I in 0...19 {
     print(String(format: "Entre o %2do. nome: ", I + 1), terminator: "")
-    let input = readLine(strippingNewline: true) ?? ""
-    NOME[I] = input
+    if let input = readLine(strippingNewline: true) {
+        NOME[I] = input
+    }
 }
 
 // Trecho de processamento da classificacao
@@ -41,7 +42,7 @@ for I in 0...18 {
 
 // Trecho de saida com dados classificados
 
-print("\nNOMES CLASSIFICADOS\n\n")
+print("\nNOMES CLASSIFICADOS\n")
 for I in 0...19 {
     print(NOME[I])
 }

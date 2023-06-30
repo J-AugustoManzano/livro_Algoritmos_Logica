@@ -24,7 +24,9 @@ print("PESQUISA BINARIA - NOME\n")
 
 for I in 0...19 {
     print(String(format: "Entre o %2do. nome: ", I + 1), terminator: "")
-    NOME[I] = readLine(strippingNewline: true) ?? ""
+    if let input = readLine(strippingNewline: true) {
+        NOME[I] = input
+    }
 }
 
 // *** inicio trecho de classificacao ***
@@ -46,11 +48,13 @@ for I in 0...18 {
 RESP = "SIM"
 while RESP == "SIM" {
     print("\nEntre o nome a ser pesquisado: ", terminator: "")
-    PESQ = readLine(strippingNewline: true) ?? ""
+    if let input = readLine(strippingNewline: true) {
+        PESQ = input
+    }
     COMECO = 0
     FINAL = 19
     ACHA = false
-    MEIO = 0 // Inicialize a variavel MEIO
+    MEIO = 0 
     while COMECO <= FINAL && !ACHA {
         MEIO = (COMECO + FINAL) / 2
         if PESQ == NOME[MEIO] {
@@ -58,18 +62,20 @@ while RESP == "SIM" {
         } else {
             if PESQ < NOME[MEIO] {
                 FINAL = MEIO - 1
-            } else {
+            } else {a
                 COMECO = MEIO + 1
             }
         }
     }
-    if ACHA {
+    if ACHA == true {
         print("\n\(PESQ) foi localizado na posicao \(MEIO + 1)\n")
     } else {
         print("\n\(PESQ) nao foi localizado\n")
     }
     print("Deseja continuar? (SIM/NAO): ", terminator: "")
-    RESP = readLine(strippingNewline: true)?.uppercased() ?? ""
+    if let input = readLine(strippingNewline: true) {
+        RESP = input.uppercased()
+    }
 }
 
 // *** fim trecho de pesquisa binaria ***

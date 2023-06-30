@@ -18,14 +18,15 @@ var J: Int = 0
 var X: Int = 0
 var NUMEROS: [Int] = Array(repeating: 0, count: 5)
 
-print("CLASSIFICACAO DE NUMEROS (CRESCENTE)\n\n")
+print("CLASSIFICACAO DE NUMEROS (CRESCENTE)\n")
 
 // Trecho de entrada de dados
 
 for I in 0...4 {
     print("Entre o \(I + 1)o. numero: ", terminator: "")
-    let input = readLine(strippingNewline: true)
-    NUMEROS[I] = Int(input ?? "") ?? 0
+    if let input = readLine(strippingNewline: true) {
+        NUMEROS[I] = Int(input) ?? 0
+    }
 }
 
 // Trecho de processamento da classificacao
@@ -42,7 +43,7 @@ for I in 0...3 {
 
 // Trecho de saida com dados classificados
 
-print("\nNUMEROS CLASSIFICADOS\n\n")
+print("\nNUMEROS CLASSIFICADOS\n")
 for I in 0...4 {
     print(NUMEROS[I])
 }
