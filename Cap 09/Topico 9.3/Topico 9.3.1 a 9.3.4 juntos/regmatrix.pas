@@ -11,7 +11,6 @@
  * Programa ..: MANIPULACAO DE REGISTRO DE MATRIZ
  *}
 
-
 program OPERACAO_REGISTRO_MATRIZ;
 
 type
