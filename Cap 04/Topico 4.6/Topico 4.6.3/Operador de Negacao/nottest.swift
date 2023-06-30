@@ -29,8 +29,8 @@ print("Entre valor inteiro <B>: ", terminator: "")
 if let inputB = readLine() {
     B = Int(inputB) ?? 0
 }
-pri
-nt("Entre valor inteiro <X>: ", terminator: "")
+
+print("Entre valor inteiro <X>: ", terminator: "")
 if let inputX = readLine() {
     X = Int(inputX) ?? 0
 }
