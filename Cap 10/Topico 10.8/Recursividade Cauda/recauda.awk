@@ -9,8 +9,6 @@
 # 
 # Programa ..: FUNCAO COM RECURSIVDADE DE CAUDA
 
-#!/usr/bin/awk -f
-
 function FATORIALBASE(N, P) {
   if (N == 0) {
     return P;
@@ -25,12 +23,16 @@ function FATORIAL(N) {
 }
 
 BEGIN {
+
   print "CALCULO DE FATORIAL";
   print "RECURSIVIDADE DE CAUDA";
   print "";
+  
   printf "Qual fatorial (1-20): ";
   getline LIMITE < "-";
-  print "";
+
   RESP = FATORIAL(LIMITE);
+  
   print "Fatorial =", RESP;
+  
 }

@@ -28,12 +28,16 @@ int factorial(int N) {
 int LIMITE = 0;
 
 void main() {
+
   print('CALCULO DE FATORIAL');
   print('RECURSIVIDADE DE CAUDA');
   print('');
+  
   stdout.write('Qual fatorial (1-20): ');
   LIMITE = int.parse(stdin.readLineSync()!);
-  print('');
+
   int RESP = factorial(LIMITE);
+  
   print('Fatorial = $RESP');
+  
 }

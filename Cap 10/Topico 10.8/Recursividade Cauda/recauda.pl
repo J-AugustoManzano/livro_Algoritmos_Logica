@@ -34,7 +34,9 @@ my $LIMITE;
 
 print "CALCULO DE FATORIAL\n";
 print "RECURSIVIDADE DE CAUDA\n\n";
+
 print "Qual fatorial (1-20): ";
 $LIMITE = <STDIN>;
 chomp($LIMITE);
+
 print "Fatorial = " . FATORIAL($LIMITE) . "\n";

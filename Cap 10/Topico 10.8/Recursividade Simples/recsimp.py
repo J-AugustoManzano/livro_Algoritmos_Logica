@@ -20,6 +20,7 @@ def FATORIAL(N):
 print('CALCULO DE FATORIAL')
 print('RECURSIVIDADE SIMPLES')
 print()
+
 LIMITE = int(input('Qual fatorial (1-20): '))
-print()
+)
 print('Fatorial =', FATORIAL(LIMITE))

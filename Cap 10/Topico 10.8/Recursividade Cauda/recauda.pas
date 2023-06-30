@@ -31,10 +31,14 @@ var
   LIMITE: byte;
 
 begin
+
   writeln('CALCULO DE FATORIAL');
   writeln('RECURSIVIDADE DE CAUDA');
   writeln;
+  
   write('Qual fatorial (1-20): ');
   readln(LIMITE);
+  
   writeln('Fatorial = ', FATORIAL(LIMITE));
+  
 end.

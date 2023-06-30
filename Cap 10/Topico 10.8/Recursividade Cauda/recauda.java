@@ -30,15 +30,20 @@ public class Main {
   static long RESP;
   
   public static void main(String[] args) {
+
+    Scanner entrada = new Scanner(System.in);
+	
     System.out.println("CALCULO DE FATORIAL");
     System.out.println("RECURSIVIDADE DE CAUDA");
     System.out.println();
-    Scanner entrada = new Scanner(System.in);
+	
     System.out.print("Qual fatorial (1-20): ");
     LIMITE = entrada.nextInt();
-    System.out.println();
+	
     RESP = FATORIAL(LIMITE);
+	
     System.out.println("Fatorial = " + RESP);
     entrada.close();
+	
   }
 }

@@ -27,10 +27,14 @@ unsigned long long FATORIAL(unsigned short N) {
 unsigned short LIMITE;
 
 int main(void) {
+	
   printf("CALCULO DE FATORIAL\n");
   printf("RECURSIVIDADE DE CAUDA\n\n");
+  
   printf("Qual fatorial (1-20): ");
   scanf("%hu", &LIMITE);
+  
   printf("Fatorial = %llu\n", FATORIAL(LIMITE));
+  
   return 0;
 }

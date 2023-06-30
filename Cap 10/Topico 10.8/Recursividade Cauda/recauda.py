@@ -23,5 +23,7 @@ def FATORIAL(N):
 print("CALCULO DE FATORIAL")
 print("RECURSIVIDADE DE CAUDA")
 print()
+
 LIMITE = int(input("Qual fatorial (1-20): "))
+
 print("Fatorial =", FATORIAL(LIMITE))

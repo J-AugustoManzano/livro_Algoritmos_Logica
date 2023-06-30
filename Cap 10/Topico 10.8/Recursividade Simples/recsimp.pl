@@ -28,9 +28,10 @@ sub FATORIAL {
 my $LIMITE;
 
 print "CALCULO DE FATORIAL\n";
-print "RECURSIVIDADE SIMPLES\n\n";
+print "RECURSIVIDADE SIMPLES\n\n"
+
 print "Qual fatorial (1-20): ";
 $LIMITE = <STDIN>;
 chomp($LIMITE);
-print "\n";
+
 print "Fatorial = " . FATORIAL($LIMITE) . "\n";

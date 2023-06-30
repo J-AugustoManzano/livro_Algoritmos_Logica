@@ -25,11 +25,15 @@ short LIMITE;
 
 int main(void)
 {
+	
   printf("CALCULO DE FATORIAL\n");
   printf("RECURSIVIDADE SIMPLES\n\n");
+  
   printf("Qual fatorial (1-20): ");
   scanf("%hd", &LIMITE);
-  printf("\n");
+
   printf("Fatorial = %llu\n", FATORIAL(LIMITE));
+  
   return 0;
+  
 }

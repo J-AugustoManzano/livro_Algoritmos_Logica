@@ -28,11 +28,14 @@ func FATORIAL(N byte) uint64 {
 var LIMITE byte
 
 func main() {
+
   fmt.Println("CALCULO DE FATORIAL")
   fmt.Println("RECURSIVIDADE SIMPLES")
   fmt.Println()
+  
   fmt.Print("Qual fatorial (1-20): ")
   fmt.Scanln(&LIMITE)
-  fmt.Println()
+
   fmt.Println("Fatorial =", FATORIAL(LIMITE))
+  
 }

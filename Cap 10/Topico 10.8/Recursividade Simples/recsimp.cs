@@ -28,13 +28,17 @@ class Program
   
   static void Main(string[] args)
   {
+	  
     Console.WriteLine("CALCULO DE FATORIAL");
     Console.WriteLine("RECURSIVIDADE SIMPLES");
     Console.WriteLine();
+	
     Console.Write("Qual fatorial (1-20): ");
     LIMITE = byte.Parse(Console.ReadLine());
-    Console.WriteLine();
+
     RESP = Factorial(LIMITE);
+	
     Console.WriteLine("Fatorial = " + RESP);
+	
   }
 }

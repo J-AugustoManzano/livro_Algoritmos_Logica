@@ -22,7 +22,8 @@ end
 print("CALCULO DE FATORIAL")
 print("RECURSIVIDADE SIMPLES")
 print()
+
 io.write("Qual fatorial (1-20): ")
 LIMITE = tonumber(io.read())
-print()
+
 print("Fatorial = " .. FATORIAL(LIMITE))

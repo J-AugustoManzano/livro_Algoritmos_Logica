@@ -28,7 +28,10 @@ Dim As Byte LIMITE
 Print "CALCULO DE FATORIAL"
 Print "RECURSIVIDADE DE CAUDA"
 Print
+
 Print "Qual fatorial (1-20): ";
 Input "", LIMITE
+
 Print "Fatorial = "; FATORIAL(LIMITE)
+
 End

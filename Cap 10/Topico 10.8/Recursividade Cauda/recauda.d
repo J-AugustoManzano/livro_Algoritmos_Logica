@@ -33,12 +33,16 @@ ubyte LIMITE;
 
 void main()
 {
+
   writeln("CALCULO DE FATORIAL");
   writeln("RECURSIVIDADE DE CAUDA");
   writeln();
+  
   write("Qual fatorial (1-20): ");
   LIMITE = to!ubyte(readln!string().strip);
-  writeln();
+
   ulong RESP = FATORIAL(LIMITE);
+  
   writeln("Fatorial = ", RESP);
+  
 }

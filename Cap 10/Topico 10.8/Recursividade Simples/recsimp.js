@@ -21,8 +21,10 @@ function FATORIAL(N) {
 }
 
 let LIMITE;
+
 console.log("CALCULO DE FATORIAL");
 console.log("RECURSIVIDADE SIMPLES\n");
+
 LIMITE = parseInt(readline.question("Qual fatorial (1-21): "));
-console.log();
+
 console.log("Fatorial =", FATORIAL(LIMITE));

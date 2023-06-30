@@ -26,6 +26,8 @@ end
 print("CALCULO DE FATORIAL")
 print("RECURSIVIDADE DE CAUDA")
 print()
+
 io.write("Qual fatorial (1-20): ")
 local LIMITE = tonumber(io.read())
+
 print("Fatorial = " .. string.format("%.0f", FATORIAL(LIMITE)))

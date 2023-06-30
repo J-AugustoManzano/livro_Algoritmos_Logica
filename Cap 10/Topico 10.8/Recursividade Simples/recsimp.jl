@@ -24,7 +24,8 @@ LIMITE = 0
 println("CALCULO DE FATORIAL")
 println("RECURSIVIDADE SIMPLES")
 println()
+
 print("Qual fatorial (1-20): ")
 LIMITE = parse(Int64, readline())
-println()
+
 println("Fatorial = ", FATORIAL(LIMITE))

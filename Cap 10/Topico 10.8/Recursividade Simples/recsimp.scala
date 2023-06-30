@@ -23,12 +23,15 @@ object Main {
   var LIMITE: Byte = 0
   
   def main(args: Array[String]): Unit = {
+  
     println("CALCULO DE FATORIAL")
     println("RECURSIVIDADE SIMPLES")
     println()
+	
     print("Qual fatorial (1-20): ")
     LIMITE = scala.io.StdIn.readByte()
-    println()
+
     println("Fatorial = " + FATORIAL(LIMITE))
+	
   }
 }

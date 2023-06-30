@@ -28,10 +28,14 @@ unsigned long long FATORIAL(unsigned short N) {
 unsigned short LIMITE;
 
 int main(void) {
+	
   cout << "CALCULO DE FATORIAL" << endl;
   cout << "RECURSIVIDADE DE CAUDA" << endl << endl;
+  
   cout << "Qual fatorial (1-20): ";
   cin >> LIMITE;
+  
   cout << "Fatorial = " << FATORIAL(LIMITE) << endl;
+  
   return 0;
 }

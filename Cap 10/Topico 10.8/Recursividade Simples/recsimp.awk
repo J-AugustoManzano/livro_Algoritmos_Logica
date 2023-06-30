@@ -19,12 +19,17 @@ function FATORIAL(N) {
 }
 
 BEGIN {
+
   print "CALCULO DE FATORIAL"
   print "RECURSIVIDADE SIMPLES"
   print ""
+  
   printf "Qual fatorial (1-20): "
   getline LIMITE < "/dev/tty"
   print ""
+  
   RESP = FATORIAL(LIMITE)
+  
   print "Fatorial =", RESP
+  
 }

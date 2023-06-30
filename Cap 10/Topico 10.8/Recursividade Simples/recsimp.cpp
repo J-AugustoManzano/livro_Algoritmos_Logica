@@ -26,11 +26,15 @@ unsigned short LIMITE;
 
 int main(void)
 {
+	
   cout << "CALCULO DE FATORIAL" << endl;
   cout << "RECURSIVIDADE SIMPLES" << endl << endl;
+  
   cout << "Qual fatorial (1-20): ";
   cin >> LIMITE;
-  cout << endl;
+
   cout << "Fatorial = " << FATORIAL(LIMITE) << endl;
+  
   return 0;
+  
 }

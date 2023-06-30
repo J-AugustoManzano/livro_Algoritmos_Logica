@@ -24,13 +24,17 @@ public class Main {
   static byte LIMITE;
 
   public static void main(String[] args) {
+	  
+    Scanner scanner = new Scanner(System.in);
+
     System.out.println("CALCULO DE FATORIAL");
     System.out.println("RECURSIVIDADE SIMPLES");
     System.out.println();
-    Scanner scanner = new Scanner(System.in);
+	
     System.out.print("Qual fatorial (1-20): ");
     LIMITE = scanner.nextByte();
-    System.out.println();
+
     System.out.println("Fatorial = " + FATORIAL(LIMITE));
+	
   }
 }

@@ -26,5 +26,4 @@ say '';
 print 'Qual fatorial (1-N): ';
 $LIMITE = prompt.Int;
 
-say '';
 say 'Fatorial = ', FATORIAL($LIMITE);

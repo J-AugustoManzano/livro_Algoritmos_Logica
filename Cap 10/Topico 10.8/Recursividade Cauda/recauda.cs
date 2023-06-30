@@ -33,13 +33,17 @@ class CALC_FAT_V5
 
   static void Main()
   {
+	  
     Console.WriteLine("CALCULO DE FATORIAL");
     Console.WriteLine("RECURSIVIDADE DE CAUDA");
     Console.WriteLine();
+	
     Console.Write("Qual fatorial (1-20): ");
     LIMITE = byte.Parse(Console.ReadLine());
-    Console.WriteLine();
+
     RESP = FATORIAL(LIMITE);
+	
     Console.WriteLine("Fatorial = " + RESP);
+	
   }
 }

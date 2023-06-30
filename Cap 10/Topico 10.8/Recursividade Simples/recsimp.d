@@ -28,12 +28,16 @@ ulong LIMITE, RESP;
   
 void main()
 {
+
   writeln("CALCULO DE FATORIAL");
   writeln("RECURSIVIDADE SIMPLES");
   writeln();
+  
   write("Qual fatorial (1-20): ");
   LIMITE = to!ulong(readln!string().strip);
-  writeln();
+
   RESP = FATORIAL(LIMITE);
+  
   writeln("Fatorial = ", RESP);
+  
 }

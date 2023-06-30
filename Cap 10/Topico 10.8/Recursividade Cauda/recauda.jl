@@ -26,7 +26,8 @@ end
 println("CALCULO DE FATORIAL")
 println("RECURSIVIDADE DE CAUDA")
 println()
+
 print("Qual fatorial (1-20): ")
 LIMITE = parse(Int, readline())
-println()
+
 println("Fatorial = ", FATORIAL(LIMITE))

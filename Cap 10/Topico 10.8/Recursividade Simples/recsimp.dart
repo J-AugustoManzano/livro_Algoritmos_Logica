@@ -25,12 +25,16 @@ int LIMITE = 0;
 int RESP = 0;
 
 void main() {
+
   print('CALCULO DE FATORIAL');
   print('RECURSIVIDADE SIMPLES');
   print('');
+  
   stdout.write('Qual fatorial (1-20): ');
   LIMITE = int.parse(stdin.readLineSync()!);
-  print('');
+
   RESP = FATORIAL(LIMITE);
+  
   print('Fatorial = $RESP');
+  
 }

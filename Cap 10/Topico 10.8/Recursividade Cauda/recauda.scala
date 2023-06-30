@@ -27,13 +27,16 @@ object Main {
   var LIMITE: Int = 0
 
   def main(args: Array[String]): Unit = {
+  
     println("CALCULO DE FATORIAL")
     println("RECURSIVIDADE DE CAUDA")
     println()
+	
     print("Qual fatorial (1-20): ")
     LIMITE = scala.io.StdIn.readInt()
-    println()
+
     val RESP = FATORIAL(LIMITE)
     println("Fatorial = " + RESP)
+	
   }
 }
