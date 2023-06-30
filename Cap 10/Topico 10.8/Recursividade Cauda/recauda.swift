@@ -31,7 +31,8 @@ print("CALCULO DE FATORIAL")
 print("RECURSIVIDADE DE CAUDA\n")
 
 print("Qual fatorial (1-20): ", terminator: "")
-let inputLIMITE = readLine()
-LIMITE = UInt16(inputLIMITE!) ?? 0
+if let inputLIMITE = readLine(), let limite = UInt16(inputLIMITE) {
+    LIMITE = limite
+}
 
 print("Fatorial = \(fatorial(LIMITE))")

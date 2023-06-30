@@ -24,12 +24,14 @@ print("VERIFICACAO DE DADOS")
 print("FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO\n")
 
 print("Informe o 1o. valor: ", terminator: "")
-let inputX = readLine()
-X = Int(inputX!) ?? 0
+if let inputX = readLine(), let x = Int(inputX) {
+    X = x
+}
 
 print("Informe o 2o. valor: ", terminator: "")
-let inputY = readLine()
-Y = Int(inputY!) ?? 0
+if let inputY = readLine(), let y = Int(inputY) {
+    Y = y
+}
 
 if igual(X, Y) {
     print("Valores sao iguais")

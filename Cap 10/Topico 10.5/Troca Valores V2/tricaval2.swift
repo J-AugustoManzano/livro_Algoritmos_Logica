@@ -25,10 +25,14 @@ func TROCA() {
 print("TROCA DE VALORES - V2\n")
 
 print("Entre valor para variavel <A>: ", terminator: "")
-A = Int(readLine()!) ?? 0
+if let inputA = readLine(), let valueA = Int(inputA) {
+    A = valueA
+}
 
 print("Entre valor para variavel <B>: ", terminator: "")
-B = Int(readLine()!) ?? 0
+if let inputB = readLine(), let valueB = Int(inputB) {
+    B = valueB
+}
 
 TROCA()
 

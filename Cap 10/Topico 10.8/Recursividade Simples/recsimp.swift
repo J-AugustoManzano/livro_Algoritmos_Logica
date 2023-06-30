@@ -27,7 +27,8 @@ print("CALCULO DE FATORIAL")
 print("RECURSIVIDADE SIMPLES\n")
 
 print("Qual fatorial (1-20): ", terminator: "")
-let inputLIMITE = readLine()
-LIMITE = Int(inputLIMITE!) ?? 0
+if let inputLIMITE = readLine(), let limite = Int(inputLIMITE) {
+    LIMITE = limite
+}
 
 print("Fatorial = \(fatorial(LIMITE))")

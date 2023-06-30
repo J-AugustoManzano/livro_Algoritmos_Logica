@@ -19,9 +19,13 @@ func rotsoma() {
     var B1: Float = 0.0
     print("\nRotina de Adicao\n")
     print("Entre o 1o. valor: ", terminator: "")
-    A1 = Float(readLine()!) ?? 0.0
+    if let inputA1 = readLine(), let valueA1 = Float(inputA1) {
+        A1 = valueA1
+    }
     print("Entre o 2o. valor: ", terminator: "")
-    B1 = Float(readLine()!) ?? 0.0
+    if let inputB1 = readLine(), let valueB1 = Float(inputB1) {
+        B1 = valueB1
+    }
     print()
     R1 = A1 + B1
     print("O resultado da operacao equivale a: \(String(format: "%.2f", R1))\n")
@@ -33,9 +37,13 @@ func rotsubtracao() {
     var B2: Float = 0.0
     print("\nRotina de Subtracao\n")
     print("Entre o 1o. valor: ", terminator: "")
-    A2 = Float(readLine()!) ?? 0.0
+    if let inputA2 = readLine(), let valueA2 = Float(inputA2) {
+        A2 = valueA2
+    }
     print("Entre o 2o. valor: ", terminator: "")
-    B2 = Float(readLine()!) ?? 0.0
+    if let inputB2 = readLine(), let valueB2 = Float(inputB2) {
+        B2 = valueB2
+    }
     print()
     R2 = A2 - B2
     print("O resultado da operacao equivale a: \(String(format: "%.2f", R2))\n")
@@ -47,9 +55,13 @@ func rotmultiplicacao() {
     var B3: Float = 0.0
     print("\nRotina de Multiplicacao\n")
     print("Entre o 1o. valor: ", terminator: "")
-    A3 = Float(readLine()!) ?? 0.0
+    if let inputA3 = readLine(), let valueA3 = Float(inputA3) {
+        A3 = valueA3
+    }
     print("Entre o 2o. valor: ", terminator: "")
-    B3 = Float(readLine()!) ?? 0.0
+    if let inputB3 = readLine(), let valueB3 = Float(inputB3) {
+        B3 = valueB3
+    }
     print()
     R3 = A3 * B3
     print("O resultado da operacao equivale a: \(String(format: "%.2f", R3))\n")
@@ -61,9 +73,13 @@ func rotdivisao() {
     var B4: Float = 0.0
     print("\nRotina de Divisao\n")
     print("Entre o 1o. valor: ", terminator: "")
-    A4 = Float(readLine()!) ?? 0.0
+    if let inputA4 = readLine(), let valueA4 = Float(inputA4) {
+        A4 = valueA4
+    }
     print("Entre o 2o. valor: ", terminator: "")
-    B4 = Float(readLine()!) ?? 0.0
+    if let inputB4 = readLine(), let valueB4 = Float(inputB4) {
+        B4 = valueB4
+    }
     print()
     if B4 == 0 {
         print("O resultado da operacao equivale a: ERRO\n")
@@ -82,7 +98,9 @@ while OPCAO != 5 {
     print("[4] - Divisao")
     print("[5] - Fim de Programa\n")
     print("Escolha uma opcao: ", terminator: "")
-    OPCAO = Int(readLine()!) ?? 0
+    if let inputOpcao = readLine(), let valueOpcao = Int(inputOpcao) {
+        OPCAO = valueOpcao
+    }
     if OPCAO != 5 {
         switch OPCAO {
         case 1:

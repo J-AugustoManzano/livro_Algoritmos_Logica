@@ -28,8 +28,7 @@ print("CALCULO DE FATORIAL")
 print("FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO\n")
 
 print("Qual fatorial (1-20): ", terminator: "")
-let input = readLine()
-LIMITE = UInt16(input!) ?? 0
-
-RESP = fatorial(N: LIMITE)
-print("Fatorial = \(RESP)")
+if let input = readLine(), let limite = UInt16(input) {
+    RESP = fatorial(N: limite)
+    print("Fatorial = \(RESP)")
+}
