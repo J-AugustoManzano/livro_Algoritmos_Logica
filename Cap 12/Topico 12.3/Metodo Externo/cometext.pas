@@ -1,17 +1,19 @@
 {*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  * 
- * Capítulo ..: 12 - Tópico 12.3
+ * Capitulo ..: 12 - Topico 12.3
  * 
- * Programa ..: USO DE MÉTODO EXTERNO A UMA CLASSE
+ * Programa ..: USO DE METODO EXTERNO A UMA CLASSE
  *}
 
 program CLASSE_OBJETO_METODO_EXTERNO;
+
+// Definicao da class
 
 type
   CLS_ALUNO = object
@@ -21,6 +23,8 @@ type
     
     function CMEDIA: Double;
   end;
+
+// Definicao de metodo extrerno
 
 function CLS_ALUNO.CMEDIA: Double;
 var
@@ -34,8 +38,11 @@ begin
 end;
 
 var
+  // Definicao da instancia do objeto ALUNO
   ALUNO: CLS_ALUNO;
   I: Integer;
+
+// Programa
 
 begin
 
@@ -52,13 +59,17 @@ begin
     Write(I, 'a. nota: ');
     ReadLn(ALUNO.NOTAS[I]);
   end;
+  
+  // *** Trecho de processamento ***
+  
   ALUNO.MEDIA := ALUNO.CMEDIA;
 
-  // *** Trecho de saída dos dados ***
+  // *** Trecho de saida dos dados ***
 
   WriteLn;
   WriteLn('RELATORIO ESCOLAR');
   WriteLn;
+  
   WriteLn('Nome: ', ALUNO.NOME);
   for I := 1 to 4 do
     WriteLn(I, 'a. nota: ', ALUNO.NOTAS[I]:5:1);

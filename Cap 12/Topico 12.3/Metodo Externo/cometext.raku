@@ -1,21 +1,23 @@
-#*
 # Livro .....: Algoritmos
-#              Lógica para Desenvolvimento de Programação de
+#              Logica para Desenvolvimento de Programacao de
 #              Computadores
-# Autores ...: José Augusto N. G. Manzano
+# Autores ...: Jose Augusto N. G. Manzano
 #              Jayr Figueiredo de Oliveira
-# Editora ...: Érica
+# Editora ...: Erica
 #
-# Capítulo ..: 12 - Tópico 12.3
+# Capitulo ..: 12 - Topico 12.3
 #
-# Programa ..: USO DE MÉTODO EXTERNO A UMA CLASSE
-#*
+# Programa ..: USO DE METODO EXTERNO A UMA CLASSE
+
+# Definicao da classe
 
 class CLS_ALUNO {
     has $.NOME is rw;
     has @.NOTAS is rw;
     has $.MEDIA is rw;
 }
+
+# Definicao de metodo extrerno
 
 sub CMEDIA(CLS_ALUNO $ALUNO) {
     my $SOMA = 0;
@@ -25,10 +27,17 @@ sub CMEDIA(CLS_ALUNO $ALUNO) {
     $ALUNO.MEDIA = $SOMA / 4;
 }
 
+# Definicao da instancia do objeto ALUNO
 my $ALUNO = CLS_ALUNO.new;
+
 my $i;
 
+# Programa
+
 sub MAIN() {
+
+    # *** Trecho de entrada dos dados ***
+    
     say "DADOS ESCOLARES";
     say "";
 
@@ -40,11 +49,17 @@ sub MAIN() {
         print ($i + 1) ~ "a. nota: ";
         $ALUNO.NOTAS[$i] = prompt().Numeric;
     }
+    
+    # *** Trecho de processamento ***
+    
     CMEDIA($ALUNO);
 
+    # *** Trecho de saida dos dados ***
+    
     say "";
     say "RELATORIO ESCOLAR";
     say "";
+    
     say "Nome: " ~ $ALUNO.NOME;
     for 0..3 -> $i {
         say ($i + 1) ~ "a. nota: " ~ $ALUNO.NOTAS[$i];
