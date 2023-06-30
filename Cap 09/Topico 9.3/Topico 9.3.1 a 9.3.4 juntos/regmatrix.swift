@@ -9,7 +9,6 @@
  * Capitulo ..: 9 - Topico 9.3.1 ate 9.3.4
  * 
  * Programa ..: MANIPULACAO DE REGISTRO DE MATRIZ
-
  */
 
 import Foundation
@@ -28,20 +27,25 @@ var ALUNO = CAD_ALUNO(NOME: "", TURMA: " ", SALA: 0, NOTAS: Array(repeating: 0.0
 print("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
 
 print("Entre o nome ......: ", terminator: "")
-ALUNO.NOME = readLine(strippingNewline: true) ?? ""
+if let nomeInput = readLine(strippingNewline: true) {
+    ALUNO.NOME = nomeInput
+}
 
 print("Entre a turma .....: ", terminator: "")
-let turmaInput = readLine(strippingNewline: true) ?? ""
-ALUNO.TURMA = turmaInput.first ?? " "
+if let turmaInput = readLine(strippingNewline: true), let turma = turmaInput.first {
+    ALUNO.TURMA = turma
+}
 
 print("Entre a sala ......: ", terminator: "")
-let salaInput = readLine(strippingNewline: true) ?? ""
-ALUNO.SALA = Int(salaInput) ?? 0
+if let salaInput = readLine(strippingNewline: true), let sala = Int(salaInput) {
+    ALUNO.SALA = sala
+}
 
 for I in 0...3 {
     print("Entre a \(I+1)a. nota ..: ", terminator: "")
-    let notaInput = readLine(strippingNewline: true) ?? ""
-    ALUNO.NOTAS[I] = Float(notaInput) ?? 0.0
+    if let notaInput = readLine(strippingNewline: true), let nota = Float(notaInput) {
+        ALUNO.NOTAS[I] = nota
+    }
 }
 
 print("\nDADOS DO ALUNO\n")

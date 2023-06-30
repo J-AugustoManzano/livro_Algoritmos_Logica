@@ -9,7 +9,6 @@
  * Capitulo ..: 9 - Topicos 9.4.1 a 9.4.3
  * 
  * Programa ..: MANIPULACAO DE REGISTRO DE MATRIZ
-
  */
 
 import Foundation
@@ -32,25 +31,23 @@ for i in 1...8 {
     print("ALUNO \(i)")
     
     print("Entre o nome ......: ", terminator: "")
-    let nome = readLine() ?? ""
-    
-    print("Entre a turma .....: ", terminator: "")
-    let turma = readLine()?.first ?? " "
-    
-    print("Entre a sala ......: ", terminator: "")
-    let salaStr = readLine() ?? ""
-    let sala = Int(salaStr) ?? 0
-    
-    var notas: Bimestre = []
-    for j in 1...4 {
-        print("Entre a \(j)a. nota ..: ", terminator: "")
-        let notaStr = readLine() ?? ""
-        let nota = Float(notaStr) ?? 0.0
-        notas.append(nota)
+    if let nome = readLine(strippingNewline: true) {
+        print("Entre a turma .....: ", terminator: "")
+        if let turmaInput = readLine(strippingNewline: true), let turma = turmaInput.first {
+            print("Entre a sala ......: ", terminator: "")
+            if let salaInput = readLine(strippingNewline: true), let sala = Int(salaInput) {
+                var notas: Bimestre = []
+                for j in 1...4 {
+                    print("Entre a \(j)a. nota ..: ", terminator: "")
+                    if let notaInput = readLine(strippingNewline: true), let nota = Float(notaInput) {
+                        notas.append(nota)
+                    }
+                }
+                alunos.append(Aluno(nome: nome, turma: turma, sala: sala, notas: notas))
+                print()
+            }
+        }
     }
-    
-    alunos.append(Aluno(nome: nome, turma: turma, sala: sala, notas: notas))
-    print()
 }
 
 print("DADOS DOS ALUNOS")
@@ -65,7 +62,3 @@ for (i, aluno) in alunos.enumerated() {
     
     print(String(format: "%5d  %@  %@  %@", alunoIndex, nome, sala, notas))
 }
-
-
-
-

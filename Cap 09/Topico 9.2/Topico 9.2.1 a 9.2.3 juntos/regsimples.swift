@@ -28,31 +28,39 @@ var ALUNO = CAD_ALUNO(NOME: "", TURMA: " ", SALA: 0, NOTA1: 0.0, NOTA2: 0.0, NOT
 print("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
 
 print("Entre o nome ......: ", terminator: "")
-ALUNO.NOME = readLine(strippingNewline: true) ?? ""
+if let nomeInput = readLine(strippingNewline: true) {
+    ALUNO.NOME = nomeInput
+}
 
 print("Entre a turma .....: ", terminator: "")
-let turmaInput = readLine(strippingNewline: true) ?? ""
-ALUNO.TURMA = turmaInput.first ?? " "
+if let turmaInput = readLine(strippingNewline: true), let turma = turmaInput.first {
+    ALUNO.TURMA = turma
+}
 
 print("Entre a sala ......: ", terminator: "")
-let salaInput = readLine(strippingNewline: true) ?? ""
-ALUNO.SALA = Int(salaInput) ?? 0
+if let salaInput = readLine(strippingNewline: true), let sala = Int(salaInput) {
+    ALUNO.SALA = sala
+}
 
 print("Entre a 1a. nota ..: ", terminator: "")
-let nota1Input = readLine(strippingNewline: true) ?? ""
-ALUNO.NOTA1 = Float(nota1Input) ?? 0.0
+if let nota1Input = readLine(strippingNewline: true), let nota1 = Float(nota1Input) {
+    ALUNO.NOTA1 = nota1
+}
 
 print("Entre a 2a. nota ..: ", terminator: "")
-let nota2Input = readLine(strippingNewline: true) ?? ""
-ALUNO.NOTA2 = Float(nota2Input) ?? 0.0
+if let nota2Input = readLine(strippingNewline: true), let nota2 = Float(nota2Input) {
+    ALUNO.NOTA2 = nota2
+}
 
 print("Entre a 3a. nota ..: ", terminator: "")
-let nota3Input = readLine(strippingNewline: true) ?? ""
-ALUNO.NOTA3 = Float(nota3Input) ?? 0.0
+if let nota3Input = readLine(strippingNewline: true), let nota3 = Float(nota3Input) {
+    ALUNO.NOTA3 = nota3
+}
 
 print("Entre a 4a. nota ..: ", terminator: "")
-let nota4Input = readLine(strippingNewline: true) ?? ""
-ALUNO.NOTA4 = Float(nota4Input) ?? 0.0
+if let nota4Input = readLine(strippingNewline: true), let nota4 = Float(nota4Input) {
+    ALUNO.NOTA4 = nota4
+}
 
 print()
 print("DADOS DO ALUNO")
