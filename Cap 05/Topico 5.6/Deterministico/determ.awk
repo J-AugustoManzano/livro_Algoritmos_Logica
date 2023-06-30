@@ -9,8 +9,6 @@
 #
 # Programa ..: LACO INCONDICIONAL/CONSTANTE - DETERMINISTICO
 
-#!/usr/bin/awk -f
-
 BEGIN {
   print "LACO DETERMINISTICO"
   print "Multiplicacao de numero por 3 por 5 vezes"
