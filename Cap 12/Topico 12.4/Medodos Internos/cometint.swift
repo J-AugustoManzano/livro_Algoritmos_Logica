@@ -17,7 +17,7 @@ import Foundation
 // Definicao de classe com metodo interno
 
 class CLS_ALUNO {
-	
+    
     var NOME: String
     var NOTAS: [Double]
     var MEDIA: Double
@@ -39,20 +39,21 @@ class CLS_ALUNO {
 }
 
 var ALUNO = CLS_ALUNO()
-var I: Int
 
 print("DADOS ESCOLARES")
 print()
 
 print("Informe o nome: ", terminator: "")
-ALUNO.NOME = readLine(strippingNewline: true) ?? ""
+if let nomeInput = readLine(strippingNewline: true) {
+    ALUNO.NOME = nomeInput
+}
 
 print("Informe as notas: ")
 for i in 0...3 {
     print("\(i+1)a. nota: ", terminator: "")
-    let input = readLine(strippingNewline: true) ?? ""
-    let nota = Double(input) ?? 0.0
-    ALUNO.NOTAS[i] = nota
+    if let notaInput = readLine(strippingNewline: true), let nota = Double(notaInput) {
+        ALUNO.NOTAS[i] = nota
+    }
 }
 
 ALUNO.CMEDIA()

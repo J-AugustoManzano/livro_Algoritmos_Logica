@@ -34,23 +34,25 @@ class CLS_ALUNO: CLS_SALA {
 
 let ALUNO = CLS_ALUNO()
 
-var I: Int = 0
-
 print("DADOS ESCOLARES")
 print()
 
 print("Informe o nome: ", terminator: "")
-ALUNO.NOME = readLine(strippingNewline: true) ?? ""
+if let nomeInput = readLine(strippingNewline: true) {
+    ALUNO.NOME = nomeInput
+}
 
 print("Informe a sala: ", terminator: "")
-let salaInput = readLine(strippingNewline: true)
-ALUNO.SALA = Int(salaInput ?? "") ?? 0
+if let salaInput = readLine(strippingNewline: true), let sala = Int(salaInput) {
+    ALUNO.SALA = sala
+}
 
 print("Informe as notas:")
 for i in 0...3 {
     print("\(i + 1)a. nota: ", terminator: "")
-    let notaInput = readLine(strippingNewline: true)
-    ALUNO.NOTAS[i] = Float(notaInput ?? "") ?? 0
+    if let notaInput = readLine(strippingNewline: true), let nota = Float(notaInput) {
+        ALUNO.NOTAS[i] = nota
+    }
 }
 
 ALUNO.CMEDIA()

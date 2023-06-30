@@ -40,24 +40,31 @@ class CLS_ALUNO: CLS_TURMA, CLS_SALA {
 }
 
 let ALUNO = CLS_ALUNO()
-var I: Int = 0
 
 print("DADOS ESCOLARES")
 print()
 
 print("Informe o nome: ", terminator: "")
-ALUNO.NOME = readLine(strippingNewline: true) ?? ""
+if let nomeInput = readLine(strippingNewline: true) {
+    ALUNO.NOME = nomeInput
+}
 
 print("Informe a turma: ", terminator: "")
-ALUNO.TURMA = (readLine(strippingNewline: true) ?? "").first ?? " "
+if let turmaInput = readLine(strippingNewline: true), let turma = turmaInput.first {
+    ALUNO.TURMA = turma
+}
 
 print("Informe a sala: ", terminator: "")
-ALUNO.SALA = Int(readLine(strippingNewline: true) ?? "") ?? 0
+if let salaInput = readLine(strippingNewline: true), let sala = Int(salaInput) {
+    ALUNO.SALA = sala
+}
 
 print("Informe as notas:")
 for I in 0...3 {
     print("\(I + 1)a. nota: ", terminator: "")
-    ALUNO.NOTAS[I] = Float(readLine(strippingNewline: true) ?? "") ?? 0
+    if let notaInput = readLine(strippingNewline: true), let nota = Float(notaInput) {
+        ALUNO.NOTAS[I] = nota
+    }
 }
 
 let media = ALUNO.CMEDIA()

@@ -30,20 +30,18 @@ func fatorial(_ N: Int) -> Int {
 
 typealias Funcao = (Int) -> Int
 
-var ENTRA: Int
-var RESPOSTA: Funcao
-
 print("POLIFORMISMO DE SOBRECARGA")
 print()
 
 print("Entre um valor numerico inteiro: ", terminator: "")
-let valor = Int(readLine(strippingNewline: true) ?? "") ?? 0
+if let input = readLine(), let valor = Int(input) {
+    let ENTRA = valor
 
-ENTRA = valor
+    var RESPOSTA: Funcao
 
-RESPOSTA = somatorio
-print("Somatorio ..: \(RESPOSTA(ENTRA))")
+    RESPOSTA = somatorio
+    print("Somatorio ..: \(RESPOSTA(ENTRA))")
 
-RESPOSTA = fatorial
-print("Fatorial ...: \(RESPOSTA(ENTRA))")
-
+    RESPOSTA = fatorial
+    print("Fatorial ...: \(RESPOSTA(ENTRA))")
+}
