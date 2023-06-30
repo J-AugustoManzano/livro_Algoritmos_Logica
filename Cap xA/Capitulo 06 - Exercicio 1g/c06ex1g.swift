@@ -18,38 +18,42 @@ var B = [Int](repeating: 0, count: 15)
 var C = [Int](repeating: 0, count: 25)
 
 print("JUNCAO DE MATRIZES 1D")
-print(">>> Para maior comodidade, entre valores entre 0 e 9999 <<<\n\n\n")
+print(">>> Para maior comodidade, entre valores entre 0 e 9999 <<<\n\n")
 
-print("Entre 10 elementos para a matriz [A]:\n\n")
+print("Entre com 10 elementos para a matriz [A]:\n")
 for i in 0...9 {
-  print(String(format: "Entre o %2do. elemento de [A] --> ", i + 1), terminator: "")
-  A[i] = Int(readLine()!)!
+    print(String(format: "Entre com o %2do. elemento de [A] --> ", i + 1), terminator: "")
+    if let input = readLine(), let numericInput = Int(input) {
+        A[i] = numericInput
+    }
 }
 
-print("\nTecle <ENTER> para proxima entrada ", terminator: "")
+print("\nPressione <ENTER> para a próxima entrada ", terminator: "")
 _ = readLine()
 
-print("\nEntre 15 elementos para a matriz [B]:\n\n")
+print("\nEntre com 15 elementos para a matriz [B]:\n")
 for i in 0...14 {
-  print(String(format: "Entre o %2do. elemento de [B] --> ", i + 1), terminator: "")
-  B[i] = Int(readLine()!)!
+    print(String(format: "Entre com o %2do. elemento de [B] --> ", i + 1), terminator: "")
+    if let input = readLine(), let numericInput = Int(input) {
+        B[i] = numericInput
+    }
 }
 
-print("\nTecle <ENTER> para ver juncao ", terminator: "")
+print("\nPressione <ENTER> para ver a junção ", terminator: "")
 _ = readLine()
 
 for i in 0...24 {
-  if i < 10 {
-    C[i] = A[i]
-  } else {
-    C[i] = B[i - 10]
-  }
+    if i < A.count {
+        C[i] = A[i]
+    } else {
+        C[i] = B[i - A.count]
+    }
 }
 
-print("\nConteudo da matriz [C] juncao das matrizes [A] e [B]:\n\n")
+print("\nConteudo da matriz [C], juncao das matrizes [A] e [B]:\n\n")
 for i in 0...24 {
-  print(String(format: "C[%2d] = %4d", i + 1, C[i]))
+    print(String(format: "C[%2d] = %4d", i + 1, C[i]))
 }
 
-print("\nTecle <ENTER> para encerrar o programa... ", terminator: "")
+print("\nPressione <ENTER> para encerrar o programa... ", terminator: "")
 _ = readLine()

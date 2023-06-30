@@ -8,7 +8,7 @@
  *
  * Capitulo ..: Apendice A - CORRECAO DE ALGUNS EXERCICIOS DE FIXACAO
  *
- * Programa ..: CÁLCULO DE MEDIA ESCOLAR
+ * Programa ..: CALCULO DE MEDIA ESCOLAR
  */
 
 var MD: Float = 0.0
@@ -17,26 +17,34 @@ var N2: Float = 0.0
 var N3: Float = 0.0
 var N4: Float = 0.0
 
-print("MEDIA ESCOLAR - CALCULO")
+print("CALCULO DE MEDIA ESCOLAR")
 print()
 
-print("Entre a 1a. nota ...........: ", terminator: "")
-N1 = Float(readLine()!)!
+print("Entre com a 1a. nota: ", terminator: "")
+if let inputN1 = readLine(), let numericInputN1 = Float(inputN1) {
+    N1 = numericInputN1
+}
 
-print("Entre a 2a. nota ...........: ", terminator: "")
-N2 = Float(readLine()!)!
+print("Entre com a 2a. nota: ", terminator: "")
+if let inputN2 = readLine(), let numericInputN2 = Float(inputN2) {
+    N2 = numericInputN2
+}
 
-print("Entre a 3a. nota ...........: ", terminator: "")
-N3 = Float(readLine()!)!
+print("Entre com a 3a. nota: ", terminator: "")
+if let inputN3 = readLine(), let numericInputN3 = Float(inputN3) {
+    N3 = numericInputN3
+}
 
-print("Entre a 4a. nota ...........: ", terminator: "")
-N4 = Float(readLine()!)!
+print("Entre com a 4a. nota: ", terminator: "")
+if let inputN4 = readLine(), let numericInputN4 = Float(inputN4) {
+    N4 = numericInputN4
+}
 
 MD = (N1 + N2 + N3 + N4) / 4
 
 print()
 if MD >= 5 {
-    print("Aluno aprovado com media ...: \(MD)")
+    print("Aluno aprovado com media: \(MD)")
 } else {
-    print("Aluno reprovado com media ..: \(MD)")
+    print("Aluno reprovado com media: \(MD)")
 }
