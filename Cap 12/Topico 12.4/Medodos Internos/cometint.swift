@@ -1,20 +1,23 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.4
+ * Capitulo ..: 12 - Topico 12.4
  * 
- * Programa ..: USO DE MÉTODO INTERNO A UMA CLASSE
+ * Programa ..: USO DE METODO INTERNO A UMA CLASSE
  * 
  */
 
 import Foundation
 
+// Definicao de classe com metodo interno
+
 class CLS_ALUNO {
+	
     var NOME: String
     var NOTAS: [Double]
     var MEDIA: Double
@@ -32,6 +35,7 @@ class CLS_ALUNO {
         }
         MEDIA = SOMA / Double(NOTAS.count)
     }
+    
 }
 
 var ALUNO = CLS_ALUNO()
@@ -50,11 +54,13 @@ for i in 0...3 {
     let nota = Double(input) ?? 0.0
     ALUNO.NOTAS[i] = nota
 }
+
 ALUNO.CMEDIA()
 
 print()
 print("RELATORIO ESCOLAR")
 print()
+
 print("Nome: \(ALUNO.NOME)")
 for i in 0...3 {
     print("\(i+1)a. nota: \(ALUNO.NOTAS[i])")

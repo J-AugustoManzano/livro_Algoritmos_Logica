@@ -1,20 +1,23 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.4
+ * Capitulo ..: 12 - Topico 12.4
  * 
- * Programa ..: USO DE MÉTODO INTERNO A UMA CLASSE
+ * Programa ..: USO DE METODO INTERNO A UMA CLASSE
  * 
  */
 
 import scala.io.StdIn.readLine
 
+// Definicao de classe com metodo interno
+
 class CLS_ALUNO {
+	
   var NOME: String = ""
   var NOTAS: Array[Double] = new Array[Double](4)
   var MEDIA: Double = 0.0
@@ -27,16 +30,16 @@ class CLS_ALUNO {
     MEDIA = SOMA / 4
     MEDIA
   }
+  
 }
 
 object Main {
   def main(args: Array[String]): Unit = {
     val ALUNO: CLS_ALUNO = new CLS_ALUNO()
 
-    // *** Trecho de entrada dos dados ***
-
     println("DADOS ESCOLARES")
     println()
+    
     print("Informe o nome: ")
     ALUNO.NOME = readLine()
 
@@ -45,13 +48,13 @@ object Main {
       printf("%da. nota: ", i + 1)
       ALUNO.NOTAS(i) = readLine().toDouble
     }
+    
     ALUNO.CMEDIA()
-
-    // T*** recho de saída dos dados ***
 
     println()
     println("RELATORIO ESCOLAR")
     println()
+    
     println("Nome: " + ALUNO.NOME)
     for (i <- 0 to 3) {
       printf("%da. nota: %5.1f\n", i + 1, ALUNO.NOTAS(i))

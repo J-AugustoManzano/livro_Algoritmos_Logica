@@ -1,17 +1,20 @@
 '''
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.4
+ * Capitulo ..: 12 - Topico 12.4
  * 
- * Programa ..: USO DE MÉTODO INTERNO A UMA CLASSE
+ * Programa ..: USO DE METODO INTERNO A UMA CLASSE
 '''
 
+# Definicao de classe com metodo interno
+
 class CLS_ALUNO:
+	
   def __init__(self):
     self.NOME = ''
     self.NOTAS = [0.0] * 4
@@ -27,22 +30,21 @@ class CLS_ALUNO:
 
 ALUNO = CLS_ALUNO()
 
-# *** Trecho de entrada dos dados ***
-
 print("DADOS ESCOLARES")
 print()
+
 ALUNO.NOME = input("Informe o nome: ")
 
 print("Informe as notas:")
 for I in range(4):
   ALUNO.NOTAS[I] = float(input(f"{I + 1}a. nota: "))
+  
 ALUNO.CMEDIA(ALUNO)
-
-# *** Trecho de saída dos dados ***
 
 print()
 print("RELATORIO ESCOLAR")
 print()
+
 print("Nome:", ALUNO.NOME)
 for I in range(4):
   print(f"{I + 1}a. nota: {ALUNO.NOTAS[I]:5.1f}")

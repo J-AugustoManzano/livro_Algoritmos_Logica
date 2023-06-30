@@ -1,14 +1,14 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.4
+ * Capitulo ..: 12 - Topico 12.4
  * 
- * Programa ..: USO DE MÉTODO INTERNO A UMA CLASSE
+ * Programa ..: USO DE METODO INTERNO A UMA CLASSE
  * 
  */
 
@@ -17,8 +17,11 @@
 #include <iomanip>
 using namespace std;
 
+// Definicao de classe com metodo interno
+
 class CLS_ALUNO {
 public:
+
   string NOME;
   double NOTAS[4];
   double MEDIA;
@@ -31,16 +34,17 @@ public:
     MEDIA = SOMA / 4;
     return MEDIA;
   }
+  
 };
 
 int main(void) {
+	
   CLS_ALUNO ALUNO;
   int I;
 
-  // Trecho de entrada dos dados
-
   cout << "DADOS ESCOLARES" << endl;
   cout << endl;
+  
   cout << "Informe o nome: ";
   getline(cin, ALUNO.NOME);
 
@@ -49,14 +53,14 @@ int main(void) {
     cout << I + 1 << "a. nota: ";
     cin >> ALUNO.NOTAS[I];
   }
+  
   ALUNO.CMEDIA();
 
-  // Trecho de saída dos dados
-
-  cout << endl;
   cout << fixed << setprecision(1);
+  cout << endl;
   cout << "RELATORIO ESCOLAR" << endl;
   cout << endl;
+  
   cout << "Nome: " << ALUNO.NOME << endl;
   for (I = 0; I < 4; I++) {
     cout << I + 1 << "a. nota: " << setw(5) << ALUNO.NOTAS[I] << endl;
