@@ -31,8 +31,6 @@ print("Informe o 2o. valor: ", terminator: "")
 let inputY = readLine()
 Y = Int(inputY!) ?? 0
 
-print("")
-
 if igual(X, Y) {
     print("Valores sao iguais")
 } else {

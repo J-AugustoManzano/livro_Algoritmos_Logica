@@ -9,24 +9,26 @@
 # 
 # Programa ..: OPERACAO COM SUBROTINA DE FUNCAO
 
-#!/usr/bin/awk -f
-
 function IGUAL(A, B) {
   return A == B
 }
 
 BEGIN {
+
   print "VERIFICACAO DE DADOS"
   print "FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO"
   print ""
+  
   printf "Informe o 1o. valor: "
   getline X < "-"
+  
   printf "Informe o 2o. valor: "
   getline Y < "-"
-  print ""
+
   if (IGUAL(X, Y)) {
     print "Valores sao iguais"
   } else {
     print "Valores sao diferentes"
   }
+  
 }

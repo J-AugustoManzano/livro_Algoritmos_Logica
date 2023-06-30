@@ -31,13 +31,16 @@ class Program
   
   static void Main()
   {
+	  
     Console.WriteLine("CALCULO DE FATORIAL");
     Console.WriteLine("FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO");
     Console.WriteLine();
+	
     Console.Write("Qual fatorial (1-20): ");
     LIMITE = byte.Parse(Console.ReadLine());
-    Console.WriteLine();
+
     RESP = FATORIAL(LIMITE);
     Console.WriteLine("Fatorial = " + RESP);
+	
   }
 }

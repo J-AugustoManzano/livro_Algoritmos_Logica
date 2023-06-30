@@ -18,11 +18,13 @@ function IGUAL(A, B) {
 }
 
 let X, Y;
+
 console.log("VERIFICACAO DE DADOS");
 console.log("FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO\n");
+
 X = parseInt(readline.question("Informe o 1o. valor: "));
 Y = parseInt(readline.question("Informe o 2o. valor: "));
-console.log();
+
 if (IGUAL(X, Y)) {
   console.log("Valores sao iguais");
 } else {

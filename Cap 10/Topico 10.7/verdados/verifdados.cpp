@@ -21,16 +21,20 @@ bool IGUAL(int A, int B) {
 int X, Y;
 
 int main(void) {
+	
   cout << "VERIFICACAO DE DADOS" << endl;
   cout << "FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO" << endl << endl;
+  
   cout << "Informe o 1o. valor: ";
   cin >> X;
+  
   cout << "Informe o 2o. valor: ";
   cin >> Y;
-  cout << endl;
+
   if (IGUAL(X, Y))
     cout << "Valores sao iguais" << endl;
   else
     cout << "Valores sao diferentes" << endl;
+
   return 0;
 }

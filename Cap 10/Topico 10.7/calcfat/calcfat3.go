@@ -35,12 +35,15 @@ var (
 )
 
 func main() {
+
   fmt.Println("CALCULO DE FATORIAL")
   fmt.Println("FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO")
   fmt.Println()
+  
   fmt.Print("Qual fatorial (1-20): ")
   fmt.Scanln(&LIMITE)
-  fmt.Println()
+
   RESP = fatorial(LIMITE)
   fmt.Println("Fatorial =", RESP)
+  
 }

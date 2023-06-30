@@ -24,14 +24,17 @@ class VerificaDados
 
   static void Main()
   {
+	  
     Console.WriteLine("VERIFICACAO DE DADOS");
     Console.WriteLine("FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO");
     Console.WriteLine();
+	
     Console.Write("Informe o 1o. valor: ");
     X = Convert.ToInt32(Console.ReadLine());
+	
     Console.Write("Informe o 2o. valor: ");
     Y = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine();
+
     if (IGUAL(X, Y))
     {
       Console.WriteLine("Valores sao iguais");

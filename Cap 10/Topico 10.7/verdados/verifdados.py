@@ -17,9 +17,10 @@ def IGUAL(A, B):
 print('VERIFICACAO DE DADOS')
 print('FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO')
 print()
+
 X = int(input('Informe o 1o. valor: '))
 Y = int(input('Informe o 2o. valor: '))
-print()
+
 if IGUAL(X, Y):
   print('Valores sao iguais')
 else:

@@ -26,7 +26,6 @@ $X = prompt.Int;
 print 'Informe o 2o. valor: ';
 $Y = prompt.Int;
 
-say '';
 if IGUAL($X, $Y) {
     say 'Valores sao iguais';
 } else {

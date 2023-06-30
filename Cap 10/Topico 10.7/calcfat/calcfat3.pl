@@ -30,9 +30,10 @@ my $RESP;
 
 print "CALCULO DE FATORIAL\n";
 print "FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO\n\n";
+
 print "Qual fatorial (1-20): ";
 $LIMITE = <STDIN>;
 chomp($LIMITE);
-print "\n";
+
 $RESP = FATORIAL($LIMITE);
 print "Fatorial = $RESP\n";

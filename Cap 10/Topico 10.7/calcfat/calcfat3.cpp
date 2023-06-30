@@ -27,12 +27,15 @@ unsigned short LIMITE;
 unsigned long long RESP;
 
 int main() {
+	
   cout << "CALCULO DE FATORIAL" << endl;
   cout << "FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO" << endl << endl;
+  
   cout << "Qual fatorial (1-20): ";
   cin >> LIMITE;
-  cout << endl;
+
   RESP = FATORIAL(LIMITE);
   cout << "Fatorial = " << RESP << endl;
+  
   return 0;
 }

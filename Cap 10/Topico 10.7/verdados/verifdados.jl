@@ -20,11 +20,13 @@ const X, Y = Ref{Int64}(0), Ref{Int64}(0)
 println("VERIFICACAO DE DADOS")
 println("FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO")
 println()
+
 print("Informe o 1o. valor: ")
 X[] = parse(Int64, readline())
+
 print("Informe o 2o. valor: ")
 Y[] = parse(Int64, readline())
-println()
+
 if IGUAL(X[], Y[])
   println("Valores sao iguais")
 else

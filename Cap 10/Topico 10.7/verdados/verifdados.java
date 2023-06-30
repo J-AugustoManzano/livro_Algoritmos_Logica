@@ -21,20 +21,27 @@ public class Main {
 static int X, Y;
   
  public static void main(String[] args) {
+	 
     Scanner entrada = new Scanner(System.in);
+	
     System.out.println("VERIFICACAO DE DADOS");
     System.out.println("FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO");
     System.out.println();
+	
     System.out.print("Informe o 1o. valor: ");
     X = entrada.nextInt();
+	
     System.out.print("Informe o 2o. valor: ");
     Y = entrada.nextInt();
-    System.out.println();
+	
     if (IGUAL(X, Y)) {
       System.out.println("Valores sao iguais");
     } else {
       System.out.println("Valores sao diferentes");
     }
+	
     entrada.close();
+	
   }
+  
 }

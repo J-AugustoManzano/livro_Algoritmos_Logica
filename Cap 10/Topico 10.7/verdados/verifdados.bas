@@ -21,14 +21,17 @@ Dim Y As Integer
 Print "VERIFICACAO DE DADOS"
 Print "FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO"
 Print
+
 Print "Informe o 1o. valor: ";
 Input "", X
+
 Print "Informe o 2o. valor: ";
 Input "", Y
-Print
+
 If (IGUAL(X, Y)) Then
   Print "Valores sao iguais"
 Else
   Print "Valores sao diferentes"
 End If
+
 End

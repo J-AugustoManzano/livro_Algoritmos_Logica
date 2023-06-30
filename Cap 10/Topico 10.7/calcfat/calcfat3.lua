@@ -25,8 +25,9 @@ local RESP = 0
 print("CALCULO DE FATORIAL")
 print("FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO")
 print()
+
 io.write("Qual fatorial (1-20): ")
 LIMITE = tonumber(io.read())
-print()
+
 RESP = fatorial(LIMITE)
 print("Fatorial = " .. RESP)

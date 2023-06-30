@@ -21,17 +21,21 @@ bool IGUAL(int A, int B) {
 int X = 0, Y = 0;
   
 void main() {
+
   print('VERIFICACAO DE DADOS');
   print('FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO');
   print('');
+  
   stdout.write('Informe o 1o. valor: ');
   X = int.parse(stdin.readLineSync()!);
+  
   stdout.write('Informe o 2o. valor: ');
   Y = int.parse(stdin.readLineSync()!);
-  print('');
+  
   if (IGUAL(X, Y)) {
     print('Valores sao iguais');
   } else {
     print('Valores sao diferentes');
   }
+  
 }

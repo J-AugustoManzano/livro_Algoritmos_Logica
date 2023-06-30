@@ -23,7 +23,8 @@ RESP = 0
 print('CALCULO DE FATORIAL')
 print('FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO')
 print()
+
 LIMITE = int(input('Qual fatorial (1-20): '))
-print()
+
 RESP = fatorial(LIMITE)
 print('Fatorial =', RESP)

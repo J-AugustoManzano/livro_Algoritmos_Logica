@@ -30,12 +30,15 @@ ulong RESP = 0;
 
 void main()
 {
+
   writeln("CALCULO DE FATORIAL");
   writeln("FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO");
   writeln();
+  
   write("Qual fatorial (1-20): ");
   readf(" %u", &LIMITE);
-  writeln();
+
   RESP = factorial(LIMITE);
   writeln("Fatorial = ", RESP);
+  
 }

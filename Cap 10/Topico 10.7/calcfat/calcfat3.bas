@@ -28,7 +28,7 @@ Print "CALCULO DE FATORIAL"
 Print "FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO"
 Print
 Input "Qual fatorial (1-20): ", LIMITE
-Print
 RESP = FATORIAL(LIMITE)
 Print "Fatorial = "; RESP
+
 End

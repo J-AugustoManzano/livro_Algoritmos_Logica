@@ -26,12 +26,15 @@ unsigned short LIMITE;
 unsigned long long RESP;
 
 int main(void) {
+	
   printf("CALCULO DE FATORIAL\n");
   printf("FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO\n\n");
+  
   printf("Qual fatorial (1-20): ");
   scanf("%hu", &LIMITE);
-  printf("\n");
+
   RESP = FATORIAL(LIMITE);
   printf("Fatorial = %llu\n", RESP);
+  
   return 0;
 }

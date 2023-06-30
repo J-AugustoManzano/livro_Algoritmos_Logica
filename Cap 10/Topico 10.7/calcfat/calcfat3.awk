@@ -9,19 +9,21 @@
 # 
 # Programa ..: OPERACAO COM SUBROTINA DE FUNCAO
 
-#!/usr/bin/awk -f
-
 BEGIN {
+
   LIMITE = 0;
   RESP = 1;
+  
   print "CALCULO DE FATORIAL";
   print "FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO";
   print "";
+  
   printf "Qual fatorial (1-20): ";
   getline LIMITE < "-";
-  print "";
+
   FATORIAL(LIMITE, RESP);
   print "Fatorial =", RESP;
+  
 }
 
 function FATORIAL(N, FAT) {

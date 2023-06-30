@@ -30,12 +30,15 @@ var
   RESP: qword;
 
 begin
+
   writeln('CALCULO DE FATORIAL');
   writeln('FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO');
   writeln;
+  
   write('Qual fatorial (1-20): ');
   readln(LIMITE);
-  writeln;
+  
   RESP := FATORIAL(LIMITE);
   writeln('Fatorial = ', RESP);
+  
 end.

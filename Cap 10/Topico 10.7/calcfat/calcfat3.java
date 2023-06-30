@@ -27,15 +27,19 @@ public class Main {
   static long RESP;
 
   public static void main(String[] args) {
+
+    Scanner entrada = new Scanner(System.in);
+	
     System.out.println("CALCULO DE FATORIAL");
     System.out.println("FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO");
     System.out.println();
+	
     System.out.print("Qual fatorial (1-20): ");
-    Scanner entrada = new Scanner(System.in);
     LIMITE = Byte.parseByte(entrada.nextLine());
-    System.out.println();
+
     RESP = fatorial(LIMITE);
     System.out.println("Fatorial = " + RESP);
     entrada.close();
+	
   }
 }

@@ -26,12 +26,15 @@ int LIMITE = 0;
 int RESP = 0;
 
 void main() {
+
   print('CALCULO DE FATORIAL');
   print('FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO');
   print('');
+  
   stdout.write('Qual fatorial (1-20): ');
   LIMITE = int.parse(stdin.readLineSync()!);
-  print('');
+
   RESP = fatorial(LIMITE);
   print('Fatorial = $RESP');
+  
 }

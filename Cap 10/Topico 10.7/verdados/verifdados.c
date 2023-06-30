@@ -20,16 +20,20 @@ int IGUAL(int A, int B) {
 int X, Y;
 
 int main(void) {
+	
   printf("VERIFICACAO DE DADOS\n");
   printf("FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO\n\n");
+  
   printf("Informe o 1o. valor: ");
   scanf("%d", &X);
+  
   printf("Informe o 2o. valor: ");
   scanf("%d", &Y);
-  printf("\n");
+
   if (IGUAL(X, Y))
     printf("Valores sao iguais\n");
   else
     printf("Valores sao diferentes\n");
+
   return 0;
 }

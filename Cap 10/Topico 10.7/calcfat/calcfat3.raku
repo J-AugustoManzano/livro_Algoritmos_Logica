@@ -23,8 +23,9 @@ my UInt $RESP;
 say 'CALCULO DE FATORIAL';
 say 'FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO';
 say '';
+
 print 'Qual fatorial (1-N): ';
 $LIMITE = prompt;
-say '';
+
 $RESP = FATORIAL($LIMITE);
 say "Fatorial = $RESP";

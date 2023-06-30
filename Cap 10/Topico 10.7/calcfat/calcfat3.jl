@@ -25,8 +25,9 @@ RESP::UInt64 = 0
 println("CALCULO DE FATORIAL")
 println("FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO")
 println()
+
 print("Qual fatorial (1-20): ")
 LIMITE = parse(UInt8, readline())
-println()
+
 RESP = fatorial(LIMITE)
 println("Fatorial = ", RESP)

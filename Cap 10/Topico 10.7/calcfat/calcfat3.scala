@@ -13,6 +13,7 @@
  */
 
 object Main {
+
   def fatorial(N: Byte): Long = {
     var FAT: Long = 1
     for (I <- 1 to N by 1) {
@@ -25,14 +26,18 @@ object Main {
   var RESP: Long = 0
 
   def main(args: Array[String]): Unit = {
+  
     println("CALCULO DE FATORIAL")
     println("FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO")
     println()
+	
     print("Qual fatorial (1-20): ")
     val input = scala.io.StdIn.readLine()
     LIMITE = input.toByte
-    println()
+	
     RESP = fatorial(LIMITE)
     println(s"Fatorial = $RESP")
+	
   }
+  
 }

@@ -23,16 +23,20 @@ var
   X, Y: integer;
 
 begin
+
   writeln('VERIFICACAO DE DADOS');
   writeln('FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO');
   writeln;
+  
   write('Informe o 1o. valor: ');
   readln(X);
+  
   write('Informe o 2o. valor: ');
   readln(Y);
-  writeln;
+  
   if (IGUAL(X, Y)) then
     writeln('Valores sao iguais')
   else
     writeln('Valores sao diferentes');
+	
 end.

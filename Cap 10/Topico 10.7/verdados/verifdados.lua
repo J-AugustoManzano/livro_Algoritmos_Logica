@@ -18,11 +18,13 @@ end
 print("VERIFICACAO DE DADOS")
 print("FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO")
 print()
+
 io.write("Informe o 1o. valor: ")
 X = tonumber(io.read())
+
 io.write("Informe o 2o. valor: ")
 Y = tonumber(io.read())
-print()
+
 if IGUAL(X, Y) then
   print("Valores sao iguais")
 else

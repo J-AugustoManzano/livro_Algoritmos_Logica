@@ -27,19 +27,21 @@ var (
 )
 
 func main() {
+
   fmt.Println("VERIFICACAO DE DADOS")
   fmt.Println("FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO")
   fmt.Println()
 
   fmt.Print("Informe o 1o. valor: ")
   fmt.Scanln(&LIMITE)
+  
   fmt.Print("Informe o 2o. valor: ")
   fmt.Scanln(&RESP)
-  fmt.Println()
 
   if IGUAL(LIMITE, RESP) {
     fmt.Println("Valores sao iguais")
   } else {
     fmt.Println("Valores sao diferentes")
   }
+  
 }

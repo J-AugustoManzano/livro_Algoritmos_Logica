@@ -23,14 +23,17 @@ int X, Y;
 
 void main()
 {
+
   writeln("VERIFICACAO DE DADOS");
   writeln("FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO");
   writeln();
+  
   write("Informe o 1o. valor: ");
   readf(" %d", &X);
+  
   write("Informe o 2o. valor: ");
   readf(" %d", &Y);
-  writeln();
+  
   if (IGUAL(X, Y))
     writeln("Valores sao iguais");
   else
