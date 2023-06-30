@@ -1,12 +1,12 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.5
+ * Capitulo ..: 12 - Topico 12.5
  * 
  * Programa ..: ENCAPSULAMENTO
  * 
@@ -18,6 +18,9 @@
 using namespace std;
 
 class CLS_ALUNO {
+
+// Encapsulamento publico e privado
+
 public:
   string NOME;
   float CMEDIA();
@@ -28,6 +31,7 @@ public:
 private:
   float NOTAS[4];
   float MEDIA;
+  
 };
 
 float CLS_ALUNO::CMEDIA() {
@@ -52,17 +56,18 @@ void CLS_ALUNO::POENOTA(float NT, int POS) {
 }
 
 CLS_ALUNO ALUNO;
+
 int I;
 float ENTRANOTA;
   
 int main(void) {
 
-  // *** Trecho de entrada dos dados ***
-
   cout << "DADOS ESCOLARES" << endl;
   cout << endl;
+  
   cout << "Informe o nome: ";
   cin >> ALUNO.NOME;
+  
   cout << "Informe as notas: " << endl;
   for (I = 0; I <= 3; I++) {
     cout << I + 1 << "a. nota: ";
@@ -70,13 +75,13 @@ int main(void) {
     ALUNO.POENOTA(ENTRANOTA, I);
   }
 
-  // *** Trecho de saída dos dados ***
-
-  cout << endl;
   cout << fixed << setprecision(1);
+  cout << endl;
   cout << "RELATORIO ESCOLAR" << endl;
   cout << endl;
+  
   cout << "Nome: " << ALUNO.NOME << endl;
+  
   for (I = 0; I <= 3; I++) {
     cout << I + 1 << "a. nota: " << setw(5) << ALUNO.PEGANOTA(I) << endl;
   }

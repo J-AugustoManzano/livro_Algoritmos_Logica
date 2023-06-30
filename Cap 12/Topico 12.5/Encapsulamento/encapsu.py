@@ -1,32 +1,18 @@
 '''
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.5
+ * Capitulo ..: 12 - Topico 12.5
  * 
- * Programa ..: ENCAPSULAMENTO
-'''
-
-'''
-Em Python, todos os atributos e métodos de uma classe são, por padrão, 
-considerados públicos e acessíveis de fora da classe.  Por convenção, 
-os atributos e métodos com um sublinhado no início (como _atributo ou 
-_metodo()) são considerados "privados". Existe uma convenção de dois 
-sublinhados no início (como __atributo ou __metodo()) para indicar que 
-o atributo ou método é "privado" de forma mais estrita, e neste caso é
-aconada uma regra de "name mangling", onde o nome real do atributo ou 
-método é alterado para evitar colisões com subclasses, mas ainda é 
-possível acessá-los usando o nome alterado "_NomeDaClasse__atributo" ou
-"_NomeDaClasse__metodo()". Em Python o tratamento do encapsulamento é 
-semelhante ao que ocorre em Dart. Não existem modificadores de acesso 
-explícitos.
+ * Programa ..: NCAPSULAMENTO (CONCEITUAL - NAO EXISTE)
 '''
 
 class CLS_ALUNO:
+	
   def __init__(self):
     self.NOME = ''
     self.__NOTAS = [0.0, 0.0, 0.0, 0.0]
@@ -50,26 +36,27 @@ class CLS_ALUNO:
 
 
 ALUNO = CLS_ALUNO()
+
 I = 0
 ENTRANOTA = 0.0
 
-# *** Trecho de entrada dos dados ***
-
 print("DADOS ESCOLARES")
 print()
+
 ALUNO.NOME = input("Informe o nome: ")
+
 print("Informe as notas:")
 for I in range(4):
   print(f"{I + 1}a. nota: ", end='')
   ENTRANOTA = float(input())
   ALUNO.POENOTA(ENTRANOTA, I)
 
-# *** Trecho de saída dos dados ***
-
 print()
 print("RELATORIO ESCOLAR")
 print()
+
 print("Nome:", ALUNO.NOME)
+
 for I in range(4):
   print(f"{I + 1}a. nota: {ALUNO.PEGANOTA(I):5.1f}")
 print(f"Media: {ALUNO.PEGAMEDIA():5.1f}")

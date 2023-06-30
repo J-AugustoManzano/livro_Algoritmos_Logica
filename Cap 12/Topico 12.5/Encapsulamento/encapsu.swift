@@ -1,12 +1,12 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.5
+ * Capitulo ..: 12 - Topico 12.5
  * 
  * Programa ..: ENCAPSULAMENTO
  * 
@@ -15,7 +15,10 @@
 import Foundation
 
 class CLS_ALUNO {
-    var NOME: String
+
+    // Encapsulamento publico e privado
+
+    public var NOME: String
     private var NOTAS: [Float]
     private var MEDIA: Float
     
@@ -25,13 +28,13 @@ class CLS_ALUNO {
         MEDIA = 0.0
     }
     
-    func CMEDIA() -> Float {
+    public func CMEDIA() -> Float {
         let SOMA = NOTAS.reduce(0, +)
         MEDIA = SOMA / Float(NOTAS.count)
         return MEDIA
     }
     
-    func PEGANOTA(POS: Int) -> Float {
+    public func PEGANOTA(POS: Int) -> Float {
         return NOTAS[POS]
     }
     
@@ -39,12 +42,13 @@ class CLS_ALUNO {
         return CMEDIA()
     }
     
-    func POENOTA(NT: Float, POS: Int) {
+    public func POENOTA(NT: Float, POS: Int) {
         NOTAS[POS] = NT
     }
 }
 
 var ALUNO = CLS_ALUNO()
+
 var I: Int
 var ENTRANOTA: Float
 
@@ -65,6 +69,7 @@ for i in 0...3 {
 print()
 print("RELATORIO ESCOLAR")
 print()
+
 print("Nome: \(ALUNO.NOME)")
 for i in 0...3 {
     print("\(i+1)a. nota: \(ALUNO.PEGANOTA(POS: i))")

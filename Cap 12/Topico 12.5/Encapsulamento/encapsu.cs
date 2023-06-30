@@ -1,12 +1,12 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.5
+ * Capitulo ..: 12 - Topico 12.5
  * 
  * Programa ..: ENCAPSULAMENTO
 */
@@ -15,6 +15,10 @@ using System;
 
 class CLS_ALUNO
 {
+	
+  // Encapsulamento publico e privado
+  // com uso de medoto interno (apenas)
+  
   public string NOME;
   private float[] NOTAS = new float[4];
   private float MEDIA;
@@ -44,24 +48,28 @@ class CLS_ALUNO
   {
     NOTAS[POS] = NT;
   }
+  
 }
 
 class Program
 {
+	
   static CLS_ALUNO ALUNO;
+  
   static int I;
   static float ENTRANOTA;
 
   static void Main(string[] args)
   {
-    
-    // *** Trecho de entrada dos dados ***
 
+    ALUNO = new CLS_ALUNO();
+        
     Console.WriteLine("DADOS ESCOLARES");
     Console.WriteLine();
+    
     Console.Write("Informe o nome: ");
-    ALUNO = new CLS_ALUNO();
     ALUNO.NOME = Console.ReadLine();
+    
     Console.WriteLine("Informe as notas:");
     for (I = 0; I <= 3; I++)
     {
@@ -70,16 +78,18 @@ class Program
       ALUNO.POENOTA(ENTRANOTA, I);
     }
 
-    // *** Trecho de saída dos dados ***
-
     Console.WriteLine();
     Console.WriteLine("RELATORIO ESCOLAR");
     Console.WriteLine();
+    
     Console.WriteLine("Nome: " + ALUNO.NOME);
+    
     for (I = 0; I <= 3; I++)
     {
       Console.WriteLine($"{I + 1}a. nota: {ALUNO.PEGANOTA(I),5:F1}");
     }
     Console.WriteLine($"Media: {ALUNO.PEGAMEDIA(),5:F1}");
+    
   }
+  
 }

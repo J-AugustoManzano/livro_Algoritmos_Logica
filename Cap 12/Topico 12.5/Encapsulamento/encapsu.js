@@ -1,25 +1,27 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.5
+ * Capitulo ..: 12 - Topico 12.5
  * 
- * Programa ..: ENCAPSULAMENTO
+ * Programa ..: ENCAPSULAMENTO (CONCEITUAL - NAO EXISTE)
  * 
  */
 
 const readlineSync = require('readline-sync');
 
 class CLS_ALUNO {
+	
   constructor() {
     this._NOME = "";
     this._NOTAS = [0, 0, 0, 0];
     this._MEDIA = 0;
   }
+  
 }
 
 function CMEDIA(aluno) {
@@ -44,17 +46,22 @@ function POENOTA(aluno, NT, POS) {
 }
 
 const ALUNO = new CLS_ALUNO();
+
 let I;
 let ENTRANOTA;
 
 console.log("DADOS ESCOLARES\n");
+
 ALUNO._NOME = readlineSync.question("Informe o nome: ");
+
 console.log("\nInforme as notas: ");
 for (I = 0; I <= 3; I++) {
   ENTRANOTA = parseFloat(readlineSync.question(`${I + 1}a. nota: `));
   POENOTA(ALUNO, ENTRANOTA, I);
 }
+
 console.log("\nRELATORIO ESCOLAR\n");
+
 console.log("Nome: " + ALUNO._NOME);
 for (I = 0; I <= 3; I++) {
   console.log(`${I + 1}a. nota: ` + PEGANOTA(ALUNO, I));

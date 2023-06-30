@@ -1,12 +1,12 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.5
+ * Capitulo ..: 12 - Topico 12.5
  * 
  * Programa ..: ENCAPSULAMENTO
  */
@@ -14,6 +14,10 @@
 import java.util.Scanner;
 
 class CLS_ALUNO {
+
+  // Encapsulamento publico e privado
+  // com uso de medoto interno (apenas)
+
   public String NOME;
   private float[] NOTAS = new float[4];
   private float MEDIA;
@@ -38,23 +42,29 @@ class CLS_ALUNO {
   public void POENOTA(float NT, int POS) {
     NOTAS[POS] = NT;
   }
+  
 }
 
 public class Main {
+	
   static CLS_ALUNO ALUNO;
+  
   static int I;
   static float ENTRANOTA;
 
   public static void main(String[] args) {
 	  
-    // *** Trecho de entrada dos dados ***
+    ALUNO = new CLS_ALUNO();
+	
+    Scanner scanner = new Scanner(System.in);
 
     System.out.println("DADOS ESCOLARES");
     System.out.println();
+	
     System.out.print("Informe o nome: ");
-    Scanner scanner = new Scanner(System.in);
-    ALUNO = new CLS_ALUNO();
+
     ALUNO.NOME = scanner.nextLine();
+	
     System.out.println("Informe as notas:");
     for (I = 0; I <= 3; I++) {
       System.out.print((I + 1) + "a. nota: ");
@@ -62,15 +72,16 @@ public class Main {
       ALUNO.POENOTA(ENTRANOTA, I);
     }
 
-    // *** Trecho de saída dos dados ***
-
     System.out.println();
     System.out.println("RELATORIO ESCOLAR");
     System.out.println();
+	
     System.out.println("Nome: " + ALUNO.NOME);
     for (I = 0; I <= 3; I++) {
       System.out.println((I + 1) + "a. nota: " + String.format("%5.1f", ALUNO.PEGANOTA(I)));
     }
     System.out.println("Media: " + String.format("%5.1f", ALUNO.PEGAMEDIA()));
+	
   }
+  
 }

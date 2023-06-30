@@ -1,12 +1,12 @@
 {*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  * 
- * Capítulo ..: 12 - Tópico 12.5
+ * Capitulo ..: 12 - Topico 12.5
  * 
  * Programa ..: ENCAPSULAMENTO
  *}
@@ -17,6 +17,10 @@ uses
   SysUtils;
 
 type
+
+  // Encapsulamento publico e privado
+  // com uso de medoto externo
+
   CLS_ALUNO = object
   public
     NOME: string;
@@ -57,16 +61,17 @@ begin
 end;
 
 var
+
   ALUNO: CLS_ALUNO;
+  
   I: Integer;
   ENTRANOTA: Real;
 
 begin
 
-  // *** Trecho de entrada dos dados ***
-
   WriteLn('DADOS ESCOLARES');
   WriteLn;
+  
   Write('Informe o nome: ');
   ReadLn(ALUNO.NOME);
 
@@ -77,9 +82,8 @@ begin
     ReadLn(ENTRANOTA);
     ALUNO.POENOTA(ENTRANOTA, I);
   end;
+  
   ALUNO.MEDIA := ALUNO.CMEDIA;
-
-  // *** Trecho de saída dos dados ***
 
   WriteLn;
   WriteLn('RELATORIO ESCOLAR');

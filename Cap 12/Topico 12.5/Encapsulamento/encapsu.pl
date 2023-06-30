@@ -1,15 +1,15 @@
 =pod
 
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.5
+ * Capitulo ..: 12 - Topico 12.5
  * 
- * Programa ..: ENCAPSULAMENTO (CONCEITUAL - NÃO EXISTE)
+ * Programa ..: ENCAPSULAMENTO (CONCEITUAL - NAO EXISTE)
 
 =cut
 
@@ -19,6 +19,7 @@ use feature 'say';
 use IO::Handle;
 
 package CLS_ALUNO {
+	
     use strict;
     use warnings;
 
@@ -30,6 +31,7 @@ package CLS_ALUNO {
             MEDIA => 0,
         }, $class;
     }
+	
 }
 
 sub CMEDIA {
@@ -58,10 +60,12 @@ sub POENOTA {
 }
 
 my $ALUNO = CLS_ALUNO->new();
+
 my $I;
 my $ENTRANOTA;
   
 say "DADOS ESCOLARES\n";
+
 print "Informe o nome: ";
 $ALUNO->{NOME} = <STDIN>;
 chomp($ALUNO->{NOME});
@@ -75,7 +79,9 @@ for ($I = 0; $I <= 3; $I++) {
 }
 
 say "\nRELATORIO ESCOLAR\n";
+
 say "Nome: " . $ALUNO->{NOME};
+
 for ($I = 0; $I <= 3; $I++) {
     say $I + 1 . "a. nota: " . $ALUNO->{NOTAS}[$I];
 }
