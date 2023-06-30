@@ -1,14 +1,14 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.7
+ * Capitulo ..: 12 - Topico 12.7
  * 
- * Programa ..: POLIFORMISMO UNIVERSAL PARAMÉTRICO
+ * Programa ..: POLIFORMISMO UNIVERSAL PARAMETRICO
  * 
  */
 
@@ -32,13 +32,13 @@ class CLS_PESSOA {
 
 class CLS_MEDICO: CLS_PESSOA {
     override func PROFISSAO() {
-        print("Você possui formação em medicina.")
+        print("Você possui formacao em medicina.")
     }
 }
 
 class CLS_ADVOGADO: CLS_PESSOA {
     override func PROFISSAO() {
-        print("Você possui formação em advocacia.")
+        print("Você possui formacao em advocacia.")
     }
 }
 

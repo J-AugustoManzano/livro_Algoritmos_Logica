@@ -1,12 +1,12 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.7
+ * Capitulo ..: 12 - Topico 12.7
  * 
  * Programa ..: POLIFORMISMO AD-HOC DE SOBRECARGA
  * 
@@ -33,8 +33,10 @@ let RESPOSTA;
 
 console.log("POLIFORMISMO DE SOBRECARGA");
 console.log();
-ENTRA = parseInt(prompt("Entre um valor numérico inteiro: "));
+
+ENTRA = parseInt(prompt("Entre um valor numerico inteiro: "));
 RESPOSTA = SOMATORIO;
-console.log("Somatório ..:", RESPOSTA(ENTRA));
+
+console.log("Somatorio ..:", RESPOSTA(ENTRA));
 RESPOSTA = FATORIAL;
 console.log("Fatorial ...:", RESPOSTA(ENTRA));

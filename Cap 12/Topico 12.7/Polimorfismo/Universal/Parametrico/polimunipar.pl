@@ -1,15 +1,15 @@
 =pod
 
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.7
+ * Capitulo ..: 12 - Topico 12.7
  * 
- * Programa ..: POLIFORMISMO UNIVERSAL PARAMÉTRICO
+ * Programa ..: POLIFORMISMO UNIVERSAL PARAMETRICO
 
 =cut
 
@@ -44,7 +44,7 @@ package CLS_MEDICO {
     }
 
     sub PROFISSAO {
-        say "Você possui formação em medicina.";
+        say "Você possui formacao em medicina.";
     }
 }
 
@@ -57,7 +57,7 @@ package CLS_ADVOGADO {
     }
 
     sub PROFISSAO {
-        say "Você possui formação em advocacia.";
+        say "Você possui formacao em advocacia.";
     }
 }
 

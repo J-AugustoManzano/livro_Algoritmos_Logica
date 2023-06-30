@@ -1,12 +1,12 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.7
+ * Capitulo ..: 12 - Topico 12.7
  * 
  * Programa ..: POLIFORMISMO AD-HOC DE SOBRECARGA
  * 
@@ -14,6 +14,7 @@
 
 object Main {
   def main(args: Array[String]): Unit = {
+  
     object PolimorfismoDeSobrecarga {
 		
       def SOMATORIO(N: Int): Int = {
@@ -33,19 +34,23 @@ object Main {
       }
 
       def run(): Unit = {
+	  
         println("POLIFORMISMO DE SOBRECARGA")
         println()
 
         print("Entre um valor numerico inteiro: ")
         val ENTRA: Int = scala.io.StdIn.readLine().toInt
-        println()
 
+        println()
         println("Somatorio ..: " + SOMATORIO(ENTRA))
         println("Fatorial ...: " + FATORIAL(ENTRA))
       }
 
       run()
     }
+	
     PolimorfismoDeSobrecarga
+	
   }
+  
 }

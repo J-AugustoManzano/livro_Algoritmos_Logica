@@ -1,15 +1,15 @@
 =pod
 
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.7
+ * Capitulo ..: 12 - Topico 12.7
  * 
- * Programa ..: POLIFORMISMO AD-HOC DE COERÇÃO
+ * Programa ..: POLIFORMISMO AD-HOC DE COERCAO
 
 =cut
 
@@ -29,5 +29,5 @@ sub ESCREVANUM {
 my $VALOR1 = 10;
 my $VALOR2 = 3.14159;
 
-ESCREVANUM($VALOR1); # Chama a função ESCREVANUM com um número inteiro
-ESCREVANUM($VALOR2); # Chama a função ESCREVANUM com um número real
+ESCREVANUM($VALOR1); # Chama a funcao ESCREVANUM com um número inteiro
+ESCREVANUM($VALOR2); # Chama a funcao ESCREVANUM com um número real

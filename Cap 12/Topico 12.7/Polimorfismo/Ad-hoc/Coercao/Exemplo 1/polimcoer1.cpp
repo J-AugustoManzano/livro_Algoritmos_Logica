@@ -1,14 +1,14 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.7
+ * Capitulo ..: 12 - Topico 12.7
  * 
- * Programa ..: POLIFORMISMO AD-HOC DE COERÇÃO
+ * Programa ..: POLIFORMISMO AD-HOC DE COERCAO
  * 
  */
 
@@ -31,8 +31,8 @@ int main(void)
   int VALOR1 = 10;
   double VALOR2 = 3.14159;
 
-  ESCREVANUM(VALOR1); // Chama função ESCREVANUM(int)
-  ESCREVANUM(VALOR2); // Chama função ESCREVANUM(double)
+  ESCREVANUM(VALOR1); // Chama funcao ESCREVANUM(int)
+  ESCREVANUM(VALOR2); // Chama funcao ESCREVANUM(double)
 
   return 0;
 }

@@ -1,14 +1,14 @@
 /*
  * Livro .....: Algoritmos
- *              Lógica para Desenvolvimento de Programação de
+ *              Logica para Desenvolvimento de Programacao de
  *              Computadores
- * Autores ...: José Augusto N. G. Manzano
+ * Autores ...: Jose Augusto N. G. Manzano
  *              Jayr Figueiredo de Oliveira
- * Editora ...: Érica
+ * Editora ...: Erica
  *
- * Capítulo ..: 12 - Tópico 12.7
+ * Capitulo ..: 12 - Topico 12.7
  * 
- * Programa ..: POLIFORMISMO UNIVERSAL PARAMÉTRICO
+ * Programa ..: POLIFORMISMO UNIVERSAL PARAMETRICO
  * 
  */
  
@@ -24,13 +24,13 @@ class CLS_PESSOA(val NOME: String) {
 
 class CLS_MEDICO(NOME: String) extends CLS_PESSOA(NOME) {
   override def PROFISSAO(): Unit = {
-    println("Você possui formação em medicina.")
+    println("Você possui formacao em medicina.")
   }
 }
 
 class CLS_ADVOGADO(NOME: String) extends CLS_PESSOA(NOME) {
   override def PROFISSAO(): Unit = {
-    println("Você possui formação em advocacia.")
+    println("Você possui formacao em advocacia.")
   }
 }
 
@@ -54,4 +54,5 @@ object Main extends App {
   PROFISSIONAL = PROFIS3
   PROFISSIONAL.PEGNOME()
   PROFISSIONAL.PROFISSAO()
+  
 }
