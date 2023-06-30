@@ -24,6 +24,7 @@ var I, J, X int
 func main() {
   
   NUMEROS := make([]int, 5) 
+  
   // Trecho de entrada de dados
 
   fmt.Println("CLASSIFICACAO DE NUMEROS (CRESCENTE)\n")

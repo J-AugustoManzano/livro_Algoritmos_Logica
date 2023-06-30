@@ -9,8 +9,6 @@
 #
 # Programa ..: LISTA CLASSIFICADA DE NOMES
 
-#!/usr/bin/awk -f
-
 BEGIN {
 
   # Trecho de entrada de dados

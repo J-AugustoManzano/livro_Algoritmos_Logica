@@ -11,6 +11,8 @@
 
 my @NUMEROS;
 
+# Trecho de entrada de dados
+
 say 'CLASSIFICACAO DE NUMEROS (CRESCENTE)';
 say '';
 
@@ -18,6 +20,8 @@ for 1..5 -> $I {
     printf "Entre o %do. numero: ", $I;
     @NUMEROS[$I-1] = prompt.Int;
 }
+
+# Trecho de processamento da classificacao
 
 for 1..4 -> $I {
     for ($I + 1)..5 -> $J {
@@ -28,6 +32,8 @@ for 1..4 -> $I {
         }
     }
 }
+
+# Trecho de saida com dados classificados
 
 say '';
 say 'NUMEROS CLASSIFICADOS';

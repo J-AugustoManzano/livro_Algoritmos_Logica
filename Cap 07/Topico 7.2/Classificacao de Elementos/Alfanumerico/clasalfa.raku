@@ -11,6 +11,8 @@
 
 my @NOME;
 
+# Trecho de entrada de dados
+
 say 'CLASSIFICACAO DE NOMES (ASCENDENTE)';
 say '';
 
@@ -18,6 +20,8 @@ for 1..20 -> $I {
     printf "Entre o %2do. nome: ", $I;
     @NOME[$I-1] = prompt;
 }
+
+# Trecho de processamento da classificacao
 
 for 1..19 -> $I {
     for ($I + 1)..20 -> $J {
@@ -28,6 +32,8 @@ for 1..19 -> $I {
         }
     }
 }
+
+# Trecho de saida com dados classificados
 
 say '';
 say 'NOMES CLASSIFICADOS';

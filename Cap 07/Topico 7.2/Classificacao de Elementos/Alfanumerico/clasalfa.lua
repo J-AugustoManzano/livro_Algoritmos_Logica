@@ -10,7 +10,6 @@
  *
  * Programa ..: LISTA CLASSIFICADA POR NOME
 --]]
---
 
 NOME = {}
 
