@@ -9,8 +9,6 @@
 #
 # Programa ..: LACO CONDICIONAL POS-TESTE COM FLUXO FALSO ITERATIVO
 
-#!/usr/bin/awk -f
-
 BEGIN {
   print "LACO PRE-TESTE COM FLUXO VERDADEIRO"
   print "Multiplicacao de numero por 3 por 5 vezes"
