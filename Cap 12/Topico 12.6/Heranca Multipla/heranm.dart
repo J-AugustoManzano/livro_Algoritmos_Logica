@@ -47,30 +47,34 @@ class CLS_ALUNO extends CLS_SALA with CLS_TURMA {
 }
 
 void main() {
+
   CLS_ALUNO ALUNO = CLS_ALUNO();
+  
   int I;
 
-  // *** Trecho de entrada dos dados ***
-
   print("DADOS ESCOLARES\n");
+  
   stdout.write("Informe o nome: ");
   ALUNO.NOME = stdin.readLineSync()!;
+  
   stdout.write("Informe a turma: ");
   ALUNO.TURMA = stdin.readLineSync()!;
+  
   stdout.write("Informe a sala: ");
   ALUNO.SALA = int.parse(stdin.readLineSync()!);
+  
   print("Informe as notas:");
   for (I = 0; I <= 3; I++) {
     stdout.write("${I + 1}a. nota: ");
     ALUNO.NOTAS[I] = double.parse(stdin.readLineSync()!);
   }
+  
   ALUNO.CMEDIA();
-
-  // *** Trecho de saida dos dados ***
 
   print("");
   print("RELATORIO ESCOLAR");
   print("");
+  
   print("Nome: ${ALUNO.NOME}");
   print("Turma: ${ALUNO.TURMA}");
   print("Sala: ${ALUNO.SALA}");
@@ -78,4 +82,5 @@ void main() {
     stdout.writeln('${I + 1}a. nota: ${ALUNO.NOTAS[I].toStringAsFixed(1).padLeft(5)}');
   }
   stdout.writeln('Media: ${ALUNO.MEDIA.toStringAsFixed(1).padLeft(5)}');
+  
 }

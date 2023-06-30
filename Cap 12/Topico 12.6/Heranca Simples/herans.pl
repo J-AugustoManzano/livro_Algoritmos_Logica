@@ -56,9 +56,11 @@ package CLS_ALUNO {
 }
 
 my $ALUNO = CLS_ALUNO->new();
+
 my $I;
 
 say "DADOS ESCOLARES\n";
+
 print "Informe o nome: ";
 $ALUNO->{NOME} = <STDIN>;
 chomp($ALUNO->{NOME});
@@ -73,9 +75,11 @@ for ($I = 0; $I <= 3; $I++) {
     $ALUNO->{NOTAS}[$I] = <STDIN>;
     chomp($ALUNO->{NOTAS}[$I]);
 }
+
 $ALUNO->CMEDIA();
 
 say "\nRELATORIO ESCOLAR\n";
+
 say "Nome: " . $ALUNO->{NOME};
 say "Sala: " . $ALUNO->{SALA};
 for ($I = 0; $I <= 3; $I++) {

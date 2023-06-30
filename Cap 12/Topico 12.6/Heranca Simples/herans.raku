@@ -29,28 +29,30 @@ class CLS_ALUNO is CLS_SALA {
 }
 
 my $ALUNO = CLS_ALUNO.new;
-my Int $I;
 
-# *** Trecho de entrada dos dados ***
+my Int $I;
 
 say "DADOS ESCOLARES";
 say "";
+
 print "Informe o nome: ";
 $ALUNO.NOME = prompt().chomp;
+
 print "Informe a sala: ";
 $ALUNO.SALA = prompt().chomp.Int;
+
 say "Informe as notas:";
 for 0..3 -> $I {
     print $I + 1 ~ "a. nota: ";
     $ALUNO.NOTAS[$I] = prompt().chomp.Numeric;
 }
-$ALUNO.CMEDIA();
 
-# *** Trecho de saida dos dados ***
+$ALUNO.CMEDIA();
 
 say "";
 say "RELATORIO ESCOLAR";
 say "";
+
 say "Nome: " ~ $ALUNO.NOME;
 say "Sala: " ~ $ALUNO.SALA;
 for 0..3 -> $I {

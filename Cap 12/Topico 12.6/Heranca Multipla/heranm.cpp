@@ -45,33 +45,36 @@ public:
 };
 
 CLS_ALUNO ALUNO;
+
 int I;
 
 int main(void) {
 
-  // *** Trecho de entrada dos dados ***
-
   cout << "DADOS ESCOLARES" << endl;
   cout << endl;
+  
   cout << "Informe o nome: ";
   cin >> ALUNO.NOME;
+  
   cout << "Informe a turma: ";
   cin >> ALUNO.TURMA;
+  
   cout << "Informe a sala: ";
   cin >> ALUNO.SALA;
+  
   cout << "Informe as notas:" << endl;
   for (I = 0; I <= 3; I++) {
     cout << I + 1 << "a. nota: ";
     cin >> ALUNO.NOTAS[I];
   }
+  
   ALUNO.CMEDIA();
 
-  // *** Trecho de saida dos dados ***
-
-  cout << endl;
   cout << fixed << setprecision(1);
+  cout << endl;
   cout << "RELATORIO ESCOLAR" << endl;
   cout << endl;
+  
   cout << "Nome: " << ALUNO.NOME << endl;
   cout << "Turma: " << ALUNO.TURMA << endl;
   cout << "Sala: " << ALUNO.SALA << endl;

@@ -46,6 +46,7 @@ class CLS_ALUNO {
 const ALUNO = new CLS_ALUNO();
 
 console.log("DADOS ESCOLARES\n");
+
 ALUNO.NOME = prompt("Informe o nome: ");
 ALUNO.TURMA.TM = prompt("Informe a turma: ");
 ALUNO.SALA.SL = parseInt(prompt("Informe a sala: "));
@@ -53,8 +54,11 @@ console.log("Informe as notas: ");
 for (let I = 0; I <= 3; I++) {
   ALUNO.NOTAS[I] = parseFloat(prompt(`${I + 1}a. nota: `));
 }
+
 ALUNO.CMEDIA();
+
 console.log("\nRELATORIO ESCOLAR\n");
+
 console.log("Nome: " + ALUNO.NOME);
 console.log("Turma: " + ALUNO.TURMA.TM);
 console.log("Sala: " + ALUNO.SALA.SL);

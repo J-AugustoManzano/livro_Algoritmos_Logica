@@ -68,9 +68,8 @@ package CLS_ALUNO {
 }
 
 my $ALUNO = CLS_ALUNO->new();
-my $I;
 
-# *** Trecho de entrada dos dados ***
+my $I;
 
 say "DADOS ESCOLARES\n";
 print "Informe o nome: ";
@@ -91,6 +90,7 @@ for ($I = 0; $I <= 3; $I++) {
     $ALUNO->{NOTAS}[$I] = <STDIN>;
     chomp($ALUNO->{NOTAS}[$I]);
 }
+
 $ALUNO->CMEDIA();
 
 # *** Trecho de saida dos dados ***

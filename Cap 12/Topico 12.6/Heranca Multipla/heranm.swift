@@ -28,7 +28,7 @@ class CLS_ALUNO: CLS_TURMA, CLS_SALA {
     var MEDIA: Float = 0
     var TURMA: Character = " "
     var SALA: Int = 0
-
+	
     func CMEDIA() -> Float {
         var SOMA: Float = 0
         for I in 0...3 {
@@ -44,6 +44,7 @@ var I: Int = 0
 
 print("DADOS ESCOLARES")
 print()
+
 print("Informe o nome: ", terminator: "")
 ALUNO.NOME = readLine(strippingNewline: true) ?? ""
 
@@ -64,6 +65,7 @@ let media = ALUNO.CMEDIA()
 print()
 print("RELATORIO ESCOLAR")
 print()
+
 print("Nome: \(ALUNO.NOME)")
 print("Turma: \(ALUNO.TURMA)")
 print("Sala: \(ALUNO.SALA)")

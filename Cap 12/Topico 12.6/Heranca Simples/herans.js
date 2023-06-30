@@ -37,18 +37,23 @@ class CLS_ALUNO extends CLS_SALA {
 }
 
 const ALUNO = new CLS_ALUNO();
+
 let I;
+const readlineSync = require('readline-sync');
 
 console.log("DADOS ESCOLARES\n");
-const readlineSync = require('readline-sync');
+
 ALUNO.NOME = readlineSync.question("Informe o nome: ");
 ALUNO.SALA = parseInt(readlineSync.question("Informe a sala: "));
 console.log("Informe as notas:");
 for (I = 0; I <= 3; I++) {
   ALUNO.NOTAS[I] = parseFloat(readlineSync.question(`${I + 1}a. nota: `));
 }
+
 ALUNO.CMEDIA();
+
 console.log("\nRELATORIO ESCOLAR\n");
+
 console.log("Nome: " + ALUNO.NOME);
 console.log("Sala: " + ALUNO.SALA);
 for (I = 0; I <= 3; I++) {

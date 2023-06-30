@@ -33,32 +33,36 @@ class CLS_ALUNO extends CLS_SALA {
 }
 
 public class Main {
+	
   static CLS_ALUNO ALUNO = new CLS_ALUNO();
+  
   static int I;
 
   public static void main(String[] args) {
-	  
-    // *** Trecho de entrada dos dados ***
 
+    Scanner scanner = new Scanner(System.in);
+	
     System.out.println("DADOS ESCOLARES");
     System.out.println();
+	
     System.out.print("Informe o nome: ");
-    Scanner scanner = new Scanner(System.in);
     ALUNO.NOME = scanner.nextLine();
+	
     System.out.print("Informe a sala: ");
     ALUNO.SALA = scanner.nextInt();
+	
     System.out.println("Informe as notas:");
     for (I = 0; I <= 3; I++) {
       System.out.print((I + 1) + "a. nota: ");
       ALUNO.NOTAS[I] = scanner.nextFloat();
     }
+	
     ALUNO.CMEDIA();
-
-    // *** Trecho de saida dos dados ***
 
     System.out.println();
     System.out.println("RELATORIO ESCOLAR");
     System.out.println();
+	
     System.out.println("Nome: " + ALUNO.NOME);
     System.out.println("Sala: " + ALUNO.SALA);
     for (I = 0; I <= 3; I++) {

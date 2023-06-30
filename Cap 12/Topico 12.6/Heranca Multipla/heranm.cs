@@ -54,26 +54,28 @@ public class MainClass {
   public static void Main(string[] args) {
 
     CLS_ALUNO ALUNO = new CLS_ALUNO();
-  
-    // *** Trecho de entrada dos dados ***
     
     Console.WriteLine("DADOS ESCOLARES\n");
+	
     Console.Write("Informe o nome: ");
     ALUNO.NOME = Console.ReadLine();
+	
     Console.Write("Informe a turma: ");
     ALUNO.TURMA.TURMA = Console.ReadLine()[0];
+	
     Console.Write("Informe a sala: ");
     ALUNO.SALA.SALA = int.Parse(Console.ReadLine());
+	
     Console.WriteLine("Informe as notas:");
     for (int I = 0; I <= 3; I++) {
       Console.Write((I + 1) + "a. nota: ");
       ALUNO.NOTAS[I] = float.Parse(Console.ReadLine());
     }
+	
     ALUNO.CMEDIA();
-
-    // *** Trecho de saida dos dados ***
-    
+ 
     Console.WriteLine("\nRELATORIO ESCOLAR\n");
+	
     Console.WriteLine("Nome: " + ALUNO.NOME);
     Console.WriteLine("Turma: " + ALUNO.TURMA.TURMA);
     Console.WriteLine("Sala: " + ALUNO.SALA.SALA);
@@ -81,5 +83,6 @@ public class MainClass {
       Console.WriteLine("{0}a. nota: {1,5:0.0}", (I + 1), ALUNO.NOTAS[I]);
     }
     Console.WriteLine("Media: {0,5:0.0}", ALUNO.MEDIA);
+	
   }
 }

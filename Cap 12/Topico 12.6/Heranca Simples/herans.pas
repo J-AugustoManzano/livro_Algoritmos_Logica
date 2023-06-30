@@ -39,31 +39,33 @@ end;
 
 var
   ALUNO: CLS_ALUNO;
+  
   I: Integer;
 
 begin
 
-  // *** Trecho de entrada dos dados ***
-
   WriteLn('DADOS ESCOLARES');
   WriteLn;
+  
   Write('Informe o nome: ');
   ReadLn(ALUNO.NOME);
+  
   Write('Informe a sala: ');
   ReadLn(ALUNO.SALA);
+  
   WriteLn('Informe as notas:');
   for I := 1 to 4 do
   begin
     Write(I, 'a. nota: ');
     ReadLn(ALUNO.NOTAS[I]);
   end;
+  
   ALUNO.MEDIA := ALUNO.CMEDIA;
   
-  // *** Trecho de saida dos dados ***
-
   WriteLn;
   WriteLn('RELATORIO ESCOLAR');
   WriteLn;
+  
   WriteLn('Nome: ', ALUNO.NOME);
   WriteLn('Sala: ', ALUNO.SALA);
   for I := 1 to 4 do

@@ -35,23 +35,22 @@ class CLS_ALUNO(CLS_SALA, CLS_TURMA):
 
 ALUNO = CLS_ALUNO()
 
-# Trecho de entrada dos dados
-
 print("DADOS ESCOLARES")
 print()
+
 ALUNO.NOME = input("Informe o nome: ")
 ALUNO.TURMA = input("Informe a sala: ")
 ALUNO.SALA = int(input("Informe a sala: "))
 print("Informe as notas:")
 for I in range(4):
   ALUNO.NOTAS[I] = float(input(f"{I + 1}a. nota: "))
+  
 ALUNO.CMEDIA()
-
-# Trecho de saida dos dados
 
 print()
 print("RELATORIO ESCOLAR")
 print()
+
 print("Nome:", ALUNO.NOME)
 print("Turma:", ALUNO.TURMA)
 print("Sala:", ALUNO.SALA)

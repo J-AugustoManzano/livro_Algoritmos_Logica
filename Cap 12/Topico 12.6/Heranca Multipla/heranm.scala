@@ -51,25 +51,27 @@ object Main {
   def main(args: Array[String]): Unit = {
     val ALUNO: CLS_ALUNO = new CLS_ALUNO
 
-    // *** Trecho de entrada dos dados ***
-
     println("DADOS ESCOLARES\n")
+	
     print("Informe o nome: ")
     ALUNO.NOME = StdIn.readLine()
+	
     print("Informe a turma: ")
     ALUNO.TURMA = StdIn.readChar()
+	
     print("Informe a sala: ")
     ALUNO.SALA = StdIn.readInt()
+	
     println("Informe as notas:")
     for (I <- 0 to 3) {
       print(s"${I + 1}a. nota: ")
       ALUNO.NOTAS(I) = StdIn.readFloat()
     }
+	
     ALUNO.CMEDIA()
 
-    // *** Trecho de saida dos dados ***
-
     println("\nRELATORIO ESCOLAR\n")
+	
     println(s"Nome: ${ALUNO.NOME}")
     println(s"Turma: ${ALUNO.TURMA}")
     println(s"Sala: ${ALUNO.SALA}")

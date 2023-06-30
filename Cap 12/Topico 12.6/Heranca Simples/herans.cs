@@ -33,36 +33,41 @@ class CLS_ALUNO : CLS_SALA {
 }
 
 public class Program {
+	
   static CLS_ALUNO ALUNO = new CLS_ALUNO();
+  
   static int I;
 
   public static void Main(string[] args) {
     
-    // *** Trecho de entrada dos dados ***
-
     Console.WriteLine("DADOS ESCOLARES");
     Console.WriteLine();
+	
     Console.Write("Informe o nome: ");
     ALUNO.NOME = Console.ReadLine();
+	
     Console.Write("Informe a sala: ");
     ALUNO.SALA = Convert.ToInt32(Console.ReadLine());
+	
     Console.WriteLine("Informe as notas:");
     for (I = 0; I <= 3; I++) {
       Console.Write((I + 1) + "a. nota: ");
       ALUNO.NOTAS[I] = Convert.ToSingle(Console.ReadLine());
     }
+	
     ALUNO.CMEDIA();
-
-    // *** Trecho de saida dos dados ***
 
     Console.WriteLine();
     Console.WriteLine("RELATORIO ESCOLAR");
     Console.WriteLine();
+	
     Console.WriteLine("Nome: " + ALUNO.NOME);
     Console.WriteLine("Sala: " + ALUNO.SALA);
     for (I = 0; I <= 3; I++) {
       Console.WriteLine($"{(I + 1)}a. nota: {ALUNO.NOTAS[I],5:F1}");
     }
     Console.WriteLine($"Media: {ALUNO.MEDIA,5:F1}");
+	
   }
+  
 }

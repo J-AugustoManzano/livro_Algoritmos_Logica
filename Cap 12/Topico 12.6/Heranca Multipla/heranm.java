@@ -55,27 +55,30 @@ public class Main {
   public static void main(String[] args) {
 
     CLS_ALUNO ALUNO = new CLS_ALUNO();
-  
-    // *** Trecho de entrada dos dados ***
+
+    Scanner scanner = new Scanner(System.in);
     
     System.out.println("DADOS ESCOLARES\n");
-    Scanner scanner = new Scanner(System.in);
+	
     System.out.print("Informe o nome: ");
     ALUNO.NOME = scanner.nextLine();
+	
     System.out.print("Informe a turma: ");
     ALUNO.TURMA.TURMA = scanner.next().charAt(0);
+	
     System.out.print("Informe a sala: ");
     ALUNO.SALA.SALA = scanner.nextInt();
+	
     System.out.println("Informe as notas:");
     for (int I = 0; I <= 3; I++) {
       System.out.print((I + 1) + "a. nota: ");
       ALUNO.NOTAS[I] = scanner.nextFloat();
     }
+	
     ALUNO.CMEDIA();
-
-    // *** Trecho de saida dos dados ***
     
     System.out.println("\nRELATORIO ESCOLAR\n");
+	
     System.out.println("Nome: " + ALUNO.NOME);
     System.out.println("Turma: " + ALUNO.TURMA.TURMA);
     System.out.println("Sala: " + ALUNO.SALA.SALA);

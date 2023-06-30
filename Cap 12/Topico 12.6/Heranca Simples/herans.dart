@@ -34,29 +34,32 @@ class CLS_ALUNO extends CLS_SALA {
 }
 
 void main() {
-  CLS_ALUNO ALUNO = CLS_ALUNO();
-  int I;
 
-  // *** Trecho de entrada dos dados ***
+  CLS_ALUNO ALUNO = CLS_ALUNO();
+  
+  int I;
 
   stdout.writeln('DADOS ESCOLARES');
   stdout.writeln();
+  
   stdout.write('Informe o nome: ');
   ALUNO.NOME = stdin.readLineSync()!;
+  
   stdout.write('Informe a sala: ');
   ALUNO.SALA = int.parse(stdin.readLineSync()!);
+  
   stdout.writeln('Informe as notas:');
   for (I = 0; I <= 3; I++) {
     stdout.write('${I + 1}a. nota: ');
     ALUNO.NOTAS[I] = double.parse(stdin.readLineSync()!);
   }
+  
   ALUNO.CMEDIA();
-
-  // *** Trecho de saida dos dados ***
 
   stdout.writeln();
   stdout.writeln('RELATORIO ESCOLAR');
   stdout.writeln();
+  
   stdout.writeln('Nome: ${ALUNO.NOME}');
   stdout.writeln('Sala: ${ALUNO.SALA}');
   for (I = 0; I <= 3; I++) {

@@ -53,36 +53,40 @@ begin
 end;
 
 var
-  ALUNO: ^CLS_ALUNO; // Ponteiro para classe (estrutura) "CLS_ALUNO"
+
+  ALUNO: ^CLS_ALUNO; 
+  
   I: Integer;
 
 begin
 
-  New(ALUNO); // Alocacao dinâmica de memoria para o objeto "ALUNO"
-
-  // *** Trecho de entrada dos dados ***
+  New(ALUNO);
 
   WriteLn('DADOS ESCOLARES');
   WriteLn;
+  
   Write('Informe o nome: ');
   ReadLn(ALUNO^.NOME);
+  
   Write('Informe a turma: ');
   ReadLn(ALUNO^.TURMA.TURMA);
+  
   Write('Informe a sala: ');
   ReadLn(ALUNO^.SALA.SALA);
+  
   WriteLn('Informe as notas:');
   for I := 1 to 4 do
   begin
     Write(I, 'a. nota: ');
     ReadLn(ALUNO^.NOTAS[I]);
   end;
+  
   ALUNO^.MEDIA := ALUNO^.CMEDIA;
   
-  // *** Trecho de saida dos dados ***
-
   WriteLn;
   WriteLn('RELATORIO ESCOLAR');
   WriteLn;
+  
   WriteLn('Nome: ', ALUNO^.NOME);
   WriteLn('Turma: ', ALUNO^.TURMA.TURMA);
   WriteLn('Sala: ', ALUNO^.SALA.SALA);

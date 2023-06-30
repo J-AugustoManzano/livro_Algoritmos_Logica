@@ -33,6 +33,7 @@ class CLS_ALUNO: CLS_SALA {
 }
 
 let ALUNO = CLS_ALUNO()
+
 var I: Int = 0
 
 print("DADOS ESCOLARES")
@@ -51,11 +52,13 @@ for i in 0...3 {
     let notaInput = readLine(strippingNewline: true)
     ALUNO.NOTAS[i] = Float(notaInput ?? "") ?? 0
 }
+
 ALUNO.CMEDIA()
 
 print()
 print("RELATORIO ESCOLAR")
 print()
+
 print("Nome: \(ALUNO.NOME)")
 print("Sala: \(ALUNO.SALA)")
 for i in 0...3 {
