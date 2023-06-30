@@ -23,12 +23,16 @@ void fatorial(unsigned short N) {
 }
 
 int main(void) {
+	
   unsigned short LIMITE;
+  
   printf("CALCULO DE FATORIAL\n");
   printf("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR\n\n");
+  
   printf("Qual fatorial (1-20): ");
   scanf("%hu", &LIMITE);
-  printf("\n");
+
   fatorial(LIMITE);
+  
   return 0;
 }

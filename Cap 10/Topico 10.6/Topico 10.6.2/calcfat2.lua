@@ -24,8 +24,9 @@ RESP = {1}
 print("CALCULO DE FATORIAL")
 print("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA")
 print()
+
 io.write("Qual fatorial (1-20): ")
 LIMITE = tonumber(io.read())
-print()
+
 FATORIAL(LIMITE, RESP)
 print("Fatorial = " .. RESP[1])

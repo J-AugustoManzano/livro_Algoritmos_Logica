@@ -20,12 +20,15 @@ function fatorial(N) {
 }
 
 BEGIN {
+
   print "CALCULO DE FATORIAL";
   print "PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR";
   print "";
+  
   printf "Qual fatorial (1-20): ";
   fflush();
   getline LIMITE < "/dev/tty";
-  print "";
+
   fatorial(LIMITE);
+  
 }

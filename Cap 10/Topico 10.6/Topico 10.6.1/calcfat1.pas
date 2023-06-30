@@ -29,11 +29,14 @@ var
   LIMITE: byte;
 
 begin
+
   writeln('CALCULO DE FATORIAL');
   writeln('PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR');
   writeln;
+  
   write('Qual fatorial (1-20): ');
   readln(LIMITE);
-  writeln;
+
   FATORIAL(LIMITE);
+  
 end.

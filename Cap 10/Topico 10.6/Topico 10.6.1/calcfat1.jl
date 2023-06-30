@@ -22,7 +22,8 @@ end
 println("CALCULO DE FATORIAL")
 println("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR")
 println()
+
 print("Qual fatorial (1-20): ")
 LIMITE = parse(UInt8, readline())
-println()
+
 fatorial(LIMITE)

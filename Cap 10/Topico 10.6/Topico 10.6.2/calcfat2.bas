@@ -23,12 +23,15 @@ Dim As Byte LIMITE
 Dim As ULongInt RESP
 
 RESP = 1
+
 Print "CALCULO DE FATORIAL"
 Print "PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA"
 Print
+
 Print "Qual fatorial (1-20): ";
 Input "", LIMITE
-Print
+
 FATORIAL(LIMITE, RESP)
 Print "Fatorial = "; RESP
+
 End

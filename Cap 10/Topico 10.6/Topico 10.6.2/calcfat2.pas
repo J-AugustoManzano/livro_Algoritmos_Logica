@@ -28,13 +28,16 @@ var
   RESP: qword;
 
 begin
+
   RESP := 1;
   writeln('CALCULO DE FATORIAL');
   writeln('PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA');
   writeln;
+  
   write('Qual fatorial (1-20): ');
   readln(LIMITE);
-  writeln;
+
   FATORIAL(LIMITE, RESP);
   writeln('Fatorial = ', RESP);
+  
 end.

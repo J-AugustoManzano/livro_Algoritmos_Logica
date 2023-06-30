@@ -20,6 +20,7 @@ def fatorial(N):
 print('CALCULO DE FATORIAL')
 print('PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR')
 print()
+
 LIMITE = int(input('Qual fatorial (1-20): '))
-print()
+
 fatorial(LIMITE)

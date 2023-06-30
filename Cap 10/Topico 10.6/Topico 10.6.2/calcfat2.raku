@@ -22,8 +22,9 @@ my $RESP = 1;
 say 'CALCULO DE FATORIAL';
 say 'PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA';
 say '';
+
 print 'Qual fatorial (1-N): ';
 $LIMITE = prompt;
-say '';
+
 FATORIAL($LIMITE, $RESP);
 say "Fatorial = $RESP";

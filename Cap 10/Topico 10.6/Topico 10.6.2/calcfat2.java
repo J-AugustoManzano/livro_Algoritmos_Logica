@@ -26,14 +26,19 @@ public class Main {
   static long[] RESP = new long[1];
   
   public static void main(String[] args) {
+	  
+    Scanner entrada = new Scanner(System.in);
+
     System.out.println("CALCULO DE FATORIAL");
     System.out.println("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA");
     System.out.println();
-    Scanner scanner = new Scanner(System.in);
+	
     System.out.print("Qual fatorial (1-20): ");
-    LIMITE = scanner.nextByte();
-    System.out.println();
+    LIMITE = entrada.nextByte();
+	
     FATORIAL(LIMITE, RESP);
     System.out.println("Fatorial = " + RESP[0]);
+	entrada.close();
+	
   }
 }

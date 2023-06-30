@@ -29,11 +29,15 @@ ulong RESP;
 
 void main()
 {
+
   writeln("CALCULO DE FATORIAL");
   writeln("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA");
   writeln();
+  
   write("Qual fatorial (1-20): ");
   readf(" %u", &LIMITE);
+  
   FATORIAL(LIMITE, RESP);
   writeln("Fatorial = ", RESP);
+  
 }

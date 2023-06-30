@@ -28,13 +28,17 @@ class Program
 
   static void Main()
   {
+	  
     byte LIMITE;
+	
     Console.WriteLine("CALCULO DE FATORIAL");
     Console.WriteLine("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR");
     Console.WriteLine();
+	
     Console.Write("Qual fatorial (1-20): ");
     LIMITE = Convert.ToByte(Console.ReadLine());
-    Console.WriteLine();
+
     FATORIAL(LIMITE);
+	
   }
 }

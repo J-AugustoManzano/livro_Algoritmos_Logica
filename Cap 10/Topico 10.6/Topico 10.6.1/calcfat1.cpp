@@ -24,13 +24,17 @@ void fatorial(unsigned short N) {
 }
 
 int main() {
+	
   unsigned short LIMITE;
+  
   cout << "CALCULO DE FATORIAL" << endl;
   cout << "PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR" << endl;
   cout << endl;
+  
   cout << "Qual fatorial (1-20): ";
   cin >> LIMITE;
-  cout << endl;
+
   fatorial(LIMITE);
+  
   return 0;
 }

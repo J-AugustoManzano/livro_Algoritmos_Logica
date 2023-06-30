@@ -24,14 +24,17 @@ class Main {
   }
 
   public static void main(String[] args) {
+	  
     byte LIMITE;
+    Scanner entrada = new Scanner(System.in);
+	
     System.out.println("CALCULO DE FATORIAL");
     System.out.println("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR");
     System.out.println();
-    Scanner entrada = new Scanner(System.in);
+	
     System.out.print("Qual fatorial (1-20): ");
     LIMITE = entrada.nextByte();
-    System.out.println();
+	
     FATORIAL(LIMITE);
     entrada.close();
   }

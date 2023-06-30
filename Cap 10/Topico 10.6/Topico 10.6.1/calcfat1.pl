@@ -27,8 +27,9 @@ sub fatorial {
 
 print "CALCULO DE FATORIAL\n";
 print "PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR\n\n";
+
 print "Qual fatorial (1-20): ";
 my $LIMITE = <STDIN>;
 chomp($LIMITE);
-print "\n";
+
 fatorial($LIMITE);

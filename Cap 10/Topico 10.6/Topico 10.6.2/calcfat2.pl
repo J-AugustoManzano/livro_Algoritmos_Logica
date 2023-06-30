@@ -31,9 +31,10 @@ my $RESP;
 $RESP = 1;
 print "CALCULO DE FATORIAL\n";
 print "PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA\n\n";
+
 print "Qual fatorial (1-20): ";
 $LIMITE = <STDIN>;
 chomp($LIMITE);
-print "\n";
+
 fatorial($LIMITE, \$RESP);
 print "Fatorial = $RESP\n";

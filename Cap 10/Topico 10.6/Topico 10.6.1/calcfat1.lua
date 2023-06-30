@@ -22,7 +22,8 @@ end
 print("CALCULO DE FATORIAL")
 print("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR")
 print()
+
 io.write("Qual fatorial (1-20): ")
 local LIMITE = tonumber(io.read())
-print()
+
 fatorial(LIMITE)

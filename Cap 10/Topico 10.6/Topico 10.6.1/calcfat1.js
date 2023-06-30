@@ -24,6 +24,7 @@ function fatorial(N) {
 
 console.log("CALCULO DE FATORIAL");
 console.log("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR\n");
+
 let LIMITE = parseInt(readline.question("Qual fatorial (1-21): "));
-console.log();
+
 fatorial(LIMITE);

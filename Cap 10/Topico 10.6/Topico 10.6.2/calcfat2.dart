@@ -26,12 +26,16 @@ int LIMITE = 0;
 int RESP = 1;
 
 void main() {
+
   print('CALCULO DE FATORIAL');
   print('PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA\n');
+  
   stdout.write('Qual fatorial (1-20): ');
   LIMITE = int.parse(stdin.readLineSync()!);
   List<int> fatList = [RESP];
+  
   FATORIAL(LIMITE, fatList);
   RESP = fatList[0];
   print('Fatorial = $RESP');
+  
 }

@@ -22,7 +22,8 @@ RESP = [1]
 print("CALCULO DE FATORIAL")
 print("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA")
 print()
+
 LIMITE = int(input("Qual fatorial (1-20): "))
-print()
+
 FATORIAL(LIMITE, RESP)
 print("Fatorial =", RESP[0])

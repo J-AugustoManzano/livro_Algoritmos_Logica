@@ -24,11 +24,14 @@ void fatorial(int N) {
 }
 
 void main() {
-  int LIMITE = 0;  print('CALCULO DE FATORIAL');
+
+  int LIMITE = 0;  
+  print('CALCULO DE FATORIAL');
   print('PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR');
   print('');
+  
   stdout.write('Qual fatorial (1-20): ');
   LIMITE = int.parse(stdin.readLineSync()!);
-  print('');
+
   fatorial(LIMITE);
 }

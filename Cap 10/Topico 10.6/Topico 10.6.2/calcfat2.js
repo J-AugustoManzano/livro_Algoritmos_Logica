@@ -23,9 +23,11 @@ function fatorial(N, FAT) {
 
 let LIMITE;
 let RESP = { value: 1 };
+
 console.log("CALCULO DE FATORIAL");
 console.log("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA\n");
+
 LIMITE = parseInt(readline.question("Qual fatorial (1-21): "));
-console.log();
+
 fatorial(LIMITE, RESP);
 console.log("Fatorial = " + RESP.value);

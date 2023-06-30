@@ -30,14 +30,18 @@ class Program
 
   static void Main()
   {
+	  
     RESP = 1;
+	
     Console.WriteLine("CALCULO DE FATORIAL");
     Console.WriteLine("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA");
     Console.WriteLine();
+	
     Console.Write("Qual fatorial (1-20): ");
     LIMITE = byte.Parse(Console.ReadLine());
-    Console.WriteLine();
+
     FATORIAL(LIMITE, ref RESP);
     Console.WriteLine("Fatorial = " + RESP);
+	
   }
 }

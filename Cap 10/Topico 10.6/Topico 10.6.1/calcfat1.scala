@@ -22,13 +22,17 @@ object Main {
   }
 
   def main(args: Array[String]): Unit = {
+  
     var LIMITE: Byte = 0
+	
     println("CALCULO DE FATORIAL")
     println("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR")
     println()
+	
     print("Qual fatorial (1-20): ")
     LIMITE = scala.io.StdIn.readByte()
-    println()
+
     fatorial(LIMITE)
+	
   }
 }

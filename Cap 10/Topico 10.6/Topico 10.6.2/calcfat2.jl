@@ -12,6 +12,7 @@
 =#
 
 let LIMITE = 0
+
     RESP = Ref{BigInt}(BigInt(1))
 
     function FATORIAL(N::UInt8, FAT::Ref{BigInt})
@@ -24,9 +25,11 @@ let LIMITE = 0
     println("CALCULO DE FATORIAL")
     println("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA")
     println()
+	
     print("Qual fatorial (1-20): ")
     LIMITE = parse(UInt8, readline())
-    println()
+	
     FATORIAL(LIMITE, RESP)
     println("Fatorial = ", RESP[])
+	
 end

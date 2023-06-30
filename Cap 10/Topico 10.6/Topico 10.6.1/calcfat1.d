@@ -29,12 +29,16 @@ void fatorial(uint N)
 
 void main()
 {
+
   uint LIMITE;
+  
   writeln("CALCULO DE FATORIAL");
   writeln("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR");
   writeln();
+  
   write("Qual fatorial (1-20): ");
   LIMITE = stdin.readln().strip().to!uint;
-  writeln();
+
   fatorial(LIMITE);
+  
 }

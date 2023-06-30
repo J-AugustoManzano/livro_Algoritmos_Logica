@@ -26,12 +26,16 @@ func fatorial(N byte) {
 }
 
 func main() {
+
   var LIMITE byte
+  
   fmt.Println("CALCULO DE FATORIAL")
   fmt.Println("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR")
   fmt.Println()
+  
   fmt.Print("Qual fatorial (1-20): ")
   fmt.Scanln(&LIMITE)
-  fmt.Println()
+
   fatorial(LIMITE)
+  
 }

@@ -20,7 +20,8 @@ sub FATORIAL($N) {
 say 'CALCULO DE FATORIAL';
 say 'PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR';
 say '';
+
 print 'Qual fatorial (1-N): ';
 my $LIMITE = prompt;
-say '';
+
 FATORIAL($LIMITE);

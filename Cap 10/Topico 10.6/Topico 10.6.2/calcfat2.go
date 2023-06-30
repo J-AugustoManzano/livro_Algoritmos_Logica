@@ -30,13 +30,17 @@ var (
 )
 
 func main() {
+
   RESP = 1
+  
   fmt.Println("CALCULO DE FATORIAL")
   fmt.Println("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA")
   fmt.Println()
+  
   fmt.Print("Qual fatorial (1-20): ")
   fmt.Scanln(&LIMITE)
-  fmt.Println()
+  
   FATORIAL(LIMITE, &RESP)
   fmt.Println("Fatorial =", RESP)
+  
 }

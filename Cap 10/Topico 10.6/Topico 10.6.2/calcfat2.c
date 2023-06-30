@@ -25,13 +25,17 @@ unsigned short LIMITE;
 unsigned long long int RESP;
   
 int main(void) {
+	
   RESP = 1;
+  
   printf("CALCULO DE FATORIAL\n");
   printf("PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA\n\n");
+  
   printf("Qual fatorial (1-20): ");
   scanf("%hu", &LIMITE);
-  printf("\n");
+
   fatorial(LIMITE, &RESP);
   printf("Fatorial = %llu\n", RESP);
+  
   return 0;
 }

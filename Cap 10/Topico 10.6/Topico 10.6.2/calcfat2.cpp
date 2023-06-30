@@ -26,13 +26,17 @@ unsigned short LIMITE;
 unsigned long long int RESP;
 
 int main() {
+	
   RESP = 1;
+  
   cout << "CALCULO DE FATORIAL" << endl;
   cout << "PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA" << endl << endl;
+  
   cout << "Qual fatorial (1-20): ";
   cin >> LIMITE;
-  cout << endl;
+
   fatorial(LIMITE, RESP);
   cout << "Fatorial = " << RESP << endl;
+  
   return 0;
 }

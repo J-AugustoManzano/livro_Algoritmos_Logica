@@ -26,8 +26,9 @@ Dim LIMITE As Byte
 Print "CALCULO DE FATORIAL"
 Print "PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR"
 Print
+
 Print "Qual fatorial (1-20): ";
 Input "", LIMITE
-Print
+
 FATORIAL(LIMITE)
 End

@@ -9,19 +9,21 @@
 # 
 # Programa ..: PASSAGEM DE PARAMETRO POR REFERENCIA
 
-#!/usr/bin/awk -f
-
 BEGIN {
+
   LIMITE = 0;
   RESP = 1;
+  
   print "CALCULO DE FATORIAL";
   print "PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR REFERENCIA";
   print "";
+  
   printf "Qual fatorial (1-20): ";
   getline LIMITE < "/dev/tty";
-  print "";
+
   RESP = FATORIAL(LIMITE);
   print "Fatorial =", RESP;
+  
 }
 
 function FATORIAL(N) {
