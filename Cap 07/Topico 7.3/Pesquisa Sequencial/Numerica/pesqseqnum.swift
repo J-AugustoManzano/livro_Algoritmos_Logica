@@ -26,14 +26,14 @@ while RESP == "SIM" {
 
     I = 0
     ACHA = false
-    while I <= 4 && !ACHA {
+    while (I <= 4 && ACHA == false) {
         if PESQ == NUMERO[I] {
             ACHA = true
         } else {
             I += 1
         }
     }
-    if ACHA == true {
+    if (ACHA == true) {
         print("\n\(PESQ) foi localizado na posicao \(I + 1)\n")
     } else {
         print("\n\(PESQ) nao foi localizado\n")

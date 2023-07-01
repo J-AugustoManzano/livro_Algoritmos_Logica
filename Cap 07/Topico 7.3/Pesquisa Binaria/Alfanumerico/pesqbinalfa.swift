@@ -55,14 +55,14 @@ while RESP == "SIM" {
     FINAL = 19
     ACHA = false
     MEIO = 0 
-    while COMECO <= FINAL && !ACHA {
+    while (COMECO <= FINAL && ACHA == false) {
         MEIO = (COMECO + FINAL) / 2
         if PESQ == NOME[MEIO] {
             ACHA = true
         } else {
             if PESQ < NOME[MEIO] {
                 FINAL = MEIO - 1
-            } else {a
+            } else {
                 COMECO = MEIO + 1
             }
         }

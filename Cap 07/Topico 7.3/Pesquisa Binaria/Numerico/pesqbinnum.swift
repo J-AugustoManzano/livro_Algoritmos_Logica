@@ -41,7 +41,7 @@ while RESP == "SIM" {
     FINAL = 9
     ACHA = false
     MEIO = 0
-    while COMECO <= FINAL && !ACHA {
+    while (COMECO <= FINAL && ACHA == false) {
         MEIO = (COMECO + FINAL) / 2
         if PESQ == NUMERO[MEIO] {
             ACHA = true

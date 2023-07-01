@@ -18,7 +18,7 @@ let I, J, COMECO, FINAL, MEIO, PESQ, X;
 let RESP;
 let ACHA;
 
-console.log("PESQUISA BINARIA - NUMERO\n\n");
+console.log("PESQUISA BINARIA - NUMERO\n");
 
 for (I = 0; I <= 9; I++) {
   NUMERO[I] = parseInt(readline.question(`Entre o ${I + 1}o. numero: `));
@@ -46,7 +46,7 @@ while (RESP === "SIM") {
   COMECO = 0;
   FINAL = 9;
   ACHA = false;
-  while (COMECO <= FINAL && !ACHA) {
+  while (COMECO <= FINAL && ACHA === false) {
     MEIO = Math.floor((COMECO + FINAL) / 2);
     if (PESQ === NUMERO[MEIO]) {
       ACHA = true;
@@ -58,7 +58,7 @@ while (RESP === "SIM") {
       }
     }
   }
-  if (ACHA) {
+  if (ACHA === true) {
     console.log(`\n${PESQ} foi localizado na posicao ${MEIO + 1}`);
   } else {
     console.log(`\n${PESQ} nao foi localizado`);
@@ -67,4 +67,3 @@ while (RESP === "SIM") {
 }
 
 // *** fim trecho de pesquisa binaria ***
-

@@ -13,7 +13,7 @@
 
 import java.util.Scanner;
 
-public class PesquisaBinariaNome {
+public class Main {
   public static void main(String[] args) {
 
     int[] NUMERO = new int[10];
@@ -56,7 +56,7 @@ public class PesquisaBinariaNome {
       COMECO = 0;
       FINAL = 9;
       ACHA = false;
-      while (COMECO <= FINAL && !ACHA) {
+      while (COMECO <= FINAL && ACHA == false) {
         MEIO = (COMECO + FINAL) / 2;
         if (PESQ == NUMERO[MEIO]) {
           ACHA = true;

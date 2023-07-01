@@ -55,7 +55,7 @@ func main() {
         I = I + 1
       }
     }
-    if (ACHA  == true) {
+    if (ACHA == true) {
       fmt.Println()
       fmt.Printf("%s foi localizado na posicao %d\n", PESQ, I + 1)
     } else {

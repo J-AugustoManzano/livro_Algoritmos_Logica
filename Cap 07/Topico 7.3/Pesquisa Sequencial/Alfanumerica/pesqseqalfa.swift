@@ -25,7 +25,7 @@ while RESP == "SIM" {
     }
     I = 1
     ACHA = false
-    while I <= 10 && !ACHA {
+    while (I <= 10 && ACHA == false) {
         if PESQ == NOME[I-1] {
             ACHA = true
         } else {

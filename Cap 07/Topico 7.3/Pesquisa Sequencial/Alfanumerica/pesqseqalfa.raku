@@ -36,7 +36,7 @@ sub MAIN {
         $I = 1;
         $ACHA = False;
 
-        while $I <= 10 && !$ACHA {
+        while ($I <= 10 && $ACHA eq False) {
             if $PESQ eq @NOME[$I-1] {
                 $ACHA = True;
             }
@@ -45,7 +45,7 @@ sub MAIN {
             }
         }
 
-        if $ACHA eq True {
+        if ($ACHA eq True) {
             say '';
             say $PESQ ~ " foi localizado na posicao " ~ $I;
         }

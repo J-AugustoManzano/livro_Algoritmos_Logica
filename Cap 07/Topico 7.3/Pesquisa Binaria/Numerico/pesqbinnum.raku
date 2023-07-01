@@ -55,7 +55,7 @@ sub MAIN {
         $FINAL = 10;
         $ACHA = False;
 
-        while $COMECO <= $FINAL && !$ACHA {
+        while ($COMECO <= $FINAL && $ACHA == False) {
             $MEIO = ($COMECO + $FINAL) div 2;
             if $PESQ == @NUMERO[$MEIO-1] {
                 $ACHA = True;

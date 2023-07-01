@@ -52,7 +52,7 @@ while $RESP eq 'SIM' {
     $COMECO = 1;
     $FINAL = 10;
     $ACHA = False;
-    while $COMECO <= $FINAL && !$ACHA {
+    while $COMECO <= $FINAL && $ACHA eq False {
         $MEIO = ($COMECO + $FINAL) div 2;
         if $PESQ eq @NOME[$MEIO] {
             $ACHA = True;
@@ -64,7 +64,7 @@ while $RESP eq 'SIM' {
             }
         }
     }
-    if $RESP eq 'SIM' {
+    if $ACHA eq True {
         say "";
         say $PESQ, " foi localizado na posicao ", $MEIO;
     } else {

@@ -48,7 +48,7 @@ while RESP == "SIM"
   FINAL = 10
   MEIO = 0
   ACHA = false
-  while COMECO <= FINAL && !ACHA
+  while (COMECO <= FINAL && ACHA == false)
     MEIO = div(COMECO + FINAL, 2)
     if PESQ == NUMERO[MEIO]
       ACHA = true
@@ -60,7 +60,7 @@ while RESP == "SIM"
       end
     end
   end
-  if ACHA
+  if ACHA == true
     println()
     println(PESQ, " foi localizado na posicao ", MEIO)
   else

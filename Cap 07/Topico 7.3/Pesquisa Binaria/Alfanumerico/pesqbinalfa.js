@@ -46,7 +46,7 @@ while (RESP === "SIM") {
   COMECO = 0;
   FINAL = 9;
   ACHA = false;
-  while (COMECO <= FINAL && !ACHA) {
+  while (COMECO <= FINAL && ACHA === false) {
     MEIO = Math.floor((COMECO + FINAL) / 2);
     if (PESQ === NOME[MEIO]) {
       ACHA = true;
@@ -58,7 +58,7 @@ while (RESP === "SIM") {
       }
     }
   }
-  if (ACHA) {
+  if (ACHA === true) {
     console.log(`\n${PESQ} foi localizado na posicao ${MEIO + 1}`);
   } else {
     console.log(`\n${PESQ} nao foi localizado`);

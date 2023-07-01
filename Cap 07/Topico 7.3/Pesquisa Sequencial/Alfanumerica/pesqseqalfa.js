@@ -31,14 +31,14 @@ while (RESP === "SIM") {
   PESQ = readline.question("\nEntre o nome a ser pesquisado: ");
   I = 1;
   ACHA = false;
-  while (I <= 10 && !ACHA) {
+  while (I <= 10 && ACHA === false) {
     if (PESQ === NOME[I - 1]) {
       ACHA = true;
     } else {
       I = I + 1;
     }
   }
-  if (ACHA) {
+  if (ACHA === true) {
     console.log(`\n${PESQ} foi localizado na posicao ${I}`);
   } else {
     console.log(`\n${PESQ} nao foi localizado`);

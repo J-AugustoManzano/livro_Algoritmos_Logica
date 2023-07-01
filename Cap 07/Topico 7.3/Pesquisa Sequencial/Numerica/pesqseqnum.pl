@@ -38,14 +38,14 @@ while ($RESP eq "SIM") {
   chomp($PESQ = <STDIN>);
   $I = 0;
   $ACHA = 0;
-  while (($I <= 4) && (!$ACHA)) {
+  while ($I <= 4 && $ACHA eq 0) {
     if ($PESQ == $NUMERO[$I]) {
       $ACHA = 1;
     } else {
       $I = $I + 1;
     }
   }
-  if ($ACHA) {
+  if ($ACHA eq 1) {
     say "";
     say "$PESQ foi localizado na posicao " . ($I + 1);
   } else {

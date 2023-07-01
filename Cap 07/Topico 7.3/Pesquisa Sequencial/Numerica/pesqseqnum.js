@@ -31,14 +31,14 @@ while (RESP === "SIM") {
   PESQ = parseInt(readline.question("\nEntre o numero a ser pesquisado: "));
   I = 0;
   ACHA = false;
-  while (I <= 4 && !ACHA) {
+  while (I <= 4 && ACHA === false) {
     if (PESQ === NUMERO[I]) {
       ACHA = true;
     } else {
       I = I + 1;
     }
   }
-  if (ACHA) {
+  if (ACHA === true) {
     console.log(`\n${PESQ} foi localizado na posicao ${I + 1}`);
   } else {
     console.log(`\n${PESQ} nao foi localizado`);

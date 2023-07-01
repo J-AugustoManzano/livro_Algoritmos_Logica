@@ -42,7 +42,7 @@ int main(void) {
     getline(cin, PESQ);
     I = 0;
     ACHA = false;
-    while (I <= 9 && !ACHA) {
+    while (I <= 9 && ACHA == false) {
       if (PESQ == NOME[I]) {
         ACHA = true;
       } else {

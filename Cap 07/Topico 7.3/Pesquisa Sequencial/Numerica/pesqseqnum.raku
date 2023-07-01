@@ -36,7 +36,7 @@ sub MAIN {
         $I = 1;
         $ACHA = False;
 
-        while $I <= 5 && !$ACHA {
+        while ($I <= 5 && $ACHA == False) {
             if $PESQ == @NUMERO[$I-1] {
                 $ACHA = True;
             }
@@ -45,7 +45,7 @@ sub MAIN {
             }
         }
 
-        if $ACHA eq True {
+        if ($ACHA eq True) {
             say '';
             say $PESQ ~ " foi localizado na posicao " ~ $I;
         }
@@ -62,5 +62,3 @@ sub MAIN {
     # *** fim do trecho de pesquisa sequencial ***
 
 }
-
-MAIN();

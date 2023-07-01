@@ -40,14 +40,14 @@ int main(void) {
     PESQ[strcspn(PESQ, "\n")] = '\0';
     I = 1;
     ACHA = false;
-    while (I <= 10 && !ACHA) {
-      if (strcmp(PESQ, NOME[I-1]) == 0) {
+    while (I <= 10 && ACHA == false) {
+      if (strcmp(PESQ, NOME[I - 1]) == 0) {
         ACHA = true;
       } else {
         I = I + 1;
       }
     }
-    if (ACHA) {
+    if (ACHA == false) {
       printf("\n%s foi localizado na posICAo %d\n", PESQ, I);
     } else {
       printf("\n%s nao foi localizado\n", PESQ);

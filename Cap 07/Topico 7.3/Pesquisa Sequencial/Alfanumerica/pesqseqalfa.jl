@@ -35,7 +35,7 @@ while (RESP == "SIM")
   global PESQ = readline()
   global I = 1
   global ACHA = false
-  while (I <= 10 && ACHA  == false)
+  while (I <= 10 && ACHA == false)
     if PESQ == NOME[I]
       ACHA = true
     else
