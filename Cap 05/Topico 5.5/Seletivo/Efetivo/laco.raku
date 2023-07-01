@@ -5,9 +5,9 @@
 #              Jayr Figueiredo de Oliveira
 # Editora ...: Erica
 #
-# Capitulo ..: 5 - Topico 5.3.1
+# Capitulo ..: 5 - Topico 5.5
 #
-# Programa ..: LACO SELETIVO ITERATIVO (SIMULADO ENQUANTO)
+# Programa ..: LACO SELETIVO ITERATIVO
 
 my $N;
 my $R;
