@@ -1,0 +1,49 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 4 - Topico 4.6.3
+ * 
+ * Programa ..: OPERACAO DE NEGACAO ".NAO. / NOT"
+ * 
+ */
+
+use std::io;
+use std::io::Write;
+
+fn main() {
+  
+    let mut a = String::new();
+    let mut b = String::new();
+    let mut x = String::new();
+    let c: i32;
+
+    print!("TESTE LOGICO OPERADOR: NOT\n\n");
+    print!("Entre valor inteiro <A>: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut a).unwrap();
+    let a: i32 = a.trim().parse().unwrap();
+
+    print!("Entre valor inteiro <B>: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut b).unwrap();
+    let b: i32 = b.trim().parse().unwrap();
+
+    print!("Entre valor inteiro <X>: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut x).unwrap();
+    let x: i32 = x.trim().parse().unwrap();
+
+    if !(x > 5) {
+        c = a + b;
+    } else {
+        c = a - b;
+    }
+
+    println!("O valor de C = {}", c);
+  
+}

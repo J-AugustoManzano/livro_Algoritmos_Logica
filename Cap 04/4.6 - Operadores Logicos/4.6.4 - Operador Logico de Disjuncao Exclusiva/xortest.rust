@@ -1,0 +1,49 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 4 - Topico 4.6.4
+ * 
+ * Programa ..: OPERACAO DE DISJUNCAO EXCLUSIVA ".XOU. / XOR"
+ * 
+ */
+
+use std::io;
+use std::io::Write;
+
+fn main() {
+  
+    let mut p1 = String::new();
+    let mut p2 = String::new();
+
+    print!("TESTE LOGICO OPERADOR: XOR\n\n");
+    print!("Entre \"1\" se atleta pontuou na 1a. prova\n");
+    print!("Entre \"1\" se atleta pontuou na 2a. prova\n");
+    print!("Qualquer outro valor se nao pontuou nas provas\n\n");
+
+    print!("Prova 1: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut p1).unwrap();
+    let p1: i32 = p1.trim().parse().unwrap();
+
+    print!("Prova 2: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut p2).unwrap();
+    let p2: i32 = p2.trim().parse().unwrap();
+
+    if (p1 == 1) ^ (p2 == 1) {
+        println!("Atleta participa da terceira prova.");
+    } else {
+        println!("Atleta nao participa da terceira prova.");
+        if (p1 == 1) && (p2 == 1) {
+            println!("Classificado para a final.");
+        } else {
+            println!("Desclassificado da competicao.");
+        }
+    }
+  
+}
