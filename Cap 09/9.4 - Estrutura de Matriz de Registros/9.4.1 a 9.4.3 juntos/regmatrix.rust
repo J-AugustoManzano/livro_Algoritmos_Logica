@@ -1,0 +1,84 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 9 - Topicos 9.4.1 a 9.4.3
+ * 
+ * Programa ..: MANIPULACAO DE REGISTRO DE MATRIZ
+ * 
+ */
+
+use std::io::{self, Write};
+
+type Bimestre = [f32; 4];
+
+#[derive(Default)]
+struct CadAluno {
+    nome: String,
+    turma: char,
+    sala: i32,
+    notas: Bimestre,
+}
+
+fn str_pad(s: &str, width: usize) -> String {
+    if s.len() >= width {
+        s[..width].to_owned()
+    } else {
+        format!("{:<width$}", s, width = width)
+    }
+}
+
+fn main() {
+    let mut alunos: [CadAluno; 8] = Default::default();
+
+    println!("REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n");
+    for i in 0..8 {
+        println!("ALUNO {}\n", i + 1);
+
+        print!("Entre o nome ......: ");
+        io::stdout().flush().unwrap();
+        io::stdin().read_line(&mut alunos[i].nome).unwrap();
+
+        print!("Entre a turma .....: ");
+        io::stdout().flush().unwrap();
+        let mut turma = String::new();
+        io::stdin().read_line(&mut turma).unwrap();
+        alunos[i].turma = turma.trim().chars().next().unwrap();
+
+        print!("Entre a sala ......: ");
+        io::stdout().flush().unwrap();
+        let mut sala = String::new();
+        io::stdin().read_line(&mut sala).unwrap();
+        alunos[i].sala = sala.trim().parse().unwrap();
+
+        for j in 0..4 {
+            print!("Entre a {}a. nota ..: ", j + 1);
+            io::stdout().flush().unwrap();
+            let mut nota = String::new();
+            io::stdin().read_line(&mut nota).unwrap();
+            alunos[i].notas[j] = nota.trim().parse().unwrap();
+        }
+        println!();
+    }
+
+    println!("DADOS DOS ALUNOS");
+    println!("{:>5} {:<30} {:>4} {:>5} {:>5} {:>5} {:>5}", "Aluno", "Nome", "Sala", "Nota1", "Nota2", "Nota3", "Nota4");
+    println!("{:-<5} {:-<30} {:-<4} {:-<5} {:-<5} {:-<5} {:-<5}", "", "", "", "", "", "", "");
+
+    for i in 0..8 {
+        println!(
+            "{:>5} {:<30} {:>4} {:>5.1} {:>5.1} {:>5.1} {:>5.1}",
+            i + 1,
+            str_pad(&alunos[i].nome.trim(), 30),
+            alunos[i].sala,
+            alunos[i].notas[0],
+            alunos[i].notas[1],
+            alunos[i].notas[2],
+            alunos[i].notas[3]
+        );
+    }
+}

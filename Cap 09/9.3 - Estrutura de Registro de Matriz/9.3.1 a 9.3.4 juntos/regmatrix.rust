@@ -1,0 +1,69 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 9 - Topico 9.3.1 ate 9.3.4
+ * 
+ * Programa ..: MANIPULACAO DE REGISTRO DE MATRIZ
+ * 
+ */
+
+use std::io::{self, Write};
+
+const BIMESTRE: usize = 4;
+
+struct CadAluno {
+    nome: String,
+    turma: char,
+    sala: i32,
+    notas: [f32; BIMESTRE],
+}
+
+fn main() {
+
+    let mut aluno = CadAluno {
+        nome: String::new(),
+        turma: ' ',
+        sala: 0,
+        notas: [0.0; BIMESTRE],
+    };
+
+    println!("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n");
+
+    print!("Entre o nome ......: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut aluno.nome).unwrap();
+
+    print!("Entre a turma .....: ");
+    io::stdout().flush().unwrap();
+    let mut turma = String::new();
+    io::stdin().read_line(&mut turma).unwrap();
+    aluno.turma = turma.trim().chars().next().unwrap();
+
+    print!("Entre a sala ......: ");
+    io::stdout().flush().unwrap();
+    let mut sala = String::new();
+    io::stdin().read_line(&mut sala).unwrap();
+    aluno.sala = sala.trim().parse().unwrap();
+
+    for i in 0..4 {
+        print!("Entre a {}a. nota ..: ", i + 1);
+        io::stdout().flush().unwrap();
+        let mut nota = String::new();
+        io::stdin().read_line(&mut nota).unwrap();
+        aluno.notas[i] = nota.trim().parse().unwrap();
+    }
+
+    println!("\nDADOS DO ALUNO\n");
+    println!("Nome ..............: {}", aluno.nome);
+    println!("Turma .............: {}", aluno.turma);
+    println!("Sala ..............: {:4}", aluno.sala);
+    for i in 0..4 {
+        println!("Nota {} ............: {:4.1}", i + 1, aluno.notas[i]);
+    }
+    
+}
