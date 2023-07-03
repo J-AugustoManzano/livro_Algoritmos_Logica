@@ -1,0 +1,2 @@
+Neste diretório encontra-se exemplificado em algumas linguagens computacionais os exemplos de apresentação dos conceitos de programação com uso de tipos de dados 
+derivados definidos a partir do uso de registros (estruturas heterogêneas de dados) do capítulo 9.
