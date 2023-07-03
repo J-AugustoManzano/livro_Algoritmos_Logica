@@ -1,0 +1,85 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 6 - Topico 6.2
+ * 
+ * Programa ..: MEDIA GERAL - VERSAO 1
+ * 
+ */
+
+use std::io::{self, Write};
+
+fn main() {
+  
+    let md1: f32;
+    let md2: f32;
+    let md3: f32;
+    let md4: f32;
+    let md5: f32;
+    let md6: f32;
+    let md7: f32;
+    let md8: f32;
+    let media: f32;
+
+    println!("MEDIA GERAL - V1");
+    println!();
+  
+    print!("Entre a nota 1: ");
+    io::stdout().flush().unwrap();
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+    md1 = input.trim().parse().unwrap();
+  
+    print!("Entre a nota 2: ");
+    io::stdout().flush().unwrap();
+    input.clear();
+    io::stdin().read_line(&mut input).unwrap();
+    md2 = input.trim().parse().unwrap();
+  
+    print!("Entre a nota 3: ");
+    io::stdout().flush().unwrap();
+    input.clear();
+    io::stdin().read_line(&mut input).unwrap();
+    md3 = input.trim().parse().unwrap();
+  
+    print!("Entre a nota 4: ");
+    io::stdout().flush().unwrap();
+    input.clear();
+    io::stdin().read_line(&mut input).unwrap();
+    md4 = input.trim().parse().unwrap();
+  
+    print!("Entre a nota 5: ");
+    io::stdout().flush().unwrap();
+    input.clear();
+    io::stdin().read_line(&mut input).unwrap();
+    md5 = input.trim().parse().unwrap();
+  
+    print!("Entre a nota 6: ");
+    io::stdout().flush().unwrap();
+    input.clear();
+    io::stdin().read_line(&mut input).unwrap();
+    md6 = input.trim().parse().unwrap();
+  
+    print!("Entre a nota 7: ");
+    io::stdout().flush().unwrap();
+    input.clear();
+    io::stdin().read_line(&mut input).unwrap();
+    md7 = input.trim().parse().unwrap();
+  
+    print!("Entre a nota 8: ");
+    io::stdout().flush().unwrap();
+    input.clear();
+    io::stdin().read_line(&mut input).unwrap();
+    md8 = input.trim().parse().unwrap();
+  
+    media = (md1 + md2 + md3 + md4 + md5 + md6 + md7 + md8) / 8.0;
+  
+    println!();
+    println!("Resultado da media = {:>5.1}", media);
+  
+}
