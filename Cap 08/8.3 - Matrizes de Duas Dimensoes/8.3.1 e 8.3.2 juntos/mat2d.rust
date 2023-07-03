@@ -1,0 +1,49 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capítulo ..: 8 - Topico 8.3
+ * 
+ * Programa ..: ENTRADA E SAIDA EM MATRIZ 2D
+ * 
+ */
+
+use std::io::{self, Write};
+
+const ROWS: usize = 8;
+const COLS: usize = 4;
+
+fn main() {
+
+    let mut notas: [[f32; COLS]; ROWS] = [[0.0; COLS]; ROWS];
+
+    println!("MATRIZ 2D - ENTRADA E SAIDA\n");
+    for i in 0..ROWS {
+        println!("Entre as notas do aluno {}:", i + 1);
+        for j in 0..COLS {
+            print!("Nota ==> {}: ", j + 1);
+            io::stdout().flush().unwrap();
+            let mut input = String::new();
+            io::stdin().read_line(&mut input).unwrap();
+            notas[i][j] = input.trim().parse().unwrap();
+        }
+        println!();
+    }
+
+    println!();
+    println!("RELATORIO DE NOTAS\n");
+    println!("Aluno Nota1 Nota2 Nota3 Nota4");
+    println!("----- ----- ----- ----- -----");
+    for i in 0..ROWS {
+        print!("{:5}", i + 1);
+        for j in 0..COLS {
+            print!("{:6.1}", notas[i][j]);
+        }
+        println!();
+    }
+    
+}
