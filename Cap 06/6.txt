@@ -1,0 +1,2 @@
+Neste diretório encontra-se exemplificado em algumas linguagens computacionais os exemplos de apresentação dos conceitos de programação com variáveis compostas 
+(matrizes de uma dimensão) do capítulo 6.
