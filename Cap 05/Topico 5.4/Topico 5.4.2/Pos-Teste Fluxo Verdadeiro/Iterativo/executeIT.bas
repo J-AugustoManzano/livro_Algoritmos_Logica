@@ -14,11 +14,11 @@
 Dim I As Integer
 Dim N As Integer
 Dim R As Integer
-Print "LACO PRE-TESTE COM FLUXO VERDADEIRO"
+Print "LACO POS-TESTE COM FLUXO VERDADEIRO"
 Print "Multiplicacao de numero por 3 por 5 vezes"
 Print
 I = 1
-Do
+Do ' como "execute"
   Print "Calculo: "; I
   Print "Entre valor numerico inteiro: ";
   Input "", N
@@ -26,4 +26,4 @@ Do
   Print "O numero informado X 3 = "; R
   Print
   I = I + 1
-Loop While (I <= 5)
+Loop While (I <= 5) ' como "enquanto_for (I <= 5)"

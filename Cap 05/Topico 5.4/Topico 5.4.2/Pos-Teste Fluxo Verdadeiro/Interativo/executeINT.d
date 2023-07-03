@@ -19,11 +19,11 @@ int N, R;
 char RESP;
 void main()
 {
-  writeln("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+  writeln("LACO POS-TESTE COM FLUXO VERDADEIRO");
   writeln("Multiplicacao de numero por 3 por N vezes");
   writeln();
   RESP = 'S';
-  do 
+  do // como "execute"
   {
     write("Entre valor numerico inteiro: ");
     readf(" %d", &N);
@@ -34,5 +34,5 @@ void main()
     readf(" %c", &RESP);
     writeln();
     RESP = toUpper(RESP);
-  } while (RESP == 'S'); 
+  } while (RESP == 'S');  // como "enquanto_for (RESP == "S")"
 }

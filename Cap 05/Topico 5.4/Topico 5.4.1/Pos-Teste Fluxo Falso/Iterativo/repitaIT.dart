@@ -18,7 +18,7 @@ int I = 0;
 int N = 0;
 int R = 0;
 void main() {
-  print('LACO PRE-TESTE COM FLUXO VERDADEIRO');
+  print('LACO POS-TESTE COM FLUXO FALSO');
   print('Multiplicacao de numero por 3 por 5 vezes');
   print('');
   I = 1;

@@ -12,12 +12,10 @@
 my Int $I = 1;
 my Int $N;
 my Int $R;
-
-say "LACO PRE-TESTE COM FLUXO VERDADEIRO";
+say "LACO POS-TESTE COM FLUXO VERDADEIRO";
 say "Multiplicacao de numero por 3 por 5 vezes";
 say "";
-
-repeat {
+repeat { // como "execute"
     say "Calculo: $I";
     print "Entre valor numerico inteiro: ";
     $N = prompt.Int;
@@ -25,4 +23,4 @@ repeat {
     say "O numero informado X 3 = $R";
     say "";
     $I = $I + 1;
-} while $I <= 5;
+} while $I <= 5; // como "enquanto_for (I <= 5)"

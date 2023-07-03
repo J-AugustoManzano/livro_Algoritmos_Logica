@@ -17,11 +17,11 @@ object Main {
   var R: Int = 0
   var RESP: Char = ' '
   def main(args: Array[String]): Unit = {
-    println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+    println("LACO POS-TESTE COM FLUXO VERDADEIRO")
     println("Multiplicacao de numero por 3 por N vezes")
     println()
     RESP = 'S'
-    do {
+    do { // como "execute"
       print("Entre valor numerico inteiro: ")
       N = scala.io.StdIn.readInt()
       R = N * 3
@@ -30,6 +30,6 @@ object Main {
       print("Deseja continuar? (S/N): ")
       RESP = scala.io.StdIn.readChar().toUpper
       println()
-    } while (RESP == 'S'); 
+    } while (RESP == 'S'); // como "enquanto_for (RESP == "S")"
   }
 }

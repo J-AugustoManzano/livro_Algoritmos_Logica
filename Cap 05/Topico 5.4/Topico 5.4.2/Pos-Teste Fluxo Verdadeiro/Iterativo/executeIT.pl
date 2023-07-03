@@ -19,11 +19,10 @@ use warnings;
 my $I;
 my $N;
 my $R;
-
-print "LACO PRE-TESTE COM FLUXO VERDADEIRO\n";
+print "LACO POS-TESTE COM FLUXO VERDADEIRO\n";
 print "Multiplicacao de numero por 3 por 5 vezes\n\n";
 $I = 1;
-do {
+do { # como "execute"
   print "Calculo: $I\n";
   print "Entre valor numerico inteiro: ";
   $N = <STDIN>;
@@ -31,4 +30,4 @@ do {
   $R = $N * 3;
   print "O numero informado X 3 = $R\n\n";
   $I = $I + 1;
-} while ($I <= 5);
+} while ($I <= 5); # como "enquanto_for (I <= 5)"

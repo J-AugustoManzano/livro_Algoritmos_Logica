@@ -13,7 +13,7 @@
 
 function main()
   global N, R, RESP
-  println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+  println("LACO POS-TESTE COM FLUXO FALSO")
   println("Multiplicacao de numero por 3 por N vezes")
   println()
   RESP = 'S'

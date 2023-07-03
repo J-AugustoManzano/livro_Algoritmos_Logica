@@ -18,11 +18,11 @@ int N = 0;
 int R = 0;
 String RESP = '';
 void main() {
-  print('LACO PRE-TESTE COM FLUXO VERDADEIRO');
+  print('LACO POS-TESTE COM FLUXO VERDADEIRO');
   print('Multiplicacao de numero por 3 por N vezes');
   print('');
   RESP = 'S';
-  do {
+  do { // como "execute"
     stdout.write('Entre valor numerico inteiro: ');
     N = int.parse(stdin.readLineSync()!);
     R = N * 3;
@@ -32,5 +32,5 @@ void main() {
     RESP = stdin.readLineSync()!;
     print('');
     RESP = RESP.toUpperCase();
-  } while (RESP == 'S');
+  } while (RESP == 'S'); // como "enquanto_for (RESP == "S")"
 }

@@ -17,7 +17,7 @@
 int N, R;
 char RESP;
 int main(void) {
-  printf("LACO PRE-TESTE COM FLUXO VERDADEIRO\n");
+  printf("LACO POS-TESTE COM FLUXO FALSO\n");
   printf("Multiplicacao de numero por 3 por N vezes\n\n");
   RESP = 'S';
   do { // simulacao "repita"

@@ -19,11 +19,10 @@ use warnings;
 my $N;
 my $R;
 my $RESP;
-
-print "LACO PRE-TESTE COM FLUXO VERDADEIRO\n";
+print "LACO POS-TESTE COM FLUXO VERDADEIRO\n\n";
 print "Multiplicacao de numero por 3 por N vezes\n\n";
 $RESP = "S";
-do {
+do { # como "execute"
   print "Entre valor numerico inteiro: ";
   $N = <STDIN>;
   chomp($N);
@@ -34,4 +33,4 @@ do {
   chomp($RESP);
   $RESP = uc($RESP);
   print "\n";
-} while ($RESP eq "S");
+} while ($RESP eq "S"); # como "enquanto_for (RESP == "S")"

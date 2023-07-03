@@ -11,15 +11,15 @@
  * Programa ..: LACO CONDICIONAL POS-TESTE COM FLUXO FALSO ITERATIVO
  */
 
-console.log('LACO PRE-TESTE COM FLUXO VERDADEIRO');
+console.log('LACO POS-TESTE COM FLUXO FALSO');
 console.log('Multiplicacao de numero por 3 por 5 vezes');
 console.log();
 let I = 1;
-do {
+do { // simulacao "repita"
   console.log('Calculo: ', I);
   let N = parseInt(prompt('Entre valor numerico inteiro: '));
   let R = N * 3;
   console.log('O numero informado X 3 = ', R);
   console.log();
   I = I + 1;
-} while (!(I > 5))  // simulacao "ate_que (I > 5)"
+} while (!(I > 5)) // simulacao "ate_que (I > 5)"

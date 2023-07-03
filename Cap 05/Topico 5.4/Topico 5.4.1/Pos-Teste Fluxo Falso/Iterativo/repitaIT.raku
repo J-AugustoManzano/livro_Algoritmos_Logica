@@ -12,11 +12,9 @@
 my Int $I;
 my Int $N;
 my Int $R;
-
-say "LACO PRE-TESTE COM FLUXO VERDADEIRO";
+say "LACO POS-TESTE COM FLUXO FALSO";
 say "Multiplicacao de numero por 3 por 5 vezes";
 say "";
-
 $I = 1;
 repeat {
     say "Calculo: $I";

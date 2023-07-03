@@ -20,7 +20,7 @@ class LacoPreTesteVerdadeiroVa
   static int R;
   static void Main(string[] args)
   {
-    Console.WriteLine("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    Console.WriteLine("LACO POS-TESTE COM FLUXO FALSO");
     Console.WriteLine("Multiplicacao de numero por 3 por 5 vezes");
     Console.WriteLine();
     I = 1;

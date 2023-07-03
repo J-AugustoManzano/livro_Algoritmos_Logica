@@ -12,11 +12,11 @@
 #!/usr/bin/awk -f
 
 BEGIN {
-  print "LACO PRE-TESTE COM FLUXO VERDADEIRO"
+  print "LACO POS-TESTE COM FLUXO VERDADEIRO"
   print "Multiplicacao de numero por 3 por N vezes"
   print ""
   RESP = "S"
-  do {
+  do { # como "execute"
     printf "Entre valor numerico inteiro: "
     getline N
     R = N * 3
@@ -26,5 +26,5 @@ BEGIN {
     getline RESP
     print ""
     RESP = toupper(RESP)
-  } while (RESP == "S");
+  } while (RESP == "S"); # como "enquanto_for (RESP == "S")"
 }

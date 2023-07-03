@@ -18,12 +18,12 @@ public class Main {
   static int N;
   static int R;
   public static void main(String[] args) {
-    System.out.println("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    System.out.println("LACO POS-TESTE COM FLUXO VERDADEIRO");
     System.out.println("Multiplicacao de numero por 3 por 5 vezes");
     System.out.println();
     Scanner entrada = new Scanner(System.in);
     I = 1;
-    do {
+    do { // como "execute"
       System.out.println("Calculo: " + I);
       System.out.print("Entre valor numerico inteiro: ");
       N = entrada.nextInt();
@@ -31,7 +31,7 @@ public class Main {
       System.out.println("O numero informado X 3 = " + R);
       System.out.println();
       I = I + 1;
-    } while (I <= 5);
+    } while (I <= 5); // como "enquanto_for (I <= 5)"
     entrada.close();
   }
 }

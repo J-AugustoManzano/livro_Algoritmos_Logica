@@ -14,11 +14,11 @@
 Dim N As Integer
 Dim R As Integer
 Dim RESP As String
-Print "LACO PRE-TESTE COM FLUXO VERDADEIRO"
+Print "LACO POS-TESTE COM FLUXO VERDADEIRO"
 Print "Multiplicacao de numero por 3 por N vezes"
 Print
 RESP = "S"
-Do 
+Do ' como "execute"
   Print "Entre valor numerico inteiro: ";
   Input "", N
   R = N * 3
@@ -28,4 +28,4 @@ Do
   Input "", RESP
   RESP = UCase$(RESP)
   Print
-Loop While (RESP = "S")
+Loop While (RESP = "S") ' como "enquanto_for (RESP == "S")"

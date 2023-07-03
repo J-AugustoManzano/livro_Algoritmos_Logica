@@ -17,11 +17,11 @@ import std.stdio;
 int I, N, R;
 void main()
 {
-  writeln("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+  writeln("LACO POS-TESTE COM FLUXO VERDADEIRO");
   writeln("Multiplicacao de numero por 3 por 5 vezes");
   writeln();
   I = 1;
-  do 
+  do // como "execute"
   {
     writeln("Calculo: ", I);
     write("Entre valor numerico inteiro: ");
@@ -31,5 +31,5 @@ void main()
     writeln();
     I = I + 1;
   } 
-  while (I <= 5); 
+  while (I <= 5); // como "enquanto_for (I <= 5)"
 }

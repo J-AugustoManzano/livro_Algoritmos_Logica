@@ -19,8 +19,7 @@ use warnings;
 my $N;
 my $R;
 my $RESP;
-
-print "LACO PRE-TESTE COM FLUXO VERDADEIRO\n";
+print "LACO POS-TESTE COM FLUXO FALSO\n";
 print "Multiplicacao de numero por 3 por N vezes\n\n";
 $RESP = "S";
 do { # simulacao "repita"

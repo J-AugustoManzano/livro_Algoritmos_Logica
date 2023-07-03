@@ -19,10 +19,10 @@ using namespace std;
 int N, R;
 char RESP;
 int main(void) {
-  cout << "LACO PRE-TESTE COM FLUXO VERDADEIRO" << endl;
+  cout << "LACO POS-TESTE COM FLUXO VERDADEIRO" << endl;
   cout << "Multiplicacao de numero por 3 por N vezes" << endl << endl;
   RESP = 'S';
-  do {
+  do { // como "execute"
     cout << "Entre valor numerico inteiro: ";
     cin >> N;
     R = N * 3;
@@ -31,6 +31,6 @@ int main(void) {
     cin >> RESP;
     RESP = toupper(RESP);
     cout << endl;
-  } while (RESP == 'S');
+  } while (RESP == 'S'); // como "enquanto_for (RESP == "S")"
   return 0;
 }

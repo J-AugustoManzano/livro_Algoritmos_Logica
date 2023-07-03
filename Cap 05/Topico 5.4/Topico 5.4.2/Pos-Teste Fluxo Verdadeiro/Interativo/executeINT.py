@@ -11,7 +11,7 @@
  * Programa ..: LACO CONDICIONAL POS-TESTE COM FLUXO VERDADEIRO INTERATIVO
 '''
 
-print('LACO PRE-TESTE COM FLUXO VERDADEIRO')
+print('LACO POS-TESTE COM FLUXO VERDADEIRO')
 print('Multiplicacao de numero por 3 por N vezes')
 print()
 RESP = 'S'

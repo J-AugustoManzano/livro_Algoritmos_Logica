@@ -20,11 +20,11 @@ class LacoPreTesteVerdadeiroVa
   static int R;
   static void Main(string[] args)
   {
-    Console.WriteLine("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    Console.WriteLine("LACO POS-TESTE COM FLUXO VERDADEIRO");
     Console.WriteLine("Multiplicacao de numero por 3 por 5 vezes");
     Console.WriteLine();
     I = 1;
-    do
+    do // como "execute"
     {
       Console.WriteLine("Calculo: " + I);
       Console.Write("Entre valor numerico inteiro: ");
@@ -34,6 +34,6 @@ class LacoPreTesteVerdadeiroVa
       Console.WriteLine();
       I = I + 1;
     } 
-    while (I <= 5); 
+    while (I <= 5); // como "enquanto_for (I <= 5)"
   }
 }

@@ -19,11 +19,11 @@ import (
 
 var I, N, R int
 func main() { // simulcao "execute"
-  fmt.Println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+  fmt.Println("LACO POS-TESTE COM FLUXO VERDADEIRO")
   fmt.Println("Multiplicacao de numero por 3 por 5 vezes")
   fmt.Println()
   I = 1
-  for { 
+  for { // simulacao "execute"
     fmt.Println("Calculo:", I)
     fmt.Print("Entre valor numerico inteiro: ")
     fmt.Scanln(&N)

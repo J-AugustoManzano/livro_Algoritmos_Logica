@@ -19,7 +19,7 @@ using namespace std;
 int N, R;
 char RESP;
 int main(void) {
-  cout << "LACO PRE-TESTE COM FLUXO VERDADEIRO" << endl;
+  cout << "LACO POS-TESTE COM FLUXO FALSO" << endl;
   cout << "Multiplicacao de numero por 3 por N vezes" << endl << endl;
   RESP = 'S';
   do { // simulacao laco "repita"

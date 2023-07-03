@@ -12,13 +12,13 @@
  */
 
 let I, N, R;
-console.log("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+console.log("LACO POS-TESTE COM FLUXO VERDADEIRO");
 console.log("Multiplicacao de numero por 3 por 5 vezes\n");
 I = 1;
-do {
+do { // como "execute"
   console.log("Calculo: " + I);
   N = parseInt(prompt("Entre valor numerico inteiro: "));
   R = N * 3;
   console.log("O numero informado X 3 = " + R + "\n");
   I = I + 1;
-} while (I <= 5);
+} while (I <= 5); // como "enquanto_for (I <= 5)"

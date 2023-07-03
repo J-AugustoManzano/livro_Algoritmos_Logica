@@ -17,10 +17,10 @@
 int N, R;
 char RESP;
 int main(void) {
-  printf("LACO PRE-TESTE COM FLUXO VERDADEIRO\n");
+  printf("LACO POS-TESTE COM FLUXO VERDADEIRO\n");
   printf("Multiplicacao de numero por 3 por N vezes\n\n");
   RESP = 'S';
-  do {
+  do { // como "execute"
     printf("Entre valor numerico inteiro: ");
     scanf("%d", &N);
     R = N * 3;
@@ -29,6 +29,6 @@ int main(void) {
     scanf(" %c", &RESP);
     RESP = toupper(RESP);
     printf("\n");
-  } while (RESP == 'S');
+  } while (RESP == 'S'); // como "enquanto_for (RESP == "S")"
   return 0;
 }

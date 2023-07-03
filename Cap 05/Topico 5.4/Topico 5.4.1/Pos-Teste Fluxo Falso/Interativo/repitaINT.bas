@@ -14,7 +14,7 @@
 Dim N As Integer
 Dim R As Integer
 Dim RESP As String
-Print "LACO PRE-TESTE COM FLUXO VERDADEIRO"
+Print "LACO POS-TESTE COM FLUXO FALSO"
 Print "Multiplicacao de numero por 3 por N vezes"
 Print
 RESP = "S"

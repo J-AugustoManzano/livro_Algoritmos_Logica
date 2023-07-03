@@ -16,7 +16,7 @@ var
   N, R: integer;
   RESP: char;
 begin
-  writeln('LACO PRE-TESTE COM FLUXO VERDADEIRO');
+  writeln('LACO POS-TESTE COM FLUXO VERDADEIRO');
   writeln('Multiplicacao de numero por 3 por N vezes');
   writeln;
   RESP := 'S';

@@ -17,7 +17,7 @@ object Main {
   var N: Int = _
   var R: Int = _
   def main(args: Array[String]): Unit = {
-    println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+    println("LACO POS-TESTE COM FLUXO FALSO")
     println("Multiplicacao de numero por 3 por 5 vezes")
     println()
     I = 1

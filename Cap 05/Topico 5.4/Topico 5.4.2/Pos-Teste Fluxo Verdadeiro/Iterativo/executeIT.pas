@@ -15,7 +15,7 @@ program LACO_PRE_TESTE_VERDADEIRO_VA;
 var
   I, N, R: integer;
 begin
-  writeln('LACO PRE-TESTE COM FLUXO VERDADEIRO');
+  writeln('LACO POS-TESTE COM FLUXO VERDADEIRO');
   writeln('Multiplicacao de numero por 3 por 5 vezes');
   writeln;
   I := 1;

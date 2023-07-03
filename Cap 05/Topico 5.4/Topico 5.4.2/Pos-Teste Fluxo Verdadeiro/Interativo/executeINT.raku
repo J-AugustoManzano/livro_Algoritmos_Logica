@@ -13,12 +13,12 @@ my Int $N;
 my Int $R;
 my Str $RESP;
 
-say "LACO PRE-TESTE COM FLUXO VERDADEIRO";
+say "LACO POS-TESTE COM FLUXO VERDADEIRO";
 say "Multiplicacao de numero por 3 por N vezes";
 say "";
 
 $RESP = "S";
-repeat {
+repeat { // simulação "execute"
     print "Entre valor numerico inteiro: ";
     $N = prompt.Int;
     $R = $N * 3;
@@ -28,4 +28,4 @@ repeat {
     $RESP = prompt.Str;
     $RESP = $RESP.uc;
     say "";
-} while $RESP eq "S";
+} while $RESP eq "S"; // como "enquanto_for (RESP == "S")"

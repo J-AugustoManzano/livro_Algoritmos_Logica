@@ -24,7 +24,7 @@ var (
   RESP string
 )
 func main() {
-  fmt.Println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+  fmt.Println("LACO POS-TESTE COM FLUXO FALSO")
   fmt.Println("Multiplicacao de numero por 3 por N vezes")
   fmt.Println()
   RESP = "S"

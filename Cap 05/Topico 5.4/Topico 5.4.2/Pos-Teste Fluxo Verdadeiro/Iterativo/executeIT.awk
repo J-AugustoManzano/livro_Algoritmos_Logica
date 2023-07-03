@@ -9,14 +9,12 @@
 #
 # Programa ..: LACO CONDICIONAL POS-TESTE COM FLUXO VERDADEIRO ITERATIVO
 
-#!/usr/bin/awk -f
-
 BEGIN {
-  print "LACO PRE-TESTE COM FLUXO VERDADEIRO"
+  print "LACO POS-TESTE COM FLUXO VERDADEIRO"
   print "Multiplicacao de numero por 3 por 5 vezes"
   print ""
   I = 1
-  do { 
+  do { # como "execute"
     print "Calculo: " I
     printf "Entre valor numerico inteiro: "
     getline N < "-"
@@ -24,5 +22,5 @@ BEGIN {
     print "O numero informado X 3 = " R
     print ""
     I = I + 1
-  } while (I <= 5); 
+  } while (I <= 5); # como "enquanto_for (I <= 5)"
 }

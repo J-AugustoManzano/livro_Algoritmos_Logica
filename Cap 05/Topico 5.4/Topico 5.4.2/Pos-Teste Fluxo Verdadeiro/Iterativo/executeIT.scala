@@ -17,11 +17,11 @@ object Main {
   var N: Int = _
   var R: Int = _
   def main(args: Array[String]): Unit = {
-    println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+    println("LACO POS-TESTE COM FLUXO VERDADEIRO")
     println("Multiplicacao de numero por 3 por 5 vezes")
     println()
     I = 1
-    do {
+    do { // como "execute"
       println("Calculo: " + I)
       print("Entre valor numerico inteiro: ")
       N = scala.io.StdIn.readInt()
@@ -29,6 +29,6 @@ object Main {
       println("O numero informado X 3 = " + R)
       println()
       I = I + 1
-    } while (I <= 5);
+    } while (I <= 5); // como "enquanto_for (I <= 5)"
   }
 }

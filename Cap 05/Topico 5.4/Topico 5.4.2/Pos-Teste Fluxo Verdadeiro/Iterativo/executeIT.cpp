@@ -17,16 +17,16 @@ using namespace std;
 
 int I, N, R;
 int main(void) {
-  cout << "LACO PRE-TESTE COM FLUXO VERDADEIRO" << endl;
+  cout << "LACO POS-TESTE COM FLUXO VERDADEIRO" << endl;
   cout << "Multiplicacao de numero por 3 por 5 vezes" << endl << endl;
   I = 1;
-  do {
+  do { // como "execute"
     cout << "Calculo: " << I << endl;
     cout << "Entre valor numerico inteiro: ";
     cin >> N;
     R = N * 3;
     cout << "O numero informado X 3 = " << R << endl << endl;
     I = I + 1;
-  } while (I <= 5);
+  } while (I <= 5); // como "enquanto_for (I <= 5)"
   return 0;
 }

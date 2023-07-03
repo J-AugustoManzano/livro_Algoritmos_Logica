@@ -11,14 +11,14 @@
  * Programa ..: LACO CONDICIONAL POS-TESTE COM FLUXO FALSO INTERATIVO
  */
 
-console.log('LACO PRE-TESTE COM FLUXO VERDADEIRO');
+console.log('LACO POS-TESTE COM FLUXO FALSO');
 console.log('Multiplicacao de numero por 3 por N vezes');
 console.log();
 let RESP = 'S';
-do {
+do { // simulacao "repita"
   let N = parseInt(prompt('Entre valor numerico inteiro: '));
   let R = N * 3;
   console.log('O numero informado X 3 = ', R);
   console.log();
   RESP = prompt('Deseja continuar? (S/N): ').toUpperCase();
-} while (!(RESP != 'S'))
+} while (!(RESP != 'S')) // simulacao "ate_que (RESP <> "S")"

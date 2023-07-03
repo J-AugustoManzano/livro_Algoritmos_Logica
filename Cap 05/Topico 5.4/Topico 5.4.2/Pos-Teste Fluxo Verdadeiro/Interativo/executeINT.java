@@ -15,12 +15,12 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    System.out.println("LACO POS-TESTE COM FLUXO VERDADEIRO");
     System.out.println("Multiplicacao de numero por 3 por N vezes");
     System.out.println();
     Scanner entrada = new Scanner(System.in);
     char RESP = 'S';
-    do {
+    do { // como "execute"
       System.out.print("Entre valor numerico inteiro: ");
       int N = entrada.nextInt();
       int R = N * 3;
@@ -30,7 +30,7 @@ public class Main {
       entrada.nextLine(); 
       RESP = entrada.nextLine().toUpperCase().charAt(0);
       System.out.println();
-    } while (RESP == 'S');
+    } while (RESP == 'S'); // simulacao "enquanto_for (RESP == "S")"
     entrada.close();
   }
 }

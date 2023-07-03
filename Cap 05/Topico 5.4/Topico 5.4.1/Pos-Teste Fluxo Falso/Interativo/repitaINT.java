@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    System.out.println("LACO POS-TESTE COM FLUXO FALSO");
     System.out.println("Multiplicacao de numero por 3 por N vezes");
     System.out.println();
     Scanner entrada = new Scanner(System.in);
