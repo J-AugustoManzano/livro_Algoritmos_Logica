@@ -1,0 +1,73 @@
+Material do tópico 4.6.
+=======================
+
+-------------------------
+- Operador de Conjunção -
+-------------------------
+
+programa TESTA_LÓGICA_E
+var
+  NÚMERO : inteiro
+início
+  leia NÚMERO
+  se (NÚMERO >= 20) .e. (NÚMERO <= 90) então
+    escreva "O número está na faixa de 20 a 90"
+  senão
+    escreva "O número está fora da faixa de 20 a 90"
+  fim_se
+fim
+
+-----------------------------------
+- Operador de Disjunção Inclusiva -
+-----------------------------------
+
+programa TESTA_LÓGICA_OU
+var
+  TRANSP : caractere
+início
+  leia TRANSP
+  se (TRANSP = "M") .ou. (TRANSP = "S") então
+    escreva "Transporte válido"
+  senão
+    escreva "Transporte inválido"
+  fim_se
+fim
+
+-----------------------
+- Operador de Negação -
+-----------------------
+
+programa TESTA_LÓGICA_NÃO
+var
+  A, B, C, X : inteiro
+início
+  leia A, B, X
+  se .não. (X > 5) então
+    C ← A + B
+  senão
+    C ← A – B
+  fim_se
+  escreva C
+fim
+
+-----------------------------------
+- Operador de Disjunção Exclusiva -
+-----------------------------------
+
+programa TESTA_LÓGICA_XOU
+var
+  P1, P2 : inteiro
+início
+  leia P1, P2
+  se (P1 = 1) .xou. (P2 = 1) então
+    escreva "Atleta participa da terceira prova."
+  eenão
+    escreva "Atleta não participa da terceira prova."
+    se (P1 = 1) .e. (P2 = 1) então
+      escreva "classificado para a final."
+    senão
+      escreva "desclassificado da competição."
+    fim_se
+  fim_se
+fim
+
