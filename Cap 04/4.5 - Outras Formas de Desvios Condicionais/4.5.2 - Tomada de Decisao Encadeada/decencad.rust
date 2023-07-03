@@ -1,0 +1,39 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 4 - Topico 4.5.2
+ * 
+ * Programa ..: OPERACAO COM DECISAO ENCADEADA
+ * 
+ */
+
+use std::io;
+use std::io::Write;
+
+fn main() {
+  
+    let mut sa = String::new();
+
+    print!("DECISAO ENCADEADA - SALARIO\n\n");
+    print!("Entre salario atual: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut sa).unwrap();
+
+    let sa: f32 = sa.trim().parse().unwrap();
+
+    let ns = if sa < 500.0 {
+        sa * 1.15
+    } else if sa <= 1000.0 {
+        sa * 1.10
+    } else {
+        sa * 1.05
+    };
+
+    println!("Novo salario: {:>10.2}", ns);
+  
+}

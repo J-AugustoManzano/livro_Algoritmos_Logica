@@ -1,0 +1,45 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 4 - Topico 4.5.1
+ * 
+ * Programa ..: OPERACAO COM DECISAO SEQUENCIAL
+ * 
+ */
+
+use std::io;
+use std::io::Write;
+
+fn main() {
+  
+    let mut n = String::new();
+
+    print!("DECISAO SEQUENCIAL\n\n");
+    print!("Entre valor inteiro <N>: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut n).unwrap();
+
+    let n: i32 = n.trim().parse().unwrap();
+
+    if n == 1 {
+        println!("voce entrou o valor 1");
+    }
+
+    if n == 2 {
+        println!("voce entrou o valor 2");
+    }
+
+    if n < 1 {
+        println!("voce entrou valor muito baixo");
+    }
+
+    if n > 2 {
+        println!("voce entrou valor muito alto");
+    }
+  
+}
