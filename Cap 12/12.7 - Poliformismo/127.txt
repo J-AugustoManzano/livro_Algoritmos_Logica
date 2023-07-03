@@ -1,0 +1,265 @@
+Material do tópico 12.7.
+========================
+
+
+-----------------------------
+- Poliformismo/Polimorfismo -
+-----------------------------
+
+# Poliformismo universal de inclusão
+
+programa POLIFORMISMO_UNIVERSAL_INCLUSÃO
+
+tipo
+
+  CLS_PAI = classe 
+              seção_pública
+                procedimento EXECUTA
+            fim_classe
+
+  procedimento CLS_PAI..EXECUTA
+  início
+    escreva "Ação executada na classe-pai"
+  fim
+
+  CLS_FILHO = classe 
+                seção_pública
+                  procedimento EXECUTA
+              fim_classe
+
+  procedimento CLS_FILHO..EXECUTA
+  início
+    escreva "Ação executada na classe-filho"
+  fim
+
+objeto
+  PAI : cls_pai
+  FILHO : cls_filho
+
+início
+
+  PAI.EXECUTA()
+
+  FILHO.EXECUTA()
+
+  PAI ← FILHO
+
+  PAI.EXECUTA()
+ 
+  PAI ← ""
+
+  PAI.EXECUTA()
+ 
+fim
+
+# Poliformismo universal paramétrico
+
+programa POLIFORMISMO_UNIVERSAL_PARAMÉTRICO
+
+tipo
+
+  CLS_PESSOA = classe 
+                 seção_protegida
+                   NOME : cadeia
+                 seção_pública
+                   procedimento PEGNOME(NOME : cadeia)
+                   procedimento PROFISSÃO
+               fim_classe
+
+  procedimento CLS_PESSOA..PEGNOME(NOME : cadeia)
+  início
+    escreva NOME
+  fim
+
+  procedimento CLS_PESSOA..PROFISSÃO
+  início
+    escreva "Atividade profissional desconhecida."
+  fim
+
+  CLS_MÉDICO = classe herança de CLS_PESSOA 
+                 seção_pública
+                   procedimento PROFISSÃO
+               fim_classe
+
+  procedimento CLS_MÉDICO..PEGNOME(NOME : cadeia)
+  início
+    escreva NOME
+  fim
+
+  procedimento CLS_MÉDICO..PROFISSÃO
+  início
+    escreva "Você possui formação em medicina."
+  fim
+  
+  CLS_ADVOGADO = classe herança de CLS_PESSOA 
+                   seção_pública
+                     procedimento PROFISSÃO
+                 fim_classe
+
+  procedimento CLS_ADVOGADO..PEGNOME(NOME : cadeia)
+  início
+    escreva NOME
+  fim
+
+ procedimento CLS_ADVOGADO..PROFISSÃO
+  início
+    escreva "Você possui formação em advocacia."
+  fim
+
+objeto
+  PROFISSIONAL : cls_pessoa
+  PROFIS1 : cls_advogado
+  PROFIS2 : cls_médico
+  PROFIS3 : cls_pessoa
+
+início
+
+  PROFISSIONAL ← PROFIS1
+  PROFISSIONAL.PEGNOME("Carlos Alberto")
+  PROFISSIONAL.PROFISSÃO
+
+  PROFISSIONAL ← PROFIS2
+  PROFISSIONAL.PEGNOME("Paulo Malaquias")
+  PROFISSIONAL.PROFISSÃO
+  PROFISSIONAL ← PROFIS3
+  PROFISSIONAL.PEGNOME("Martha Nepomuceno")
+  PROFISSIONAL.PROFISSÃO
+
+fim
+
+# Poliformismo ad-hoc de sobrecarga
+
+programa POLIFORMISMO_ADHOC_SOBRECARGA_1
+
+tipo 
+
+  CLS_ÁREA = classe 
+               seção_pública
+                 função ÁREA(X : inteiro) : inteiro
+                 função ÁREA(R : real, H : real) : real
+                 função ÁREA(X : inteiro, Y : inteiro, Z : inteiro) : in-teiro
+             fim_classe
+  função CLS_ÁREA..ÁREA(X : inteiro) : inteiro
+  início
+    AREA ← X * X
+  fim
+
+  função CLS_ÁREA..ÁREA(R : real, H : real) : real
+  início
+    AREA ← R * R * 3.14159 * H
+  fim
+
+  função CLS_ÁREA..ÁREA(X : inteiro, Y : inteiro, Z : inteiro) : inteiro
+  início
+    AREA ← X * Y * Z
+  fim
+
+objeto
+  RESPOSTA : cls_área
+
+início
+
+  escreva "Área: Quadrado ..: ", RESPOSTA.ÁREA(5)
+  escreva "Área: Cubo ......: ", RESPOSTA.ÁREA(5, 6, 7)
+  escreva "Área: Cilindro ..: ", RESPOSTA.ÁREA(7, 3)
+
+fim
+
+--------------------------------------------------------
+
+programa POLIFORMISMO_ADHOC_SOBRECARGA_2
+
+  função SOMATORIO(N : inteiro) : inteiro
+  var
+   I, SOMA : inteiro
+  início
+    SOMA ← 0
+    para I de 1 até N passo 1 faça
+      SOMA ← SOMA + I
+    fim_para
+ SOMATORIO ← SOMA 
+  fim
+
+  função FATORIAL(N : inteiro) : inteiro
+  var
+   I, FAT : inteiro
+  início
+    FAT ← 1
+    para I de 1 até N passo 1 faça
+      FAT ← FAT * I
+    fim_para
+ FATORIAL ← FAT 
+  fim
+
+tipo
+  FUNÇÃO(inteiro)
+
+var
+  ENTRA : inteiro
+  RESPOSTA : função
+
+início
+  leia ENTRA
+
+  RESPOSTA ←  SOMATORIO
+  escreva RESPOSTA(ENTRA)
+
+  RESPOSTA ← FATORIAL
+  escreva RESPOSTA(ENTRA)
+fim
+
+# Poliformismo ad-hoc de coerção
+
+programa POLIFORMISMO_ADHOC_COERÇÃO_1
+
+  procedimento ESCREVANUM(NÚMERO : inteiro) 
+  início
+    escreva "Número inteiro: ", NÚMERO
+  fim
+
+  procedimento ESCREVANUM(NÚMERO : real) 
+  início
+    escreva "Número real: ", NÚMERO
+  fim
+
+var
+  VALOR1 : inteiro
+  VALOR2 : real
+
+início
+  VALOR1 ← 10
+  VALOR2 ← 3.14159
+  ESCREVANUM(VALOR1) // Chama sub-rotina ESCREVANUM(inteiro)
+  ESCREVANUM(VALOR2) // Chama sub-rotina ESCREVANUM(real)
+fim
+
+-------------------------------------------------------------
+
+programa POLIFORMISMO_ADHOC_COERSÃO_2
+
+tipo 
+
+  CLS_CÁLCULO = classe 
+                  seção_pública
+                    função SOMAR(A, B : inteiro) : inteiro
+                    função SOMAR(A, B : real) : real
+                fim_classe
+
+  função SOMAR(A, B : inteiro) : inteiro
+  início
+    SOMAR ← A + B
+  fim
+
+  função SOMAR(A, B : real) : real
+  início
+    SOMAR ← A + B
+  fim
+
+objeto
+  OPERAÇÃO : cls_cálculo
+início
+  escreva OPERAÇÃO.SOMAR(1.3, 2.7)
+  escreva OPERAÇÃO.SOMAR(2, 2.5)
+  escreva OPERAÇÃO.SOMAR(1.5, 6)
+  escreva OPERAÇÃO.SOMAR(4, 2)
+fim
