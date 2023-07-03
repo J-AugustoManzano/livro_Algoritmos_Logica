@@ -1,0 +1,45 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 4 - Topico 4.4
+ * 
+ * Programa ..: ADICAO DE NUMEROS - DECISAO COMPOSTA
+ * 
+ */
+
+use std::io;
+use std::io::Write;
+
+fn main() {
+  
+    let mut a = String::new();
+    let mut b = String::new();
+
+    print!("DECISAO COMPOSTA - ADICAO DE DOIS NUMEROS\n\n");
+    print!("Entre valor <A>: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut a).unwrap();
+
+    print!("Entre valor <B>: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut b).unwrap();
+
+    let a: f32 = a.trim().parse().unwrap();
+    let b: f32 = b.trim().parse().unwrap();
+    let x: f32 = a + b;
+    let r: f32;
+
+    if x >= 10.0 {
+        r = x + 5.0;
+    } else {
+        r = x - 7.0;
+    }
+
+    print!("Resultado da adicao quando maior ou igual a dez = {:.2}\n", r);
+  
+}
