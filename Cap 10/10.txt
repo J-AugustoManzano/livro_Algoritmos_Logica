@@ -1,1 +1,0 @@
-Neste diretório encontra-se exemplificado em algumas linguagens de programação os exemplos de apresentação dos conceitos de programação com vdefinição de su-rotinas (programação modular) do capítulo 10.
