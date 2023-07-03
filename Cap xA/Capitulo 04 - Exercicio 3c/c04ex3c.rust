@@ -1,0 +1,50 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: Apendice A - CORRECAO DE ALGUNS EXERCICIOS DE FIXACAO
+ *
+ * Programa ..: CÁLCULO DE MEDIA ESCOLAR
+ */
+
+use std::io::{self, Write};
+
+fn main() {
+  
+    println!("MEDIA ESCOLAR - CALCULO");
+    println!();
+
+    print!("Entre a 1a. nota ...........: ");
+    let _ = io::stdout().flush();
+    let mut n1 = String::new();
+    let _ = io::stdin().read_line(&mut n1);
+    let n1: f32 = n1.trim().parse().unwrap();
+
+    print!("Entre a 2a. nota ...........: ");
+    let _ = io::stdout().flush();
+    let mut n2 = String::new();
+    let _ = io::stdin().read_line(&mut n2);
+    let n2: f32 = n2.trim().parse().unwrap();
+
+    print!("Entre a 3a. nota ...........: ");
+    let _ = io::stdout().flush();
+    let mut n3 = String::new();
+    let _ = io::stdin().read_line(&mut n3);
+    let n3: f32 = n3.trim().parse().unwrap();
+
+    print!("Entre a 4a. nota ...........: ");
+    let _ = io::stdout().flush();
+    let mut n4 = String::new();
+    let _ = io::stdin().read_line(&mut n4);
+    let n4: f32 = n4.trim().parse().unwrap();
+
+    let md = (n1 + n2 + n3 + n4) / 4.0;
+
+    println!();
+    println!("Aluno {} com media ...: {:.1}", if md >= 5.0 { "aprovado" } else { "reprovado" }, md);
+  
+}

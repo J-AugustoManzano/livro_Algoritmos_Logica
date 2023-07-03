@@ -1,0 +1,31 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: Apendice A - CORRECAO DE ALGUNS EXERCICIOS DE FIXACAO
+ *
+ * Programa ..: CONVERSAO DE TEMPERATURA
+ */
+
+use std::io::{self, Write};
+
+fn main() {
+  
+    println!("CONVERSAO DE TEMPERATURA");
+    println!();
+
+    print!("Entre temperatura em Celsius ..: ");
+    let _ = io::stdout().flush();
+    let mut celsius = String::new();
+    let _ = io::stdin().read_line(&mut celsius);
+    let celsius: f32 = celsius.trim().parse().unwrap();
+
+    let fahrenheit = celsius * 9.0 / 5.0 + 32.0;
+
+    println!("Em Fahrenheit equivale a ......: {:.1}", fahrenheit);
+  
+}
