@@ -1,0 +1,11 @@
+Neste diretório encontra-se exemplificado em algumas linguagens de programação os exemplos de apresentação dos conceitos de programação com orientação a objetos do capítulo 12. Nem todas as linguagens usadas neste projeto são orientadas a objetos ou possuem suporte total a este paradigma, por esta razão essas linguagens foram omitidas. São disponibilizados neste diretório códigos nas linguagens:
+
+- C++
+- C#
+- Dart
+- Java
+- Pascal
+- Python
+- Scala
+
+Outro detelhes a ser considerado é que nem todas essas linguagens darão suporte a POO da mesma forma ou terão os mesmos recursos. Neste caso o programa referente ao recurso em certa linguagem não estará presente no diretório a ele associado.
