@@ -1,0 +1,62 @@
+Material do tópico 5.5.
+=======================
+
+-----------------
+- Laço Seletivo -
+-----------------
+
+programa LAÇO_SELETIVO_V1
+var
+  I, N, R : inteiro
+início
+  I ← 1
+  laço
+    leia N
+    R ← N * 3
+    escreva R
+    saia_caso (I > 4)
+    I ← I + 1
+  fim_laço
+fim
+
+programa LAÇO_SELETIVO_V2_1
+var
+  I, N, R : inteiro
+início
+  I ← 1
+  enquanto (.verdadeiro.) faça
+    leia N
+    R ← N * 3
+    escreva R
+    se (I > 4) então
+      interrompa
+    fim_se
+    I ← I + 1
+  fim_enquanto
+fim
+
+programa LAÇO_SELETIVO_V2_2
+var
+  I, N, R : inteiro
+início
+  I ← 1
+  INICÍO_DO_LAÇO:
+    leia N
+    R ← N * 3
+    escreva R
+    se (I > 4) então
+      vai_para FIM_DO_LAÇO
+    fim_se
+    I ← I + 1
+    vai_para INICÍO_DO_LAÇO
+  FIM_DO_LAÇO:
+fim
+
+
+
+
+
+
+
+
+
