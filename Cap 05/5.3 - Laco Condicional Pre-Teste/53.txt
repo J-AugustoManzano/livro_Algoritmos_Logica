@@ -1,0 +1,111 @@
+Material do tópico 5.3.
+=======================
+
+--------------------------------------
+- Laço Pré-teste de Fluxo Verdadeiro -
+--------------------------------------
+
+# Laço iterativo
+
+programa LAÇO_PRÉ_TESTE_VERDADEIRO_VA
+var
+  I, N, R : inteiro
+início
+  I ← 1
+  enquanto (I <= 5) faça
+    leia N
+    R ← N * 3
+    escreva R
+    I ← I + 1
+  fim_enquanto
+fim
+
+# Laço interativo
+
+programa LAÇO_PRÉ_TESTE_VERDADEIRO_VB
+var
+  N, R : inteiro
+  RESP : caractere
+início
+  RESP ← "S"
+  enquanto (RESP = "S") faça
+    leia N
+    R ← N * 3
+    escreva R
+    escreva "Deseja continuar? (S/N): "
+    leia RESP
+  fim_enquanto
+fim
+
+---------------------------------
+- Laço Pré-teste de Fluxo Falso -
+---------------------------------
+
+# Laço iterativo
+
+programa LAÇO_PRÉ_TESTE_FALSO_VA_1
+var
+  I, N, R : inteiro
+início
+  I ← 1
+  até_seja (I > 5) efetue
+    leia N
+    R ← N * 3
+    escreva R
+    I ← I + 1
+  fim_até_seja
+fim
+
+# Laço interativo
+
+programa LAÇO_PRÉ_TESTE_FALSO_VB_1
+var
+  N, R : inteiro
+  RESP : caractere
+início
+  RESP ← "S"
+  até_seja (RESP <> "S") efetue
+    leia N
+    R ← N * 3
+    escreva R
+    escreva "Deseja continuar? (S/N): "
+    leia RESP
+  fim_até_seja
+fim
+
+--------------------------------------------
+- Laço Pré-teste de Fluxo Falso (SIMULADO) -
+--------------------------------------------
+
+# Laço iterativo 
+
+programa LAÇO_PRÉ_TESTE_FALSO_VA_2
+var
+  I, N, R : inteiro
+início
+  I ← 1
+  enquanto (.não. (I > 5)) faça
+    leia N
+    R ← N * 3
+    escreva R
+    I ← I + 1
+  fim_enquanto
+fim
+
+# Laço interativo
+
+programa LAÇO_PRÉ_TESTE_FALSO_VB_2
+var
+  N, R : inteiro
+  RESP : caractere
+início
+  RESP ← "S"
+  enquanto (.não. (RESP <> "S")) faça
+    leia N
+    R ← N * 3
+    escreva R
+    escreva "Deseja continuar? (S/N): "
+    leia RESP
+  fim_enquanto
+fim
+

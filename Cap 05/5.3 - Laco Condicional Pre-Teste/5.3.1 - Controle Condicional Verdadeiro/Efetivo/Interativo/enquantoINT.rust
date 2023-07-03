@@ -1,0 +1,38 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 5 - Topico 5.3.1
+ * 
+ * Programa ..: LACO CONDICIONAL PRE-TESTE COM FLUXO VERDADEIRO INTERATIVO
+ * 
+ */
+
+use std::io;
+use std::io::Write;
+
+fn main() {
+    let mut resp;
+    println!("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    println!("Multiplicacao de numero por 3 por N vezes\n");
+    resp = String::from("S");
+    while resp == "S" || resp == "s" {
+        print!("Entre valor numerico inteiro: ");
+        io::stdout().flush().unwrap();
+        let mut n = String::new();
+        io::stdin().read_line(&mut n).unwrap();
+        let n: i32 = n.trim().parse().unwrap();
+        let r = n * 3;
+        println!("O numero informado X 3 = {}\n", r);
+        print!("Deseja continuar? (S/N): ");
+        io::stdout().flush().unwrap();
+        resp.clear();
+        io::stdin().read_line(&mut resp).unwrap();
+        resp = resp.trim().to_uppercase();
+        println!();
+    }
+}
