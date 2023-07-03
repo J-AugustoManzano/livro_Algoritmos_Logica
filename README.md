@@ -54,26 +54,23 @@ Neste momento são disponibilizados os algoritmos convertidos em programas nas l
 - D (2001) - Walter Bright
 - Dart (2011) - Google (Lars Bak e Kasper Lund)
 - Go (2009) - Google (Robert Griesemer, Rob Pike e Ken Thompson) -- (#) --
+- Groovy (2007) - James Strachan
 - Java (1995) - Sun Microsystems (James Gosling, líder do projeto)
 - JavaScript (1995) - Netescape (Brendan Eich, lider do projeto)
 - Julia (2012) - Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman -- (#) --
+- Kotlin (2016) - JetBrains (liderado por Dmitry Jemerov)
 - Lua (1994) - Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes -- (#) --
 - Pascal (1970) - Niklaus Wirth
 - Perl (1988) - Larry Wall
+- PHP (1995) - Rasmus Lerdorf
 - Python (1991) - Guido van Rossum
 - Raku (2019) - Larry Wall |antes linguagem Perl6|
+- Rubi (1995) - Yukihiro Matsumoto
+- Rust (2015) - Graydon Hoare
 - Scala (2204) - Martin Odersky
 - Swift (2014) - Apple Inc. (liderado por Chris Lattner)
 
 > OBS: -- (#) -- Indica linguagens de programação que não são orientadas a objetos (AWK, C, Go) ou que não possuem suporte adeaquado ou pleno ao paradigma POO (BASIC, D, Julia, Lua).
 
 Com o tempo outras linguagens serão acrescidas.
-Neste momento são exemplificadas 18 linguagens de programação.
-
-Em breve:
-
-- Groovy (.groovy) - 2007 - James Strachan
-- Kotlin (.kt) - 2016 - JetBrains (liderado por Dmitry Jemerov) 
-- PHP (.php) - 1995 - Rasmus Lerdorf
-- Rubi (.rb) - 1995 - Yukihiro Matsumoto
-- Rust (.rust) - 2015 - Graydon Hoare
+Neste momento são exemplificadas 23 linguagens de programação.
