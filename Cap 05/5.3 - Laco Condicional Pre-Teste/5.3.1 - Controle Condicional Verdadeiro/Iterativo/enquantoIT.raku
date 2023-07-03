@@ -12,7 +12,6 @@
 my Int $I = 1;
 my Int $N;
 my Int $R;
-
 say "LACO PRE-TESTE COM FLUXO VERDADEIRO";
 say "Multiplicacao de numero por 3 por 5 vezes";
 say "";

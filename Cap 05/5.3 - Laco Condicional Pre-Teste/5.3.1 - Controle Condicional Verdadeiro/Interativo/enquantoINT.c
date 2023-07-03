@@ -16,10 +16,8 @@ import Foundation
 var N: Int = 0
 var R: Int = 0
 var RESP: Character = "S"
-
 print("LACO PRE-TESTE COM FLUXO VERDADEIRO")
 print("Multiplicacao de numero por 3 por N vezes\n")
-
 RESP = "S"
 while RESP == "S" {
     print("Entre valor numerico inteiro: ", terminator: "")

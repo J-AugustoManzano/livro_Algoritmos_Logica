@@ -19,7 +19,6 @@ use warnings;
 my $N;
 my $R;
 my $RESP;
-
 print "LACO PRE-TESTE COM FLUXO VERDADEIRO\n";
 print "Multiplicacao de numero por 3 por N vezes\n\n";
 $RESP = 'S';

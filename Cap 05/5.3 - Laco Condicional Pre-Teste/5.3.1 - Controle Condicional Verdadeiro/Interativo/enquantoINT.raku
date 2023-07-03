@@ -12,7 +12,6 @@
 my Int $N;
 my Int $R;
 my Str $RESP = 'S';
-
 say "LACO PRE-TESTE COM FLUXO VERDADEIRO";
 say "Multiplicacao de numero por 3 por N vezes";
 say "";
