@@ -1,0 +1,34 @@
+use std::io::{self, Write};
+
+fn troca(a: &mut i32, b: &mut i32) {
+    let x = *a;
+    *a = *b;
+    *b = x;
+}
+
+fn main() {
+  
+    let mut a: i32;
+    let mut b: i32;
+
+    println!("TROCA DE VALORES - V2\n");
+
+    print!("Entre valor para variavel <A>: ");
+    let _ = io::stdout().flush();
+    let mut input = String::new();
+    let _ = io::stdin().read_line(&mut input);
+    a = input.trim().parse().unwrap();
+
+    print!("Entre valor para variavel <B>: ");
+    let _ = io::stdout().flush();
+    input.clear();
+    let _ = io::stdin().read_line(&mut input);
+    b = input.trim().parse().unwrap();
+
+    troca(&mut a, &mut b);
+
+    println!("\nOs valores trocados sao:\n");
+    println!("<A> = {}", a);
+    println!("<B> = {}", b);
+  
+}

@@ -1,0 +1,44 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 10 - Topico 10.5
+ *
+ * Programa ..: TROCA: CONVENCIONAL
+ */
+
+use std::io::{self, Write};
+
+fn main() {
+
+    let a: i32;
+    let b: i32;
+    let x: i32;
+
+    println!("TROCA DE VALORES - V1\n");
+
+    print!("Entre valor para variavel <A>: ");
+    io::stdout().flush().unwrap();
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+    a = input.trim().parse().unwrap();
+
+    print!("Entre valor para variavel <B>: ");
+    io::stdout().flush().unwrap();
+    input.clear();
+    io::stdin().read_line(&mut input).unwrap();
+    b = input.trim().parse().unwrap();
+
+    x = a;
+    let a = b;
+    let b = x;
+
+    println!("\nOs valores trocados sao:\n");
+    println!("<A> = {}", a);
+    println!("<B> = {}", b);
+    
+}

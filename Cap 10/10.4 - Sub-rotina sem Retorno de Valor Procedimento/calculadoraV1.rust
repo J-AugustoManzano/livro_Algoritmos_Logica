@@ -1,0 +1,106 @@
+use std::io::{self, Write};
+use std::str::FromStr;
+
+fn rotsoma() {
+    let mut a1: String = String::new();
+    let mut b1: String = String::new();
+    println!("\nRotina de Adicao\n");
+    print!("Entre o 1o. valor: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut a1).unwrap();
+    let a1: f32 = f32::from_str(a1.trim()).unwrap();
+    print!("Entre o 2o. valor: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut b1).unwrap();
+    let b1: f32 = f32::from_str(b1.trim()).unwrap();
+    println!();
+    let r1 = a1 + b1;
+    println!("O resultado da operacao equivale a: {:.2}\n", r1);
+}
+
+fn rotsubtracao() {
+    let mut a2: String = String::new();
+    let mut b2: String = String::new();
+    println!("\nRotina de Subtracao\n");
+    print!("Entre o 1o. valor: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut a2).unwrap();
+    let a2: f32 = f32::from_str(a2.trim()).unwrap();
+    print!("Entre o 2o. valor: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut b2).unwrap();
+    let b2: f32 = f32::from_str(b2.trim()).unwrap();
+    println!();
+    let r2 = a2 - b2;
+    println!("O resultado da operacao equivale a: {:.2}\n", r2);
+}
+
+fn rotmultiplicacao() {
+    let mut a3: String = String::new();
+    let mut b3: String = String::new();
+    println!("\nRotina de Multiplicacao\n");
+    print!("Entre o 1o. valor: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut a3).unwrap();
+    let a3: f32 = f32::from_str(a3.trim()).unwrap();
+    print!("Entre o 2o. valor: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut b3).unwrap();
+    let b3: f32 = f32::from_str(b3.trim()).unwrap();
+    println!();
+    let r3 = a3 * b3;
+    println!("O resultado da operacao equivale a: {:.2}\n", r3);
+}
+
+fn rotdivisao() {
+    let mut a4: String = String::new();
+    let mut b4: String = String::new();
+    println!("\nRotina de Divisao\n");
+    print!("Entre o 1o. valor: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut a4).unwrap();
+    let a4: f32 = f32::from_str(a4.trim()).unwrap();
+    print!("Entre o 2o. valor: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut b4).unwrap();
+    let b4: f32 = f32::from_str(b4.trim()).unwrap();
+    println!();
+    if b4 == 0.0 {
+        println!("O resultado da operacao equivale a: ERRO\n");
+    } else {
+        let r4 = a4 / b4;
+        println!("O resultado da operacao equivale a: {:.2}\n", r4);
+    }
+}
+
+fn main() {
+
+    let mut opcao: i32 = 0;
+    
+    while opcao != 5 {
+        println!("CALCULADORA - V1\n");
+        println!("[1] - Adicao");
+        println!("[2] - Subtracao");
+        println!("[3] - Multiplicacao");
+        println!("[4] - Divisao");
+        println!("[5] - Fim de Programa\n");
+        print!("Escolha uma opcao: ");
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        opcao = i32::from_str(input.trim()).unwrap();
+        if opcao != 5 {
+            match opcao {
+                1 => rotsoma(),
+                2 => rotsubtracao(),
+                3 => rotmultiplicacao(),
+                4 => rotdivisao(),
+                _ => {
+                    println!();
+                    println!("Opcao invalida - Tente novamente\n");
+                }
+            }
+        }
+    }
+    
+}
