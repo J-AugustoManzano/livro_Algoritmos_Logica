@@ -1,0 +1,37 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 5 - Topico 5.4.1
+ * 
+ * Programa ..: LACO CONDICIONAL POS-TESTE COM FLUXO FALSO INTERATIVO (SIMULADO))
+ * 
+ */
+
+use std::io::{self, Write, BufRead};
+
+fn main() {
+    println!("LACO PRE-TESTE COM FLUXO FALSO");
+    println!("Multiplicacao de numero por 3 por N vezes\n");
+    let mut resp;
+    loop { // repita
+        print!("Entre valor numerico inteiro: ");
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().lock().read_line(&mut input).unwrap();
+        let n: i32 = input.trim().parse().unwrap();
+        let r = n * 3;
+        println!("O numero informado X 3 = {}\n", r);
+        print!("Deseja continuar? (S/N): ");
+        io::stdout().flush().unwrap();
+        input.clear();
+        io::stdin().lock().read_line(&mut input).unwrap();
+        resp = input.trim().chars().next().unwrap().to_ascii_uppercase();
+        println!();
+        if resp != 'S' { break }; // até_que (RESP <> "S")
+    }
+}
