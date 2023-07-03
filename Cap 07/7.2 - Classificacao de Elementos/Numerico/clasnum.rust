@@ -1,0 +1,51 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 7 - Topico 7.2
+ * 
+ * Programa ..: LISTA CLASSIFICADA POR NUMERO
+ * 
+ */
+
+use std::io::{self, Write};
+
+fn main() {
+  
+    let mut numeros: [i32; 5] = [0; 5];
+    let mut x: i32;
+
+    println!("CLASSIFICACAO DE NUMEROS (CRESCENTE)");
+    println!();
+  
+    for i in 0..5 {
+        print!("Entre o {:>2}o. numero: ", i + 1);
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        numeros[i] = input.trim().parse().unwrap();
+    }
+
+    for i in 0..4 {
+        for j in (i + 1)..5 {
+            if numeros[i] > numeros[j] {
+                x = numeros[i];
+                numeros[i] = numeros[j];
+                numeros[j] = x;
+            }
+        }
+    }
+
+    println!();
+    println!("NUMEROS CLASSIFICADOS");
+    println!();
+  
+    for i in 0..5 {
+        println!("{}", numeros[i]);
+    }
+  
+}

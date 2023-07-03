@@ -1,0 +1,51 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 7 - Topico 7.2
+ * 
+ * Programa ..: LISTA CLASSIFICADA POR NOME
+ * 
+ */
+
+use std::io::{self, Write};
+
+fn main() {
+  
+    let mut nome: Vec<String> = vec![String::new(); 20];
+    let mut x: String;
+
+    println!("CLASSIFICACAO DE NOMES (ASCENDENTE)");
+    println!();
+  
+    for i in 0..20 {
+        print!("Entre o {:>2}o. nome: ", i + 1);
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        nome[i] = input.trim().to_string();
+    }
+
+    for i in 0..19 {
+        for j in (i + 1)..20 {
+            if nome[i] > nome[j] {
+                x = nome[i].clone();
+                nome[i] = nome[j].clone();
+                nome[j] = x;
+            }
+        }
+    }
+
+    println!();
+    println!("NOMES CLASSIFICADOS");
+    println!();
+  
+    for i in 0..20 {
+        println!("{}", nome[i]);
+    }
+  
+}
