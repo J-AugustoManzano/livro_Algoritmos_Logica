@@ -19,7 +19,6 @@ use warnings;
 my $I;
 my $N;
 my $R;
-
 print "LACO DETERMINISTICO\n";
 print "Multiplicacao de numero por 3 por 5 vezes\n\n";
 for ($I = 1; $I <= 5; $I++) {

@@ -19,7 +19,6 @@ use warnings;
 my $I = 1;
 my $N;
 my $R;
-
 print "LACO PRE-TESTE COM FLUXO VERDADEIRO\n";
 print "Multiplicacao de numero por 3 por 5 vezes\n\n";
 while (1) {

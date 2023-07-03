@@ -1,3 +1,17 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 5 - Topico 5.5
+ * 
+ * Programa ..: LACO SELETIVO ITERATIVO (SIMULADO ENQUANTO)
+ * 
+ */
+
 import Foundation
 
 var I: Int = 0

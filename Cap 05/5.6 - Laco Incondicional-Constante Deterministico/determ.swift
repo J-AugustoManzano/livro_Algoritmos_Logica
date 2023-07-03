@@ -1,3 +1,17 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 5 - Topico 5.6
+ * 
+ * Programa ..: LACO INCONDICIONAL/CONSTANTE - DETERMINISTICO
+ * 
+ */
+
 import Foundation
 
 print("LACO DETERMINISTICO")

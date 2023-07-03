@@ -12,10 +12,8 @@
 my $I;
 my $N;
 my $R;
-
 say "LACO DETERMINISTICO";
 say "Multiplicacao de numero por 3 por 5 vezes\n";
-
 for 1..5 -> $I {
     say "Calculo: $I";
     print "Entre valor numerico inteiro: ";

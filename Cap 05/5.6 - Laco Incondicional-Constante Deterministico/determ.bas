@@ -14,11 +14,9 @@
 Dim N As Integer
 Dim R As Integer
 Dim I As Integer
-
 Print "LACO DETERMINISTICO"
 Print "Multiplicacao de numero por 3 por 5 vezes"
 Print
-
 For I = 1 To 5 Step 1
   Print "Calculo: "; I
   Print "Entre valor numerico inteiro: ";
