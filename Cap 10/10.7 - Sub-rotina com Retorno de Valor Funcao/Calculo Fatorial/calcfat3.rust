@@ -1,0 +1,40 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 10 - Topico 10.7
+ *
+ * Programa ..: OPERACAO COM SUBROTINA DE FUNCAO
+ */
+
+use std::io::{self, Write};
+
+fn fatorial(n: u16) -> u64 {
+    let mut fat: u64 = 1;
+    for i in 1..=n {
+        fat = fat * i as u64;
+    }
+    fat
+}
+
+fn main() {
+  
+    let mut limite = String::new();
+    let resp: u64;
+
+    println!("CALCULO DE FATORIAL");
+    println!("FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO\n");
+
+    print!("Qual fatorial (1-20): ");
+    let _ = io::stdout().flush();
+    let _ = io::stdin().read_line(&mut limite);
+    let limite: u16 = limite.trim().parse().unwrap();
+
+    resp = fatorial(limite);
+    println!("Fatorial = {}", resp);
+  
+}

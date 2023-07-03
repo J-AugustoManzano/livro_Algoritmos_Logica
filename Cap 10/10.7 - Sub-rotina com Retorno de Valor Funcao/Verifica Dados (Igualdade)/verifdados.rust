@@ -1,0 +1,44 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 10 - Topico 10.7
+ *
+ * Programa ..: OPERACAO COM SUBROTINA DE FUNCAO
+ */
+
+use std::io::{self, Write};
+
+fn igual(a: i32, b: i32) -> bool {
+    a == b
+}
+
+fn main() {
+  
+    let mut x = String::new();
+    let mut y = String::new();
+
+    println!("VERIFICACAO DE DADOS");
+    println!("FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO\n");
+
+    print!("Informe o 1o. valor: ");
+    let _ = io::stdout().flush();
+    let _ = io::stdin().read_line(&mut x);
+    let x: i32 = x.trim().parse().unwrap();
+
+    print!("Informe o 2o. valor: ");
+    let _ = io::stdout().flush();
+    let _ = io::stdin().read_line(&mut y);
+    let y: i32 = y.trim().parse().unwrap();
+
+    if igual(x, y) {
+        println!("Valores sao iguais");
+    } else {
+        println!("Valores sao diferentes");
+    }
+  
+}
