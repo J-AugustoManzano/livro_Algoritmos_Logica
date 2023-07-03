@@ -67,4 +67,13 @@ Neste momento são disponibilizados os algoritmos convertidos em programas nas l
 
 > OBS: -- (#) -- Indica linguagens de programação que não são orientadas a objetos (AWK, C, Go) ou que não possuem suporte adeaquado ou pleno ao paradigma POO (BASIC, D, Julia, Lua).
 
-Com o tempo outras linguagens serão acrescidas, neste momento são exemplificadas 18 linguagens de programação.
+Com o tempo outras linguagens serão acrescidas.
+Neste momento são exemplificadas 18 linguagens de programação.
+
+Em breve:
+
+- Groovy (.groovy) --- 2007 - James Strachan
+- Kotlin (.kt) ------- 2016 - JetBrains (liderado por Dmitry Jemerov) 
+- PHP (.php) --------- 1995 - Rasmus Lerdorf
+- Rubi (.rb) --------- 1995 - Yukihiro Matsumoto
+- Rust (.rust) ------- 2015 - Graydon Hoare
