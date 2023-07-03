@@ -12,11 +12,9 @@
 my Int $N;
 my Int $R;
 my Str $RESP;
-
 say "LACO POS-TESTE COM FLUXO VERDADEIRO";
 say "Multiplicacao de numero por 3 por N vezes";
 say "";
-
 $RESP = "S";
 repeat { // simulação "execute"
     print "Entre valor numerico inteiro: ";
