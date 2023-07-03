@@ -1,1 +1,0 @@
-Neste diretório encontra-se exemplificado em algumas linguagens computacionais os exemplos de apresentação dos conceitos de programação com tomada de decisão do capítulo 4.
