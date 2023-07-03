@@ -1,0 +1,117 @@
+Neste diretório encontra-se a codificação de uma versão do programa CALCULADORA, neste caso, versão 4. Este 
+programa foi apresentado no capítulo 10. 
+
+Neste espaço o programa é escrito em algumas linguagens de programação com o objetivo de mostrar que o con-
+teúdo exposto na obra é plenamente aplicável em diversas linguagens de programação.
+
+Até o momento o programa CALCULADORA_V4 está escrito em 26 linguagens:
+
+Ada ............ (.adb)
+AWK ............ (.awk)
+BASIC .......... (.bas)
+C .............. (.c)
+C++ ............ (.cpp)
+C# ............. (.cs)
+D .............. (.d)
+Dart ........... (.dart)
+Go ............. (.go)
+Groovy ......... (.groovy)
+Java ........... (.java)
+JavaScript ..... (.js)
+Julia .......... (.jl)
+Kotlin ......... (.kt)
+Lua ............ (.lua)
+Pascal ......... (.pas)
+Perl ........... (.pl)
+PHP ............ (.php)
+Python ......... (.py)
+Raku ........... (.raku)
+Ruby ........... (.rb)
+Rust ........... (.rust)
+Scala .......... (.scala)
+Swift .......... (.swift)
+Tcl ............ (.tcl)
+Visual Basic ... (.vb)
+
+Nesta versão o programa é operacionalizado com um nível de abstração maior que o utilizado no capítulo 10. 
+Neste caso, as quatro sub-rotinas de cálculo do programa são configuradas em uma só. Isto proporciona 
+demonstrar um nível maior do conceito de "refinamento sucessivo".
+
+programa CALCULADORA_V4
+
+var
+  R, A, B : real
+  OPCAO : inteiro
+
+  // Trecho de sub-rotinas de entrada e saída
+
+  procedimento ENTRADA
+  início
+    escreva "Entre o 1o. valor: " 
+    leia A
+    escreva "Entre o 2o. valor: " 
+    leia B
+  fim
+
+  procedimento SAÍDA
+  início
+    escreva "O resultado da operação equivale a: ", R, "."
+  fim
+
+  // Trecho com função para o cálculo das operações
+
+  função CALCULO(X, Y : real, OPERADOR : caractere) : real
+  início
+    caso OPERADOR
+      seja "+" faça CALCULO ← X + Y
+      seja "-" faça CALCULO ← X – Y
+      seja "*" faça CALCULO ← X * Y
+      seja "/" faça CALCULO ← X / Y
+    fim_caso
+  fim
+  // Trecho com sub-rotina geral
+  procedimento ROTCALC(OPERAÇÃO : caractere)
+  início
+    caso OPERAÇÃO
+      seja "+" faça escreva "Rotina de Adição"
+      seja "-" faça escreva "Rotina de Subtração"
+      seja "*" faça escreva "Rotina de Multiplicação"
+      seja "/" faça escreva "Rotina de Divisão"
+    fim_caso
+    ENTRADA
+    se (OPERAÇÃO = "/") então
+      se (B = 0) então
+        escreva "O resultado da operacao equivale a: ERRO."
+      senão
+        R ← CALCULO(A, B, "/")
+        SAÍDA
+      fim_se;
+    fim_se
+    se .não. (OPERAÇÃO = "/") então
+      R ← CALCULO(A, B, OPERAÇÃO)
+      SAÍDA
+    fim_se
+  fim
+// Trecho principal do programa
+início
+  OPÇÃO ← 0
+  enquanto (OPÇÃO <> 5) faça
+    escreva "1 – Adição"
+    escreva "2 – Subtração"
+    escreva "3 – Multiplicação"
+    escreva "4 – Divisão"
+    escreva "5 – Fim de Programa"
+    escreva "Escolha uma opção: "
+    leia OPÇÃO
+    se (OPÇÃO <> 5) então
+      caso OPÇÃO
+        seja 1 faça ROTCALC("+")
+        seja 2 faça ROTCALC("-")
+        seja 3 faça ROTCALC("*")
+        seja 4 faça ROTCALC("/")
+      senão
+        escreva "Opção inválida - Tente novamente."
+      fim_caso
+    fim_se
+  fim_enquanto
+fim
