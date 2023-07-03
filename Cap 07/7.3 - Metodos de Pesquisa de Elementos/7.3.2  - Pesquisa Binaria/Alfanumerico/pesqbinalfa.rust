@@ -1,0 +1,93 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 7 - Topico 7.4
+ * 
+ * Programa ..: PESQUISA BINARIA POR NOME
+ * 
+ */
+
+use std::io::{self, Write};
+
+fn main() {
+
+    let mut nome: Vec<String> = Vec::with_capacity(10);
+    let mut comeco: usize;
+    let mut final_: usize;
+    let mut meio: usize = 0; // Inicializar meio com um valor padrão
+    let mut pesq: String;
+    let mut resp: String;
+    let mut x: String;
+    let mut acha: bool;
+
+    println!("PESQUISA BINARIA - NOME\n");
+
+    for i in 0..10 {
+        print!("Entre o {:>2}o. nome: ", i + 1);
+        io::stdout().flush().unwrap();
+        let mut entrada = String::new();
+        io::stdin().read_line(&mut entrada).unwrap();
+        nome.push(entrada.trim().to_string());
+    }
+
+    // *** inicio trecho de classificacao ***
+
+    for i in 0..9 {
+        for j in (i + 1)..10 {
+            if nome[i] > nome[j] {
+                x = nome[i].to_string();
+                nome[i] = nome[j].to_string();
+                nome[j] = x;
+            }
+        }
+    }
+
+    // *** fim trecho de classificacao ***
+
+    // *** inicio trecho de pesquisa binaria ***
+
+    resp = String::from("SIM");
+    while resp == "SIM" {
+        println!();
+        print!("Entre o nome a ser pesquisado: ");
+        io::stdout().flush().unwrap();
+        let mut entrada = String::new();
+        io::stdin().read_line(&mut entrada).unwrap();
+        pesq = entrada.trim().to_string();
+        comeco = 0;
+        final_ = 9;
+        acha = false;
+        while comeco <= final_ && acha == false {
+            meio = (comeco + final_) / 2;
+            if pesq == nome[meio] {
+                acha = true;
+            } else {
+                if pesq < nome[meio] {
+                    final_ = meio - 1;
+                } else {
+                    comeco = meio + 1;
+                }
+            }
+        }
+        if acha == true {
+            println!();
+            println!("{} foi localizado na posição {}", pesq, meio + 1);
+        } else {
+            println!();
+            println!("{} nao foi localizado", pesq);
+        }
+
+        println!();
+        print!("Deseja continuar? (SIM/NAO): ");
+        io::stdout().flush().unwrap();
+        let mut entrada = String::new();
+        io::stdin().read_line(&mut entrada).unwrap();
+        resp = entrada.trim().to_string().to_uppercase();
+    }
+    
+}

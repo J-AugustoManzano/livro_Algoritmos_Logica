@@ -1,0 +1,71 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 7 - Topico 7.3
+ * 
+ * Programa ..: PESQUISA SEQUENCIAL POR NOME
+ * 
+ */
+
+use std::io::{self, Write};
+
+fn main() {
+  
+    let mut nome: Vec<String> = Vec::with_capacity(10);
+    let mut i: usize;
+    let mut pesq: String;
+    let mut resp: String;
+    let mut acha: bool;
+
+    println!("PESQUISA SEQUENCIAL DE NOMES\n");
+
+    for i in 0..10 {
+        print!("Entre o {:>2}o. nome: ", i + 1);
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        nome.push(input.trim().to_string());
+    }
+
+    // *** Inicio do trecho de pesquisa sequencial ***
+
+    resp = String::from("SIM");
+    while resp == "SIM" {
+        println!();
+        print!("Entre o nome a ser pesquisado: ");
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        pesq = input.trim().to_string();
+        i = 0;
+        acha = false;
+        while i < nome.len() && acha == false {
+            if pesq == nome[i] {
+                acha = true;
+            } else {
+                i = i + 1;
+            }
+        }
+        if acha == true {
+            println!();
+            println!("{} foi localizado na posicao {}", pesq, i + 1);
+        } else {
+            println!();
+            println!("{} nao foi localizado", pesq);
+        }
+        println!();
+        print!("Deseja continuar? (SIM/NAO): ");
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        resp = input.trim().to_uppercase();
+    }
+
+    // *** Fim do trecho de pesquisa sequencial ***
+  
+}
