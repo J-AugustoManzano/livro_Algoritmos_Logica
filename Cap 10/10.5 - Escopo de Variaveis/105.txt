@@ -1,0 +1,52 @@
+Material do tópico 10.5.
+========================
+
+-----------------------
+- Troca de Valores V1 -
+-----------------------
+
+programa TROCA_VALORES_V1
+
+var
+  X, A, B : inteiro
+
+início
+  leia A, B
+  X ← A
+  A ← B
+  B ← X
+  escreva A, B
+fim
+
+-----------------------
+- Troca de Valores V2 -
+-----------------------
+
+programa TROCA_VALORES_V2
+
+var
+  A, B : inteiro
+
+  procedimento TROCA
+  var
+    X : inteiro
+  início
+    X ← A
+    A ← B
+    B ← X
+  fim
+
+início
+  leia A, B
+  TROCA
+  escreva A, B
+fim
+
+
+=========
+= OBS.: =
+=========
+
+Os exemplos TROCA_VALORES_V3 e TROCA_VALORES_V4 são códigos
+escritos prpositalmente com erros e por esta razão não aqui
+implementados em qualquer linguagem de programação.
