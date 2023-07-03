@@ -11,7 +11,7 @@
  * Programa ..: LACO CONDICIONAL PRE-TESTE COM FLUXO FALSO INTERATIVO
 '''
 
-print('LACO PRE-TESTE COM FLUXO VERDADEIRO')
+print('LACO PRE-TESTE COM FLUXO FALSO')
 print('Multiplicacao de numero por 3 por N vezes')
 print()
 RESP = 'S'
@@ -22,3 +22,4 @@ while (not (RESP != 'S')): # simulacao "ate_seja (RESP <> "S") efetue"
   print()
   RESP = input('Deseja continuar? (S/N): ').upper()
   print()
+  # simulaçao "fim_ate_seja"

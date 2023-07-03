@@ -19,7 +19,7 @@ int N, R;
 char RESP;
 void main()
 {
-  writeln("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+  writeln("LACO PRE-TESTE COM FLUXO FALSO");
   writeln("Multiplicacao de numero por 3 por N vezes");
   writeln();
   RESP = 'S';
@@ -34,5 +34,5 @@ void main()
     readf(" %c", &RESP);
     writeln();
     RESP = toUpper(RESP);
-  }
+  } // simulaçao "fim_ate_seja"
 }

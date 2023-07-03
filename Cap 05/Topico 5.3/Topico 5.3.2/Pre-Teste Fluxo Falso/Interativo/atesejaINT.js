@@ -11,16 +11,17 @@
  * Programa ..: LACO CONDICIONAL PRE-TESTE COM FLUXO FALSO INTERATIVO
  */
 
-console.log('LACO PRE-TESTE COM FLUXO VERDADEIRO');
+let N, R;
+let RESP;
+console.log('LACO PRE-TESTE COM FLUXO FALSO');
 console.log('Multiplicacao de numero por 3 por N vezes');
 console.log();
-let N, R;
-let RESP = 'S';
-while (RESP === 'S') {
+RESP = 'S';
+while (RESP === 'S') { // simulacao "ate_seja (RESP <> "S") efetue"
   N = parseInt(prompt('Entre valor numerico inteiro: '));
   R = N * 3;
   console.log('O numero informado X 3 = ', R);
   console.log();
   RESP = prompt('Deseja continuar? (S/N): ').toUpperCase();
   console.log();
-}
+} // simulaçao "fim_ate_seja"

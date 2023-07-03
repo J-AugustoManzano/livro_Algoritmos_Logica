@@ -18,7 +18,7 @@ int N = 0;
 int R = 0;
 String RESP = '';
 void main() {
-  print('LACO PRE-TESTE COM FLUXO VERDADEIRO');
+  print('LACO PRE-TESTE COM FLUXO FALSO');
   print('Multiplicacao de numero por 3 por N vezes');
   print('');
   RESP = 'S';
@@ -32,5 +32,5 @@ void main() {
     RESP = stdin.readLineSync()!;
     print('');
     RESP = RESP.toUpperCase();
-  }
+  } // simulaçao "fim_ate_seja"
 }

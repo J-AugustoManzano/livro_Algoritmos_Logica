@@ -14,7 +14,7 @@
 Dim N As Integer
 Dim R As Integer
 Dim RESP As String
-Print "LACO PRE-TESTE COM FLUXO VERDADEIRO"
+Print "LACO PRE-TESTE COM FLUXO FALSO"
 Print "Multiplicacao de numero por 3 por N vezes"
 Print
 RESP = "S"
@@ -28,4 +28,4 @@ Do Until (RESP <> "S") ' como "ate_seja (RESP <> "S") efetue"
   Input "", RESP
   RESP = UCase$(RESP)
   Print
-Loop
+Loop ' como "fim_ate_seja"

@@ -17,7 +17,7 @@ import std.stdio;
 int I, N, R;
 void main()
 {
-  writeln("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+  writeln("LACO PRE-TESTE COM FLUXO FALSO");
   writeln("Multiplicacao de numero por 3 por 5 vezes");
   writeln();
   I = 1;

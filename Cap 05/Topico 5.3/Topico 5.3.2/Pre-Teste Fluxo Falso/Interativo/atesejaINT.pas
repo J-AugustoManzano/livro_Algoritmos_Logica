@@ -16,7 +16,7 @@ var
   N, R: integer;
   RESP: char;
 begin
-  writeln('LACO PRE-TESTE COM FLUXO VERDADEIRO');
+  writeln('LACO PRE-TESTE COM FLUXO FALSO');
   writeln('Multiplicacao de numero por 3 por N vezes');
   writeln;
   RESP := 'S';
@@ -31,5 +31,5 @@ begin
     readln(RESP);
     writeln;
     RESP := UpCase(RESP);
-  end;
+  end; // simulaçao "fim_ate_seja"
 end.

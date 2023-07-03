@@ -10,7 +10,7 @@
 # Programa ..: LACO CONDICIONAL PRE-TESTE COM FLUXO FALSO INTERATIVO
 
 BEGIN {
-  print "LACO PRE-TESTE COM FLUXO VERDADEIRO"
+  print "LACO PRE-TESTE COM FLUXO FALSO"
   print "Multiplicacao de numero por 3 por N vezes"
   print ""
   RESP = "S"
@@ -24,5 +24,5 @@ BEGIN {
     getline RESP
     print ""
     RESP = toupper(RESP)
-  }
+  } # simulaçao "fim_ate_seja"
 }

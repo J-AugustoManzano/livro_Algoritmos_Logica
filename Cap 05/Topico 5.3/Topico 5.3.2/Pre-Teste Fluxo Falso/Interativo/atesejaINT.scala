@@ -17,7 +17,7 @@ object Main {
   var R: Int = 0
   var RESP: Char = ' '
   def main(args: Array[String]): Unit = {
-    println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+    println("LACO PRE-TESTE COM FLUXO FALSO")
     println("Multiplicacao de numero por 3 por N vezes")
     println()
     RESP = 'S'
@@ -30,6 +30,6 @@ object Main {
       print("Deseja continuar? (S/N): ")
       RESP = scala.io.StdIn.readChar().toUpper
       println()
-    }
+    } // simulaçao "fim_ate_seja"
   }
 }

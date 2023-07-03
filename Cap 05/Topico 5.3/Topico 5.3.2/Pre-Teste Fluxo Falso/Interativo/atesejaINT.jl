@@ -13,7 +13,7 @@
 
 function main()
   global N, R, RESP
-  println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+  println("LACO PRE-TESTE COM FLUXO FALSO")
   println("Multiplicacao de numero por 3 por N vezes")
   println()
   RESP = 'S'
@@ -26,7 +26,7 @@ function main()
     print("Deseja continuar? (S/N): ")
     RESP = uppercase(readline())[1]
     println()
-  end
+  end # simulaçao "fim_ate_seja"
 end
 
 main()

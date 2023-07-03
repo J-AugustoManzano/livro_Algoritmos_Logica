@@ -19,11 +19,9 @@ use warnings;
 my $N;
 my $R;
 my $RESP = 'S';
-
-print "LACO PRE-TESTE COM FLUXO VERDADEIRO\n";
+print "LACO PRE-TESTE COM FLUXO FALSO\n";
 print "Multiplicacao de numero por 3 por N vezes\n";
 print "\n";
-
 until ($RESP ne 'S') { # equivalente a "ate_seja (RESP <> "S") efetue"
     print "Entre valor numerico inteiro: ";
     $N = <STDIN>;
@@ -36,4 +34,4 @@ until ($RESP ne 'S') { # equivalente a "ate_seja (RESP <> "S") efetue"
     chomp($RESP);
     print "\n";
     $RESP = uc($RESP);
-}
+} # simulaçao "fim_ate_seja"

@@ -13,11 +13,10 @@ my Int $N;
 my Int $R;
 my Str $RESP = 'S';
 
-say "LACO PRE-TESTE COM FLUXO VERDADEIRO";
+say "LACO PRE-TESTE COM FLUXO FALSO";
 say "Multiplicacao de numero por 3 por N vezes";
 say "";
-
-until $RESP ne 'S' { # como "ate_seja (RESP <> "S") efetue"
+until $RESP ne 'S' { # simulacao "ate_seja (RESP <> "S") efetue"
     print "Entre valor numerico inteiro: ";
     $N = prompt.Int;
     $R = $N * 3;
@@ -27,4 +26,4 @@ until $RESP ne 'S' { # como "ate_seja (RESP <> "S") efetue"
     $RESP = prompt;
     $RESP = $RESP.uc;
     say "";
-}
+} # simulaçao "fim_ate_seja"

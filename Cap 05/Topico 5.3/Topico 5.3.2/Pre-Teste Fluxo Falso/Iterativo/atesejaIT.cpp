@@ -17,7 +17,7 @@ using namespace std;
 
 int I, N, R;
 int main(void) {
-  cout << "LACO PRE-TESTE COM FLUXO VERDADEIRO" << endl;
+  cout << "LACO PRE-TESTE COM FLUXO FALSO" << endl;
   cout << "Multiplicacao de numero por 3 por 5 vezes" << endl << endl;
   I = 1;
   while (not (I > 5)) { // simulacao "ate_seja (I > 5) efetue"

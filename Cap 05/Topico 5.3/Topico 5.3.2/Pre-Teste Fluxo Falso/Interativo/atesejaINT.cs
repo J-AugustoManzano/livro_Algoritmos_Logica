@@ -20,7 +20,7 @@ class Program
   static char RESP;
   static void Main(string[] args)
   {
-    Console.WriteLine("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    Console.WriteLine("LACO PRE-TESTE COM FLUXO FALSO");
     Console.WriteLine("Multiplicacao de numero por 3 por N vezes");
     Console.WriteLine();
     RESP = 'S';
@@ -34,6 +34,6 @@ class Program
       Console.Write("Deseja continuar? (S/N): ");
       RESP = Console.ReadLine().ToUpper()[0];
       Console.WriteLine();
-    }
+    } // simulaçao "fim_ate_seja"
   }
 }

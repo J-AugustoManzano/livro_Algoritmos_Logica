@@ -19,7 +19,7 @@ using namespace std;
 int N, R;
 char RESP;
 int main(void) {
-  cout << "LACO PRE-TESTE COM FLUXO VERDADEIRO" << endl;
+  cout << "LACO PRE-TESTE COM FLUXO FALSO" << endl;
   cout << "Multiplicacao de numero por 3 por N vezes" << endl << endl;
   RESP = 'S';
   while (not (RESP != 'S')) { // simulacao "ate_seja (RESP <> "S") efetue"
@@ -31,6 +31,6 @@ int main(void) {
     cin >> RESP;
     RESP = toupper(RESP);
     cout << endl;
-  }
+  } // simulaçao "fim_ate_seja"
   return 0;
 }

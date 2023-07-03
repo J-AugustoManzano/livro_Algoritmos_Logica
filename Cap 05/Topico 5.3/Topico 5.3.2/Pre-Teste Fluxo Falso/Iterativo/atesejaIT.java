@@ -18,7 +18,7 @@ public class Main {
   static int N;
   static int R;
   public static void main(String[] args) {
-    System.out.println("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    System.out.println("LACO PRE-TESTE COM FLUXO FALSO");
     System.out.println("Multiplicacao de numero por 3 por 5 vezes");
     System.out.println();
     Scanner entrada = new Scanner(System.in);

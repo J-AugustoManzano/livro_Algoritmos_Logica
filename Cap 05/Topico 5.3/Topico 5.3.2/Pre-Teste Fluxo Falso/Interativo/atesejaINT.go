@@ -23,8 +23,8 @@ var (
   R    int
   RESP string
 )
-func main() {
-  fmt.Println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+func main() { // simulacao "ate_seja (RESP <> "S") efetue"
+  fmt.Println("LACO PRE-TESTE COM FLUXO FALSO")
   fmt.Println("Multiplicacao de numero por 3 por N vezes")
   fmt.Println()
   RESP = "S"
@@ -37,5 +37,5 @@ func main() {
     fmt.Print("Deseja continuar? (S/N): ")
     fmt.Scanln(&RESP)
     fmt.Println()
-  }
+  } // simulaçao "fim_ate_seja"
 }
