@@ -1,0 +1,45 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: Apendice A - CORRECAO DE ALGUNS EXERCICIOS DE FIXACAO
+ * 
+ * Programa ..: LISTA CLASSIFICADA POR NUMERO - DECRESCENTE
+ * 
+ */
+
+use std::io::{self, Write};
+
+fn main() {
+    let mut a: [i32; 12] = [0; 12];
+
+    println!("CLASSIFICACAO (DECRESCENTE)\n");
+
+    for i in 0..12 {
+        print!("Entre o {:>2}o. numero: ", i + 1);
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        a[i] = input.trim().parse().unwrap();
+    }
+
+    for i in 0..10 {
+        for j in i + 1..12 {
+            if a[i] < a[j] {
+                let x = a[i];
+                a[i] = a[j];
+                a[j] = x;
+            }
+        }
+    }
+
+    println!("\nNUMEROS CLASSIFICADOS\n");
+
+    for i in 0..12 {
+        println!("{}", a[i]);
+    }
+}

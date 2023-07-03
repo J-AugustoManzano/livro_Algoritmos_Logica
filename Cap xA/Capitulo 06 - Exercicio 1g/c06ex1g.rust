@@ -1,0 +1,66 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: Apendice A - CORRECAO DE ALGUNS EXERCICIOS DE FIXACAO
+ *
+ * Programa ..: JUNCAO DE DUAS MATRIZES 1D
+ */
+
+use std::io::{self, Write};
+
+fn main() {
+    let mut a: [i32; 10] = [0; 10];
+    let mut b: [i32; 15] = [0; 15];
+    let mut c: [i32; 25] = [0; 25];
+
+    println!("JUNCAO DE MATRIZES 1D");
+    println!(">>> Para maior comodidade, entre valores entre 0 e 9999 <<<\n\n\n");
+
+    println!("Entre 10 elementos para a matriz [A]:\n");
+    for i in 0..10 {
+        print!("Entre o {:>2}o. elemento de [A] --> ", i + 1);
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        a[i] = input.trim().parse().unwrap();
+    }
+
+    print!("\nTecle <ENTER> para proxima entrada ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut String::new()).unwrap();
+
+    println!("\nEntre 15 elementos para a matriz [B]:\n");
+    for i in 0..15 {
+        print!("Entre o {:>2}o. elemento de [B] --> ", i + 1);
+        io::stdout().flush().unwrap();
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        b[i] = input.trim().parse().unwrap();
+    }
+
+    print!("\nTecle <ENTER> para ver juncao ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut String::new()).unwrap();
+
+    for i in 0..25 {
+        if i <= 9 {
+            c[i] = a[i];
+        } else {
+            c[i] = b[i - 10];
+        }
+    }
+
+    println!("\nConteudo da matriz [C] juncao das matrizes [A] e [B]:\n");
+    for i in 0..25 {
+        println!("C[{:>2}] = {}", i + 1, c[i]);
+    }
+
+    print!("\nTecle <ENTER> para encerrar o programa...");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut String::new()).unwrap();
+}
