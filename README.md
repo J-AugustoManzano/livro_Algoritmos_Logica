@@ -72,8 +72,8 @@ Neste momento são exemplificadas 18 linguagens de programação.
 
 Em breve:
 
-- Groovy (.groovy) --- 2007 - James Strachan
-- Kotlin (.kt) ------- 2016 - JetBrains (liderado por Dmitry Jemerov) 
-- PHP (.php) --------- 1995 - Rasmus Lerdorf
-- Rubi (.rb) --------- 1995 - Yukihiro Matsumoto
-- Rust (.rust) ------- 2015 - Graydon Hoare
+- Groovy (.groovy) - 2007 - James Strachan
+- Kotlin (.kt) - 2016 - JetBrains (liderado por Dmitry Jemerov) 
+- PHP (.php) - 1995 - Rasmus Lerdorf
+- Rubi (.rb) - 1995 - Yukihiro Matsumoto
+- Rust (.rust) - 2015 - Graydon Hoare
