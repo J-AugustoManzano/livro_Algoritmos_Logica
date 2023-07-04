@@ -79,4 +79,4 @@ Neste momento são exemplificadas 23 linguagens de programação.
 EM BREVE
 --------
 
-- TypeScript (2012) - Microsoft Corporation
+- TypeScript (2012) - Microsoft Corporation (Steve Lucco, líder do projeto)
