@@ -14,51 +14,43 @@
 
 import scala.io.StdIn
 
-// Nao e possivel em Scala definir o tipo BIMESTRE
+class BIMESTRE {
+  var NOTAS: Array[Double] = Array.fill(4)(0.0)
+}
 
-case class CAD_ALUNO(
-  NOME: String,
-  TURMA: Char,
-  SALA: Int,
-  NOTAS: Array[Float]
-)
+class CAD_ALUNO {
+  var NOME: String = ""
+  var TURMA: Char = ' '
+  var SALA: Int = 0
+  var NOTAS: BIMESTRE = new BIMESTRE()
+}
 
-object Main {
-  def main(args: Array[String]): Unit = {
-	  
-    var ALUNO = CAD_ALUNO(
-      "",
-      ' ',
-      0,
-      Array.fill[Float](4)(0)
-    )
-    var I = 0
+object Main extends App {
+  println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
 
-    println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n")
-    
-    print("Entre o nome ......: ")
-    ALUNO = ALUNO.copy(NOME = StdIn.readLine())
-    
-    print("Entre a turma .....: ")
-    ALUNO = ALUNO.copy(TURMA = StdIn.readLine().charAt(0))
-    
-    print("Entre a sala ......: ")
-    ALUNO = ALUNO.copy(SALA = StdIn.readInt())
-    ALUNO = ALUNO.copy(NOTAS = Array.fill[Float](4)(0))
-    
-    for (I <- 0 to 3 by 1) {
-      print(s"Entre a ${I + 1}a. nota ..: ")
-      ALUNO.NOTAS(I) = StdIn.readFloat()
-    }
+  val ALUNO: CAD_ALUNO = new CAD_ALUNO()
 
-    println("\nDADOS DO ALUNO\n")
-    println(s"Nome ..............: ${ALUNO.NOME}")
-    println(s"Turma .............: ${ALUNO.TURMA}")
-    println(f"Sala ..............: ${ALUNO.SALA}%4d")
-    for (I <- 0 to 3 by 1) {
-      println(f"Nota ${I + 1} ............: ${ALUNO.NOTAS(I)}%4.1f")
-    }
-    
+  print("Entre o nome ......: ")
+  ALUNO.NOME = scala.io.StdIn.readLine()
+
+  print("Entre a turma .....: ")
+  ALUNO.TURMA = scala.io.StdIn.readChar()
+
+  print("Entre a sala ......: ")
+  ALUNO.SALA = scala.io.StdIn.readInt()
+
+  for (i <- 0 until 4) {
+    print(s"Entre a ${i + 1}a nota ..: ")
+    ALUNO.NOTAS.NOTAS(i) = scala.io.StdIn.readDouble()
   }
-  
+
+  println()
+  println("DADOS DO ALUNO")
+  println()
+  println(s"Nome ..............: ${ALUNO.NOME}")
+  println(s"Turma .............: ${ALUNO.TURMA}")
+  println(s"Sala ..............: ${ALUNO.SALA}")
+  for (i <- 0 until 4) {
+    println(s"Nota ${i + 1} ............: ${ALUNO.NOTAS.NOTAS(i)}")
+  }
 }

@@ -17,6 +17,7 @@ import std.string;
 import std.conv;
 
 alias BIMESTRE = float[4];
+
 struct CAD_ALUNO {
   string NOME;
   char TURMA;

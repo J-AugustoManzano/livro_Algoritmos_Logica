@@ -15,52 +15,89 @@
 
 use strict;
 use warnings;
-use feature 'say';
 
-use constant NUM_ALUNOS => 8;
+package BIMESTRE {
+    sub new {
+        my $class = shift;
+        my $self = [0, 0, 0, 0];
+        bless $self, $class;
+        return $self;
+    }
+}
+
+package CAD_ALUNO {
+    sub new {
+        my $class = shift;
+        my $self = {
+            NOME => "",
+            TURMA => "",
+            SALA => 0,
+            NOTAS => BIMESTRE->new()
+        };
+        bless $self, $class;
+        return $self;
+    }
+}
 
 my @ALUNO;
-my $I;
-my $J;
+my @BIMESTRE;
 
-say "REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n";
-
-for ($I = 0; $I < NUM_ALUNOS; $I++) {
-  say "ALUNO ", $I + 1;
-  
-  print "Entre o nome ......: ";
-  $ALUNO[$I]{'NOME'} = <STDIN>;
-  chomp $ALUNO[$I]{'NOME'};
-
-  print "Entre a turma .....: ";
-  $ALUNO[$I]{'TURMA'} = <STDIN>;
-  chomp $ALUNO[$I]{'TURMA'};
-
-  print "Entre a sala ......: ";
-  $ALUNO[$I]{'SALA'} = <STDIN>;
-  chomp $ALUNO[$I]{'SALA'};
-
-  for ($J = 0; $J < 4; $J++) {
-    print "Entre a ", $J + 1, "a. nota ..: ";
-    $ALUNO[$I]{'NOTAS'}[$J] = <STDIN>;
-    chomp $ALUNO[$I]{'NOTAS'}[$J];
-  }
-
-  say "";
+for my $I (1..8) {
+    print "REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n";
+    print "\n";
+    
+    print "ALUNO $I\n";
+    
+    my $aluno = CAD_ALUNO->new();
+    
+    print "Entre o nome ......: ";
+    chomp($aluno->{NOME} = <STDIN>);
+    
+    print "Entre a turma .....: ";
+    chomp($aluno->{TURMA} = <STDIN>);
+    
+    print "Entre a sala ......: ";
+    chomp($aluno->{SALA} = <STDIN>);
+    
+    for my $J (1..4) {
+        print "Entre a ${J}a. nota ..: ";
+        chomp($aluno->{NOTAS}[$J-1] = <STDIN>);
+    }
+    print "\n";
+    
+    push @ALUNO, $aluno;
 }
 
-say "DADOS DOS ALUNOS";
-say sprintf("%5s %-30s %4s %5s %5s %5s %5s", "Aluno", "Nome", "Sala", "Nota1", "Nota2", "Nota3", "Nota4");
-say "----- ------------------------------ ---- ----- ----- ----- -----";
-for ($I = 0; $I < NUM_ALUNOS; $I++) {
-  say sprintf("%5d %-30s %4d %5s %5s %5s %5s",
-    $I + 1,
-    substr($ALUNO[$I]{'NOME'}, 0, 30),
-    $ALUNO[$I]{'SALA'},
-    sprintf("%.1f", $ALUNO[$I]{'NOTAS'}[0]),
-    sprintf("%.1f", $ALUNO[$I]{'NOTAS'}[1]),
-    sprintf("%.1f", $ALUNO[$I]{'NOTAS'}[2]),
-    sprintf("%.1f", $ALUNO[$I]{'NOTAS'}[3])
-  );
+print "\nDADOS DOS ALUNOS\n";
+print "Aluno ";
+print "Nome                           ";
+print "Sala ";
+print "Nota1 ";
+print "Nota2 ";
+print "Nota3 ";
+print "Nota4\n";
+print "----- ";
+print "------------------------------ ";
+print "---- ";
+print "----- ";
+print "----- ";
+print "----- ";
+print "-----\n"; 
+for my $I (0..7) {
+    print sprintf("%5d", $I+1);
+    print " ";
+    my $nome = $ALUNO[$I]->{NOME};
+    if (length($nome) > 30) {
+        print substr($nome, 0, 30);
+    } else {
+        print $nome . (" " x (30 - length($nome)));
+    }
+    print " ";
+    print sprintf("%4d", $ALUNO[$I]->{SALA});
+    print " ";
+    for my $J (0..3) {
+        print sprintf("%5.1f", $ALUNO[$I]->{NOTAS}[$J]);
+        print " ";
+    }
+    print "\n";
 }
-

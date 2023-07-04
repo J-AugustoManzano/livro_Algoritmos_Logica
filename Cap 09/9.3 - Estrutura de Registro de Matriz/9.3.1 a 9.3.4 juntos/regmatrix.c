@@ -15,6 +15,7 @@
 #include <stdio.h>
 
 typedef float BIMESTRE[4];
+
 struct CAD_ALUNO {
   char NOME[256];
   char TURMA;

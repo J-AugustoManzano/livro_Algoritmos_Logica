@@ -12,43 +12,52 @@
  * 
  */
 
-class Aluno {
+class BIMESTRE {
+    double[] notas = new double[4]
+}
+
+class CAD_ALUNO {
     String NOME
     char TURMA
     int SALA
-    double[] NOTAS = new double[4]
+    BIMESTRE NOTAS = new BIMESTRE()
 }
 
-def ALUNOS = new Aluno[8]
+def ALUNO = new CAD_ALUNO[8]
 
-println("REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n")
+println('REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)')
+println()
 
 for (int I = 0; I < 8; I++) {
     println("ALUNO ${I + 1}")
     
-    print("Entre o nome ......: ")
-    ALUNOS[I] = new Aluno()
-    ALUNOS[I].NOME = System.console().readLine()
+    print('Entre o nome ......: ')
+    ALUNO[I] = new CAD_ALUNO()
+    ALUNO[I].NOME = System.console().readLine()
     
-    print("Entre a turma .....: ")
-    ALUNOS[I].TURMA = System.console().readLine()[0]
+    print('Entre a turma .....: ')
+    ALUNO[I].TURMA = System.console().readLine().charAt(0)
     
-    print("Entre a sala ......: ")
-    ALUNOS[I].SALA = Integer.parseInt(System.console().readLine())
+    print('Entre a sala ......: ')
+    ALUNO[I].SALA = Integer.parseInt(System.console().readLine())
     
     for (int J = 0; J < 4; J++) {
         print("Entre a ${J + 1}a. nota ..: ")
-        ALUNOS[I].NOTAS[J] = Double.parseDouble(System.console().readLine())
+        ALUNO[I].NOTAS.notas[J] = Double.parseDouble(System.console().readLine())
     }
-    
     println()
 }
 
-println("DADOS DOS ALUNOS")
-println("%5s %-30s %4s %5s %5s %5s %5s".formatted("Aluno", "Nome", "Sala", "Nota1", "Nota2", "Nota3", "Nota4"))
-println("%5s %-30s %4s %5s %5s %5s %5s".formatted("-----", "------------------------------", "----", "-----", "-----", "-----", "-----"))
-
+println()
+println('DADOS DOS ALUNOS')
+println("%5s %-30s %4s %5s %5s %5s %5s".formatted('Aluno', 'Nome', 'Sala', 'Nota1', 'Nota2', 'Nota3', 'Nota4'))
+println("%5s %-30s %4s %5s %5s %5s %5s".formatted('-----', '------------------------------', '----', '-----', '-----', '-----', '-----'))
 for (int I = 0; I < 8; I++) {
-    String NOME = ALUNOS[I].NOME.substring(0, Math.min(30, ALUNOS[I].NOME.length()))
-    println("%5d %-30s %4d %5.1f %5.1f %5.1f %5.1f".formatted(I + 1, NOME, ALUNOS[I].SALA, ALUNOS[I].NOTAS[0], ALUNOS[I].NOTAS[1], ALUNOS[I].NOTAS[2], ALUNOS[I].NOTAS[3]))
+    def nome = ALUNO[I].NOME.length() > 30 ? ALUNO[I].NOME.substring(0, 30) : ALUNO[I].NOME.padRight(30)
+    def sala = ALUNO[I].SALA.toString().padLeft(4)
+    def nota1 = ALUNO[I].NOTAS.notas[0].toString().padLeft(5)
+    def nota2 = ALUNO[I].NOTAS.notas[1].toString().padLeft(5)
+    def nota3 = ALUNO[I].NOTAS.notas[2].toString().padLeft(5)
+    def nota4 = ALUNO[I].NOTAS.notas[3].toString().padLeft(5)
+    println "%5d %-30s %4s %5s %5s %5s %5s".formatted(I + 1, nome, sala, nota1, nota2, nota3, nota4)
 }

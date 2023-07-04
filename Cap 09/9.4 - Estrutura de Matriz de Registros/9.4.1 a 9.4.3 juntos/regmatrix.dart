@@ -14,40 +14,45 @@
  
 import 'dart:io';
 
-// Nao e possivel em Dart definir o tipo BIMESTRE
-
-class CAD_ALUNO {
-  String NOME = '';
-  String TURMA = '';
-  int SALA = 0;
-  List<double> NOTAS = [];
+class BIMESTRE {
+  List<double> notas = List<double>.filled(4, 0);
 }
 
-List<CAD_ALUNO> ALUNO = List<CAD_ALUNO>.filled(8, CAD_ALUNO());
-var I, J;
+class CAD_ALUNO {
+  String NOME;
+  String TURMA;
+  int SALA;
+  BIMESTRE NOTAS;
+
+  CAD_ALUNO({required this.NOME, required this.TURMA, required this.SALA, required this.NOTAS});
+}
 
 void main() {
+  List<CAD_ALUNO> ALUNOS = [];
 
   print('REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n');
-  
-  for (I = 0; I <= 7; I++) {
-    ALUNO[I] = CAD_ALUNO();
+
+  for (int I = 0; I < 8; I++) {
     print('ALUNO ${I + 1}');
-    
+
     stdout.write('Entre o nome ......: ');
-    ALUNO[I].NOME = stdin.readLineSync() ?? '';
-    
+    String? NOME = stdin.readLineSync();
+
     stdout.write('Entre a turma .....: ');
-    ALUNO[I].TURMA = stdin.readLineSync()?.substring(0, 1) ?? '';
-    
+    String? TURMA = stdin.readLineSync();
+
     stdout.write('Entre a sala ......: ');
-    ALUNO[I].SALA = int.parse(stdin.readLineSync() ?? '');
-    
-    ALUNO[I].NOTAS = List<double>.filled(4, 0.0);
-    for (J = 0; J <= 3; J++) {
+    int? SALA = int.tryParse(stdin.readLineSync() ?? '');
+
+    BIMESTRE NOTAS = BIMESTRE();
+    for (int J = 0; J < 4; J++) {
       stdout.write('Entre a ${J + 1}a. nota ..: ');
-      ALUNO[I].NOTAS[J] = double.parse(stdin.readLineSync() ?? '');
+      double? NOTA = double.tryParse(stdin.readLineSync() ?? '');
+      NOTAS.notas[J] = NOTA ?? 0;
     }
+
+    ALUNOS.add(CAD_ALUNO(NOME: NOME ?? '', TURMA: TURMA ?? '', SALA: SALA ?? 0, NOTAS: NOTAS));
+
     print('');
   }
 
@@ -66,14 +71,13 @@ void main() {
   stdout.write('----- ');
   stdout.write('----- ');
   stdout.write('-----\n');
-  for (I = 0; I <= 7; I++) {
+  for (int I = 0; I < 8; I++) {
+    CAD_ALUNO ALUNO = ALUNOS[I];
+    String NOME = ALUNO.NOME.padRight(30).substring(0, 30);
+    String NOTAS = ALUNO.NOTAS.notas.map((NOTA) => NOTA.toStringAsFixed(1).padLeft(5)).join(' ');
     stdout.write('${(I + 1).toString().padLeft(5)} ');
-    stdout.write('${ALUNO[I].NOME.padRight(30).substring(0, 30)} ');
-    stdout.write('${ALUNO[I].SALA.toString().padLeft(4)} ');
-    for (J = 0; J <= 3; J++) {
-      stdout.write('${ALUNO[I].NOTAS[J].toStringAsFixed(1).padLeft(5)} ');
-    }
-    print('');
+    stdout.write('$NOME ');
+    stdout.write('${ALUNO.SALA.toString().padLeft(4)} ');
+    stdout.write('$NOTAS\n');
   }
-
 }

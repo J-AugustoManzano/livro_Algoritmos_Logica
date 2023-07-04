@@ -13,77 +13,75 @@
 
 import java.util.Scanner;
 
-// Nao e possivel em Java definir o tipo BIMESTRE
-
-class CAD_ALUNO {
-  String NOME;
-  char TURMA;
-  int SALA;
-  float[] NOTAS;
-}
-
 public class Main {
-
-  static CAD_ALUNO[] ALUNO;
-  static int I, J;
-
-  public static void main(String[] args) {
-	  
-    ALUNO = new CAD_ALUNO[8];
-
-    Scanner entrada = new Scanner(System.in);
-
-    System.out.println("REGISTRO ESCOLAR - MATRIZ (8 ALUNOS)\n");
-    
-    for (I = 0; I <= 7; I++) {
-      ALUNO[I] = new CAD_ALUNO();
-      
-      System.out.printf("ALUNO %d\n", I + 1);
-      System.out.print("Entre o nome ......: ");
-      ALUNO[I].NOME = entrada.nextLine();
-      
-      System.out.print("Entre a turma .....: ");
-      ALUNO[I].TURMA = entrada.nextLine().charAt(0);
-      
-      System.out.print("Entre a sala ......: ");
-      ALUNO[I].SALA = Integer.parseInt(entrada.nextLine());
-      
-      ALUNO[I].NOTAS = new float[4];
-      for (J = 0; J <= 3; J++) {
-        System.out.printf("Entre a %da. nota ..: ", J + 1);
-        ALUNO[I].NOTAS[J] = Float.parseFloat(entrada.nextLine());
-      }
-      System.out.println();
-      
+    public static class BIMESTRE {
+        public float[] notas;
     }
 
-    System.out.println("DADOS DOS ALUNOS");
-    System.out.printf("%-5s", "Aluno ");
-    System.out.printf("%-30s", "Nome                           ");
-    System.out.printf("%-4s", "Sala ");
-    System.out.printf("%-5s", "Nota1 ");
-    System.out.printf("%-5s", "Nota2 ");
-    System.out.printf("%-5s", "Nota3 ");
-    System.out.printf("%-5s\n", "Nota4");
-    System.out.print("----- ");
-    System.out.print("------------------------------ ");
-    System.out.print("---- ");
-    System.out.print("----- ");
-    System.out.print("----- ");
-    System.out.print("----- ");
-    System.out.println("-----");
-    for (I = 0; I <= 7; I++) {
-      System.out.printf("%5d ", I + 1);
-      System.out.printf("%-30.30s ", ALUNO[I].NOME);
-      System.out.printf("%4d ", ALUNO[I].SALA);
-      for (J = 0; J <= 3; J++) {
-        System.out.printf("%5.1f ", ALUNO[I].NOTAS[J]);
-      }
-      System.out.println();
+    public static class CAD_ALUNO {
+        public String nome;
+        public char turma;
+        public int sala;
+        public BIMESTRE notas;
     }
 
-    entrada.close();
-    
-  }
-  
+    public static void main(String[] args) {
+        CAD_ALUNO[] aluno = new CAD_ALUNO[8];
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)\n");
+
+        for (int i = 0; i < 8; i++) {
+            aluno[i] = new CAD_ALUNO();
+
+            System.out.println("ALUNO " + (i + 1));
+
+            System.out.print("Entre o nome ......: ");
+            aluno[i].nome = scanner.nextLine();
+
+            System.out.print("Entre a turma .....: ");
+            aluno[i].turma = scanner.nextLine().charAt(0);
+
+            System.out.print("Entre a sala ......: ");
+            aluno[i].sala = Integer.parseInt(scanner.nextLine());
+
+            aluno[i].notas = new BIMESTRE();
+            aluno[i].notas.notas = new float[4];
+
+            for (int j = 0; j < 4; j++) {
+                System.out.print("Entre a " + (j + 1) + "a. nota ..: ");
+                aluno[i].notas.notas[j] = Float.parseFloat(scanner.nextLine());
+            }
+
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println("DADOS DOS ALUNOS");
+        System.out.printf("%-5s", "Aluno ");
+        System.out.printf("%-30s", "Nome                           ");
+        System.out.printf("%-4s", "Sala ");
+        System.out.printf("%-5s", "Nota1 ");
+        System.out.printf("%-5s", "Nota2 ");
+        System.out.printf("%-5s", "Nota3 ");
+        System.out.printf("%-5s\n", "Nota4");
+        System.out.print("----- ");
+        System.out.print("------------------------------ ");
+        System.out.print("---- ");
+        System.out.print("----- ");
+        System.out.print("----- ");
+        System.out.print("----- ");
+        System.out.println("-----");
+
+        for (int i = 0; i < 8; i++) {
+            System.out.printf("%5d ", i + 1);
+            String nome = aluno[i].nome.substring(0, Math.min(aluno[i].nome.length(), 30));
+            System.out.printf("%-30.30s ", String.format("%-" + 30 + "s", nome));
+            System.out.printf("%4d ", aluno[i].sala);
+            for (int j = 0; j < 4; j++) {
+                System.out.printf("%5.1f ", aluno[i].notas.notas[j]);
+            }
+            System.out.println();
+        }
+    }
 }

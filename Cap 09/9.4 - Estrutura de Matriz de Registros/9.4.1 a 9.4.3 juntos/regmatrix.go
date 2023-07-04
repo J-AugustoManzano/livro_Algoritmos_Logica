@@ -14,80 +14,70 @@
 package main
 
 import (
-  "bufio"
-  "fmt"
-  "os"
-  "strconv"
-  "strings"
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
 )
 
 type BIMESTRE [4]float64
 
 type CAD_ALUNO struct {
-  NOME  string
-  TURMA string
-  SALA  int
-  NOTAS BIMESTRE
+	NOME  string
+	TURMA rune
+	SALA  int
+	NOTAS BIMESTRE
 }
 
-var ALUNO[8] CAD_ALUNO
-var I int
-var J int
-
 func main() {
-	
-  fmt.Println("REGISTRO ESCOLAR - MATRIZ (8 ALUNOS)\n")
+	var ALUNO [8]CAD_ALUNO
+	var I, J int
 
-  entrada := bufio.NewReader(os.Stdin)
+	fmt.Println("REGISTRO ESCOLAR - MATRICIAL (8 ALUNOS)")
+	fmt.Println()
 
-  for I := 0; I <= 7; I++ {
-    fmt.Printf("ALUNO %d\n", I + 1)
-    
-    fmt.Print("Entre o nome ......: ")
-    NOME, _ := entrada.ReadString('\n')
-    ALUNO[I].NOME = strings.TrimSpace(NOME)
-    
-    fmt.Print("Entre a turma .....: ")
-    TURMA, _ := entrada.ReadString('\n')
-    ALUNO[I].TURMA = strings.TrimSpace(TURMA)
-    
-    fmt.Print("Entre a sala ......: ")
-    SALAstr, _ := entrada.ReadString('\n')
-    SALA, _ := strconv.Atoi(strings.TrimSpace(SALAstr))
-    
-    ALUNO[I].SALA = SALA
-    for J := 0; J <= 3; J++ {
-      fmt.Printf("Entre a %da. nota ..: ", J+1)
-      NOTAstr, _ := entrada.ReadString('\n')
-      NOTA, _ := strconv.ParseFloat(strings.TrimSpace(NOTAstr), 64)
-      ALUNO[I].NOTAS[J] = NOTA
-    }
-    fmt.Println()
-  }
+	reader := bufio.NewReader(os.Stdin)
 
-  fmt.Println("\nDADOS DOS ALUNOS")
-  fmt.Print("Aluno ")
-  fmt.Print("Nome                           ")
-  fmt.Print("Sala ")
-  fmt.Print("Nota1 ")
-  fmt.Print("Nota2 ")
-  fmt.Print("Nota3 ")
-  fmt.Println("Nota4")
-  fmt.Print("----- ")
-  fmt.Print("------------------------------ ")
-  fmt.Print("---- ")
-  fmt.Print("----- ")
-  fmt.Print("----- ")
-  fmt.Print("----- ")
-  fmt.Println("-----")
-  for I := 0; I <= 7; I++ {
-    fmt.Printf("%5d ", I + 1)
-    fmt.Printf("%-30.30s ", ALUNO[I].NOME)
-    fmt.Printf("%4d ", ALUNO[I].SALA)
-    for J := 0; J <= 3; J++ {
-      fmt.Printf("%5.1f ", ALUNO[I].NOTAS[J])
-    }
-    fmt.Println()
-  }
+	for I = 0; I < 8; I++ {
+		fmt.Printf("ALUNO %d\n", I+1)
 
+		fmt.Print("Entre o nome ......: ")
+		ALUNO[I].NOME, _ = reader.ReadString('\n')
+		ALUNO[I].NOME = strings.TrimSpace(ALUNO[I].NOME)
+
+		fmt.Print("Entre a turma .....: ")
+		turma, _ := reader.ReadString('\n')
+		ALUNO[I].TURMA = rune(strings.TrimSpace(turma)[0])
+
+		fmt.Print("Entre a sala ......: ")
+		salaStr, _ := reader.ReadString('\n')
+		ALUNO[I].SALA, _ = strconv.Atoi(strings.TrimSpace(salaStr))
+
+		for J = 0; J < 4; J++ {
+			fmt.Printf("Entre a %da. nota ..: ", J+1)
+			notaStr, _ := reader.ReadString('\n')
+			ALUNO[I].NOTAS[J], _ = strconv.ParseFloat(strings.TrimSpace(notaStr), 64)
+		}
+		fmt.Println()
+	}
+
+	fmt.Println()
+	fmt.Println("DADOS DOS ALUNOS")
+	fmt.Printf("%5s %-30s %4s %5s %5s %5s %5s\n", "Aluno", "Nome", "Sala", "Nota1", "Nota2", "Nota3", "Nota4")
+	fmt.Printf("%5s %-30s %4s %5s %5s %5s %5s\n", "-----", "------------------------------", "----", "-----", "-----", "-----", "-----")
+	for I = 0; I < 8; I++ {
+		nome := ALUNO[I].NOME
+		if len(nome) > 30 {
+			nome = nome[:30]
+		} else {
+			nome = fmt.Sprintf("%-30s", nome)
+		}
+		sala := fmt.Sprintf("%4d", ALUNO[I].SALA)
+		notas := make([]string, 4)
+		for J = 0; J < 4; J++ {
+			notas[J] = fmt.Sprintf("%5.1f", ALUNO[I].NOTAS[J])
+		}
+		fmt.Printf("%5d %s %s %s %s %s %s\n", I+1, nome, sala, notas[0], notas[1], notas[2], notas[3])
+	}
 }

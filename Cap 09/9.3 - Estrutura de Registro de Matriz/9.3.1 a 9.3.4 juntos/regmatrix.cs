@@ -13,52 +13,58 @@
 
 using System;
 
-// Nao e possivel em C# definir o tipo BIMESTRE
-
-public struct CAD_ALUNO
+class Program
 {
-  public string NOME;
-  public char TURMA;
-  public int SALA;
-  public float[] NOTAS;
-}
-
-public class Program
-{
-  
-  static CAD_ALUNO ALUNO;
-  static int I;
-
-  public static void Main()
-  {
-    
-    Console.WriteLine("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n");
-    
-    Console.Write("Entre o nome ......: ");
-    ALUNO.NOME = Console.ReadLine();
-    
-    Console.Write("Entre a turma .....: ");
-    ALUNO.TURMA = Console.ReadLine()[0];
-    
-    Console.Write("Entre a sala ......: ");
-    ALUNO.SALA = int.Parse(Console.ReadLine());
-    
-    ALUNO.NOTAS = new float[4];
-    for (I = 0; I <= 3; I++)
+    struct BIMESTRE
     {
-      Console.Write($"Entre a {I + 1}a. nota ..: ");
-      ALUNO.NOTAS[I] = float.Parse(Console.ReadLine());
+        public double[] notas;
+        
+        public BIMESTRE(int size)
+        {
+            notas = new double[size];
+        }
     }
 
-    Console.WriteLine("\nDADOS DO ALUNO\n");
-    Console.WriteLine($"Nome ..............: {ALUNO.NOME}");
-    Console.WriteLine($"Turma .............: {ALUNO.TURMA}");
-    Console.WriteLine($"Sala ..............: {ALUNO.SALA,4}");
-    for (I = 0; I <= 3; I++)
+    struct CAD_ALUNO
     {
-      Console.WriteLine($"Nota {I + 1} ............: {ALUNO.NOTAS[I],4:F1}");
+        public string nome;
+        public char turma;
+        public int sala;
+        public BIMESTRE notas;
     }
-    
-  }
-  
+
+    static void Main()
+    {
+        Console.WriteLine("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)");
+        Console.WriteLine();
+
+        CAD_ALUNO aluno;
+
+        Console.Write("Entre o nome ......: ");
+        aluno.nome = Console.ReadLine();
+
+        Console.Write("Entre a turma .....: ");
+        aluno.turma = Console.ReadLine()[0];
+
+        Console.Write("Entre a sala ......: ");
+        aluno.sala = int.Parse(Console.ReadLine());
+
+        aluno.notas = new BIMESTRE(4);
+        for (int i = 0; i < 4; i++)
+        {
+            Console.Write("Entre a {0}a nota ..: ", i + 1);
+            aluno.notas.notas[i] = double.Parse(Console.ReadLine());
+        }
+
+        Console.WriteLine();
+        Console.WriteLine("DADOS DO ALUNO");
+        Console.WriteLine();
+        Console.WriteLine("Nome ..............: " + aluno.nome);
+        Console.WriteLine("Turma .............: " + aluno.turma);
+        Console.WriteLine("Sala ..............: " + aluno.sala);
+        for (int i = 0; i < 4; i++)
+        {
+            Console.WriteLine("Nota " + (i + 1) + " ............: " + aluno.notas.notas[i].ToString("0.0"));
+        }
+    }
 }

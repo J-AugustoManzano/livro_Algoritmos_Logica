@@ -14,6 +14,7 @@
 using Printf
 
 const BIMESTRE = Vector{Float64}
+
 mutable struct CAD_ALUNO
   NOME::String
   TURMA::Char

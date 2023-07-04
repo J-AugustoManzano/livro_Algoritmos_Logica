@@ -14,6 +14,7 @@
 const readline = require('readline-sync');
 
 const BIMESTRE = new Array(4);
+
 const ALUNO = {
   NOME: "",
   TURMA: "",

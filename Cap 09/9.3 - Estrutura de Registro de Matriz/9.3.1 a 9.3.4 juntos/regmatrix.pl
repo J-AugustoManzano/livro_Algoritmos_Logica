@@ -15,38 +15,60 @@
 
 use strict;
 use warnings;
-use feature 'say';
 
-my %ALUNO;
-my @NOTAS;
+package BIMESTRE {
+    sub new {
+        my $class = shift;
+        my $self = {
+            NOTAS => [0, 0, 0, 0]
+        };
+        bless $self, $class;
+        return $self;
+    }
+}
 
-say "REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n";
+package CAD_ALUNO {
+    sub new {
+        my $class = shift;
+        my $self = {
+            NOME => "",
+            TURMA => "",
+            SALA => 0,
+            NOTAS => BIMESTRE->new()
+        };
+        bless $self, $class;
+        return $self;
+    }
+}
+
+print "REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n\n";
+
+my $ALUNO = CAD_ALUNO->new();
 
 print "Entre o nome ......: ";
-$ALUNO{'NOME'} = <STDIN>;
-chomp $ALUNO{'NOME'};
+$ALUNO->{NOME} = <STDIN>;
+chomp $ALUNO->{NOME};
 
 print "Entre a turma .....: ";
-$ALUNO{'TURMA'} = <STDIN>;
-chomp $ALUNO{'TURMA'};
+$ALUNO->{TURMA} = <STDIN>;
+chomp $ALUNO->{TURMA};
 
 print "Entre a sala ......: ";
-$ALUNO{'SALA'} = <STDIN>;
-chomp $ALUNO{'SALA'};
+$ALUNO->{SALA} = <STDIN>;
+chomp $ALUNO->{SALA};
 
-for my $I (0..3) {
-  print "Entre a " . ($I + 1) . "a. nota ..: ";
-  $NOTAS[$I] = <STDIN>;
-  chomp $NOTAS[$I];
+for (my $i = 0; $i < 4; $i++) {
+    print "Entre a ", $i + 1, "a nota ..: ";
+    $ALUNO->{NOTAS}->{NOTAS}->[$i] = <STDIN>;
+    chomp $ALUNO->{NOTAS}->{NOTAS}->[$i];
 }
 
-$ALUNO{'NOTAS'} = \@NOTAS;
-
-say "\nDADOS DO ALUNO\n";
-say "Nome ..............: ", $ALUNO{'NOME'};
-say "Turma .............: ", $ALUNO{'TURMA'};
-say "Sala ..............: ", sprintf("%4s", $ALUNO{'SALA'});
-for my $I (0..3) {
-  say "Nota " . ($I + 1) . " ............: ", sprintf("%4.1f", $ALUNO{'NOTAS'}[$I]);
+print "\n";
+print "DADOS DO ALUNO\n";
+print "\n";
+print "Nome ..............: ", $ALUNO->{NOME}, "\n";
+print "Turma .............: ", $ALUNO->{TURMA}, "\n";
+print "Sala ..............: ", $ALUNO->{SALA}, "\n";
+for (my $i = 0; $i < 4; $i++) {
+    print "Nota ", $i + 1, " ............: ", $ALUNO->{NOTAS}->{NOTAS}->[$i], "\n";
 }
-

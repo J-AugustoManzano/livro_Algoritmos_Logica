@@ -11,37 +11,50 @@
  * Programa ..: MANIPULACAO DE REGISTRO DE MATRIZ
 =end
 
-class CadAluno
-  attr_accessor :nome, :turma, :sala, :notas
+class BIMESTRE
+  attr_accessor :NOTAS
+  
+  def initialize
+    @NOTAS = Array.new(4, 0.0)
+  end
 end
 
-aluno = CadAluno.new
+class CAD_ALUNO
+  attr_accessor :NOME, :TURMA, :SALA, :NOTAS
+  
+  def initialize
+    @NOME = ""
+    @TURMA = ""
+    @SALA = 0
+    @NOTAS = BIMESTRE.new
+  end
+end
 
 puts 'REGISTRO ESCOLAR - SIMPLES (1 ALUNO)'
 puts
 
+ALUNO = CAD_ALUNO.new
+
 print 'Entre o nome ......: '
-aluno.nome = gets.chomp
+ALUNO.NOME = gets.chomp
 
 print 'Entre a turma .....: '
-aluno.turma = gets.chomp
+ALUNO.TURMA = gets.chomp
 
 print 'Entre a sala ......: '
-aluno.sala = gets.chomp.to_i
+ALUNO.SALA = gets.chomp.to_i
 
-aluno.notas = []
-
-for i in 1..4
-  print 'Entre a ' + i.to_s + 'a. nota ..: '
-  aluno.notas << gets.chomp.to_f
+(1..4).each do |i|
+  print "Entre a #{i}a nota ..: "
+  ALUNO.NOTAS.NOTAS[i - 1] = gets.chomp.to_f
 end
 
 puts
 puts 'DADOS DO ALUNO'
 puts
-puts 'Nome ..............: ' + aluno.nome
-puts 'Turma .............: ' + aluno.turma
-puts 'Sala ..............: ' + aluno.sala.to_s.rjust(4)
-for i in 1..4
-  puts 'Nota ' + i.to_s + ' ............: ' + aluno.notas[i-1].to_s.rjust(4, '0.0')
+puts "Nome ..............: #{ALUNO.NOME}"
+puts "Turma .............: #{ALUNO.TURMA}"
+puts "Sala ..............: #{ALUNO.SALA}"
+(1..4).each do |i|
+  puts "Nota #{i} ............: #{ALUNO.NOTAS.NOTAS[i - 1]}"
 end

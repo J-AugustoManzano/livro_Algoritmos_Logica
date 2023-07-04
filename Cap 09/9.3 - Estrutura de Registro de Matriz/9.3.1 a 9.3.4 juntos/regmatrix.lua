@@ -12,6 +12,7 @@
 --]]
 
 local BIMESTRE = {}
+
 local CAD_ALUNO = {
   NOME = "",
   TURMA = "",

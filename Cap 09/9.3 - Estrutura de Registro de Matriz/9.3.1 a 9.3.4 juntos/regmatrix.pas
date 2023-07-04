@@ -15,6 +15,7 @@ program OPERACAO_REGISTRO_MATRIZ;
 
 type
   BIMESTRE = array[1..4] of real;
+  
   CAD_ALUNO = record
     NOME: string;
     TURMA: char;

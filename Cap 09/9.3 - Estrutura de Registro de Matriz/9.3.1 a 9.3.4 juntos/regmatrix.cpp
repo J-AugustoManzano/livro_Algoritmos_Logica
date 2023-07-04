@@ -19,6 +19,7 @@
 using namespace std;
 
 typedef float BIMESTRE[4];
+
 struct CAD_ALUNO {
   string NOME;
   char TURMA;

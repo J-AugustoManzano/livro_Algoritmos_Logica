@@ -13,51 +13,50 @@
 
 import java.util.Scanner;
 
-// Nao e possivel em Dart definir o tipo BIMESTRE
-
-class CAD_ALUNO {
-  String NOME;
-  char TURMA;
-  int SALA;
-  float[] NOTAS;
-}
-
-public class Main {
-
-  static CAD_ALUNO ALUNO;
-  static int I;
-
-  public static void main(String[] args) {
-    ALUNO = new CAD_ALUNO();
-
-    Scanner entrada = new Scanner(System.in);
-
-    System.out.println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n");
-    
-    System.out.print("Entre o nome ......: ");
-    ALUNO.NOME = entrada.nextLine();
-    
-    System.out.print("Entre a turma .....: ");
-    ALUNO.TURMA = entrada.nextLine().charAt(0);
-    
-    System.out.print("Entre a sala ......: ");
-    ALUNO.SALA = Integer.parseInt(entrada.nextLine());
-    
-    ALUNO.NOTAS = new float[4];
-    for (I = 0; I <= 3; I++) {
-      System.out.printf("Entre a %da. nota ..: ", I + 1);
-      ALUNO.NOTAS[I] = Float.parseFloat(entrada.nextLine());
+class Main {
+    static class BIMESTRE {
+        double[] notas;
     }
 
-    System.out.println("\nDADOS DO ALUNO\n");
-    System.out.printf("Nome ..............: %s\n", ALUNO.NOME);
-    System.out.printf("Turma .............: %c\n", ALUNO.TURMA);
-    System.out.printf("Sala ..............: %4d\n", ALUNO.SALA);
-    for (I = 0; I <= 3; I++) {
-      System.out.printf("Nota %d ............: %4.1f\n", I + 1, ALUNO.NOTAS[I]);
+    static class CAD_ALUNO {
+        String nome;
+        char turma;
+        int sala;
+        BIMESTRE notas;
     }
 
-    entrada.close();
-    
-  }
+    public static void main(String[] args) {
+        System.out.println("REGISTRO ESCOLAR - SIMPLES (1 ALUNO)");
+        System.out.println();
+
+        CAD_ALUNO aluno = new CAD_ALUNO();
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Entre o nome ......: ");
+        aluno.nome = scanner.nextLine();
+
+        System.out.print("Entre a turma .....: ");
+        aluno.turma = scanner.nextLine().charAt(0);
+
+        System.out.print("Entre a sala ......: ");
+        aluno.sala = Integer.parseInt(scanner.nextLine());
+
+        aluno.notas = new BIMESTRE();
+        aluno.notas.notas = new double[4];
+        for (int i = 0; i < 4; i++) {
+            System.out.print("Entre a " + (i + 1) + "a nota ..: ");
+            aluno.notas.notas[i] = Double.parseDouble(scanner.nextLine());
+        }
+
+        System.out.println();
+        System.out.println("DADOS DO ALUNO");
+        System.out.println();
+        System.out.println("Nome ..............: " + aluno.nome);
+        System.out.println("Turma .............: " + aluno.turma);
+        System.out.println("Sala ..............: " + aluno.sala);
+        for (int i = 0; i < 4; i++) {
+            System.out.println("Nota " + (i + 1) + " ............: " + String.format("%.1f", aluno.notas.notas[i]));
+        }
+    }
 }
