@@ -73,4 +73,10 @@ Neste momento são disponibilizados os algoritmos convertidos em programas nas l
 > OBS: -- (#) -- Indica linguagens de programação que não são orientadas a objetos (AWK, C, Go) ou que não possuem suporte adeaquado ou pleno ao paradigma POO (BASIC, D, Julia, Lua).
 
 Com o tempo outras linguagens poderão ser acrescidas.
+
 Neste momento são exemplificadas 23 linguagens de programação.
+
+EM BREVE
+========
+
+- TypeScript (2012) - Microsoft Corporation
