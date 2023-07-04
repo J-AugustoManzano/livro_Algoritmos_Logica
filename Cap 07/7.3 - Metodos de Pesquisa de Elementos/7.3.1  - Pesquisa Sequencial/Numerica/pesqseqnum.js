@@ -18,7 +18,7 @@ let I, PESQ;
 let RESP;
 let ACHA;
 
-console.log("PESQUISA SEQUENCIAL DE NUMEROS\n\n");
+console.log("PESQUISA SEQUENCIAL DE NUMEROS\n");
 
 for (I = 0; I <= 4; I++) {
   NUMERO[I] = parseInt(readline.question(`Entre o ${I + 1}o. numero: `));

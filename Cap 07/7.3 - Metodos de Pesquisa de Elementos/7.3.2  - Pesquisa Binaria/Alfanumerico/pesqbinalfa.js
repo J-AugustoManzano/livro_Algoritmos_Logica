@@ -18,7 +18,7 @@ let I, J, COMECO, FINAL, MEIO;
 let PESQ, RESP, X;
 let ACHA;
 
-console.log("PESQUISA BINARIA - NOME\n\n");
+console.log("PESQUISA BINARIA - NOME\n");
 
 for (I = 0; I <= 9; I++) {
   NOME[I] = readline.question(`Entre o ${I + 1}o. nome: `);

@@ -18,7 +18,7 @@ let I;
 let PESQ, RESP;
 let ACHA;
 
-console.log("PESQUISA SEQUENCIAL DE NOMES\n\n");
+console.log("PESQUISA SEQUENCIAL DE NOMES\n");
 
 for (I = 1; I <= 10; I++) {
   NOME[I - 1] = readline.question(`Entre o ${I}o. nome: `);
