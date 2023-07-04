@@ -50,7 +50,7 @@ Neste momento são disponibilizados os algoritmos convertidos em programas nas l
 - BASIC | FreeBASIC (2004) - Richard Russell (líder do projeto) -- (#) --
 - C (1972) - Dennis Ritchie -- (#) --
 - C++ (1983) - Bjarne Stroustrup
-- C# (2000) - Microsoft Corporation (liderado por Anders Hejlsberg)
+- C# (2000) - Microsoft Corporation (Anders Hejlsberg, líder do projeto)
 - D (2001) - Walter Bright
 - Dart (2011) - Google (Lars Bak e Kasper Lund)
 - Go (2009) - Google (Robert Griesemer, Rob Pike e Ken Thompson) -- (#) --
@@ -58,7 +58,7 @@ Neste momento são disponibilizados os algoritmos convertidos em programas nas l
 - Java (1995) - Sun Microsystems (James Gosling, líder do projeto)
 - JavaScript (1995) - Netescape (Brendan Eich, lider do projeto)
 - Julia (2012) - Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman -- (#) --
-- Kotlin (2016) - JetBrains (liderado por Dmitry Jemerov)
+- Kotlin (2016) - JetBrains (Dmitry Jemerov, líder do projeto)
 - Lua (1994) - Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes -- (#) --
 - Pascal (1970) - Niklaus Wirth
 - Perl (1988) - Larry Wall
@@ -68,9 +68,9 @@ Neste momento são disponibilizados os algoritmos convertidos em programas nas l
 - Rubi (1995) - Yukihiro Matsumoto
 - Rust (2015) - Graydon Hoare
 - Scala (2204) - Martin Odersky
-- Swift (2014) - Apple Inc. (liderado por Chris Lattner)
+- Swift (2014) - Apple Inc. (Chris Lattner, líder do projeto)
 
-> OBS: -- (#) -- Indica linguagens de programação que não são orientadas a objetos (AWK, C, Go) ou que não possuem suporte adeaquado ou pleno ao paradigma POO (BASIC, D, Julia, Lua).
+> OBS: -- (#) -- Indica linguagens que não são OO (AWK, C, Go) ou não dão suporte adeaquado a POO (BASIC, D, Julia, Lua).
 
 Com o tempo outras linguagens poderão ser acrescidas.
 
