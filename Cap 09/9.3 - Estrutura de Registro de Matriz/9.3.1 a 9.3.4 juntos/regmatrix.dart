@@ -14,35 +14,35 @@
  
 import 'dart:io';
 
-// Nao e possivel em Dart definir o tipo BIMESTRE
+class BIMESTRE {
+  List<double> notas = List<double>.filled(4, 0);
+}
 
 class CAD_ALUNO {
   String NOME = '';
   String TURMA = '';
   int SALA = 0;
-  List<double> NOTAS = [];
+  BIMESTRE NOTAS = BIMESTRE();
 }
 
 var ALUNO = CAD_ALUNO();
 var I;
 
 void main() {
-
   print('REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n');
-  
+
   stdout.write('Entre o nome ......: ');
   ALUNO.NOME = stdin.readLineSync()!;
-  
+
   stdout.write('Entre a turma .....: ');
   ALUNO.TURMA = stdin.readLineSync()!;
-  
+
   stdout.write('Entre a sala ......: ');
   ALUNO.SALA = int.parse(stdin.readLineSync()!);
-  
-  ALUNO.NOTAS = [];
+
   for (I = 0; I <= 3; I++) {
     stdout.write('Entre a ${I + 1}a. nota ..: ');
-    ALUNO.NOTAS.add(double.parse(stdin.readLineSync()!));
+    ALUNO.NOTAS.notas[I] = double.parse(stdin.readLineSync()!);
   }
 
   print('\nDADOS DO ALUNO\n');
@@ -50,7 +50,6 @@ void main() {
   print('Turma .............: ${ALUNO.TURMA}');
   print('Sala ..............: ${ALUNO.SALA.toString().padLeft(4)}');
   for (I = 0; I <= 3; I++) {
-    print('Nota ${I + 1} ............: ${ALUNO.NOTAS[I].toStringAsFixed(1).padLeft(4)}');
+    print('Nota ${I + 1} ............: ${ALUNO.NOTAS.notas[I].toStringAsFixed(1).padLeft(4)}');
   }
-  
 }
