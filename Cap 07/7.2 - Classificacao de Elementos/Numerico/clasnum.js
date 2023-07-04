@@ -18,7 +18,7 @@ let NUMEROS = [];
 
 // Trecho de entrada de dados
 
-console.log("CLASSIFICACAO DE NUMEROS (CRESCENTE)\n\n");
+console.log("CLASSIFICACAO DE NUMEROS (CRESCENTE)\n");
 for (I = 0; I <= 4; I++) {
   NUMEROS[I] = parseInt(readline.question(`Entre o ${I + 1}o. numero: `));
 }

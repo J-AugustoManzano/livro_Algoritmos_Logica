@@ -13,7 +13,7 @@
 
 const readline = require('readline-sync');
 let NOME = [];
-console.log("CLASSIFICACAO DE NOMES (ASCENDENTE)\n\n");
+console.log("CLASSIFICACAO DE NOMES (ASCENDENTE)\n");
 
 // Trecho de entrada de dados
 
