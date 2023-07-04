@@ -11,52 +11,39 @@
  * Programa ..: JUNCAO DE DUAS MATRIZES 1D
  */
 
-#include <stdio.h>
+const readline = require('readline-sync');
 
-int A[10];
-int B[15];
-int C[25];
-int I;
+const A = new Array(10);
+const B = new Array(15);
+const C = new Array(25);
 
-int main(void) {
-	
-  printf("JUNCAO DE MATRIZES 1D\n");
-  printf(">>> Para maior comodidade, entre valores entre 0 e 9999 <<<\n\n\n");
-  
-  printf("Entre 10 elementos para a matriz [A]:\n\n");
-  for (I = 0; I <= 9; I++) {
-    printf("Entre o %2do. elemento de [A] --> ", I + 1);
-    scanf("%d", &A[I]);
-    while ((getchar() != '\n') && (!EOF));
-  }
-  
-  printf("\nTecle <ENTER> para proxima entrada ");
-  getchar();
-  
-  printf("\nEntre 15 elementos para a matriz [B]:\n\n");
-  for (I = 0; I <= 14; I++) {
-    printf("Entre o %2do. elemento de [B] --> ", I + 1);
-    scanf("%d", &B[I]);
-    while ((getchar() != '\n') && (!EOF));
-  }
-  
-  printf("\nTecle <ENTER> para ver juncao ");
-  getchar();
-  
-  for (I = 0; I <= 24; I++) {
-    if (I <= 9)
-      C[I] = A[I];
-    else
-      C[I] = B[I - 10];
-  }
-  
-  printf("\nConteudo da matriz [C] juncao das matrizes [A] e [B]:\n\n");
-  for (I = 0; I <= 24; I++) {
-    printf("C[%2d] = %4d\n", I + 1, C[I]);
-  }
-  
-  printf("\nTecle <ENTER> para encerrar o programa... ");
-  getchar();
-  
-  return 0;
+console.log("JUNCAO DE MATRIZES 1D");
+console.log(">>> Para maior comodidade, entre valores entre 0 e 9999 <<<\n\n");
+
+console.log("Entre 10 elementos para a matriz [A]:\n");
+for (let i = 0; i < 10; i++) {
+  A[i] = parseInt(readline.question(`Entre o ${String(i + 1).padStart(2, ' ')}o. elemento de [A] --> `));
 }
+
+console.log(readline.question("\nPressione <ENTER> para próxima entrada "));
+
+console.log("Entre 15 elementos para a matriz [B]:\n");
+for (let i = 0; i < 15; i++) {
+  B[i] = parseInt(readline.question(`Entre o ${String(i + 1).padStart(2, ' ')}o. elemento de [B] --> `));
+}
+
+console.log(readline.question("\nPressione <ENTER> para ver a junção "));
+
+for (let i = 0; i < 25; i++) {
+  if (i <= 9)
+    C[i] = A[i];
+  else
+    C[i] = B[i - 10];
+}
+
+console.log("Conteúdo da matriz [C] junção das matrizes [A] e [B]:\n");
+for (let i = 0; i < 25; i++) {
+  console.log(`C[${String(i + 1).padStart(2, ' ')}] = ${C[i]}`);
+}
+
+console.log(readline.question("\nPressione <ENTER> para encerrar o programa... "));
