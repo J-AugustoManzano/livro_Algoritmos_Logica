@@ -14,7 +14,7 @@
 let MD = [];
 let SOMA = 0;
 
-console.log("MEDIA GERAL - V3\n\n");
+console.log("MEDIA GERAL - V3\n");
 
 for (let I = 0; I <= 7; I++) {
   MD[I] = parseFloat(prompt("Entre a nota " + (I + 1) + ": "));

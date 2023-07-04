@@ -11,7 +11,7 @@
  * Programa ..: MEDIA GERAL - VERSAO 1
  */
 
-console.log("MEDIA GERAL - V1\n\n");
+console.log("MEDIA GERAL - V1\n");
 
 let MD1 = parseFloat(prompt("Entre a nota 1: "));
 let MD2 = parseFloat(prompt("Entre a nota 2: "));
