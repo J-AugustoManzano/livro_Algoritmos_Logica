@@ -17,7 +17,7 @@ let I, N;
 let A;
 let FORMATO = [];
 
-console.log("MATRIZ DINAMICA\n\n");
+console.log("MATRIZ DINAMICA\n");
 
 N = parseInt(readline.question("Entre a quantidade de elementos da matriz: "), 10);
 
