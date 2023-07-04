@@ -1,0 +1,58 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 12 - Topico 12.7
+ * 
+ * Programa ..: POLIFORMISMO UNIVERSAL DE INCLUSAO
+ * 
+ */
+
+trait Pai {
+    fn executar(&self);
+}
+
+struct Filho;
+
+impl Pai for Filho {
+    fn executar(&self) {
+        println!("Ação executada na classe-filho");
+    }
+}
+
+struct PaiPadrao;
+
+impl Pai for PaiPadrao {
+    fn executar(&self) {
+        println!("Ação executada na classe-pai");
+    }
+}
+
+fn main() {
+
+    let pai: Box<dyn Pai> = Box::new(PaiPadrao);
+    let filho: Box<dyn Pai> = Box::new(Filho);
+
+    // pai.executar()
+    pai.executar();
+
+    // filho.executar()
+    filho.executar();
+
+    // pai <- filho
+    let pai: Box<dyn Pai> = filho;
+
+    // pai.executar()
+    pai.executar();
+
+    // pai <- PaiPadrao
+    let pai: Box<dyn Pai> = Box::new(PaiPadrao);
+
+    // pai.executar()
+    pai.executar();
+    
+}
