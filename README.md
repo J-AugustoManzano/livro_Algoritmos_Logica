@@ -77,6 +77,6 @@ Com o tempo outras linguagens poderão ser acrescidas.
 Neste momento são exemplificadas 23 linguagens de programação.
 
 EM BREVE
-========
+--------
 
 - TypeScript (2012) - Microsoft Corporation
