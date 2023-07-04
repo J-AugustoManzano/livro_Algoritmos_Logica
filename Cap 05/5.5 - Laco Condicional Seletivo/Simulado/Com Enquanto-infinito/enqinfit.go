@@ -19,7 +19,7 @@ import (
 
 var I, N, R int
 func main() {
-  fmt.Println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+  fmt.Println("LACO SELETIVO ITERATIVO")
   fmt.Println("Multiplicacao de numero por 3 por 5 vezes")
   fmt.Println()
   I = 1

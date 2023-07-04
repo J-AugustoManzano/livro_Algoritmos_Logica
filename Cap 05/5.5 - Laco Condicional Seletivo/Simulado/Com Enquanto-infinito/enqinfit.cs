@@ -18,7 +18,7 @@ public class Program
   static int I, N, R;
   public static void Main()
   {
-    Console.WriteLine("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    Console.WriteLine("LACO SELETIVO ITERATIVO");
     Console.WriteLine("Multiplicacao de numero por 3 por 5 vezes\n");
     I = 1;
     while (true) // simulacao "laco"

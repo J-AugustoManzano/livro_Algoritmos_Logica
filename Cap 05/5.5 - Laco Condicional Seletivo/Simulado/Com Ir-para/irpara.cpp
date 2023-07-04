@@ -17,7 +17,7 @@ using namespace std;
 
 int I, N, R;
 int main() {
-  cout << "LACO PRE-TESTE COM FLUXO VERDADEIRO" << endl;
+  cout << "LACO SELETIVO ITERATIVO" << endl;
   cout << "Multiplicacao de numero por 3 por 5 vezes" << endl << endl;
   I = 1;
   INICIO_DO_LACO: // simulacao "laco"

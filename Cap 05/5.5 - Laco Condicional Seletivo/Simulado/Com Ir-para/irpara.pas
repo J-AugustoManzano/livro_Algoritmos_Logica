@@ -16,7 +16,7 @@ var
   I, N, R: Integer;
   label INICIO_DO_LACO, FIM_DO_LACO;
 begin
-  writeln('LACO PRE-TESTE COM FLUXO VERDADEIRO');
+  writeln('LACO SELETIVO ITERATIVO');
   writeln('Multiplicacao de numero por 3 por 5 vezes');
   writeln;
   I := 1;

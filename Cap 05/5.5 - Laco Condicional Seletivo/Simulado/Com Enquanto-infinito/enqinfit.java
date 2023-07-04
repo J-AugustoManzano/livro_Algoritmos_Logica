@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Main {
   static int I, N, R;
   public static void main(String[] args) {
-    System.out.println("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    System.out.println("LACO SELETIVO ITERATIVO");
     System.out.println("Multiplicacao de numero por 3 por 5 vezes\n");
     Scanner entrada = new Scanner(System.in);
     I = 1;

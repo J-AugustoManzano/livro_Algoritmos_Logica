@@ -13,7 +13,7 @@
  */
 
 def I, N, R
-println "LACO PRE-TESTE COM FLUXO VERDADEIRO"
+println "LACO SELETIVO ITERATIVO"
 println "Multiplicacao de numero por 3 por 5 vezes\n"
 I = 1
 while (true) { // simulacao "laco"

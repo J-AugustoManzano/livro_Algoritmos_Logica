@@ -17,7 +17,7 @@
 $I = 1;
 $N = 0;
 $R = 0;
-echo "LACO PRE-TESTE COM FLUXO VERDADEIRO\n";
+echo "LACO SELETIVO ITERATIVO\n";
 echo "Multiplicacao de numero por 3 por 5 vezes\n\n";
 INICIO_DO_LACO: // simulacao "laco"
     echo "Calculo: " . $I . "\n";

@@ -12,7 +12,7 @@
 my $N;
 my $R;
 my $I;
-say "LACO PRE-TESTE COM FLUXO VERDADEIRO";
+say "LACO SELETIVO ITERATIVO";
 say "Multiplicacao de numero por 3 por 5 vezes";
 say "";
 $I = 1;

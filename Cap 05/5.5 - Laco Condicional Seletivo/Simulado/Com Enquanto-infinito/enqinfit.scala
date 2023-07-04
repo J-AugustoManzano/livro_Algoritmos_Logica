@@ -14,7 +14,7 @@
 
 object Main extends App {
   var I, N, R: Int = 0
-  println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+  println("LACO SELETIVO ITERATIVO")
   println("Multiplicacao de numero por 3 por 5 vezes\n")
   I = 1
   var shouldBreak = false

@@ -16,7 +16,7 @@ import std.stdio;
 
 int main()
 {
-  writeln("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+  writeln("LACO SELETIVO ITERATIVO");
   writeln("Multiplicacao de numero por 3 por 5 vezes\n");
   int I = 1;
   INICIO_DO_LACO: // simulacao "laco"

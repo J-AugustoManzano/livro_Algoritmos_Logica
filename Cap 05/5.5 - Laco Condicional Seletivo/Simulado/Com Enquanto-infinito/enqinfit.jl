@@ -12,7 +12,7 @@
 =#
 
 function main()
-  println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+  println("LACO SELETIVO ITERATIVO")
   println("Multiplicacao de numero por 3 por 5 vezes")
   println()
   I = 1

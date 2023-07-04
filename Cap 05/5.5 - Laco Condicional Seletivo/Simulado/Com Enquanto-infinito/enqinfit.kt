@@ -19,7 +19,7 @@ fun main() {
     var N: Int
     var R: Int
     var entrada = Scanner(System.`in`)
-    println("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+    println("LACO SELETIVO ITERATIVO")
     println("Multiplicacao de numero por 3 por 5 vezes\n")
     while (true) {
         println("Calculo: $I")

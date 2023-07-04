@@ -12,7 +12,7 @@
  */
 
 let I, N, R;
-console.log("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+console.log("LACO SELETIVO ITERATIVO");
 console.log("Multiplicacao de numero por 3 por 5 vezes\n");
 I = 1;
 while (true) { // simulacao "laco"

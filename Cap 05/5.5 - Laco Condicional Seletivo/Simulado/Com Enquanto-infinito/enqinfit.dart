@@ -16,7 +16,7 @@ import 'dart:io';
 
 int I = 0, N = 0, R = 0;
 void main() {
-  print("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+  print("LACO SELETIVO ITERATIVO");
   print("Multiplicacao de numero por 3 por 5 vezes\n");
   I = 1;
   while (true) { // simulacao "laco"

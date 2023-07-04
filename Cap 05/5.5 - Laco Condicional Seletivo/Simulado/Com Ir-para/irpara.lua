@@ -11,7 +11,7 @@
  * Programa ..: LACO SELETIVO ITERATIVO (SIMULADO IR_PARA)
 --]]
 
-print("LACO PRE-TESTE COM FLUXO VERDADEIRO")
+print("LACO SELETIVO ITERATIVO")
 print("Multiplicacao de numero por 3 por 5 vezes\n")
 I = 1
 ::INICIO_DO_LACO:: -- simulacao "laco"

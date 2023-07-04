@@ -17,7 +17,7 @@ fn main() {
     let mut i;
     let mut r;
     let mut entrada;
-    println!("LACO PRE-TESTE COM FLUXO VERDADEIRO");
+    println!("LACO SELETIVO ITERATIVO");
     println!("Multiplicacao de numero por 3 por 5 vezes\n");
     i = 1;
     loop {

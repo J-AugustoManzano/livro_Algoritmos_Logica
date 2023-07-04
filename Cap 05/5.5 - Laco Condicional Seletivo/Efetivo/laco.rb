@@ -11,7 +11,7 @@
  * Programa ..: LACO SELETIVO ITERATIVO
 =end
 
-puts 'LACO PRE-TESTE COM FLUXO VERDADEIRO'
+puts 'LACO SELETIVO ITERATIVO'
 puts 'Multiplicacao de numero por 3 por 5 vezes'
 puts
 i = 1

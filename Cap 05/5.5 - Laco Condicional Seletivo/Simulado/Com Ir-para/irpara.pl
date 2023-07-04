@@ -19,7 +19,7 @@ use warnings;
 my $I;
 my $N;
 my $R;
-print "LACO PRE-TESTE COM FLUXO VERDADEIRO\n";
+print "LACO SELETIVO ITERATIVO\n";
 print "Multiplicacao de numero por 3 por 5 vezes\n\n";
 $I = 1;
 INICIO_DO_LACO: # simulacao "laco"

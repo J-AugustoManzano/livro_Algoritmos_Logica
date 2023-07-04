@@ -15,7 +15,7 @@
 
 int I, N, R;
 int main(void) {
-  printf("LACO PRE-TESTE COM FLUXO VERDADEIRO\n");
+  printf("LACO SELETIVO ITERATIVO\n");
   printf("Multiplicacao de numero por 3 por 5 vezes\n\n");
   I = 1;
   while (true) { // simulacao "laco"

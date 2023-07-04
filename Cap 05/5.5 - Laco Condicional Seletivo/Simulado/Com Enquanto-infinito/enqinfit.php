@@ -16,7 +16,7 @@
 $I;
 $N;
 $R;
-echo "LACO PRE-TESTE COM FLUXO VERDADEIRO" . PHP_EOL;
+echo "LACO SELETIVO ITERATIVO" . PHP_EOL;
 echo "Multiplicacao de numero por 3 por 5 vezes" . PHP_EOL . PHP_EOL;
 $I = 1;
 while (true) {
