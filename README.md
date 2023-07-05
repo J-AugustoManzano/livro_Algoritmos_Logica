@@ -81,5 +81,5 @@ Neste momento são exemplificadas 23 linguagens de programação.
 EM BREVE
 --------
 
-- Tcl (1988) - John Ousterhout -- (#) --
+- Tcl (1988, extensão ".tcl") - John Ousterhout -- (#) --
 - TypeScript (2012) - Microsoft Corporation (Steve Lucco, líder do projeto)
