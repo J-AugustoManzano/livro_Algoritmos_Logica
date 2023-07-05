@@ -48,7 +48,7 @@ Os programas apresentados neste repositório seguem, de forma didática, a estru
 
 Neste momento são disponibilizados os algoritmos convertidos em programas nas linguagens de programação:
 
-- AWK (1977) - Alfred Aho, Peter Weinberger, Brian Kernighan -- (#) --
+- AWK (1977 - extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan -- (#) --
 - BASIC | FreeBASIC (2004) - Richard Russell (líder do projeto) -- (#) --
 - C (1972) - Dennis Ritchie -- (#) --
 - C++ (1983) - Bjarne Stroustrup
