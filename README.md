@@ -66,7 +66,7 @@ Neste momento são disponibilizados os algoritmos nas linguagens de programaçã
 - Perl (1988, extensão ".pl") - Larry Wall
 - PHP (1995, extensão ".php") - Rasmus Lerdorf
 - Python (1991, extensão ".py") - Guido van Rossum
-- Raku (2019) - Larry Wall |antes linguagem Perl6|
+- Raku (2019, extensão "raku") - Larry Wall |antes linguagem Perl6|
 - Rubi (1995) - Yukihiro Matsumoto
 - Rust (2015) - Graydon Hoare
 - Scala (2204) - Martin Odersky
