@@ -62,7 +62,7 @@ Neste momento são disponibilizados os algoritmos nas linguagens de programaçã
 - Julia (2012, extensão ".jl") - Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman -- (#) --
 - Kotlin (2016, extensçao ".kt") - JetBrains (Dmitry Jemerov, líder do projeto)
 - Lua (1994, extensão ".lua") - Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes -- (#) --
-- Pascal (1970) - Niklaus Wirth
+- Pascal (1970, extensão ".pas") - Niklaus Wirth
 - Perl (1988) - Larry Wall
 - PHP (1995) - Rasmus Lerdorf
 - Python (1991) - Guido van Rossum
