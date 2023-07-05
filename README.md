@@ -50,7 +50,7 @@ Neste momento são disponibilizados os algoritmos convertidos em programas nas l
 
 - AWK (1977 - extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan -- (#) --
 - BASIC | FreeBASIC (2004 - extensão ".bas") - Richard Russell (líder do projeto) -- (#) --
-- C (1972) - Dennis Ritchie -- (#) --
+- C (1972 - extensão ".c") - Dennis Ritchie -- (#) --
 - C++ (1983) - Bjarne Stroustrup
 - C# (2000) - Microsoft Corporation (Anders Hejlsberg, líder do projeto)
 - D (2001) - Walter Bright
