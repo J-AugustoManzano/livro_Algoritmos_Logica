@@ -67,7 +67,7 @@ Neste momento são disponibilizados os algoritmos nas linguagens de programaçã
 - PHP (1995, extensão ".php") - Rasmus Lerdorf
 - Python (1991, extensão ".py") - Guido van Rossum
 - Raku (2019, extensão "raku") - Larry Wall |antes linguagem Perl6|
-- Rubi (1995) - Yukihiro Matsumoto
+- Rubi (1995, extensão ".rb") - Yukihiro Matsumoto
 - Rust (2015) - Graydon Hoare
 - Scala (2204) - Martin Odersky
 - Swift (2014) - Apple Inc. (Chris Lattner, líder do projeto)
