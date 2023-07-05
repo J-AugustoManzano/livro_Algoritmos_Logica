@@ -56,7 +56,7 @@ Neste momento são disponibilizados os algoritmos nas linguagens de programaçã
 - D (2001, extensão ".d") - Walter Bright
 - Dart (2011, extensão ".dart") - Google (Lars Bak e Kasper Lund)
 - Go (2009, extensão ".go") - Google (Robert Griesemer, Rob Pike e Ken Thompson) -- (#) --
-- Groovy (2007) - James Strachan
+- Groovy (2007, extensão ".groovy") - James Strachan
 - Java (1995) - Sun Microsystems (James Gosling, líder do projeto)
 - JavaScript (1995) - Netescape (Brendan Eich, lider do projeto)
 - Julia (2012) - Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman -- (#) --
