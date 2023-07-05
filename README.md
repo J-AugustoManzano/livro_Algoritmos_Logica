@@ -70,7 +70,7 @@ Neste momento são disponibilizados os algoritmos nas linguagens de programaçã
 - Rubi (1995, extensão ".rb") - Yukihiro Matsumoto
 - Rust (2015, extensão ".rust") - Graydon Hoare
 - Scala (2204, extensão ".scala") - Martin Odersky
-- Swift (2014) - Apple Inc. (Chris Lattner, líder do projeto)
+- Swift (2014, extensão ".swift") - Apple Inc. (Chris Lattner, líder do projeto)
 
 > OBS: -- (#) -- Indica linguagens que não são OO (AWK, C, Go, Tcl) ou não dão suporte adeaquado a POO (BASIC, D, Julia, Lua).
 
