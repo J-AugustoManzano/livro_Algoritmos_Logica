@@ -52,7 +52,7 @@ Neste momento são disponibilizados os algoritmos nas linguagens de programaçã
 - BASIC | FreeBASIC (2004, extensão ".bas") - Richard Russell (líder do projeto) -- (#) --
 - C (1972, extensão ".c") - Dennis Ritchie -- (#) --
 - C++ (1983, extensão ".cpp") - Bjarne Stroustrup
-- C# (2000) - Microsoft Corporation (Anders Hejlsberg, líder do projeto)
+- C# (2000, extensão ".cs") - Microsoft Corporation (Anders Hejlsberg, líder do projeto)
 - D (2001) - Walter Bright
 - Dart (2011) - Google (Lars Bak e Kasper Lund)
 - Go (2009) - Google (Robert Griesemer, Rob Pike e Ken Thompson) -- (#) --
