@@ -48,10 +48,10 @@ Os programas apresentados neste repositório seguem, de forma didática, a estru
 
 Neste momento são disponibilizados os algoritmos nas linguagens de programação:
 
-- AWK (1977 - extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan -- (#) --
-- BASIC | FreeBASIC (2004 - extensão ".bas") - Richard Russell (líder do projeto) -- (#) --
-- C (1972 - extensão ".c") - Dennis Ritchie -- (#) --
-- C++ (1983 - extensão ".cpp") - Bjarne Stroustrup
+- AWK (1977, extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan -- (#) --
+- BASIC | FreeBASIC (2004, extensão ".bas") - Richard Russell (líder do projeto) -- (#) --
+- C (1972, extensão ".c") - Dennis Ritchie -- (#) --
+- C++ (1983, extensão ".cpp") - Bjarne Stroustrup
 - C# (2000) - Microsoft Corporation (Anders Hejlsberg, líder do projeto)
 - D (2001) - Walter Bright
 - Dart (2011) - Google (Lars Bak e Kasper Lund)
