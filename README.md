@@ -82,4 +82,4 @@ EM BREVE
 --------
 
 - Tcl (1988, extensão ".tcl") - John Ousterhout -- (#) --
-- TypeScript (2012) - Microsoft Corporation (Steve Lucco, líder do projeto)
+- TypeScript (2012, extensão ".ts") - Microsoft Corporation (Steve Lucco, líder do projeto)
