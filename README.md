@@ -59,7 +59,7 @@ Neste momento são disponibilizados os algoritmos nas linguagens de programaçã
 - Groovy (2007, extensão ".groovy") - James Strachan
 - Java (1995, extensão ".java") - Sun Microsystems (James Gosling, líder do projeto)
 - JavaScript (1995, extensão ".js") - Netescape (Brendan Eich, lider do projeto)
-- Julia (2012) - Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman -- (#) --
+- Julia (2012, extensão ".jl") - Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman -- (#) --
 - Kotlin (2016) - JetBrains (Dmitry Jemerov, líder do projeto)
 - Lua (1994) - Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes -- (#) --
 - Pascal (1970) - Niklaus Wirth
