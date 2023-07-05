@@ -64,7 +64,7 @@ Neste momento são disponibilizados os algoritmos nas linguagens de programaçã
 - Lua (1994, extensão ".lua") - Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes -- (#) --
 - Pascal (1970, extensão ".pas") - Niklaus Wirth
 - Perl (1988, extensão ".pl") - Larry Wall
-- PHP (1995) - Rasmus Lerdorf
+- PHP (1995, extensão ".php") - Rasmus Lerdorf
 - Python (1991) - Guido van Rossum
 - Raku (2019) - Larry Wall |antes linguagem Perl6|
 - Rubi (1995) - Yukihiro Matsumoto
