@@ -55,7 +55,7 @@ Neste momento são disponibilizados os algoritmos nas linguagens de programaçã
 - C# (2000, extensão ".cs") - Microsoft Corporation (Anders Hejlsberg, líder do projeto)
 - D (2001, extensão ".d") - Walter Bright
 - Dart (2011, extensão ".dart") - Google (Lars Bak e Kasper Lund)
-- Go (2009) - Google (Robert Griesemer, Rob Pike e Ken Thompson) -- (#) --
+- Go (2009, extensão ".go") - Google (Robert Griesemer, Rob Pike e Ken Thompson) -- (#) --
 - Groovy (2007) - James Strachan
 - Java (1995) - Sun Microsystems (James Gosling, líder do projeto)
 - JavaScript (1995) - Netescape (Brendan Eich, lider do projeto)
