@@ -72,7 +72,7 @@ Neste momento são disponibilizados os algoritmos convertidos em programas nas l
 - Scala (2204) - Martin Odersky
 - Swift (2014) - Apple Inc. (Chris Lattner, líder do projeto)
 
-> OBS: -- (#) -- Indica linguagens que não são OO (AWK, C, Go) ou não dão suporte adeaquado a POO (BASIC, D, Julia, Lua).
+> OBS: -- (#) -- Indica linguagens que não são OO (AWK, C, Go, Tcl) ou não dão suporte adeaquado a POO (BASIC, D, Julia, Lua).
 
 Com o tempo outras linguagens poderão ser acrescidas.
 
@@ -82,3 +82,4 @@ EM BREVE
 --------
 
 - TypeScript (2012) - Microsoft Corporation (Steve Lucco, líder do projeto)
+- Tcl (1988) - John Ousterhout -- (#) --
