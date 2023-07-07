@@ -48,20 +48,20 @@ Os programas apresentados neste repositório seguem, de forma didática, a estru
 
 Neste momento estão disponibilizados algoritmos de demosntração do livro texto indicado acima nas seguintes linguagens de programação, indicando nome da linguagem, ano de lançamento, extensão de gravação dos programas-fonte, autores ou líderes de projetos:
 
-- AWK (1977, extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan -- (#) --
-- BASIC | FreeBASIC (2004, extensão ".bas") - Richard Russell (líder do projeto) -- (#) --
-- C (1972, extensão ".c") - Dennis Ritchie -- (#) --
+- AWK (1977, extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan (#)
+- BASIC | FreeBASIC (2004, extensão ".bas") - Richard Russell (líder do projeto) (#)
+- C (1972, extensão ".c") - Dennis Ritchie (#)
 - C++ (1983, extensão ".cpp") - Bjarne Stroustrup
 - C# (2000, extensão ".cs") - Microsoft Corporation (Anders Hejlsberg, líder do projeto)
 - D (2001, extensão ".d") - Walter Bright
 - Dart (2011, extensão ".dart") - Google (Lars Bak e Kasper Lund)
-- Go (2009, extensão ".go") - Google (Robert Griesemer, Rob Pike e Ken Thompson) -- (#) --
+- Go (2009, extensão ".go") - Google (Robert Griesemer, Rob Pike e Ken Thompson) (#)
 - Groovy (2007, extensão ".groovy") - James Strachan
 - Java (1995, extensão ".java") - Sun Microsystems (James Gosling, líder do projeto)
 - JavaScript (1995, extensão ".js") - Netescape (Brendan Eich, lider do projeto)
-- Julia (2012, extensão ".jl") - Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman -- (#) --
+- Julia (2012, extensão ".jl") - Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman (#)
 - Kotlin (2016, extensçao ".kt") - JetBrains (Dmitry Jemerov, líder do projeto)
-- Lua (1994, extensão ".lua") - Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes -- (#) --
+- Lua (1994, extensão ".lua") - Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes (#)
 - Pascal (1970, extensão ".pas") - Niklaus Wirth
 - Perl (1988, extensão ".pl") - Larry Wall
 - PHP (1995, extensão ".php") - Rasmus Lerdorf
