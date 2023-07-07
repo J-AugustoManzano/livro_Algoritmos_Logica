@@ -19,7 +19,7 @@ Este repositório complementa a codificação em diversas linguagens de programa
 
 > OBS: -- Quando em um diretório faltar a codificação de um programa em certa linguagem do conjunto usado, isto indicará que aquela linguagem não possui suporte ao recurso exemplificado e a sua forma simulada de fazê-lo é mais complexa do que os objetivos destes exemplos.
 
-A organização deste material baseia-se na mesma estrutura de sumário do livro e está configurado para atender especialmente a 30ª. Edição (a ser lançada). No entanto, poderá com certo cuidado e atenção ser usado com edições anteriores a esta. É importante ressaltar que nem todos os capítulos do livro possuem conteúdos práticos de programação na forma de algoritmos gráficos (ISO-5807:1985) e algoritmos textuais (português estruturado). Alguns capítulos possuem tonalidade apenas descritiva. Assim sendo, este material contempla os capítulos práticos:
+A organização deste material baseia-se na mesma estrutura de sumário do livro e está configurado para atender especialmente a 30ª. Edição (a ser lançada). No entanto, poderá com certo cuidado e atenção ser usado com edições anteriores a esta. É importante ressaltar que nem todos os capítulos do livro possuem conteúdos práticos de programação na forma de algoritmos gráficos (ISO-5807:1985) e algoritmos textuais (português estruturado). Alguns capítulos possuem tonalidade apenas descritiva. Desta forma, este material contempla os capítulos práticos:
 
 - 03 - Programação com Sequência
 - 04 - Programação com Decisão
