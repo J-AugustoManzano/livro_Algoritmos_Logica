@@ -1,4 +1,4 @@
-# Exemplos codificados do livro:
+# Exemplos de demosntração codificados do livro:
 
 > [Algoritmos](https://www.editoraerica.com.br/algoritmos-logica-para-desenvolvimento-de-programacao-de-computadores/p)
 > 
