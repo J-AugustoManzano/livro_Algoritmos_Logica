@@ -81,6 +81,6 @@ Neste momento são exemplificadas 23 linguagens de programação.
 EM BREVE
 --------
 
-- Fortran-95 (1997, extensão ".f90" pu ".f95")
+- Fortran-95 (1997, extensão ".f90" pu ".f95") - produto conjunto da ISO e da IEC (Michael Metcalf, John Reid e Malcolm Cohen, líderes do projeto)
 - Tcl (1988, extensão ".tcl") - John Ousterhout -- (#) --
 - TypeScript (2012, extensão ".ts") - Microsoft Corporation (Steve Lucco, líder do projeto)
