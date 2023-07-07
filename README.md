@@ -13,7 +13,7 @@ O livro é organizado com a apresentação conceitual de certos elementos da pro
 - Introdução a certo conceito de programação;
 - Exercícios de conhecimento com demonstração do conceito apresentado;
 - Exercícios de aprendizagem com aplicação do conceito apresentado;
-- Exercícios de fixação dos conceitos apresentados.
+- Exercícios de fixação para aprofundamento dos conceitos apresentados.
 
 Este repositório apresenta de forma complementar a coficiação em diversas linguagens de programação dos exemplos usados (exercícios de conhecimento) na apresentação conceitual das temas relacionados a programação de computadores. É pertinente salientar que os algoritmos apresentados no livro nem sempre serão implementados em sua totalidade nas linguagens de programação disponibilizadas neste repositório. Isto ocorre pois há linguagens que podem não dar suporte a determinado recurso que venha a interferir na implementação do algoritmo. No entanto, na maioria das vezes, se consegue seguir um caminho alternativo na busca da solução como ocorre nos exemplos do diretório "Cap 05\Topico 5.5\Seletivo\Com Ir-para" onde do conjunto de linguagens usadas algumas não possuem um dos comandos necessários a implementação do recurso, mas a alternativa de operação encontra-se no diretório "Cap 05\Topico 5.5\Seletivo\ Com Enquanto-infinito". O diretório "Cap 12" também possui um conjunto menor de linguagens implementadas pelo fato de fazer uso do paradigma de "Programação Orienta a Objetos" e este não estar disponível em todo o conjunto das linguagens utilizadas.
 
