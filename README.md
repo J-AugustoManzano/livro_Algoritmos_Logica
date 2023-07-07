@@ -49,18 +49,18 @@ Os programas apresentados neste repositório seguem, de forma didática, a estru
 Neste momento estão disponibilizados algoritmos de demonstração do livro texto indicado acima nas seguintes linguagens de programação, sendo apontados os nomes das linguagens, anos de lançamento, extensões de gravação dos programas-fonte, autores ou líderes de projetos:
 
 - AWK (1977, extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan (#)
-- BASIC | FreeBASIC (2004, extensão ".bas") - Richard Russell (líder do projeto) (#)
+- BASIC | FreeBASIC (2004, extensão ".bas") - Richard Russell (líder) (#)
 - C (1972, extensão ".c") - Dennis Ritchie (#)
 - C++ (1983, extensão ".cpp") - Bjarne Stroustrup
-- C# (2000, extensão ".cs") - Microsoft Corporation (Anders Hejlsberg, líder do projeto)
+- C# (2000, extensão ".cs") - Microsoft Corporation (Anders Hejlsberg, líder)
 - D (2001, extensão ".d") - Walter Bright
 - Dart (2011, extensão ".dart") - Google (Lars Bak e Kasper Lund)
 - Go (2009, extensão ".go") - Google (Robert Griesemer, Rob Pike e Ken Thompson) (#)
 - Groovy (2007, extensão ".groovy") - James Strachan
-- Java (1995, extensão ".java") - Sun Microsystems (James Gosling, líder do projeto)
-- JavaScript (1995, extensão ".js") - Netescape (Brendan Eich, lider do projeto)
+- Java (1995, extensão ".java") - Sun Microsystems (James Gosling, líder)
+- JavaScript (1995, extensão ".js") - Netescape (Brendan Eich, lider)
 - Julia (2012, extensão ".jl") - Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman (#)
-- Kotlin (2016, extensçao ".kt") - JetBrains (Dmitry Jemerov, líder do projeto)
+- Kotlin (2016, extensçao ".kt") - JetBrains (Dmitry Jemerov, líder)
 - Lua (1994, extensão ".lua") - Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes (#)
 - Pascal (1970, extensão ".pas") - Niklaus Wirth
 - Perl (1988, extensão ".pl") - Larry Wall
@@ -70,7 +70,7 @@ Neste momento estão disponibilizados algoritmos de demonstração do livro text
 - Rubi (1995, extensão ".rb") - Yukihiro Matsumoto
 - Rust (2015, extensão ".rust") - Graydon Hoare
 - Scala (2204, extensão ".scala") - Martin Odersky
-- Swift (2014, extensão ".swift") - Apple Inc. (Chris Lattner, líder do projeto)
+- Swift (2014, extensão ".swift") - Apple Inc. (Chris Lattner, líder)
 
 > (#)- Indica linguagens usadas que não são OO (AWK, C, Fortran-95, Go, Tcl) ou não dão suporte adeaquado a POO (BASIC, D, Julia, Lua, Pascal |Free Pascal|).
 
@@ -81,6 +81,6 @@ Neste momento são exemplificadas 23 linguagens de programação.
 EM BREVE
 --------
 
-- Fortran-95 (1997, extensão ".f90" ou ".f95") - ISO/IEC (Michael Metcalf, John Reid e Malcolm Cohen, líderes do projeto)
+- Fortran-95 (1997, extensão ".f90" ou ".f95") - ISO/IEC (Michael Metcalf, John Reid e Malcolm Cohen, líderes)
 - Tcl (1988, extensão ".tcl") - John Ousterhout -- (#) --
 - TypeScript (2012, extensão ".ts") - Microsoft Corporation (Steve Lucco, líder do projeto)
