@@ -84,3 +84,4 @@ EM BREVE
 - Fortran-95 (1997, extensão ".f90/.f95") - ISO/IEC (Michael Metcalf, John Reid e Malcolm Cohen, líderes)
 - Tcl (1988, extensão ".tcl") - John Ousterhout (#)
 - TypeScript (2012, extensão ".ts") - Microsoft Corporation (Steve Lucco, líder)
+- Visual Basic .Net (2002, extensão ".vb") - Microsoft Corporation (Anders Hejlsberg, líder)
