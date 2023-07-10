@@ -1,0 +1,57 @@
+/*
+ * Livro .....: Algoritmos
+ *              Logica para Desenvolvimento de Programacao de
+ *              Computadores
+ * Autores ...: Jose Augusto N. G. Manzano
+ *              Jayr Figueiredo de Oliveira
+ * Editora ...: Erica
+ *
+ * Capitulo ..: 12 - Topico 12.7
+ * 
+ * Programa ..: POLIFORMISMO AD-HOC DE SOBRECARGA
+ * 
+ */
+
+use std::io::{self, Write};
+
+fn somatorio(n: i32) -> i32 {
+    let mut soma = 0;
+    for i in 1..=n {
+        soma = soma + i;
+    }
+    soma
+}
+
+fn fatorial(n: i32) -> i32 {
+    let mut fat = 1;
+    for i in 1..=n {
+        fat = fat * i;
+    }
+    fat
+}
+
+type Funcao = fn(i32) -> i32;
+
+fn main() {
+    let entra: i32;
+    let mut resposta: Funcao;
+
+    println!("POLIMORFISMO DE SOBRECARGA");
+    println!();
+    
+    print!("Entre um valor numerico inteiro: ");
+    io::stdout().flush().expect("Falha ao exibir mensagem");
+    entra = read_int();
+
+    resposta = somatorio;
+    println!("Somatorio ..: {}", resposta(entra));
+
+    resposta = fatorial;
+    println!("Fatorial ...: {}", resposta(entra));
+}
+
+fn read_int() -> i32 {
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Falha ao ler entrada");
+    input.trim().parse().expect("Entrada inválida")
+}
