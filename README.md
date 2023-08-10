@@ -82,7 +82,7 @@ EM BREVE
 --------
 
 - Fortran-95 (1997, extensão ".f90/.f95") - ISO/IEC (Michael Metcalf, John Reid e Malcolm Cohen, líderes)
-- Pike (1994, extensão ".pike") - Fredrik Hübinette e Per Hedbor (carece de confirmação)
+- Pike (1994, extensão ".pike") - Universidade de Linköping (Fredrik Hübinette, Per-Åke Minborg e outros)
 - Tcl (1988, extensão ".tcl") - John Ousterhout (#)
 - TypeScript (2012, extensão ".ts") - Microsoft Corporation (Steve Lucco, líder)
 - Visual Basic .Net (2002, extensão ".vb") - Microsoft Corporation (Anders Hejlsberg, líder)
