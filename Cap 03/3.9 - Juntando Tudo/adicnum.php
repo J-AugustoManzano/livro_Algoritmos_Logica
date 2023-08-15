@@ -9,7 +9,7 @@
  * 
  * Capitulo ..: Programacao - Topico Programacao.9
  * 
- * Programa ..: ADICAO DE DOIS NÚMEROS INTEIROS
+ * Programa ..: ADICAO DE DOIS NUMEROS INTEIROS
  */
 
 $X = 0;
