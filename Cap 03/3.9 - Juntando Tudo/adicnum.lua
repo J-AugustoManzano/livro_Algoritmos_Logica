@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 3 - Topico 3.9
  *
- * Programa ..: ADICAO DE DOIS NÚMEROS INTEIROS
+ * Programa ..: ADICAO DE DOIS NUMEROS INTEIROS
 --]]
 
 print("ADICAO DE NUMEROS")
