@@ -46,7 +46,7 @@ O melhor uso de uma linguagem se consegue se ela estiver devidamente instalada e
 
 Os programas apresentados neste repositório seguem, de forma didática, a estrutura de escrita dos algoritmos do livro texto. Assim sendo, há nos códigos das diversas linguagens disponibilizadas a ocorrência de pequenos detalhes que buscam manter a maior proximidade possível da escrita destes com os algoritmos. No uso prático de linguagens de programação podem certos elementos serem suprimidos ou trabalhados de forma diferente da maneira que aqui é apresentado. Este material é direcionado a iniciantes em programação de computadores, não há profissionais
 
-Neste momento estão disponibilizados algoritmos de demonstração do livro texto indicado acima nas seguintes linguagens de programação, sendo apontados os nomes das linguagens, anos de lançamento, extensões de gravação dos programas-fonte, autores ou líderes de projetos:
+São disponibilizados algoritmos de demonstração do livro texto indicado acima em 28 linguagens de programação, sendo apontados os nomes das linguagens, anos de lançamento, extensões de gravação dos programas-fonte, autores ou líderes de projetos:
 
 - AWK (1977, extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan (#)
 - BASIC | FreeBASIC (2004, extensão ".bas") - Richard Russell (líder) (#)
@@ -55,6 +55,7 @@ Neste momento estão disponibilizados algoritmos de demonstração do livro text
 - C# (2000, extensão ".cs") - Microsoft Corporation (Anders Hejlsberg, líder)
 - D (2001, extensão ".d") - Walter Bright
 - Dart (2011, extensão ".dart") - Google (Lars Bak e Kasper Lund)
+- Fortran-95 (1997, extensão ".f90/.f95") - ISO/IEC (Michael Metcalf, John Reid e Malcolm Cohen, líderes)
 - Go (2009, extensão ".go") - Google (Robert Griesemer, Rob Pike e Ken Thompson) (#)
 - Groovy (2007, extensão ".groovy") - James Strachan
 - Java (1995, extensão ".java") - Sun Microsystems (James Gosling, líder)
@@ -65,24 +66,17 @@ Neste momento estão disponibilizados algoritmos de demonstração do livro text
 - Pascal (1970, extensão ".pas") - Niklaus Wirth
 - Perl (1988, extensão ".pl") - Larry Wall
 - PHP (1995, extensão ".php") - Rasmus Lerdorf
+- Pike (1994, extensão ".pike") - Universidade de Linköping (Fredrik Hübinette, Per-Åke Minborg e outros)
 - Python (1991, extensão ".py") - Guido van Rossum
 - Raku (2019, extensão "raku") - Larry Wall |antes linguagem Perl6|
 - Ruby (1995, extensão ".rb") - Yukihiro Matsumoto
 - Rust (2015, extensão ".rust") - Graydon Hoare
 - Scala (2204, extensão ".scala") - Martin Odersky
 - Swift (2014, extensão ".swift") - Apple Inc. (Chris Lattner, líder)
-
-> (#) - Indica linguagens usadas que não são OO (AWK, C, Fortran-95, Go, Tcl) ou não dão suporte adeaquado a POO (BASIC, D, Julia, Lua, Pascal |Free Pascal|).
-
-Com o tempo outras linguagens poderão ser acrescidas.
-
-Neste momento são exemplificadas 23 linguagens de programação.
-
-EM BREVE
---------
-
-- Fortran-95 (1997, extensão ".f90/.f95") - ISO/IEC (Michael Metcalf, John Reid e Malcolm Cohen, líderes)
-- Pike (1994, extensão ".pike") - Universidade de Linköping (Fredrik Hübinette, Per-Åke Minborg e outros)
 - Tcl (1988, extensão ".tcl") - John Ousterhout (#)
 - TypeScript (2012, extensão ".ts") - Microsoft Corporation (Steve Lucco, líder)
 - Visual Basic .Net (2002, extensão ".vb") - Microsoft Corporation (Anders Hejlsberg, líder)
+
+> (#) - Indica linguagens usadas que não são POO (AWK, C, Fortran-95, Go, Tcl) ou não dão suporte adeaquado a POO (BASIC, D, Julia, Lua, Pascal |Free Pascal|).
+
+Com o tempo outras linguagens poderão ser acrescidas.
