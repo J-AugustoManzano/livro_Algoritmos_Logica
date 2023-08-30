@@ -48,8 +48,8 @@ Os programas apresentados neste repositório seguem, de forma didática, a estru
 
 São disponibilizados algoritmos de demonstração do livro texto indicado acima em 28 linguagens de programação, sendo apontados os nomes das linguagens, anos de lançamento, extensões de gravação dos programas-fonte, autores ou líderes de projetos:
 
-- AWK (1977, extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan (#)
-- BASIC | FreeBASIC (2004, extensão ".bas") - Richard Russell (líder) (#)
+1 AWK (1977, extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan (#)
+1 BASIC | FreeBASIC (2004, extensão ".bas") - Richard Russell (líder) (#)
 - C (1972, extensão ".c") - Dennis Ritchie (#)
 - C++ (1983, extensão ".cpp") - Bjarne Stroustrup
 - C# (2000, extensão ".cs") - Microsoft Corporation (Anders Hejlsberg, líder)
