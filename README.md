@@ -25,7 +25,7 @@ A organização deste material baseia-se na mesma estrutura de sumário do livro
 - 04 - Programação com Decisão
 - 05 - Programação com Laços - [em preparação]
 - 06 - Estruturas de Dados Homogêneas de Uma Dimensão
-- 07 - Aplicações Básicas com Matrizes de Uma Dimensão - [em preparação]
+- 07 - Aplicações Básicas com Matrizes de Uma Dimensão
 - 08 - Estruturas de Dados Homogêneas de Duas Dimensões
 - 09 - Estruturas de Dados Heterogêneas - [em preparação]
 - 10 - Programação com Subrotinas (Modular) - [em preparação]
