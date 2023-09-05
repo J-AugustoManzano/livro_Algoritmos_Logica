@@ -23,12 +23,12 @@ A organização deste material baseia-se na mesma estrutura de sumário do livro
 
 - 03 - Programação com Sequência
 - 04 - Programação com Decisão
-- 05 - Programação com Laços - [em preparação]
+- 05 - Programação com Laços (Estruturada) - [em preparação]
 - 06 - Estruturas de Dados Homogêneas de Uma Dimensão
 - 07 - Aplicações Básicas com Matrizes de Uma Dimensão
 - 08 - Estruturas de Dados Homogêneas de Duas Dimensões
 - 09 - Estruturas de Dados Heterogêneas - [em preparação]
-- 10 - Programação com Subrotinas (Modular) - [em preparação]
+- 10 - Programação com Subrotinas (Modular)
 - 12 - Aplicação Básica de POO
 - xA - Apêndice A (Resolução de Alguns Exercícios de Fixação)
 - xB - Apêndice B (Exemplos de Codificação Interativo)
