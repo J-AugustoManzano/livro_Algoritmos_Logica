@@ -23,7 +23,7 @@ A organização deste material baseia-se na mesma estrutura de sumário do livro
 
 - 03 - Programação com Sequência
 - 04 - Programação com Decisão
-- 05 - Programação com Laços (Estruturada) - [em preparação]
+- 05 - Programação com Laços (Estruturada)
 - 06 - Estruturas de Dados Homogêneas de Uma Dimensão
 - 07 - Aplicações Básicas com Matrizes de Uma Dimensão
 - 08 - Estruturas de Dados Homogêneas de Duas Dimensões
