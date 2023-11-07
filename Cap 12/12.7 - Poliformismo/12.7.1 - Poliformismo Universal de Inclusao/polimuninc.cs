@@ -33,29 +33,19 @@ class Program
 {
   static void Main(string[] args)
   {
-	  
-    CLS_PAI PAI = new CLS_PAI();
+    CLS_PAI PAI = new CLS_PAI(), ptr_pai = null;
     CLS_FILHO FILHO = new CLS_FILHO();
 
-    // PAI.EXECUTA()
     PAI.EXECUTA();
 
-    // FILHO.EXECUTA()
     FILHO.EXECUTA();
 
     // PAI <- FILHO
-    PAI = FILHO;
-
-    // PAI.EXECUTA()
-    PAI.EXECUTA();
+    ptr_pai = FILHO;
+    ptr_pai.EXECUTA();
 
     // PAI <- ""
-    PAI = new CLS_PAI();
-
-    // PAI.EXECUTA()
-    PAI.EXECUTA();
-    
-    // Limpeza de memoria nao necesaria
-
+    ptr_pai = PAI;
+    ptr_pai.EXECUTA();
   }
 }
