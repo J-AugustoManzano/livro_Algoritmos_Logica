@@ -32,8 +32,8 @@ public:
 
 int main() {
 	
-  CLS_PAI* PAI = new CLS_PAI();
-  CLS_FILHO* FILHO = new CLS_FILHO();
+  CLS_PAI *PAI = new CLS_PAI();
+  CLS_FILHO *FILHO = new CLS_FILHO();
 
   // PAI.EXECUTA()
   PAI->EXECUTA();
