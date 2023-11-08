@@ -12,49 +12,46 @@
  * 
  */
 
-trait Pai {
-    fn executar(&self);
+trait Executavel 
+{
+  fn executar(&self);
 }
 
-struct Filho;
+struct ClsPai;
 
-impl Pai for Filho {
-    fn executar(&self) {
-        println!("Ação executada na classe-filho");
-    }
+impl Executavel for ClsPai 
+{
+  fn executar(&self) 
+  {
+    println!("Acao executada na classe-pai");
+  }
 }
 
-struct PaiPadrao;
+struct ClsFilho;
 
-impl Pai for PaiPadrao {
-    fn executar(&self) {
-        println!("Ação executada na classe-pai");
-    }
+impl Executavel for ClsFilho 
+{
+  fn executar(&self) 
+  {
+    println!("Acao executada na classe-filho");
+  }
 }
 
-fn main() {
+fn main() 
+{
+  let pai = ClsPai;
+  let filho = ClsFilho;
+  let mut ptr_pai: &dyn Executavel;
 
-    let pai: Box<dyn Pai> = Box::new(PaiPadrao);
-    let filho: Box<dyn Pai> = Box::new(Filho);
+  pai.executar();
+  
+  filho.executar();
 
-    // pai.executar()
-    pai.executar();
+  ptr_pai = &filho; // PAI ← FILHO
+  
+  ptr_pai.executar();
 
-    // filho.executar()
-    filho.executar();
-
-    // pai <- filho
-    let pai: Box<dyn Pai> = filho;
-
-    // pai.executar()
-    pai.executar();
-
-    // pai <- PaiPadrao
-    let pai: Box<dyn Pai> = Box::new(PaiPadrao);
-
-    // pai.executar()
-    pai.executar();
-    
-    // Limpeza de memoria nao necesaria
-    
+  ptr_pai = &pai; // PAI ← ""
+  
+  ptr_pai.executar();
 }

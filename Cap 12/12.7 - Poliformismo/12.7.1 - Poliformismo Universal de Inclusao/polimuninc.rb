@@ -12,38 +12,29 @@
 =end
 
 class CLS_PAI
-  def executar
+  def EXECUTA
     puts "Acao executada na classe-pai"
   end
 end
 
 class CLS_FILHO < CLS_PAI
-  def executar
+  def EXECUTA
     puts "Acao executada na classe-filho"
   end
 end
 
-pai = CLS_PAI.new
-filho = CLS_FILHO.new
+PAI = CLS_PAI.new
+FILHO = CLS_FILHO.new
+ptrPAI = nil
 
-# pai.executar()
-pai.executar
+PAI.EXECUTA
 
-# filho.executar()
-filho.executar
+FILHO.EXECUTA
 
-# pai <- filho
-pai = filho
+ptrPAI = FILHO # PAI ← FILHO
 
-# pai.executar()
-pai.executar
+ptrPAI.EXECUTA
 
-# pai <- ""
-pai = CLS_PAI.new
+ptrPAI = PAI # PAI ← ""
 
-# pai.executar()
-pai.executar
-
-# Limpeza de memória
-pai = nil
-filho = nil
+PAI.EXECUTA
