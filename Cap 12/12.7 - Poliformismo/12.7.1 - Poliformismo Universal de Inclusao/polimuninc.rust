@@ -41,17 +41,17 @@ fn main()
 {
   let pai = ClsPai;
   let filho = ClsFilho;
-  let mut ptr_pai: &dyn Executavel;
+  let mut pivo: &dyn Executavel;
 
   pai.executar();
-  
+
   filho.executar();
 
-  ptr_pai = &filho; // PAI ← FILHO
-  
-  ptr_pai.executar();
+  pivo = &filho; // PAI ← FILHO
 
-  ptr_pai = &pai; // PAI ← ""
-  
-  ptr_pai.executar();
+  pivo.executar();
+
+  pivo = &pai; // PAI ← ""
+
+  pivo.executar();
 }
