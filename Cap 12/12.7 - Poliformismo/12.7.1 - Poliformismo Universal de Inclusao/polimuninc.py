@@ -12,41 +12,25 @@
 '''
 
 class CLS_PAI:
-  def __del__(self):
-    pass
-
   def EXECUTA(self):
     print("Acao executada na classe-pai")
-
 
 class CLS_FILHO(CLS_PAI):
   def EXECUTA(self):
     print("Acao executada na classe-filho")
 
-
 PAI = CLS_PAI()
 FILHO = CLS_FILHO()
+ptrPAI = None
 
-# PAI.EXECUTA()
 PAI.EXECUTA()
 
-# FILHO.EXECUTA()
 FILHO.EXECUTA()
 
-# PAI <- FILHO
-del PAI
-PAI = FILHO
+ptrPAI = FILHO # PAI ← FILHO
 
-# PAI.EXECUTA()
+ptrPAI.EXECUTA()
+
+ptrPAI = PAI # PAI ← ""
+
 PAI.EXECUTA()
-
-# PAI <- ""
-del PAI
-PAI = CLS_PAI()
-
-# PAI.EXECUTA()
-PAI.EXECUTA()
-
-# Limpeza de memoria
-del PAI
-del FILHO

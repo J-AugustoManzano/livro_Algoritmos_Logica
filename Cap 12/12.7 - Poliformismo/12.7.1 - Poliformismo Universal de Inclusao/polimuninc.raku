@@ -9,37 +9,34 @@
 #
 # Programa: POLIFORMISMO UNIVERSAL DE INCLUSAO
 
-class CLS_PAI {
-    method EXECUTA() {
-        say "Acao executada na classe-pai";
-    }
+class CLS_PAI 
+{
+  method EXECUTA() 
+  {
+    say "Acao executada na classe-pai";
+  }
 }
 
-class CLS_FILHO is CLS_PAI {
-    method EXECUTA() {
-        say "Acao executada na classe-filho";
-    }
+class CLS_FILHO is CLS_PAI 
+{
+  method EXECUTA() 
+  {
+    say "Acao executada na classe-filho";
+  }
 }
 
-my $PAI = CLS_PAI.new();
-my $FILHO = CLS_FILHO.new();
+my $PAI = CLS_PAI.new;
+my $FILHO = CLS_FILHO.new;
+my $ptrPAI;
 
-# PAI.EXECUTA()
-$PAI.EXECUTA();
+$PAI.EXECUTA;
 
-# FILHO.EXECUTA()
-$FILHO.EXECUTA();
+$FILHO.EXECUTA;
 
-# PAI <- FILHO
-$PAI = $FILHO;
+$ptrPAI = $FILHO; # PAI ← FILHO
 
-# PAI.EXECUTA()
-$PAI.EXECUTA();
+$ptrPAI.EXECUTA;
 
-# PAI <- ""
-$PAI = CLS_PAI.new();
+$ptrPAI = $PAI; # PAI ← ""
 
-# PAI.EXECUTA()
-$PAI.EXECUTA();
-
-# Limpeza de memoria nao necesaria
+$PAI.EXECUTA;
