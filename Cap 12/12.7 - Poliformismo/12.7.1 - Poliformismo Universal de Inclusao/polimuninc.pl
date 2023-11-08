@@ -17,48 +17,43 @@ use strict;
 use warnings;
 use feature 'say';
 
-package CLS_PAI {
-    sub new {
-        my $class = shift;
-        return bless {}, $class;
-    }
+package CLS_PAI;
 
-    sub EXECUTA {
-        my $self = shift;
-        say "Acao executada na classe-pai";
-    }
+sub new 
+{
+  my $class = shift;
+  my $self = {};
+  bless $self, $class;
+  return $self;
 }
 
-package CLS_FILHO {
-    use parent -norequire, 'CLS_PAI';
+sub EXECUTA 
+{
+  my $self = shift;
+  print "Acao executada na classe-pai\n";
+}
 
-    sub EXECUTA {
-        my $self = shift;
-        say "Acao executada na classe-filho";
-    }
+package CLS_FILHO;
+use base "CLS_PAI";
+
+sub EXECUTA 
+{
+  my $self = shift;
+  print "Acao executada na classe-filho\n";
 }
 
 my $PAI = CLS_PAI->new();
 my $FILHO = CLS_FILHO->new();
+my $ptrPAI;
 
-# PAI->EXECUTA()
 $PAI->EXECUTA();
 
-# FILHO->EXECUTA()
 $FILHO->EXECUTA();
 
-# PAI <- FILHO
-$PAI = $FILHO;
+$ptrPAI = $FILHO; # PAI ← FILHO
 
-# PAI->EXECUTA()
+$ptrPAI->EXECUTA();
+
+$ptrPAI = $PAI; # PAI ← ""
+
 $PAI->EXECUTA();
-
-# PAI <- ""
-$PAI = CLS_PAI->new();
-
-# PAI->EXECUTA()
-$PAI->EXECUTA();
-
-# Limpeza de memoria
-undef $PAI;
-undef $FILHO;

@@ -14,45 +14,36 @@
  * 
  */
 
-class CLS_PAI {
-    public function __destruct() {} // Destrutor virtual
-
-    public function EXECUTA() {
-        echo "Acao executada na classe-pai" . "\n";
-    }
+class CLS_PAI 
+{
+  public function EXECUTA() 
+  {
+    echo "Acao executada na classe-pai\n";
+  }
 }
 
-class CLS_FILHO extends CLS_PAI {
-    public function EXECUTA() {
-        echo "Acao executada na classe-filho" . "\n";
-    }
+class CLS_FILHO extends CLS_PAI 
+{
+  public function EXECUTA() 
+  {
+    echo "Acao executada na classe-filho\n";
+  }
 }
 
 $PAI = new CLS_PAI();
 $FILHO = new CLS_FILHO();
+$ptrPAI;
 
-// PAI.EXECUTA()
 $PAI->EXECUTA();
 
-// FILHO.EXECUTA()
 $FILHO->EXECUTA();
 
-// PAI <- FILHO
-unset($PAI);
-$PAI = $FILHO;
+$ptrPAI = $FILHO; // PAI ← FILHO
 
-// PAI.EXECUTA()
+$ptrPAI->EXECUTA();
+
+$ptrPAI = $PAI; // PAI ← ""
+
 $PAI->EXECUTA();
-
-// PAI <- ""
-unset($PAI);
-$PAI = new CLS_PAI();
-
-// PAI.EXECUTA()
-$PAI->EXECUTA();
-
-// Limpeza de memória
-unset($PAI);
-unset($FILHO);
 
 ?>
