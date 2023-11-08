@@ -12,41 +12,40 @@
  * 
  */
  
-abstract class CLS_PAI {
-  def EXECUTA(): Unit = {
+class CLS_PAI 
+{
+  def EXECUTA(): Unit = 
+  {
     println("Acao executada na classe-pai")
   }
 }
 
-class CLS_FILHO extends CLS_PAI {
-  override def EXECUTA(): Unit = {
+class CLS_FILHO extends CLS_PAI 
+{
+  override def EXECUTA(): Unit = 
+  {
     println("Acao executada na classe-filho")
   }
 }
 
-object Main extends App {
-		
-  var PAI: CLS_PAI = new CLS_PAI { } 
-  var FILHO: CLS_FILHO = new CLS_FILHO()
+object Main 
+{
+  def main(args: Array[String]): Unit = 
+  {
+    val PAI = new CLS_PAI()
+    val FILHO = new CLS_FILHO()
+    var ptrPAI: CLS_PAI = null
 
-  // PAI.EXECUTA()
-  PAI.EXECUTA()
+    PAI.EXECUTA()
+    
+    FILHO.EXECUTA()
 
-  // FILHO.EXECUTA()
-  FILHO.EXECUTA()
+    ptrPAI = FILHO // PAI ← FILHO
+    
+    ptrPAI.EXECUTA()
 
-  // PAI <- FILHO
-  PAI = FILHO
-
-  // PAI.EXECUTA()
-  PAI.EXECUTA()
-
-  // PAI <- ""
-  PAI = new CLS_PAI { } 
-
-  // PAI.EXECUTA()
-  PAI.EXECUTA()
-  
-  // Limpeza de memoria nao necesaria
-  
+    ptrPAI = PAI // PAI ← ""
+    
+    PAI.EXECUTA()
+  }
 }

@@ -12,35 +12,34 @@
  * 
  */
 
-class CLS_PAI {
-  EXECUTA(): void {
+class CLS_PAI 
+{
+  EXECUTA(): void 
+  {
     console.log("Acao executada na classe-pai");
   }
 }
 
-class CLS_FILHO extends CLS_PAI {
-  EXECUTA(): void {
+class CLS_FILHO extends CLS_PAI 
+{
+  EXECUTA(): void 
+  {
     console.log("Acao executada na classe-filho");
   }
 }
 
-let PAI: CLS_PAI = new CLS_PAI();
-let FILHO: CLS_FILHO = new CLS_FILHO();
+const PAI = new CLS_PAI();
+const FILHO = new CLS_FILHO();
+let ptrPAI: CLS_PAI | null;
 
-// PAI.EXECUTA()
 PAI.EXECUTA();
 
-// FILHO.EXECUTA()
 FILHO.EXECUTA();
 
-// PAI <- FILHO
-PAI = FILHO;
+ptrPAI = FILHO; // PAI ← FILHO
 
-// PAI.EXECUTA()
-PAI.EXECUTA();
+ptrPAI?.EXECUTA();
 
-// PAI <- ""
-PAI = new CLS_PAI();
+ptrPAI = PAI; // PAI ← ""
 
-// PAI.EXECUTA()
 PAI.EXECUTA();
