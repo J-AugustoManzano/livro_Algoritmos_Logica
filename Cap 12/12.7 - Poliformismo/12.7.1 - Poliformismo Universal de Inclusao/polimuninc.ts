@@ -30,16 +30,16 @@ class CLS_FILHO extends CLS_PAI
 
 const PAI = new CLS_PAI();
 const FILHO = new CLS_FILHO();
-let ptrPAI: CLS_PAI | null;
+let PIVO: CLS_PAI | null;
 
 PAI.EXECUTA();
 
 FILHO.EXECUTA();
 
-ptrPAI = FILHO; // PAI ← FILHO
+PIVO = FILHO; // PAI ← FILHO
 
-ptrPAI?.EXECUTA();
+PIVO?.EXECUTA();
 
-ptrPAI = PAI; // PAI ← ""
+PIVO = PAI; // PAI ← ""
 
 PAI.EXECUTA();

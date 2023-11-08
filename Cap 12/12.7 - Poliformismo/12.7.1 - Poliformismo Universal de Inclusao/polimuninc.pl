@@ -44,16 +44,16 @@ sub EXECUTA
 
 my $PAI = CLS_PAI->new();
 my $FILHO = CLS_FILHO->new();
-my $ptrPAI;
+my $PIVO;
 
 $PAI->EXECUTA();
 
 $FILHO->EXECUTA();
 
-$ptrPAI = $FILHO; # PAI ← FILHO
+$PIVO = $FILHO; # PAI ← FILHO
 
-$ptrPAI->EXECUTA();
+$PIVO->EXECUTA();
 
-$ptrPAI = $PAI; # PAI ← ""
+$PIVO = $PAI; # PAI ← ""
 
 $PAI->EXECUTA();

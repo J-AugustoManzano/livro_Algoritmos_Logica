@@ -37,17 +37,17 @@ int main(void)
 {
   CLS_PAI PAI;
   CLS_FILHO FILHO;
-  CLS_PAI *ptrPAI;
+  CLS_PAI *PIVO;
 
   PAI.EXECUTA();
 
   FILHO.EXECUTA();
 
-  ptrPAI = &FILHO; // PAI ← FILHO
+  PIVO = &FILHO; // PAI ← FILHO
 
-  ptrPAI->EXECUTA();
+  PIVO->EXECUTA();
 
-  ptrPAI = &PAI; // PAI ← ""
+  PIVO = &PAI; // PAI ← ""
 
   PAI.EXECUTA();
 

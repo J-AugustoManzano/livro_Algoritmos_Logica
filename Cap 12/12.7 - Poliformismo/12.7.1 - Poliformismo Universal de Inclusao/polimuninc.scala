@@ -34,17 +34,17 @@ object Main
   {
     val PAI = new CLS_PAI()
     val FILHO = new CLS_FILHO()
-    var ptrPAI: CLS_PAI = null
+    var PIVO: CLS_PAI = null
 
     PAI.EXECUTA()
     
     FILHO.EXECUTA()
 
-    ptrPAI = FILHO // PAI ← FILHO
+    PIVO = FILHO // PAI ← FILHO
     
-    ptrPAI.EXECUTA()
+    PIVO.EXECUTA()
 
-    ptrPAI = PAI // PAI ← ""
+    PIVO = PAI // PAI ← ""
     
     PAI.EXECUTA()
   }

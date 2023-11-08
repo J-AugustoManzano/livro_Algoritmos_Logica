@@ -32,17 +32,17 @@ fun main()
 {
   val PAI = CLS_PAI()
   val FILHO = CLS_FILHO()
-  var ptrPAI: CLS_PAI
+  var PIVO: CLS_PAI
 
   PAI.EXECUTA()
   
   FILHO.EXECUTA()
 
-  ptrPAI = FILHO // PAI ← FILHO
+  PIVO = FILHO // PAI ← FILHO
   
-  ptrPAI.EXECUTA()
+  PIVO.EXECUTA()
 
-  // ptrPAI = PAI // PAI ← "" - nao necessario
+  // PIVO = PAI // PAI ← "" - nao necessario
   
   PAI.EXECUTA()
 }
