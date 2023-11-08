@@ -7,9 +7,9 @@
  * Editora ...: Erica
  *
  * Capitulo ..: 12 - Topico 12.7
- * 
+ *
  * Programa ..: POLIFORMISMO UNIVERSAL DE INCLUSAO
- * 
+ *
  */
 
 #include <iostream>
@@ -18,8 +18,8 @@ using namespace std;
 class CLS_PAI
 {
   public:
-    virtual void EXECUTA()
-    {
+    virtual void EXECUTA() 
+	{
       cout << "Acao executada na classe-pai" << endl;
     }
 };
@@ -27,28 +27,29 @@ class CLS_PAI
 class CLS_FILHO : public CLS_PAI
 {
   public:
-    void EXECUTA() override
-    {
+    void EXECUTA() override 
+	{
       cout << "Acao executada na classe-filho" << endl;
     }
 };
 
 int main(void)
 {
-  CLS_PAI PAI, *ptr_pai = nullptr;
+  CLS_PAI PAI;
   CLS_FILHO FILHO;
+  CLS_PAI *ptrPAI;
 
   PAI.EXECUTA();
-  
+
   FILHO.EXECUTA();
 
-  // PAI <- FILHO
-  ptr_pai = &FILHO;
-  ptr_pai->EXECUTA();
+  ptrPAI = &FILHO; // PAI ← FILHO
 
-  // PAI <- ""
-  ptr_pai = &PAI;
-  ptr_pai->EXECUTA();
+  ptrPAI->EXECUTA();
+
+  ptrPAI = &PAI; // PAI ← ""
+
+  PAI.EXECUTA();
 
   return 0;
 }

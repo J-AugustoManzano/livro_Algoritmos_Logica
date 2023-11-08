@@ -7,31 +7,30 @@
  * Editora ...: Erica
  *
  * Capitulo ..: 12 - Topico 12.7
- * 
+ *
  * Programa ..: POLIFORMISMO UNIVERSAL DE INCLUSAO
-*/
+ *
+ */
 
-using System;
-
-class Program
+class CLS_PAI 
 {
-  class CLS_PAI
+  public void EXECUTA() 
   {
-    public virtual void EXECUTA()
-    {
-      Console.WriteLine("Acao executada na classe-pai");
-    }
+    System.out.println("Acao executada na classe-pai");
   }
+}
 
-  class CLS_FILHO : CLS_PAI
+class CLS_FILHO extends CLS_PAI
+{
+  @Override public void EXECUTA() 
   {
-    public override void EXECUTA()
-    {
-      Console.WriteLine("Acao executada na classe-filho");
-    }
+    System.out.println("Acao executada na classe-filho");
   }
+}
 
-  static void Main()
+public class Main 
+{
+  public static void main(String[] args)
   {
     CLS_PAI PAI = new CLS_PAI();
     CLS_FILHO FILHO = new CLS_FILHO();

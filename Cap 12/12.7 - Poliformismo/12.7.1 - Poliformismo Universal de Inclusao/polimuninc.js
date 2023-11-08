@@ -24,25 +24,18 @@ class CLS_FILHO extends CLS_PAI {
   }
 }
 
-let PAI = new CLS_PAI();
-let FILHO = new CLS_FILHO();
+const PAI = new CLS_PAI();
+const FILHO = new CLS_FILHO();
+let ptrPAI;
 
-// PAI.EXECUTA()
 PAI.EXECUTA();
 
-// FILHO.EXECUTA()
 FILHO.EXECUTA();
 
-// PAI <- FILHO
-PAI = FILHO;
+ptrPAI = FILHO; // PAI ← FILHO
 
-// PAI.EXECUTA()
+ptrPAI.EXECUTA();
+
+ptrPAI = PAI; // PAI ← ""
+
 PAI.EXECUTA();
-
-// PAI <- ""
-PAI = new CLS_PAI();
-
-// PAI.EXECUTA()
-PAI.EXECUTA();
-
-// Limpeza de memoria nao necesaria

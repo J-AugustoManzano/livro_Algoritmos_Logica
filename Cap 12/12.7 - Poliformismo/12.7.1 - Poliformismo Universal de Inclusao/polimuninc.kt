@@ -12,41 +12,37 @@
  * 
  */
 
-open class CLS_PAI {
-    open fun EXECUTA() {
-        println("Acao executada na classe-pai")
-    }
+open class CLS_PAI 
+{
+  open fun EXECUTA() 
+  {
+    println("Acao executada na classe-pai")
+  }
 }
 
-class CLS_FILHO : CLS_PAI() {
-    override fun EXECUTA() {
-        println("Acao executada na classe-filho")
-    }
+class CLS_FILHO : CLS_PAI() 
+{
+  override fun EXECUTA() 
+  {
+    println("Acao executada na classe-filho")
+  }
 }
 
-fun main() {
+fun main() 
+{
+  val PAI = CLS_PAI()
+  val FILHO = CLS_FILHO()
+  var ptrPAI: CLS_PAI
+
+  PAI.EXECUTA()
   
-    var PAI: CLS_PAI = CLS_PAI()
-    var FILHO: CLS_PAI = CLS_FILHO()
+  FILHO.EXECUTA()
 
-    // PAI.EXECUTA()
-    PAI.EXECUTA()
+  ptrPAI = FILHO // PAI ← FILHO
+  
+  ptrPAI.EXECUTA()
 
-    // FILHO.EXECUTA()
-    FILHO.EXECUTA()
-
-    // PAI <- FILHO
-    PAI = FILHO
-
-    // PAI.EXECUTA()
-    PAI.EXECUTA()
-
-    // PAI <- ""
-    PAI = CLS_PAI()
-
-    // PAI.EXECUTA()
-    PAI.EXECUTA()
-    
-    // Limpeza de memoria nao necesaria
-    
+  // ptrPAI = PAI // PAI ← "" - nao necessario
+  
+  PAI.EXECUTA()
 }
