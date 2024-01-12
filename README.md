@@ -8,6 +8,8 @@
 > 
 > **Aurores: José Augusto N. G Manzano e Jayr figueiredo de Oliveira.**
 
+![Livro Algorimos](/imagens/blob/main/CapaAlgorimosLogica.png)
+
 O livro é organizado com a apresentação conceitual de certos elementos da programação computacional a partir de exemplos introdutórios, demonstrações de programas direcionados aos elementos introdutórios apresentados, uso de exercícios de aprendizagem para aprofundamento do tema e aplicação de exercícios de fixação. De modo geral o livro, em cada capítulo, é fundamentado na estrutura operacional:
 
 - Introdução a certo conceito de programação;
