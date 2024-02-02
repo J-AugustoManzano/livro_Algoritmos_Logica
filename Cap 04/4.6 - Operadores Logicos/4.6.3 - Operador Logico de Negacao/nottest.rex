@@ -7,7 +7,7 @@
 /*                                                            */
 /* Capitulo ..: 4 - Topico 4.6.3                              */
 /*                                                            */
-/* Programa ..: OPERACAO DE NEGACAO ".NAO. / \"     */
+/* Programa ..: OPERACAO DE NEGACAO ".NAO. / \"               */
 
 say "TESTE LOGICO OPERADOR: \ (.NAO.)"
 say
