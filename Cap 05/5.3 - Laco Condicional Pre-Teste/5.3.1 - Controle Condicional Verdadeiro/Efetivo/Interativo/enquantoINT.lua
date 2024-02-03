@@ -14,6 +14,7 @@
 print('LACO PRE-TESTE COM FLUXO VERDADEIRO')
 print('Multiplicacao de numero por 3 por N vezes')
 print()
+
 RESP = 'S'
 while (RESP == 'S') do
   io.write('Entre valor numerico inteiro: ')

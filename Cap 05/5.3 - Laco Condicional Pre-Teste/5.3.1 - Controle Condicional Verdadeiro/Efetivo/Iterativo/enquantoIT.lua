@@ -14,6 +14,7 @@
 print("LACO PRE-TESTE COM FLUXO VERDADEIRO")
 print("Multiplicacao de numero por 3 por 5 vezes")
 print()
+
 I = 1
 while (I <= 5) do
   print("Calculo: " .. I)
