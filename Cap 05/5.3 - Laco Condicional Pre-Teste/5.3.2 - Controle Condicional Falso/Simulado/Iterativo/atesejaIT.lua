@@ -14,6 +14,7 @@
 print("LACO PRE-TESTE COM FLUXO FALSO")
 print("Multiplicacao de numero por 3 por 5 vezes")
 print()
+
 I = 1
 while (not (I > 5)) do  -- simulacao "ate_seja (I > 5) efetue"
   print("Calculo: " .. I)
