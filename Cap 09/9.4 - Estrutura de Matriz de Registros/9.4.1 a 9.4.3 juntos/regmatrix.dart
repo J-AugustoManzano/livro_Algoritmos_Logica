@@ -8,7 +8,7 @@
  *
  * Capitulo ..: 9 - Topicos 9.4.1 a 9.4.3
  * 
- * Programa ..: MANIPULACAO DE REGISTRO DE MATRIZ
+ * Programa ..: MANIPULACAO DE MATRIZ DE REGISTRO
  * 
  */
  
