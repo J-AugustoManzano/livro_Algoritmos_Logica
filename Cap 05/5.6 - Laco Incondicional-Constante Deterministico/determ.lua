@@ -14,6 +14,7 @@
 print("LACO DETERMINISTICO")
 print("Multiplicacao de numero por 3 por 5 vezes")
 print()
+
 for I = 1, 5, 1 do
   print("Calculo: " .. I)
   io.write("Entre valor numerico inteiro: ")
