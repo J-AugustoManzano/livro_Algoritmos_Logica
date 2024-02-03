@@ -14,6 +14,7 @@
 print('LACO POS-TESTE COM FLUXO VERDADEIRO')
 print('Multiplicacao de numero por 3 por N vezes')
 print()
+
 RESP = 'S'
 repeat -- simulacao "execute"
   io.write('Entre valor numerico inteiro: ')

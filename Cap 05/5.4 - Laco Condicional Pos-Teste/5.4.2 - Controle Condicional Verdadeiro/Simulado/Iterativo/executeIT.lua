@@ -14,6 +14,7 @@
 print("LACO POS-TESTE COM FLUXO VERDADEIRO")
 print("Multiplicacao de numero por 3 por 5 vezes")
 print()
+
 I = 1
 repeat -- simulacao "execute"
   print("Calculo: " .. I)
