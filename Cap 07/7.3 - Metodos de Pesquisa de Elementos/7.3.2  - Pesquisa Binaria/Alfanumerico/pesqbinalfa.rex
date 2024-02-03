@@ -13,7 +13,7 @@ say "PESQUISA BINARIA - NOME"
 say
 
 do I = 1 to 10
-  call charout, "Entre a nota " || I || "o. nome: "
+  call charout, "Entre o " || I || "o. nome: "
   parse pull NOME.I
 end
 
