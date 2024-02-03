@@ -15,7 +15,7 @@ BEGIN {
   RESP = 1;
   
   print "CALCULO DE FATORIAL";
-  print "FUNCAO SIMPLES SEM PASSAGEM DE PARAMETRO";
+  print "FUNCAO SIMPLES COM PASSAGEM DE PARAMETRO";
   print "";
   
   printf "Qual fatorial (1-20): ";
