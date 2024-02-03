@@ -7,7 +7,7 @@
 #
 # Capitulo ..: 9 - Topico 9.3.1 ate 9.3.4
 # 
-# Programa ..: MANIPULACAO DE REGISTRO DE MATRIZ
+# Programa ..: MANIPULACAO DE MATRIZ DE REGISTRO
 
 puts "REGISTRO ESCOLAR - SIMPLES (1 ALUNO)\n"
 
