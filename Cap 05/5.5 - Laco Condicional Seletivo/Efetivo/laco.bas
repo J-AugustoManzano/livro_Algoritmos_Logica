@@ -17,6 +17,7 @@ Dim I As Integer
 Print "LACO SELETIVO ITERATIVO"
 Print "Multiplicacao de numero por 3 por 5 vezes"
 Print
+
 I = 1
 Do ' equivalente a "laco"
   Print "Calculo: "; I
