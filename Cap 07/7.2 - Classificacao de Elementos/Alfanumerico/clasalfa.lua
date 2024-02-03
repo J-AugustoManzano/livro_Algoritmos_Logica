@@ -17,6 +17,7 @@ NOME = {}
 
 print("CLASSIFICACAO DE NOMES (ASCENDENTE)")
 print()
+
 for I = 1, 20, 1 do
   io.write(string.format("Entre o %2do. nome: ", I))
   NOME[I] = io.read()
