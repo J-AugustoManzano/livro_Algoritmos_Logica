@@ -14,6 +14,7 @@
 print('LACO POS-TESTE COM FLUXO FALSO')
 print('Multiplicacao de numero por 3 por N vezes')
 print()
+
 RESP = 'S'
 repeat -- como "repita"
   io.write('Entre valor numerico inteiro: ')

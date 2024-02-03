@@ -14,8 +14,9 @@
 print("LACO POS-TESTE COM FLUXO FALSO")
 print("Multiplicacao de numero por 3 por 5 vezes")
 print()
+
 I = 1
-repeat -- como "repta"
+repeat -- como "repita"
   print("Calculo: " .. I)
   io.write("Entre valor numerico inteiro: ")
   N = tonumber(io.read())
