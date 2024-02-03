@@ -9,7 +9,7 @@
 /*                                                            */
 /* Programa ..: LACO INCONDICIONAL/CONSTANTE - DETERMINISTICO */ 
 
-say "LACO DETERMINISTICOO"
+say "LACO DETERMINISTICO"
 say "Multiplicacao de numero por 3 por 5 vezes"
 say
 
