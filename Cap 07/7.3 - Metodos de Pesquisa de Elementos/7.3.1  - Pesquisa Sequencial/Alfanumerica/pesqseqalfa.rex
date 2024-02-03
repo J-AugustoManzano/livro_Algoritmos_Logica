@@ -9,7 +9,7 @@
 /*                                                            */
 /* Programa ..: PESQUISA SEQUENCIAL DE NOME                   */
 
-say "PESQUISA SEQUENCIAL DE NOMES)"
+say "PESQUISA SEQUENCIAL DE NOMES"
 say
 
 do I = 1 to 10
