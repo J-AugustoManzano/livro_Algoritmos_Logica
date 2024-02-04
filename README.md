@@ -10,7 +10,7 @@
 
 ![Livro Algorimos](https://github.com/J-AugustoManzano/imagens/blob/main/CapaAlgorimosLogica.png)
 
-O livro é organizado com a apresentação conceitual de certos elementos da programação computacional a partir de exemplos introdutórios, demonstrações de programas direcionados aos elementos introdutórios apresentados, uso de exercícios de aprendizagem para aprofundamento do tema e aplicação de exercícios de fixação. De modo geral o livro, em cada capítulo, é fundamentado na estrutura operacional:
+O livro é organizado com a apresentação conceitual de certos elementos da programação computacional a partir de exemplos introdutórios, demonstrações de programas direcionados aos elementos introdutórios apresentados, uso de exercícios de aprendizagem para aprofundamento do tema e aplicação de exercícios de fixação para ação de aprendizagem focada. De modo geral o livro, em cada capítulo, é fundamentado na estrutura operacional:
 
 - Introdução a certo conceito de programação;
 - Exercícios de conhecimento com demonstração do conceito apresentado;
@@ -71,7 +71,7 @@ São disponibilizados algoritmos de demonstração do livro texto indicado acima
 - Pike (1994, extensão ".pike") - Universidade de Linköping (Fredrik Hübinette, Per-Åke Minborg e outros)
 - Python (1991, extensão ".py") - Guido van Rossum
 - Raku (2019, extensão ".raku") - Larry Wall |antes linguagem Perl6|
-- Rexx (1979, extensão ".rex ou .rexx") - IBM (Mike Cowlishaw) - EM DESENVOLVIMENTO
+- Rexx (1979, extensão ".rex ou .rexx") - IBM (Mike Cowlishaw) (#)
 - Ruby (1995, extensão ".rb") - Yukihiro Matsumoto
 - Rust (2015, extensão ".rust") - Graydon Hoare
 - Scala (2204, extensão ".scala") - Martin Odersky
@@ -80,6 +80,6 @@ São disponibilizados algoritmos de demonstração do livro texto indicado acima
 - TypeScript (2012, extensão ".ts") - Microsoft Corporation (Steve Lucco, líder)
 - Visual Basic .Net (2002, extensão ".vb") - Microsoft Corporation (Anders Hejlsberg, líder)
 
-> (#) - Indica linguagens usadas que não são POO (AWK, C, Fortran-95, Go, Tcl) ou que não dão suporte adeaquado a POO (BASIC, D, Julia, Lua, Pascal |Free Pascal|).
+> (#) - Indica linguagens usadas que não são POO (AWK, C, Fortran-95, Go, Tcl) ou que não dão suporte adeaquado a POO (BASIC, D, Julia, Lua, Pascal |Free Pascal|, Classic Rexx).
 
 Com o tempo outras linguagens poderão ser acrescidas.
