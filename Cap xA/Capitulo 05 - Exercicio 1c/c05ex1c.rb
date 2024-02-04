@@ -6,6 +6,8 @@
 # Editora ...: Erica
 # 
 # Capitulo ..: Apendice A - CORRECAO DE ALGUNS EXERCICIOS DE FIXACAO
+# 
+# Programa ..: RESULTADO DO SOMATORIO DE 1 ATE 100
 
 soma = 0
 
