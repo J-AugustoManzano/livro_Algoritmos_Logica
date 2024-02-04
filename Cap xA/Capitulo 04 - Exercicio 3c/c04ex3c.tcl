@@ -7,7 +7,7 @@
 #
 # Capitulo ..: Apendice A - CORRECAO DE ALGUNS EXERCICIOS DE FIXACAO
 #
-# Programa ..: CÁLCULO DE MEDIA ESCOLAR
+# Programa ..: CALCULO DE MEDIA ESCOLAR
 
 puts "MEDIA ESCOLAR - CALCULO\n"
 
