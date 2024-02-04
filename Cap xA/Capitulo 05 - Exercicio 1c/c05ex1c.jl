@@ -8,7 +8,7 @@
  *
  * Capitulo ..: Apendice A - CORRECAO DE ALGUNS EXERCICIOS DE FIXACAO
  * 
- * Programa ..: RESULTADO DO SOMATÓRIO DE ATE 100
+ * Programa ..: RESULTADO DO SOMATORIO DE ATE 100
 =#
 
 SOMA, CONTADOR = Ref{Int}(0), Ref{Int}(0)
