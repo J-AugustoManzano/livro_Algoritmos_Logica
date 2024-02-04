@@ -8,7 +8,7 @@
  *
  * Capitulo ..: Apendice A - CORRECAO DE ALGUNS EXERCICIOS DE FIXACAO
  *
- * Programa ..: RESULTADO DO SOMATÓRIO DE ATE 100
+ * Programa ..: RESULTADO DO SOMATORIO DE 1 ATE 100
  */
 
 fn main() {
