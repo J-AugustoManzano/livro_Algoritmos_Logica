@@ -10,7 +10,7 @@
 
 ![Livro Algorimos](https://github.com/J-AugustoManzano/imagens/blob/main/CapaAlgorimosLogica.png)
 
-O livro é organizado com a apresentação conceitual de elementos básicos de programação computacional, em estilo imperativo, a partir de exemplos introdutórios, demonstrações de programas direcionados aos elementos introdutórios apresentados, uso de exercícios de aprendizagem para aprofundamento e aplicação de exercícios de fixação para ação de aprendizagem focada. De modo geral o livro, em cada capítulo, é fundamentado na estrutura operacional:
+O livro é organizado com a apresentação conceitual de elementos básicos de programação computacional, em estilo imperativo, a partir de exemplos introdutórios, demonstrações de programas direcionados aos elementos introdutórios apresentados, uso de exercícios de aprendizagem para aprofundamento conceitual e aplicação de exercícios de fixação para aprofundamento prático. De modo geral o livro, em cada capítulo, é fundamentado na estrutura operacional:
 
 - Introdução a certo conceito de programação;
 - Exercícios de conhecimento com demonstração do conceito apresentado;
