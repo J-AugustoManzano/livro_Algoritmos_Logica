@@ -48,7 +48,7 @@ O melhor uso de uma linguagem se consegue se ela estiver devidamente instalada e
 
 Os programas apresentados neste repositório seguem, de forma didática, a estrutura de escrita dos algoritmos do livro texto. Assim sendo, há nos códigos das diversas linguagens disponibilizadas a ocorrência de pequenos detalhes que buscam manter a maior proximidade possível da escrita destes com os algoritmos. No uso prático de linguagens de programação podem certos elementos serem suprimidos ou trabalhados de forma diferente da maneira que aqui é apresentado. Este material é direcionado a iniciantes em programação de computadores, não há profissionais
 
-São disponibilizados algoritmos de demonstração do livro texto indicado acima em 308 linguagens de programação, sendo apontados os nomes das linguagens, anos de lançamento, extensões de gravação dos programas-fonte, autores ou líderes de projetos:
+São disponibilizados algoritmos de demonstração do livro texto indicado acima em 30 linguagens de programação, sendo apontados os nomes das linguagens, anos de lançamento, extensões de gravação dos programas-fonte, autores ou líderes de projetos:
 
 - AWK (1977, extensão ".awk") - Alfred Aho, Peter Weinberger, Brian Kernighan (#)
 - BASIC | FreeBASIC (2004, extensão ".bas") - Richard Russell (líder) (#)
