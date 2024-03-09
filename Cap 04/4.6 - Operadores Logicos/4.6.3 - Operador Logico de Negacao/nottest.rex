@@ -27,3 +27,6 @@ else
   C = A - B
   
 say "O valor de C = " C
+
+exit
+
