@@ -26,3 +26,5 @@ else
   R = X - 7
 
 say "Resultado da adicao quando maior ou igual a dez = " format(R, ,2)
+
+exit
