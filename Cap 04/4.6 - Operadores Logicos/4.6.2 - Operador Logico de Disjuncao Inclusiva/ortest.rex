@@ -19,3 +19,5 @@ if (TRANSP = "M") | (TRANSP = "S") then
   say "Transporte valido"
 else
   say "Transporte invalido"
+
+exit
