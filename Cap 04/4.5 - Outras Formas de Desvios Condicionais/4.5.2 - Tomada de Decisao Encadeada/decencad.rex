@@ -24,3 +24,5 @@ else
     NS = SA * 1.05
  
 say "Novo salario:  " format(NS, ,2)
+
+exit
