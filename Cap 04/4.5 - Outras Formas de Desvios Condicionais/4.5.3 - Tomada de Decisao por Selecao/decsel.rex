@@ -56,3 +56,6 @@ select
     say "Valor invalido"
   end
 end
+
+exit
+
