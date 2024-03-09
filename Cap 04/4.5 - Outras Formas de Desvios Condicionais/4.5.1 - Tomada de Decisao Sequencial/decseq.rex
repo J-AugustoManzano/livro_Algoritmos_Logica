@@ -26,3 +26,5 @@ if (N < 1) then
 
 if (N > 2) then
   say "voce entrou valor muito alto"
+
+exit
