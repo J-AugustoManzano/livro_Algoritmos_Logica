@@ -23,3 +23,5 @@ X = A + B
 
 if (X > 10) then
   say "Resultado da adicao quando maior que dez = " format(X, ,2)
+
+exit
