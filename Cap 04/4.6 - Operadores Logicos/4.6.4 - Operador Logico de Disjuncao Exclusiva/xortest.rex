@@ -32,3 +32,5 @@ else do
   else
     say "Desclassificado da competicao."
 end
+
+exit
