@@ -22,3 +22,5 @@ if (R4 = 0) & (R5 = 0) then
   say N
 else
   say "Valor nao e divisivel por 4 e 5"
+
+exit
