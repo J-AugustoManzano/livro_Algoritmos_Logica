@@ -22,5 +22,7 @@ X = A + B
 
 say "Resultado da adicao = " X
 
+exit
+
 
 
