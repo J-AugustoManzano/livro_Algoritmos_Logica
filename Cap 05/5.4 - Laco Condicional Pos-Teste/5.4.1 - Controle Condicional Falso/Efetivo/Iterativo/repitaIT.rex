@@ -15,7 +15,7 @@ say "Multiplicacao de numero por 3 por 5 vezes"
 say
 
 I = 1
-do until (I > 5)
+do until (0)
   say "Calculo: " I
   call charout, "Entre valor numerico inteiro: "
   parse pull N
@@ -23,4 +23,5 @@ do until (I > 5)
   say "O numero informado X 3 = " R
   say
   I = I + 1
+  if (I > 5) then leave
 end
