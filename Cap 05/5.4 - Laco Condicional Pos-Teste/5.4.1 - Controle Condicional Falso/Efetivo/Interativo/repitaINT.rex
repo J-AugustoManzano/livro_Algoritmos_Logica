@@ -15,7 +15,7 @@ say "Multiplicacao de numero por 3 por N vezes"
 say
 
 RESP = "S"
-do until (RESP \= "S")
+do until (0)
   call charout, "Entre valor numerico inteiro: "
   parse pull N
   R = N * 3
@@ -23,5 +23,6 @@ do until (RESP \= "S")
   say
   call charout, "Deseja continuar? (S/N): "
   parse upper pull RESP
+  if (upper(Resp) \= "S") then leave
   say
 end
