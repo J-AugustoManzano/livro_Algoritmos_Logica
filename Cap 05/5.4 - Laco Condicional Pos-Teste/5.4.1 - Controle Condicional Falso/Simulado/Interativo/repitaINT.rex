@@ -23,6 +23,6 @@ do until (0) -- simulacao "repita"
   say
   call charout, "Deseja continuar? (S/N): "
   parse upper pull RESP
-  if (upper(Resp) \= "S") then leave
+  if (upper(Resp) \= "S") then leave -- simulacao "ate_que (RESP <> "S")"
   say
 end
