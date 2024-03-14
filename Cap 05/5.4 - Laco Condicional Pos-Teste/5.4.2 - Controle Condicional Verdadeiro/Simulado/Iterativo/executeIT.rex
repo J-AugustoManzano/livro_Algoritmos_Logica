@@ -15,7 +15,7 @@ say "Multiplicacao de numero por 3 por 5 vezes"
 say
 
 I = 1
-do while (1) -- como "execute"
+do while (1) -- simulacao "execute"
   say "Calculo: " I
   call charout, "Entre valor numerico inteiro: "
   parse pull N
@@ -23,5 +23,5 @@ do while (1) -- como "execute"
   say "O numero informado X 3 = " R
   say
   I = I + 1
-  if \ (I <= 5) then leave -- como "enquanto_for (I <= 5)"
+  if \ (I <= 5) then leave -- simulacao "enquanto_for (I <= 5)"
 end
