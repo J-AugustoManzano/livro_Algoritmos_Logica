@@ -15,7 +15,7 @@ say "Multiplicacao de numero por 3 por N vezes"
 say
 
 RESP = "S"
-do until (0) -- simulacao "repita"
+loop -- simulacao "repita"
   call charout, "Entre valor numerico inteiro: "
   parse pull N
   R = N * 3
