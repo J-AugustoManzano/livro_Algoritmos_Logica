@@ -24,5 +24,5 @@ do until (0) -- simulcao "repita"
   say "O numero informado X 3 = " R
   say
   I = I + 1
-  if (I > 5) then leave
+  if (I > 5) then leave -- simulacao "ate_que (I > 5)"
 end
