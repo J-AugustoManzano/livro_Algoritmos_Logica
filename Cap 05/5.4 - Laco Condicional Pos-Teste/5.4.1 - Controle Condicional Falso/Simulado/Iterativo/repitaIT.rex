@@ -16,7 +16,7 @@ say "Multiplicacao de numero por 3 por 5 vezes"
 say
 
 I = 1
-do until (0)
+do until (0) -- simulcao "repita"
   say "Calculo: " I
   call charout, "Entre valor numerico inteiro: "
   parse pull N
