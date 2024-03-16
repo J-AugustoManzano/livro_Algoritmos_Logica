@@ -14,7 +14,7 @@ say "PROCEDIMENTO COM PASSAGEM DE PARAMETRO POR VALOR"
 say
 
 call charout, "Qual fatorial (1-12): "
-parse pull LIMITE
+pull LIMITE
 
 call FATORIAL LIMITE
 exit 0
