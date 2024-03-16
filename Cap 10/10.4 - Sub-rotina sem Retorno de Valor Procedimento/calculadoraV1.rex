@@ -20,7 +20,7 @@ do while (OPCAO <> 5)
   say "[5] - Fim de Programa"
   say
   call charout, "Escolha uma opcao: "
-  parse pull OPCAO
+  pull OPCAO
   if (OPCAO <> 5) then 
     select
       when (OPCAO = 1) then call ROTSOMA
@@ -42,9 +42,9 @@ ROTSOMA:
   say "Rotina de Adicao"
   say
   call charout, "Entre o 1o. valor: "
-  parse pull A1
+  pull A1
   call charout, "Entre o 2o. valor: "
-  parse pull B1
+  pull B1
   say
   R1 = A1 + B1
   say "O resultado da operacao equivale a: " || format(R1, ,2)
@@ -56,9 +56,9 @@ ROTSUBTRACAO:
   say "Rotina de Subtracao"
   say
   call charout, "Entre o 1o. valor: "
-  parse pull A2
+  pull A2
   call charout, "Entre o 2o. valor: "
-  parse pull B2
+  pull B2
   say
   R2 = A2 - B2
   say "O resultado da operacao equivale a: " || format(R2, ,2)
@@ -70,9 +70,9 @@ ROTMULTIPLICACAO:
   say "Rotina de Multiplicacao"
   say
   call charout, "Entre o 1o. valor: "
-  parse pull A3
+  pull A3
   call charout, "Entre o 2o. valor: "
-  parse pull B3
+  pull B3
   say
   R3 = A3 * B3
   say "O resultado da operacao equivale a: " || format(R3, ,2)
@@ -84,9 +84,9 @@ ROTDIVISAO:
   say "Rotina de Divisao"
   say
   call charout, "Entre o 1o. valor: "
-  parse pull A4
+  pull A4
   call charout, "Entre o 2o. valor: "
-  parse pull B4
+  pull B4
   if (B4 = 0) then 
     do
       say "O resultado da operacao equivale a: ERRO"
