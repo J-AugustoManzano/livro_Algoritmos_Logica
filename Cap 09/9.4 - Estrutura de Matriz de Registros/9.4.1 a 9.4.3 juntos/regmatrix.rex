@@ -34,16 +34,16 @@ end
 
 say
 say "DADOS DOS ALUNOS"
-say "Aluno Nome                           Sala Nota1 Nota2 Nota3 Nota4"
-say "----- ------------------------------ ---- ----- ----- ----- -----"
+say "Aluno Nome                           Sala Turma Nota1 Nota2 Nota3 Nota4"
+say "----- ------------------------------ ---- ----- ----- ----- ----- -----"
 
 do I = 1 to 8
   call charout, right(I, 5) || " "
   call charout, left(ALUNO.I.NOME, 30) || " "
   call charout, right(ALUNO.I.SALA, 4) || " "
+  call charout, right(upper(ALUNO.I.TURMA), 5) || " "
   do J = 1 to 4
-    call charout, right(format(ALUNO.I.NOTAS.J, ,1), 5) || " "
+    call charout, right(format(ALUNO.I.NOTAS.J, ,2), 5) || " "
   end
   say
 end
-
