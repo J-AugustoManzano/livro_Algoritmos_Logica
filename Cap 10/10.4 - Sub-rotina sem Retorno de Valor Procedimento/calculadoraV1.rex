@@ -37,7 +37,7 @@ do while (OPCAO <> 5)
 end
 exit 0
 
-ROTSOMA: procedure
+ROTSOMA:
   say
   say "Rotina de Adicao"
   say
@@ -51,7 +51,7 @@ ROTSOMA: procedure
   say
 return
 
-ROTSUBTRACAO: procedure
+ROTSUBTRACAO:
   say
   say "Rotina de Subtracao"
   say
@@ -65,7 +65,7 @@ ROTSUBTRACAO: procedure
   say
 return
 
-ROTMULTIPLICACAO: procedure
+ROTMULTIPLICACAO:
   say
   say "Rotina de Multiplicacao"
   say
@@ -79,7 +79,7 @@ ROTMULTIPLICACAO: procedure
   say
 return
 
-ROTDIVISAO: procedure
+ROTDIVISAO:
   say
   say "Rotina de Divisao"
   say
