@@ -20,7 +20,7 @@ call FATORIAL LIMITE
 exit 0
 
 FATORIAL: procedure
-  parse arg N
+  arg N
   FAT = 1
   do I = 1 to N
     FAT = FAT * I
