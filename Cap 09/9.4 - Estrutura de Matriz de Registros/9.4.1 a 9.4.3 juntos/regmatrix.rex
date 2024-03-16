@@ -42,7 +42,7 @@ do I = 1 to 8
   call charout, left(ALUNO.I.NOME, 30) || " "
   call charout, right(ALUNO.I.SALA, 4) || " "
   do J = 1 to 4
-    call charout, right(format(ALUNO.I.SALA, ,1), 5) || " "
+    call charout, right(format(ALUNO.I.NOTAS.J, ,1), 5) || " "
   end
   say
 end
