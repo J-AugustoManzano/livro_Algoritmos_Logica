@@ -36,7 +36,7 @@ end
 RESP = "SIM"
 do while RESP = "SIM"
   say
-  call charout, "Entre o nome a ser pesquisado: "
+  call charout, "Entre o numero a ser pesquisado: "
   parse pull PESQ
   COMECO = 1
   FINAL = 10
