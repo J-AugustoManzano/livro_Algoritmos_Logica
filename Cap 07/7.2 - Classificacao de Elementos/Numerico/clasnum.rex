@@ -13,7 +13,7 @@ say "CLASSIFICACAO DE NUMEROS (CRESCENTE)"
 say
 
 do I = 1 to 5
-  call charout, "Entre a nota " || I || "o. nome: "
+  call charout, "Entre o " || I || "o. numero: "
   parse pull NUMEROS.I
 end
 
