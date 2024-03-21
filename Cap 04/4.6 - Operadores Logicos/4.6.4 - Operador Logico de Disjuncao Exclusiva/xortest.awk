@@ -27,7 +27,7 @@ BEGIN {
   printf "Prova 2: "
   getline P2 < "-"
   
-  if ((P1 == 1 && P2 != 1) || (P1 != 1 && P2 == 1)) {
+  if ((P1 == 1 && !(P2 == 1)) || (!(P1 == 1) && P2 == 1)) {
     printf "Atleta participa da terceira prova.\n"
   } else {
     printf "Atleta nao participa da terceira prova.\n"
@@ -37,5 +37,5 @@ BEGIN {
       printf "Desclassificado da competicao.\n"
     }
   }
-  
+
 }
