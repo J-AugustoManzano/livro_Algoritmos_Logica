@@ -77,7 +77,7 @@ São disponibilizados algoritmos de demonstração do livro em 29 linguagens de 
 - Scala (2204, extensão ".scala") - Martin Odersky
 - Swift (2014, extensão ".swift") - Apple Inc. (Chris Lattner, líder)
 - Tcl (1988, extensão ".tcl") - John Ousterhout (#)
-- TypeScript (2012, extensão ".ts") - Microsoft Corporation (Steve Lucco, líder)
+- TypeScript (2012, extensão ".ts") - Microsoft Corporation (Anders Hejlsberg, líder)
 - Visual Basic .Net (2002, extensão ".vb") - Microsoft Corporation (Anders Hejlsberg, líder)
 
 > (#) - Indica linguagens usadas que não são POO (AWK, C, Fortran-95, Go, Tcl) ou que não dão suporte adeaquado a POO (BASIC, D, Julia, Lua, Pascal |Free Pascal|, Classic Rexx).
