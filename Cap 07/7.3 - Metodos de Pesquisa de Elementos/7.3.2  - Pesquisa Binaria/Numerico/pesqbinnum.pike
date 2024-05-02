@@ -47,13 +47,19 @@ int main() {
         RESP = "";
         write("\nEntre numero a ser pesquisado: ");
         PESQ = (int)Stdio.stdin->gets();
-        I = 0;
+        COMECO = 0;
+        FINAL = 9;
         ACHA = false;
-        while (I <= 4 && ACHA == false) {
-            if (PESQ == NUMERO[I])
+        while (COMECO <= FINAL && ACHA == false) {
+            MEIO = (COMECO + FINAL) / 2;
+            if (NUMERO[MEIO] == PESQ) {
                 ACHA = true;
-            else
-                I = I + 1;
+                I = MEIO;
+            } else if (NUMERO[MEIO] < PESQ) {
+                COMECO = MEIO + 1;
+            } else {
+                FINAL = MEIO - 1;
+            }
         }
         if (ACHA == true) {
             write(sprintf("\n%d foi localizado na posicao %d\n", PESQ, I + 1));
