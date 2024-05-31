@@ -10,20 +10,15 @@
 ' * 
 ' * Programa ..: TROCA: COM PROCEDIMENTO
 ' *
-' * A linguagem BASIC (FreeBASIC) nao opera com variaveis globais "A" e
-' * "B" dentro do procedimento TROCA. A solucao e fazer uso de passagem
-' * de parametro por referencia, assunto tratado em outro topco.
-' * 
-' * Este programa esta propositalmente codificado de forma incorreta.
 
-Dim A As Integer
-Dim B As Integer
+Dim Shared A As Integer
+Dim Shared B As Integer
 
 Sub TROCA()
   Dim X As Integer
-  X = A ' As variaveis "A"  e "B" nao
-  A = B ' podem ser reconhecdas como
-  B = X ' variaveis globais.
+  X = A 
+  A = B 
+  B = X 
 End Sub
 
 Print "TROCA DE VALORES - V2"
