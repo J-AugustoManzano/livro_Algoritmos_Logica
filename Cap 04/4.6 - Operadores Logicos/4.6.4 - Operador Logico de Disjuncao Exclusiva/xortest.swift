@@ -32,7 +32,7 @@ if let inputP2 = readLine() {
     P2 = Int(inputP2) ?? 0
 }
 
-if (P1 == 1) != (P2 == 1) {
+if (P1 == 1 && P2 != 1) || (P1 != 1 && P2 == 1) {
     print("Atleta participa da terceira prova.")
 } else {
     print("Atleta nao participa da terceira prova.")
