@@ -48,7 +48,7 @@ public:
   CLS_ADVOGADO(string NOME) : CLS_PESSOA(NOME) {}
 
   void PROFISSAO() override {
-    cout << "Voce possui formacao em advocacia." << endl;
+    cout << "Voce possui formacao em direito." << endl;
   }
 };
 
