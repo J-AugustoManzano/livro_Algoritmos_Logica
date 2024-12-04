@@ -33,7 +33,7 @@ class CLS_MEDICO is CLS_PESSOA {
 
 class CLS_ADVOGADO is CLS_PESSOA {
     method PROFISSAO() {
-        say "Você possui formacao em advocacia.";
+        say "Você possui formacao em direito.";
     }
 }
 
