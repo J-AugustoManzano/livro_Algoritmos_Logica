@@ -46,7 +46,7 @@ class CLS_ADVOGADO extends CLS_PESSOA {
     }
 
     public function PROFISSAO() {
-        echo "Voce possui formacao em advocacia." . "\n";
+        echo "Voce possui formacao em direito." . "\n";
     }
 }
 
