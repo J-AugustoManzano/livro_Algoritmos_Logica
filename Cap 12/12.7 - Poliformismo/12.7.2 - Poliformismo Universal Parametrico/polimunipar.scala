@@ -30,7 +30,7 @@ class CLS_MEDICO(NOME: String) extends CLS_PESSOA(NOME) {
 
 class CLS_ADVOGADO(NOME: String) extends CLS_PESSOA(NOME) {
   override def PROFISSAO(): Unit = {
-    println("Você possui formacao em advocacia.")
+    println("Você possui formacao em direito.")
   }
 }
 
