@@ -38,7 +38,7 @@ class CLS_MEDICO: CLS_PESSOA {
 
 class CLS_ADVOGADO: CLS_PESSOA {
     override func PROFISSAO() {
-        print("Você possui formacao em advocacia.")
+        print("Você possui formacao em direito.")
     }
 }
 
