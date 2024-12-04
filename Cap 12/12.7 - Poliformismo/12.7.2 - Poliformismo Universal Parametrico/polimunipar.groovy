@@ -44,7 +44,7 @@ class CLS_ADVOGADO extends CLS_PESSOA {
     }
 
     void PROFISSAO() {
-        println("Voce possui formacao em advocacia.")
+        println("Voce possui formacao em direito.")
     }
 }
 
