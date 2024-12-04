@@ -57,7 +57,7 @@ package CLS_ADVOGADO {
     }
 
     sub PROFISSAO {
-        say "Você possui formacao em advocacia.";
+        say "Você possui formacao em direito.";
     }
 }
 
