@@ -8,7 +8,7 @@
 > 
 > **Aurores: José Augusto N. G Manzano e Jayr figueiredo de Oliveira.**
 
-![Livro Algorimos](https://github.com/J-AugustoManzano/imagens/blob/main/CapaAlgorimosLogica.png)
+![Livro Algorimos](https://github.com/J-AugustoManzano/imagens/blob/main/livrosAlg.png)
 
 O livro é organizado com a apresentação conceitual de elementos básicos de programação computacional, em estilo imperativo, a partir de exemplos introdutórios, demonstrações de programas direcionados aos elementos introdutórios apresentados, uso de exercícios de aprendizagem para aprofundamento conceitual e aplicação de exercícios de fixação para aprofundamento prático. De modo geral o livro, em cada capítulo, é fundamentado na estrutura operacional:
 
