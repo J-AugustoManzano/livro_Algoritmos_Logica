@@ -30,7 +30,7 @@ class CLS_MEDICO(NOME: String) : CLS_PESSOA(NOME) {
 
 class CLS_ADVOGADO(NOME: String) : CLS_PESSOA(NOME) {
     override fun PROFISSAO() {
-        println("Você possui formação em advocacia.")
+        println("Você possui formação em direito.")
     }
 }
 
