@@ -35,7 +35,7 @@ class CLS_ADVOGADO(CLS_PESSOA):
         super().__init__(nome)
 
     def PROFISSAO(self):
-        print("Voce possui formacao em advocacia.")
+        print("Voce possui formacao em direito.")
 
 
 PROFISSIONAL = None
