@@ -47,7 +47,7 @@ Class CLS_ADVOGADO
     End Sub
 
     Public Overrides Sub PROFISSAO()
-        Console.WriteLine("Voce possui formacao em advocacia.")
+        Console.WriteLine("Voce possui formacao em direito.")
     End Sub
 End Class
 
