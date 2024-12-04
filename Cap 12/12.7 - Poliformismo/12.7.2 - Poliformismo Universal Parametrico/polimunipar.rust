@@ -77,7 +77,7 @@ impl Pessoa for Advogado {
     }
 
     fn profissao(&self) {
-        println!("Você possui formação em advocacia.");
+        println!("Você possui formação em direito.");
     }
 }
 
