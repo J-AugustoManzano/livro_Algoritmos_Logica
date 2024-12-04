@@ -45,7 +45,7 @@ class CLS_ADVOGADO extends CLS_PESSOA {
 
   @Override
   public void PROFISSAO() {
-    System.out.println("Você possui formacao em advocacia.");
+    System.out.println("Você possui formacao em direito.");
   }
 }
 
