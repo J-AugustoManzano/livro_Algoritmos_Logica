@@ -40,7 +40,7 @@ class CLS_ADVOGADO extends CLS_PESSOA {
 
   @override
   void PROFISSAO() {
-    print('Você possui formacao em advocacia.');
+    print('Você possui formacao em direito.');
   }
 }
 
