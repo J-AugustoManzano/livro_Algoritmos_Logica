@@ -43,7 +43,7 @@ class CLS_ADVOGADO : CLS_PESSOA {
   }
 
   public override void PROFISSAO() {
-    Console.WriteLine("Voce possui formacao em advocacia.");
+    Console.WriteLine("Voce possui formacao em direito.");
   }
 }
 
