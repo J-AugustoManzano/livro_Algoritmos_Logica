@@ -35,7 +35,7 @@ end
 
 class ClsAdvogado < ClsPessoa
   def profissao
-    puts "Voce possui formacao em advocacia."
+    puts "Voce possui formacao em direito."
   end
 end
 
