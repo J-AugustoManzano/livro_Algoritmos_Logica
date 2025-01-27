@@ -1,0 +1,65 @@
+// PESQUISA_BINÁRIA
+
+// Cuidado no uso de matrizes do tipo "caracter" em ILA.
+// Ocorrência de erro na operação de comparação "NOME[I] > NOME[J]"
+// Altere "caracter" para "numerico" e entre apenas valores numéricos
+// nas variáveis NOME, PESQ e X.
+
+variaveis
+  matriz caracter NOME[10]
+  numerico I, J, COMECO, FINAL, MEIO    
+  caracter PESQ, RESP, X 
+  logico ACHA
+inicio
+
+  para I = 1 ate 10 passo 1
+    ler NOME[I] 
+  proximo
+  
+  // *** início trecho de classificação ***
+  
+  para I = 1 ate 9 passo 1
+    para J = I + 1 ate 10 passo 1
+      se (NOME[I] > NOME[J]) entao
+         X = NOME[I]
+         NOME[I] = NOME[J]
+         NOME[J] = X
+      fim_se
+    proximo  
+  proximo  
+  
+  // *** fim trecho de classificação ***
+  
+  // *** início do trecho de pesquisa sequencial ***
+  
+  RESP = "SIM"
+  faca enquanto (RESP = "SIM")
+    escrever "Entre o nome a ser pesquisado: " 
+    ler PESQ
+    COMECO = 1
+    FINAL = 10
+    ACHA = falso
+    faca enquanto (COMECO <= FINAL) e (ACHA = falso)
+      MEIO = inteiro((COMECO + FINAL) / 2)
+      se (PESQ = NOME[MEIO]) entao
+        ACHA = verdadeiro
+      senao
+        se (PESQ < NOME[MEIO]) entao
+          FINAL = MEIO - 1
+        senao
+          COMECO = MEIO + 1
+        fim_se
+      fim_se
+    fim_enquanto
+    se (ACHA = verdadeiro) entao
+      escrever PESQ, " foi localizado na posicao ", MEIO
+    senao
+      escrever PESQ, " nao foi localizado"
+    fim_se
+    escrever "Deseja continuar? (SIM/NAO): " 
+    ler RESP
+  fim_enquanto
+
+  // *** fim do trecho de pesquisa binária  ***
+
+fim

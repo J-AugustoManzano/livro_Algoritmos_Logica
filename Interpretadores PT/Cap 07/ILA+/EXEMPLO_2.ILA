@@ -1,0 +1,56 @@
+// EXEMPLO_2
+// Este script precisou ser adaptado. A quantidade de elementos de "20"
+// foi diminuída para "10" para não sobrecarregar a memória e ocorrer
+// abortagem da execução do programa.
+
+variaveis
+  matriz numerico A[10]
+  matriz numerico B[10]
+  matriz numerico C[10]
+  caracter RESP
+  logico ACHA
+  numerico I, PESQ   
+inicio
+
+  // Trecho de entrada de dados da matriz A
+  
+  para I = 1 ate 10 passo 1
+    ler A[I] 
+  proximo
+  
+  // Trecho de entrada de dados da matriz B
+  
+  para I = 1 ate 10 passo 1
+    ler B[I] 
+  proximo
+  
+  // Trecho de criação da matriz C
+  
+  para I = 1 ate 10 passo 1
+    C[I] = A[I] - B[I]
+  proximo
+
+  // Trecho de pesquisa sequencial
+  
+  RESP = "SIM"
+  faca enquanto (RESP = "SIM") 
+    ler PESQ
+    I = 1
+    ACHA = falso
+    faca enquanto (I <= 10) e (ACHA = falso) 
+      se (PESQ = C[I]) entao
+        ACHA = verdadeiro
+      senao
+        I = I + 1
+      fim_se
+    fim_enquanto
+    se (ACHA = verdadeiro) entao
+      escrever PESQ, " foi localizado na posicao ", I
+    senao
+      escrever PESQ, " nao foi localizado"
+    fim_se
+    escrever "Deseja continuar? (SIM/NAO): " 
+    ler RESP
+  fim_enquanto
+
+fim

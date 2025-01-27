@@ -1,0 +1,40 @@
+// LISTA_NOME_ORDENADA
+
+// Este script com tipo de dado "caracter" apresenta erro na execucao
+// da instrução "se (NOME[I] > NOME[J]) entao". O ILA não "consegue"
+// realizar a comparação "NOME[I] > NOME[J]" dando um erro de tipo de
+// dados. Um possível ajuste é alterar o tipo de dado "caracter" por
+// "numerico" das variáveis "NOME" e "X" e fornecer valores numéricos  
+// no programa ao invés de nomes.
+
+variaveis
+  numerico I, J   
+  matriz caracter NOME[20]
+  caracter X
+inicio
+
+  // Trecho de entrada de dados
+  
+  para I = 1 ate 20 passo 1
+    ler NOME[I] 
+  proximo
+  
+  // Trecho de processamento da classificação
+  
+  para I = 1 ate 19 passo 1
+    para J = I + 1 ate 20 passo 1
+      se (NOME[I] > NOME[J]) entao
+         X = NOME[I]
+         NOME[I] = NOME[J]
+         NOME[J] = X
+      fim_se
+    proximo  
+  proximo
+  
+  // Trecho de saída com dados classificados
+  
+  para I = 1 ate 20 passo 1
+    escrever NOME[I] 
+  proximo
+
+fim

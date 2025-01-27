@@ -1,0 +1,52 @@
+algoritmo EXEMPLO_2;
+variáveis
+  A, B, C  : matriz[20] de inteiros;
+  RESP : literal;
+  ACHA : lógico;
+  I, PESQ : inteiro;
+fim-variáveis
+início
+
+  // Trecho de entrada de dados da matriz A
+
+  para I de 1 até 20 passo 1 faça
+    A[I - 1] := leia(); 
+  fim-para
+
+  // Trecho de entrada de dados da matriz B
+
+  para I de 1 até 20 passo 1 faça
+    B[I - 1] := leia(); 
+  fim-para
+
+  // Trecho de criação da matriz C
+
+  para I de 1 até 20 passo 1 faça
+    C[I - 1] := A[I - 1] - B[I - 1];
+  fim-para
+
+  // Trecho de pesquisa sequencial
+
+  RESP := "SIM";
+  enquanto (RESP = "SIM") faça
+    imprima("Entre o nome a ser pesquisado: ");
+    PESQ := leia(); 
+    I := 1;
+    ACHA := falso;
+    enquanto (I <= 20) e (ACHA = falso) faça
+      se (PESQ = C[I - 1]) então
+        ACHA := verdadeiro;
+      senão
+        I := I + 1;
+      fim-se
+    fim-enquanto
+    se (ACHA = verdadeiro) então
+      imprima(PESQ, " foi localizado na posicao ", I);
+    senão
+      imprima(PESQ, " nao foi localizado");
+    fim-se
+    RESP := leia();
+  fim-enquanto
+
+fim
+

@@ -1,0 +1,39 @@
+// EXEMPLO_1
+variaveis
+  numerico I, J   
+  matriz numerico A[10]
+  matriz numerico B[10]
+  numerico X
+inicio
+
+  // Trecho de entrada de dados
+  
+  para I = 1 ate 10 passo 1
+    ler A[I] 
+  proximo
+  
+  // Trecho de criação da matriz B
+  
+  para I = 1 ate 10 passo 1
+    B[I] = A[I] / 5
+  proximo
+
+  // Trecho de processamento de ordenação
+  
+  para I = 1 ate 9 passo 1
+    para J = I + 1 ate 10 passo 1
+      se (B[I] < B[J]) entao
+         X = B[I]
+         B[I] = B[J]
+         B[J] = X
+      fim_se
+    proximo  
+  proximo  
+
+  // Trecho de saída com dados ordenados
+  
+  para I = 1 ate 10 passo 1
+    escrever B[I] 
+  proximo
+
+fim

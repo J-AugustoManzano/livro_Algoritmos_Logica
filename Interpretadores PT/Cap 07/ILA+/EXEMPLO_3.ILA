@@ -1,0 +1,81 @@
+// EXEMPLO_3
+// Este script precisou ser adaptado. A quantidade de elementos das
+// matrizes foram alterados para:
+// - A[1..15] => A[5]
+// - B[1..35] => B[10]
+// - C[1..50] => C[15]
+
+variaveis
+  matriz numerico A[5]
+  matriz numerico B[10]
+  matriz numerico C[15]
+  caracter RESP
+  logico ACHA
+  numerico I, J, PESQ, COMECO, FINAL, MEIO, X    
+inicio
+
+  // Trecho de entrada de dados da matriz A
+  
+  para I = 1 ate 5 passo 1
+    ler A[I] 
+  proximo
+  
+  // Trecho de entrada de dados da matriz B
+  
+  para I = 1 ate 10 passo 1
+    ler B[I] 
+  proximo
+  
+  // Trecho de criação da matriz C
+  
+  para I = 1 ate 15 passo 1
+    se (I <= 5) entao
+      C[I] = A[I]
+    senao
+      C[I] = B[I - 5]
+    fim_se
+  proximo
+
+  // Trecho de ordenação da matriz C
+
+  para I = 1 ate 14 passo 1 
+    para J = I + 1 ate 15 passo 1 
+      se (C[I] > C[J]) entao
+        X = C[I]
+        C[I] = C[J]
+        C[J] = X
+      fim_se
+    proximo
+  proximo
+
+  // Trecho de pesquisa binária
+  
+  RESP = "SIM"
+  faca enquanto (RESP = "SIM")
+    escrever "Entre o nome a ser pesquisado: " 
+    ler PESQ
+    COMECO = 1
+    FINAL = 15
+    ACHA = falso
+    faca enquanto (COMECO <= FINAL) e (ACHA = falso)
+      MEIO = inteiro((COMECO + FINAL) / 2)
+      se (PESQ = C[MEIO]) entao
+        ACHA = verdadeiro
+      senao
+        se (PESQ < C[MEIO]) entao
+          FINAL = MEIO - 1
+        senao
+          COMECO = MEIO + 1
+        fim_se
+      fim_se
+    fim_enquanto
+    se (ACHA = verdadeiro) entao
+      escrever PESQ, " foi localizado na posicao ", MEIO
+    senao
+      escrever PESQ, " nao foi localizado"
+    fim_se
+    escrever "Deseja continuar? (SIM/NAO): " 
+    ler RESP
+  fim_enquanto
+
+fim

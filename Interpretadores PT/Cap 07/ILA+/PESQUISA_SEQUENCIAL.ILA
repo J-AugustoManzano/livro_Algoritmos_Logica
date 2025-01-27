@@ -1,0 +1,39 @@
+// PESQUISA_SEQUENCIAL
+variaveis
+  matriz caracter NOME[10]
+  numerico I   
+  caracter PESQ, RESP
+  logico ACHA
+inicio
+
+  para I = 1 ate 10 passo 1
+    ler NOME[I] 
+  proximo
+  
+  // *** início do trecho de pesquisa sequencial ***
+  
+  RESP = "SIM"
+  faca enquanto (RESP = "SIM") 
+    escrever "Entre o nome a ser pesquisado: " 
+    ler PESQ
+    I = 1
+    ACHA = falso
+    faca enquanto (I <= 10) e (ACHA = falso) 
+      se (PESQ = NOME[I]) entao
+        ACHA = verdadeiro
+      senao
+        I = I + 1
+      fim_se
+    fim_enquanto
+    se (ACHA = verdadeiro) entao
+      escrever PESQ, " foi localizado na posicao ", I
+    senao
+      escrever PESQ, " nao foi localizado"
+    fim_se
+    escrever "Deseja continuar? (SIM/NAO): " 
+    ler RESP
+  fim_enquanto
+
+  // *** fim do trecho de pesquisa seqüencial ***
+
+fim

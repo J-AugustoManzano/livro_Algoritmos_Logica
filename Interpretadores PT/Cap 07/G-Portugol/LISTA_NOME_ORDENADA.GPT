@@ -1,0 +1,37 @@
+// O script não funciona adequadamente com dados do tipo "literal" em GPT.
+// Se alterado os tipos "literais" e "literal" para "inteiros" e "inteiro"
+// o programa funciona adequadamente.
+algoritmo LISTA_NOME_ORDENADA;
+variáveis
+  I, J : inteiro;
+  NOME : matriz[20] de literais;
+  X : literal;
+fim-variáveis
+início
+
+  // Trecho de entrada de dados
+
+  para I de 1 até 20 passo 1 faça
+    NOME[I - 1] := leia(); 
+  fim-para
+
+  // Trecho de processamento da classificação
+
+  para I de 1 até 19 passo 1 faça
+    para J de I + 1 até 20 passo 1 faça
+      se (NOME[I - 1] > NOME[J - 1]) então
+        X := NOME[I - 1];
+        NOME[I - 1] := NOME[J - 1];
+        NOME[J - 1] := X;
+      fim-se
+    fim-para 
+  fim-para
+
+  // Trecho de saída com dados classificados
+
+  para I de 1 até 20 passo 1 faça
+    imprima(NOME[I - 1]); 
+  fim-para
+
+fim
+
