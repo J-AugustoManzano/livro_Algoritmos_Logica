@@ -15,4 +15,6 @@ Livro: https://clubedeautores.com.br/livro/visualg
 
 >>> ATENÇÃO <<<
 
-Nem todos os exemplos do livro estão codificados em todos os interpretadores. Isso ocorre devido a ausência nessas ferramentas de certos recursos. Por isso, todas essas ferramentas alternativas devem ser usadas com muito cuidado.
+Nem todos os exemplos do livro estão codificados em todos os interpretadores. 
+Isso ocorre devido a ausência nessas ferramentas de certos recursos. 
+Por isso, todas essas ferramentas alternativas devem ser usadas com muito cuidado.
