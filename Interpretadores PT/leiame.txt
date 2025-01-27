@@ -1,0 +1,14 @@
+G-Portugol: https://sourceforge.net/projects/gpt.berlios/
+Livro: https://clubedeautores.com.br/livro/gportugol
+
+ILA+: https://www.professores.uff.br/screspo/2017/09/06/ila-interpretador-de-linguagem-algoritmica/
+Livro: https://clubedeautores.com.br/livro/ila
+
+Portugol Online: https://vinyanalista.github.io/portugol/
+Livro: https://clubedeautores.com.br/livro/portugol-online
+
+Portugol Studio: https://univali-lite.github.io/Portugol-Studio/
+Livro: https://clubedeautores.com.br/livro/portugol-studio-3
+
+VisuAlg: https://sourceforge.net/projects/visualg30/
+Livro: https://clubedeautores.com.br/livro/visualg
