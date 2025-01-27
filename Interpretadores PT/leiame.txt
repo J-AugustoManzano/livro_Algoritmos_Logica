@@ -21,3 +21,7 @@ Livro: https://clubedeautores.com.br/livro/visualg
 Nem todos os exemplos do livro estão codificados em todos os interpretadores. 
 Isso ocorre devido a ausência nessas ferramentas de certos recursos. 
 Por isso, todas essas ferramentas alternativas devem ser usadas com muito cuidado.
+
+>>> OBSERVAÇÃO <<<
+
+Os scripts dos interpretadores atendem apenas os capítulo de 3 a 10.
