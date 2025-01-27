@@ -4,6 +4,9 @@ Livro: https://clubedeautores.com.br/livro/gportugol
 ILA+: https://www.professores.uff.br/screspo/2017/09/06/ila-interpretador-de-linguagem-algoritmica/
 Livro: https://clubedeautores.com.br/livro/ila
 
+Portugol IDE: http://orion.ipt.pt/~manso/Portugol/home.html
+Livro: https://clubedeautores.com.br/livro/portugol-ide
+
 Portugol Online: https://vinyanalista.github.io/portugol/
 Livro: https://clubedeautores.com.br/livro/portugol-online
 
