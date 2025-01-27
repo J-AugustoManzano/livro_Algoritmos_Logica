@@ -1,0 +1,13 @@
+algoritmo LER_ELEMENTOS;
+variáveis
+  NOTAS : matriz[8][4] de reais;
+  I, J : inteiro;
+fim-variáveis
+início
+  para I de 1 até 8 passo 1 faça
+    para J de 1 até 4 passo 1 faça
+      NOTAS[I - 1][J - 1] := leia();
+    fim-para 
+  fim-para
+fim
+

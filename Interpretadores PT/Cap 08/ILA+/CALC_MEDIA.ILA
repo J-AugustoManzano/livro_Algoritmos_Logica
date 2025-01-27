@@ -1,0 +1,57 @@
+// CALC_MÉDIA
+// ILA apresenta problemas em "se (NOME[I] > NOME[J]) entao".
+// Sugere-se deixar a parte de ordenção (classificação) definida como 
+// comentário.
+// Tamanho da matriz ajustado de 8x4 para 3x4.
+variaveis
+  caracter X
+  numerico I, J
+  numerico Y, SOMA_NT, SOMA_MD, MEDIA_GP
+  matriz numerico NOTA[3,4]
+  matriz numerico MEDIA[3]
+  matriz caracter NOME[3]
+inicio
+
+  SOMA_MD = 0
+  para I = 1 ate 3 passo 1 
+    SOMA_NT = 0
+    escrever "Aluno ", I, " ..: "
+    ler NOME[I]
+    para J = 1 ate 4 passo 1 
+      escrever "Nota  ", J, " ...: " 
+      ler NOTA[I,J]
+      SOMA_NT = SOMA_NT + NOTA[I,J]
+    proximo 
+    MEDIA[I] = SOMA_NT / 4
+    SOMA_MD = SOMA_MD + MEDIA[I]
+  proximo 
+
+  // Rotina de ordenação e troca de elementos
+
+  para I = 1 ate 2 passo 1 
+    para J = I + 1 ate 3 passo 1 
+
+//      se (NOME[I] > NOME[J]) entao
+
+//          X = NOME[I]
+//          NOME[I] = NOME[J]
+//          NOME[J] = X
+
+//          Y = MEDIA[I]
+//          MEDIA[I] = MEDIA[J]
+//          MEDIA[J] = Y
+
+//      fim_se
+
+    proximo
+  proximo
+
+  para I = 1 ate 3 passo 1 
+    escrever "Aluno ...: ", NOME[I]
+    escrever "Media ...: ", MEDIA[I]
+  proximo
+
+  MEDIA_GP = SOMA_MD / 8
+  escrever "Media Geral : ", MEDIA_GP
+
+fim

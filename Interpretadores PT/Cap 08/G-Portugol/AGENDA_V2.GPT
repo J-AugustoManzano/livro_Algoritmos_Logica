@@ -1,0 +1,56 @@
+// GPT não opera classificação de forma adequada para dados literais.
+// Script executado precariamente.
+// Apesar dos cuidados nos ajustes do posicionamento dos índices o
+// script não apresenta os dados adequadamente classificados quando
+// operados com dados "inteiro".
+algoritmo AGENDA_V1;
+variáveis
+  DADO : matriz[10][5] de literais;
+  I, J, K : inteiro;
+  X : literal;
+fim-variáveis
+início
+
+  // Rotina de entrada
+
+  para I de 1 até 10 passo 1 faça
+    imprima("Nome .......: ");
+    DADO[I - 1][0] := leia();
+    imprima("Endereco ...: ");
+    DADO[I - 1][1] := leia(); 
+    imprima("CEP ........: ");
+    DADO[I - 1][2] := leia();
+    imprima("Bairro .....: ");
+    DADO[I - 1][3] := leia();
+    imprima("Telefone ...: ");
+    DADO[I - 1][4] := leia();
+  fim-para
+
+  // Rotina de ordenação dos elementos
+
+  para I de 1 até 9 passo 1 faça
+    para J de I + 1 até 10 passo 1 faça
+
+      se (DADO[I - 1][0] > DADO[J - 1][0]) então
+
+        para K de 1 até 5 passo 1 faça
+          X := DADO[I - 1][K - 1];
+          DADO[I - 1][K - 1] := DADO[J - 1][K - 1];
+          DADO[J - 1][K - 1] := X;
+        fim-para
+
+      fim-se
+
+    fim-para
+  fim-para
+
+  // Rotina de saída
+
+  para I de 1 até 10 passo 1 faça
+    para J de 1 até 5 passo 1 faça
+      imprima(DADO[I - 1][J - 1]); 
+    fim-para
+  fim-para
+
+fim
+

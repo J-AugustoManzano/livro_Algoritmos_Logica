@@ -1,0 +1,57 @@
+// GPT não opera classificação de forma adequada para dados literais.
+// Script executado precariamente.
+algoritmo CALC_MEDIA;
+variáveis
+  X : literal;
+  I, J : inteiro;
+  Y, SOMA_NT, SOMA_MD, MEDIA_GP : real;
+  NOTA : matriz[8][4] de reais;
+  MEDIA : matriz[8] de reais;
+  NOME : matriz[8] de literais;
+fim-variáveis
+início
+
+  SOMA_MD := 0;
+  para I de 1 até 8 passo 1 faça
+    SOMA_NT := 0;
+    imprima("Aluno ", I, " ..: ");
+    NOME[I - 1] := leia();
+    para J de 1 até 4 passo 1 faça
+      imprima("Nota  ", J, " ...: "); 
+      NOTA[I - 1][J - 1] := leia();
+      SOMA_NT := SOMA_NT + NOTA[I - 1][J - 1];
+    fim-para 
+    MEDIA[I - 1] := SOMA_NT / 4;
+    SOMA_MD := SOMA_MD + MEDIA[I - 1];
+  fim-para 
+
+  // Rotina de ordenação e troca de elementos
+
+  para I de 1 até 7 passo 1 faça
+    para J de I + 1 até 8 passo 1 faça
+
+      se (NOME[I - 1] > NOME[J - 1]) então
+
+         X := NOME[I - 1];
+         NOME[I - 1] := NOME[J - 1];
+         NOME[J - 1] := X;
+
+         Y := MEDIA[I - 1];
+         MEDIA[I - 1] := MEDIA[J - 1];
+         MEDIA[J - 1] := Y;
+
+      fim-se
+
+    fim-para
+  fim-para 
+
+  para I de 1 até 8 passo 1 faça
+    imprima("Aluno ...: ", NOME[I - 1]);
+    imprima("Media ...: ", MEDIA[I - 1]);
+  fim-para
+
+  MEDIA_GP := SOMA_MD / 8;
+  imprima("Media Geral : ", MEDIA_GP);
+
+fim
+

@@ -1,0 +1,54 @@
+// AGENDA_V2
+// ILA apresenta problemas em "se (DADO[I,1] > DADO[J,1]) entao".
+// Sugere-se deixar a parte de ordenção (classificação) definida como 
+// comentário.
+// Tamanho da matriz ajustado de 10x5 para 3x5.
+variaveis
+  matriz caracter DADO[3,5]
+  numerico I, J, K   
+inicio
+
+  // Rotina de entrada
+
+  para I = 1 ate 3 passo 1 
+    escrever "Nome .......: " 
+    ler DADO[I,1] 
+    escrever "Endereco ...: " 
+    ler DADO[I,2] 
+    escrever "CEP ........: " 
+    ler DADO[I,3] 
+    escrever "Bairro .....: " 
+    ler DADO[I,4] 
+    escrever "Telefone ...: " 
+    ler DADO[I,5] 
+  proximo
+
+  // Rotina de ordenação com laço para controlar a troca de elementos
+
+  para I = 1 ate 2 passo 1 
+    para J = I + 1 ate 3 passo 1 
+
+//      se (DADO[I,1] > DADO[J,1]) entao
+
+         // Troca do Nome
+
+        para K = 1 ate 5 passo 1
+//          X = DADO[I,K]
+//          DADO[I,K] = DADO[J,K]
+//          DADO[J,K] = X
+        proximo
+
+//      fim_se
+
+    proximo
+  proximo
+
+  // Rotina de saída
+
+  para I = 1 ate 3 passo 1 
+    para J = 1 ate 5 passo 1 
+      escrever DADO[I,J] 
+    proximo
+  proximo
+
+fim

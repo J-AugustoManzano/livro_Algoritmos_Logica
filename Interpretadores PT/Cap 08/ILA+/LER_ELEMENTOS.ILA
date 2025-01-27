@@ -1,0 +1,14 @@
+// LER_ELEMENTOS
+// Este script para ILA teve seu tamanho de dimensão alterado.
+// A matriz NOTAS de 8x4 utiliza mais memória do que o ambiente consegue 
+// gerenciar. Alterado para 3x4.
+variaveis
+  matriz numerico NOTAS[3,4]
+  numerico I, J   
+inicio
+  para I = 1 ate 3 passo 1
+    para J = 1 ate 4 passo 1
+      ler NOTAS[I,J] 
+    proximo
+  proximo
+fim
