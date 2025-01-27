@@ -1,0 +1,20 @@
+// ESCRITA_V1
+variaveis
+  matriz composta ALUNO
+    caracter NOME
+    caracter TURMA
+    numerico SALA
+    numerico NOTA1
+    numerico NOTA2
+    numerico NOTA3
+    numerico NOTA4
+  fim_composta
+inicio
+  escrever ALUNO:NOME  
+  escrever ALUNO:TURMA  
+  escrever ALUNO:SALA  
+  escrever ALUNO:NOTA1 
+  escrever ALUNO:NOTA2 
+  escrever ALUNO:NOTA3 
+  escrever ALUNO:NOTA4 
+fim

@@ -1,0 +1,22 @@
+// ESCRITA_V3
+// Em ILA não é possível definir o tipo "BIMESTRE".
+// A quantidade de elementos foi ajustada de "8" para "3" devido a 
+// capacidade de memória não suportar muitos elementos.
+variaveis
+  matriz composta ALUNO[3]
+    caracter NOME
+    caracter TURMA
+    numerico SALA
+    matriz numerico NOTAS[4]
+  fim_composta
+  numerico I, J
+inicio
+  para I = 1 ate 3 passo 1
+    escrever ALUNO[I]:NOME  
+    escrever ALUNO[I]:TURMA  
+    escrever ALUNO[I]:SALA 
+    para J = 1 ate 4 passo 1 
+      escrever ALUNO[I]:NOTAS[J] 
+    proximo
+  proximo
+fim

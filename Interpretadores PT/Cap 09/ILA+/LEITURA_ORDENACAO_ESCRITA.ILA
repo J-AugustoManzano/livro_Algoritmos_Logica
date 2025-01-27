@@ -1,0 +1,5 @@
+// LEITURA_ORDENAÇÃO_ESCRITA
+// Em ILA não é possível definir o tipo "BIMESTRE".
+// Não processa "se (ALUNO[I]:NOME > ALUNO[J]:NOME) entao".
+// Não é possível definir a estrutura de ordenação (classificação) para
+// registros.

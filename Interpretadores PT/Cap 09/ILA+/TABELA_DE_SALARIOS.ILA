@@ -1,0 +1,57 @@
+// TABELA_DE_SALÁRIOS
+// Matriz de tamanho 17 ajustado para 3
+variaveis
+  matriz composta TABELA[6]
+    numerico CODIGO
+    caracter CARGO
+    numerico SALARIO
+  fim_composta
+  numerico I, CODPESQ 
+  caracter RESP
+  logico ACHA 
+inicio
+
+  // Trecho de entrada dos dados da tabela
+
+  para I = 1 ate 3 passo 1 
+    TABELA[I]:CODIGO = I
+    escrever "Codigo ......: ", TABELA[I]:CODIGO
+    escrever "Cargo .......: " 
+    ler TABELA[I]:CARGO
+    escrever "Salario .....: " 
+    ler TABELA[I]:SALARIO
+  proximo
+
+  // Trecho de pesquisa sequencial
+
+  RESP = "S"
+  faca enquanto (RESP = "S") 
+
+    escrever "Qual codigo - 1 a 5: "
+
+    ler CODPESQ
+    I = 1
+    ACHA = falso
+    faca enquanto (I <= 3) e (ACHA = falso)
+      se (CODPESQ = TABELA[I]:CODIGO) entao
+        ACHA = verdadeiro 
+      senao
+        I = I + 1
+      fim_se
+    fim_enquanto
+    se (ACHA = verdadeiro) entao 
+      escrever "Codigo:  ", TABELA[I]:CODIGO
+      escrever "Cargo:   ", TABELA[I]:CARGO
+      escrever "Salario: ", TABELA[I]:SALARIO
+      escrever " "
+    senao
+      escrever "Cargo Inexistente"
+    fim_se
+
+    escrever "Deseja continuar pesquisa? - Responda [S]im ou [N]ao: " 
+    ler RESP
+
+  fim_enquanto
+
+fim
+

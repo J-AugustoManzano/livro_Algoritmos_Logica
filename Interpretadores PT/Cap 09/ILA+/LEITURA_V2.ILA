@@ -1,0 +1,18 @@
+// LEITURA_V2
+// Em ILA não é possível definir o tipo "BIMESTRE".
+variaveis
+  matriz composta ALUNO
+    caracter NOME
+    caracter TURMA
+    numerico SALA
+    matriz numerico NOTAS[4]
+  fim_composta
+  numerico I
+inicio
+  ler ALUNO:NOME  
+  ler ALUNO:TURMA  
+  ler ALUNO:SALA 
+  para I = 1 ate 4 passo 1 
+    ler ALUNO:NOTAS[I] 
+  proximo
+fim
