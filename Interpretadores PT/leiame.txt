@@ -12,3 +12,7 @@ Livro: https://clubedeautores.com.br/livro/portugol-studio-3
 
 VisuAlg: https://sourceforge.net/projects/visualg30/
 Livro: https://clubedeautores.com.br/livro/visualg
+
+>>> ATENÇÃO <<<
+
+Nem todos os exemplos do livro estão codificados em todos os interpretadores. Isso ocorre devido a ausência nessas ferramentas de certos recursos. Por isso, todas essas ferramentas alternativas devem ser usadas com muito cuidado.
