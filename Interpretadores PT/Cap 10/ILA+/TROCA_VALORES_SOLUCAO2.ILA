@@ -1,0 +1,21 @@
+// TROCA_VALORES_SOLUÇÃO2
+// ILA não opera com variáveis locais.
+// Solução adaptada.
+
+variaveis
+  numerico X, A, B
+
+  funcao TROCA()
+  inicio
+    X = A
+    A = B
+    B = X
+  fim
+
+inicio
+  ler A
+  ler B
+  troca()
+  escrever A
+  escrever B
+fim

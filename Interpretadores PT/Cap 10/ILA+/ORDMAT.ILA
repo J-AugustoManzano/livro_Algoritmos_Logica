@@ -1,0 +1,56 @@
+// ORDMAT
+// ILA não aceita a definição de sub-rotina dentro de sub-rotina.
+// Devido a existência de comando "FIM" a variável "FIM" passou a
+// ser "FIM_".
+// Não aceita o uso da matriz "TABELA" como passagem de parâmetro.
+// Adaptado.
+
+variaveis
+  numerico FIM_, I, A, B, X, J
+  matriz numerico TABELA[10]
+
+  funcao ENTRADA()
+  inicio
+    para I = 1 ate FIM_ passo 1 
+      ler TABELA[I]
+    proximo
+  fim
+
+  funcao TROCA(A, B)
+  inicio
+    X = A
+    A = B
+    B = X
+  fim
+
+  funcao ORDENACAO()
+  inicio
+    para I = 1 ate FIM_ - 1 passo 1
+      para J = I + 1 ate FIM_ passo 1 
+        se (TABELA[I] > TABELA[J]) entao
+          X = TABELA[I]         // ******
+          TABELA[I] = TABELA[J] // ****** Não faz TROCA(TABELA[I], TABELA[J])
+          TABELA[J] = X         // ******
+        fim_se
+      proximo
+    proximo
+  fim
+
+  funcao PROCESSAMENTO()
+  inicio
+    ORDENACAO()
+  fim
+
+  funcao SAIDA()
+  inicio
+    para I = 1 ate FIM_ passo 1 
+      escrever TABELA[I]
+    proximo
+  fim
+
+inicio
+  FIM_ = 10
+  ENTRADA()
+  PROCESSAMENTO()
+  SAIDA() 
+fim

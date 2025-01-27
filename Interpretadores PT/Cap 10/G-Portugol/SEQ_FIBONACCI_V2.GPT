@@ -1,0 +1,32 @@
+algoritmo SEQ_FIBONACCI_V2;
+
+variáveis
+  I : inteiro;
+fim-variáveis
+
+início
+  para I de 0 até 14 passo 1 faça
+    imprima(FIBONACCI(I));
+  fim-para
+fim
+
+função FIBONACCIBASE(N : inteiro, ANTERIOR : inteiro, ATUAL : inteiro) : inteiro
+início
+  se (N = 0) então
+    retorne ANTERIOR ;
+  fim-se
+  se (N = 1) então
+    retorne ATUAL ;
+  fim-se
+  se (N = 2) então
+    retorne ANTERIOR + ATUAL;
+  fim-se
+  se (N > 2) então
+    retorne FIBONACCIBASE(N - 1, ATUAL, ANTERIOR + ATUAL);
+  fim-se
+fim
+
+função FIBONACCI(N : inteiro) : inteiro
+início
+  retorne FIBONACCIBASE(N, 0, 1);
+fim

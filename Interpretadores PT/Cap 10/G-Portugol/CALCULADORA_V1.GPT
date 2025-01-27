@@ -1,0 +1,93 @@
+// GPT não opera com metodologia "BOTTOM-UP".
+// Sub-rotinas só podem ser implementadas com métodfo "top-down".
+algoritmo CALCULADORA_V1;
+
+variáveis
+  R1, A1, B1 : real;
+  R2, A2, B2 : real;
+  R3, A3, B3 : real;
+  R4, A4, B4 : real;
+  OPCAO : inteiro;
+fim-variáveis
+
+// *** Trecho da parte principal do programa ***
+
+início
+  OPCAO := 0;
+  enquanto (OPCAO <> 5) faça
+    imprima("[1] - Adicao");
+    imprima("[2] - Subtracao");
+    imprima("[3] - Multiplicacao");
+    imprima("[4] - Divisao");
+    imprima("[5] - Fim de Programa");
+    imprima("Escolha uma opcao: "); 
+    OPCAO := leia(); 
+    se (OPCAO <> 5) então
+      se (OPCAO = 1) então 
+        ROTSOMA();          
+      fim-se
+      se (OPCAO = 2) então 
+        ROTSUBTRACAO();     
+      fim-se
+      se (OPCAO = 3) então 
+        ROTMULTIPLICACAO(); 
+      fim-se
+      se (OPCAO = 4) então 
+        ROTDIVISAO();       
+      fim-se
+      se (OPCAO < 1) ou (OPCAO > 5) então
+        imprima("Opcao invalida - Tente novamente");
+      fim-se
+    fim-se
+  fim-enquanto
+fim
+
+// *** Trecho dos módulos para efetivação dos cálculos ***
+
+função ROTSOMA()
+início
+  imprima("Rotina de Adicao");  
+  imprima("Entre o 1o. valor: ");
+  A1 := leia();
+  imprima("Entre o 2o. valor: ");
+  B1 := leia();
+  R1 := A1 + B1;
+  imprima("O resultado da operacao equivale a: ", R1);
+fim
+
+função ROTSUBTRACAO()
+início
+  imprima("Rotina de Subtracao");  
+  imprima("Entre o 1o. valor: "); 
+  A2 := leia();
+  imprima("Entre o 2o. valor: "); 
+  B2 := leia();
+  R2 := A2 - B2;
+  imprima("O resultado da operacao equivale a: ", R2);
+fim
+
+função ROTMULTIPLICACAO()
+início
+  imprima("Rotina de Multiplicacao");  
+  imprima("Entre o 1o. valor: "); 
+  A3 := leia();
+  imprima("Entre o 2o. valor: "); 
+  B3 := leia();
+  R3 := A3 * B3;
+  imprima("O resultado da operacao equivale a: ", R3);
+fim
+
+função ROTDIVISAO()
+início
+  imprima("Rotina de Divisao");  
+  imprima("Entre o 1o. valor: "); 
+  A4 := leia();
+  imprima("Entre o 2o. valor: "); 
+  B4 := leia();
+  se (B4 = 0) então
+    imprima("O resultado da operacao equivale a: ERRO");
+  senão
+    R4 := A4 / B4;
+    imprima("O resultado da operacao equivale a: ", R4);
+  fim-se
+fim

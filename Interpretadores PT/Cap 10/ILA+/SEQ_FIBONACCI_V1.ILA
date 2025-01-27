@@ -1,0 +1,29 @@
+// SEQ_FIBONACCI_V1
+// ILA não consegue processar adequadamente este script.
+// Estouro de pilha.
+// Adaptado.
+
+variaveis
+  numerico N, I
+
+  funcao FIBONACCI(N)
+  inicio
+    se (N = 0) entao
+      retornar 0
+    fim_se
+    se (N = 1) entao
+      retornar 1
+    fim_se
+    se (N = 2) entao
+      retornar 1
+    fim_se
+    se (N > 2) entao
+      retornar FIBONACCI(N - 1) + FIBONACCI(N - 2)
+    fim_se
+  fim
+
+inicio
+  para I = 1 ate 3 passo 1  
+    escrever FIBONACCI(I)
+  proximo
+fim

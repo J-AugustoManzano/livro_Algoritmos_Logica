@@ -1,0 +1,114 @@
+// VETOR_PILHA
+// Variável "MATRIZ" ajudtada para "MATRIZZ" devido o fato de "MATRIZ" ser
+// um comando da linguagem ILA.
+// Adaptado.
+
+variaveis
+  numerico LIMITE, TOPO, ELEMENTO, X, I, OPCAO
+  matriz numerico MATRIZZ[10]
+
+  funcao VAZIA()
+  inicio
+    se (TOPO = 0) entao
+      retornar verdadeiro
+    senao
+      retornar falso
+    fim_se
+  fim
+
+  funcao CHEIA()
+  inicio
+    se (TOPO = LIMITE) entao
+      retornar verdadeiro
+    senao
+      retornar falso
+    fim_se
+  fim
+
+  funcao ADICIONAR(ELEMENTO)
+  inicio
+    se (CHEIA()) entao
+      retornar falso
+    senao
+      TOPO = TOPO + 1
+      MATRIZZ[TOPO] = ELEMENTO
+      retornar verdadeiro
+    fim_se
+  fim
+
+  funcao RETIRAR(ELEMENTO)
+  inicio
+    se (VAZIA()) entao
+      retornar falso
+    senao
+      ELEMENTO = MATRIZZ[TOPO]
+      MATRIZZ[TOPO] = 0
+      TOPO = TOPO - 1
+      retornar verdadeiro
+    fim_se
+  fim
+
+  funcao EMPILHAR()
+  inicio
+    ler X
+    se (ADICIONAR(X)) entao
+      escrever "O elemento ", X, " foi inserido na posicao ", TOPO, "."
+    senao
+      escrever "Impossivel adicionar o elemento ", X, " – pilha cheia."
+    fim_se
+  fim
+
+  funcao DESEMPILHAR()
+  inicio
+    se (RETIRAR(X)) entao
+      escrever "O elemento ", X, " foi retirado do topo da pilha."
+    senao
+      escrever "Impossivel retirar elementos – pilha vazia."
+    fim_se
+  fim
+
+  funcao MOSTRAR()
+  inicio
+    se nao (VAZIA()) entao
+      para I = TOPO ate 1 passo -1
+        escrever "Posicao: ", I, " = ", MATRIZZ[I]
+      proximo
+    senao
+      escrever "Impossivel apresentar – pilha vazia."
+    fim_se
+  fim
+
+  funcao CRIAR()
+  inicio
+    TOPO = 0
+    para I = 1 ate LIMITE passo 1
+      MATRIZZ[I] = 0
+    proximo
+  fim
+
+inicio
+  LIMITE = 10
+  CRIAR()
+  OPCAO = 0
+  faca enquanto (OPCAO <> 5)
+    escrever "[1] - Empilhar"
+    escrever "[2] - Desempilhar"
+    escrever "[3] - Apresentar"
+    escrever "[4] - Criar pilha"
+    escrever "[5] - Sair"
+    escrever "Escolha uma opcao: " 
+    ler OPCAO
+    se (OPCAO <> 5) entao
+      faca caso 
+        caso (OPCAO = 1): 
+          EMPILHAR()
+        caso (OPCAO = 2): 
+          DESEMPILHAR()
+        caso (OPCAO = 3): 
+          MOSTRAR()
+        caso (OPCAO = 4): 
+          CRIAR()
+      fim_caso
+    fim_se
+  fim_enquanto
+fim

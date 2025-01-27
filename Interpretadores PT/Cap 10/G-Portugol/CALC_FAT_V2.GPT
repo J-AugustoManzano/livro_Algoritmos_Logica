@@ -1,0 +1,25 @@
+// Por fazer uso apenas de variáveis globais GPT não
+// opera com passagem de parâmetro por referência.
+// O script teve que ser adapatado para chegar próxima
+// da execução do algoritmo proposto.
+algoritmo CALC_FAT_V2;
+
+variáveis
+  I, LIMITE, RESP : inteiro;
+fim-variáveis
+
+início
+  RESP := 1;
+  imprima("Qual fatorial: ");
+  LIMITE := leia();
+  FATORIAL(LIMITE, RESP);
+  imprima(RESP);
+fim
+
+função FATORIAL(N : inteiro, FAT : inteiro)
+início
+  para I de 1 até N passo 1 faça
+    FAT := FAT * I;
+  fim-para
+  RESP := FAT;
+fim

@@ -1,0 +1,24 @@
+// TROCA_VALORES_SOLUÇÃO3
+// ILA não aceita definição de variáveis locais
+// Programa gera erro de falat de comando "inicio" na linha 6
+// Solução adaptada.
+
+  funcao TROCA()
+  variaveis
+    numerico X
+  inicio
+    X = A
+    A = B
+    B = X
+  fim
+
+variaveis
+  numerico A, B
+
+inicio
+  ler A
+  ler B
+  troca()
+  escrever A
+  escrever B
+fim

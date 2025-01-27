@@ -1,0 +1,20 @@
+// CALC_FAT_V4
+// Adaptado.
+
+variaveis
+  numerico N, LIMITE
+
+  funcao FATORIAL(N)
+  inicio
+    se (N = 0) entao
+      retornar 1
+    senao
+      retornar N * FATORIAL(N - 1) // Não aceita a forma FATORIAL(N - 1) * N
+    fim_se
+  fim
+
+inicio
+  escrever "Qual fatorial: " 
+  ler LIMITE
+  escrever FATORIAL(LIMITE)
+fim

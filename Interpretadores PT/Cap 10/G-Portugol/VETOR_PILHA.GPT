@@ -1,0 +1,117 @@
+// Devido a algumas características operacionais de GPT o script apresentado
+// esta adaptado.
+algoritmo VETOR_PILHA;
+
+variáveis
+  LIMITE, TOPO, X, I, OPCAO : inteiro;
+  MATRIZ : matriz[10] de inteiros;
+fim-variáveis
+
+início
+  LIMITE := 10;
+  CRIAR(); // Chamada adaptada
+  OPCAO := 0;
+  enquanto (OPCAO <> 5) faça
+    imprima("[1] - Empilhar");
+    imprima("[2] - Desempilhar");
+    imprima("[3] - Apresentar");
+    imprima("[4] - Criar pilha");
+    imprima("[5] - Sair");
+    imprima("Escolha uma opcao: "); 
+    OPCAO := leia();
+    se (OPCAO <> 5) então
+      se (OPCAO = 1) então
+        EMPILHAR();
+      fim-se
+      se (OPCAO = 2) então
+        DESEMPILHAR();
+      fim-se
+      se (OPCAO = 3) então
+        MOSTRAR();
+      fim-se
+      se (OPCAO = 4) então
+        CRIAR();
+      fim-se
+    fim-se
+  fim-enquanto
+fim
+
+função VAZIA() : lógico
+início
+  se (TOPO = 0) então
+    retorne verdadeiro;
+  senão
+    retorne falso;
+  fim-se
+fim
+
+função CHEIA() : lógico
+início
+  se (TOPO = LIMITE) então
+    retorne verdadeiro;
+  senão
+    retorne falso;
+  fim-se
+fim
+
+função ADICIONAR(ELEMENTO : inteiro) : lógico
+início
+  se (CHEIA()) então
+    retorne falso;
+  senão
+    TOPO := TOPO + 1;
+    MATRIZ[TOPO - 1] := ELEMENTO;
+    retorne verdadeiro;
+  fim-se
+fim
+
+função RETIRAR(ELEMENTO : inteiro) : lógico
+início
+  se (VAZIA()) então
+    retorne falso;
+  senão
+    ELEMENTO := MATRIZ[TOPO - 1];
+    MATRIZ[TOPO - 1] := 0;
+    TOPO := TOPO - 1;
+    retorne verdadeiro;
+  fim-se
+fim
+
+função EMPILHAR()
+início
+  X := leia();
+  se (ADICIONAR(X)) então
+    imprima("O elemento ", X, " foi inserido na posicao ", TOPO, ".");
+  senão
+    imprima("Impossivel adicionar o elemento ", X, " - pilha cheia.");
+  fim-se
+fim
+
+função DESEMPILHAR()
+início
+  se (RETIRAR(X)) então
+    imprima("O elemento ", X, " foi retirado do topo da pilha.");
+  senão
+    imprima("Impossivel retirar elementos - pilha vazia.");
+  fim-se
+fim
+
+função MOSTRAR()
+início
+  se não (VAZIA()) então
+    para I de TOPO até 1 passo -1 faça
+      imprima("Posicao: ", I, " = ", MATRIZ[I - 1]);
+    fim-para
+  senão
+    imprima("Impossivel apresentar - pilha vazia.");
+  fim-se
+fim
+
+função CRIAR()
+início
+  TOPO := 0;
+  para I de 1 até LIMITE passo 1 faça
+    MATRIZ[I - 1] := 0;
+  fim-para
+fim
+

@@ -1,0 +1,89 @@
+// CALCULADORA_V1
+// ILA não opera com variáveis locais
+// Script adaptado
+
+// *** Trecho dos módulos para efetivação dos cálculos ***
+
+variaveis
+  numerico R1, A1, B1
+  numerico R2, A2, B2
+  numerico R3, A3, B3
+  numerico R4, A4, B4
+  numerico OPCAO
+
+  funcao ROTSOMA()
+  inicio
+    escrever "Rotina de Adicao"  
+    escrever "Entre o 1o. valor: " 
+    ler A1
+    escrever "Entre o 2o. valor: " 
+    ler B1
+    R1 = A1 + B1
+    escrever "O resultado da operacao equivale a: ", R1
+  fim
+
+  funcao ROTSUBTRACAO()
+  inicio
+    escrever "Rotina de Subtracao"  
+    escrever "Entre o 1o. valor: " 
+    ler A2
+    escrever "Entre o 2o. valor: " 
+    ler B2
+    R2 = A2 - B2
+    escrever "O resultado da operacao equivale a: ", R2
+  fim
+
+  funcao ROTMULTIPLICACAO()
+  inicio
+    escrever "Rotina de Multiplicacao"  
+    escrever "Entre o 1o. valor: " 
+    ler A3
+    escrever "Entre o 2o. valor: " 
+    ler B3
+    R3 = A3 * B3
+    escrever "O resultado da operacao equivale a: ", R3
+  fim
+
+  funcao ROTDIVISAO()
+  inicio
+    escrever "Rotina de Divisaoo"  
+    escrever "Entre o 1o. valor: " 
+    ler A4
+    escrever "Entre o 2o. valor: " 
+    ler B4
+    se (B4 = 0) entao
+      escrever "O resultado da operacao equivale a: ERRO"
+    senao
+      R4 = A4 / B4
+      escrever "O resultado da operacao equivale a: ", R4
+    fim_se
+  fim
+
+// *** Trecho da parte principal do programa ***
+
+inicio
+  OPCAO = 0
+  faca enquanto (OPCAO <> 5)
+    escrever "[1] - Adicao"
+    escrever "[2] - Subtracao"
+    escrever "[3] - Multiplicacao"
+    escrever "[4] - Divisao"
+    escrever "[5] - Fim de Programa"
+    escrever "Escolha uma opcao: " 
+    ler OPCAO
+    se (OPCAO <> 5) entao
+      faca caso 
+        caso (OPCAO = 1): 
+          ROTSOMA()
+        caso (OPCAO = 2):
+          ROTSUBTRACAO()
+        caso (OPCAO = 3):
+          ROTMULTIPLICACAO()
+        caso (OPCAO = 4):
+          ROTDIVISAO()
+      outro_caso: 
+        escrever "Opção inválida - Tente novamente"
+      fim_caso
+    fim_se
+  fim_enquanto
+fim

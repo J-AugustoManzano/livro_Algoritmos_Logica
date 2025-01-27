@@ -1,0 +1,14 @@
+// TROCA_VALORES_SOLUÇÃO1
+
+variaveis
+  numerico X, A, B
+
+inicio
+  ler A
+  ler B
+  X = A
+  A = B
+  B = X
+  escrever A
+  escrever B
+fim

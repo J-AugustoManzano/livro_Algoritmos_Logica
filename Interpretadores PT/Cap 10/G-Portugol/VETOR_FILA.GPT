@@ -1,0 +1,131 @@
+// Devido a algumas características operacionais de GPT o script apresentado
+// esta adaptado.
+algoritmo VETOR_PILHA;
+
+variáveis
+  FIM, INICIO, I, X, OPCAO : inteiro;
+  MATRIZ : matriz[10] de inteiros;
+fim-variáveis
+
+início
+  FIM := 10;
+  CRIAR(); // Chamada adaptada
+  OPCAO := 0;
+  enquanto (OPCAO <> 6) faça
+    imprima("[1] - Entrada");
+    imprima("[2] - Saida");
+    imprima("[3] - Apresentar 1o. da fila");
+    imprima("[4] - Apresentar a fila");
+    imprima("[5] - Nova fila");
+    imprima("[6] - Sair");
+    imprima("Escolha uma opcao: "); 
+    OPCAO := leia();
+    se (OPCAO <> 6) então
+      se (OPCAO = 1) então
+        ENTRADA();
+      fim-se
+      se (OPCAO = 2) então
+        SAIDA();
+      fim-se
+      se (OPCAO = 3) então
+        ATUAL();
+      fim-se
+      se (OPCAO = 4) então
+        EXIBICAO();
+      fim-se
+      se (OPCAO = 5) então
+        CRIAR();
+      fim-se
+    fim-se
+  fim-enquanto
+fim
+
+função VAZIA() : lógico
+início
+  se (INICIO = 0) então
+    retorne verdadeiro;
+  senão
+    retorne falso;
+  fim-se
+fim
+
+função CHEIA() : lógico
+início
+  se (INICIO = FIM) então
+    retorne verdadeiro;
+  senão
+    retorne falso;
+  fim-se
+fim
+
+função ADICIONAR(ELEMENTO : inteiro) : lógico
+início
+  se (CHEIA()) então
+    retorne falso;
+  senão
+    INICIO := INICIO + 1;
+    MATRIZ[INICIO - 1] := ELEMENTO;
+    retorne verdadeiro;
+  fim-se
+fim
+
+função RETIRAR() : lógico // Ajuste necessário por não usar referência
+início
+  se (VAZIA()) então
+    retorne falso;
+  senão
+    X := MATRIZ[0];
+    para I de 1 até INICIO - 1 passo 1 faça
+      MATRIZ[I - 1] := MATRIZ[(I - 1) + 1];
+    fim-para
+    INICIO := INICIO - 1;
+    retorne verdadeiro;
+  fim-se
+fim
+
+função CRIAR()
+início
+  INICIO := 0;
+  para I de 1 até FIM passo 1 faça
+    MATRIZ[I - 1] := 0;
+  fim-para
+fim
+
+função ENTRADA()
+início
+  X := leia();
+  se (ADICIONAR(X)) então
+    imprima("Elemento ", X, " foi inserido na posicao ", INICIO, " da fila.");
+  senão
+    imprima("Impossivel inserir o elemento ", X, " - fila lotada.");
+  fim-se
+fim
+
+função SAIDA()
+início
+  se (RETIRAR()) então
+    imprima("O elemento ", X, " foi retirado do inicio da fila."); 
+  senão
+    imprima("Impossivel retirar elementos - fila vazia.");
+  fim-se
+fim
+
+função ATUAL()
+início
+  se não (VAZIA()) então
+    imprima(MATRIZ[0], " primeiro elemento da fila neste momento.");
+  senão
+    imprima("Impossivel apresentar - fila vazia.");
+  fim-se
+fim
+
+função EXIBICAO()
+início
+  se não (VAZIA()) então
+    para I de 1 até INICIO  passo 1 faça
+      imprima("Posicao: ", I, " = ", MATRIZ[I - 1]);
+    fim-para
+  senão
+    imprima("Impossivel apresentar - fila vazia.");
+  fim-se
+fim

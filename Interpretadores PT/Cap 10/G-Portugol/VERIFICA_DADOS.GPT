@@ -1,0 +1,22 @@
+algoritmo VERIFICA_DADOS;
+
+variáveis
+  X, Y : inteiro;
+fim-variáveis
+
+início
+  imprima("Informe o 1o. valor: ");
+  X := leia();
+  imprima("Informe o 2o. valor: ");
+  Y := leia();
+  se (IGUAL(X, Y)) então
+    imprima("Valores sao iguais");
+  senão
+    imprima("Valores sao diferentes");
+  fim-se
+fim
+
+função IGUAL(A : inteiro, B : inteiro) : lógico
+início
+  retorne A = B;
+fim

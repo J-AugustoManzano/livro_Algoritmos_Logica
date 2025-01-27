@@ -1,0 +1,21 @@
+// GPT não opera o uso de variáveis locais.
+algoritmo TROCA_VALORES_SOLUCAO2;
+
+variáveis
+  X, A, B : inteiro;
+fim-variáveis
+
+início
+  A := leia();
+  B := leia();
+  TROCA();
+  imprima(A);
+  imprima(B);
+fim
+
+função TROCA()
+início
+  X := A;
+  A := B;
+  B := X;
+fim

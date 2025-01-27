@@ -1,0 +1,25 @@
+// CALC_FAT_V5
+// Adaptado.
+
+variaveis
+  numerico N, PARCIAL, LIMITE
+
+  funcao FATORIALBASE(N, PARCIAL) 
+  inicio
+    se (N = 0) entao
+      retornar PARCIAL
+    senao
+      retornar FATORIALBASE(N - 1, PARCIAL * N) 
+    fim_se
+  fim
+
+  funcao FATORIAL(N)
+  inicio
+    retornar FATORIALBASE(N, 1) 
+  fim
+
+inicio
+  escrever "Qual fatorial: " 
+  ler LIMITE
+  escrever FATORIAL(LIMITE)
+fim

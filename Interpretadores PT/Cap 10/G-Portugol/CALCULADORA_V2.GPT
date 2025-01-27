@@ -1,0 +1,93 @@
+// GPT não opera com metodologia "BOTTOM-UP".
+// Sub-rotinas só podem ser implementadas com métodfo "top-down".
+algoritmo CALCULADORA_V2;
+
+variáveis
+  R, A, B : real;
+  OPCAO : inteiro;
+fim-variáveis
+
+// Trecho principal do programa
+
+início
+  OPCAO := 0;
+  enquanto (OPCAO <> 5) faça
+    imprima("[1] - Adicao");
+    imprima("[2] - Subtracao");
+    imprima("[3] - Multiplicacao");
+    imprima("[4] - Divisao");
+    imprima("[5] - Fim de Programa");
+    imprima("Escolha uma opcao: "); 
+    OPCAO := leia(); 
+    se (OPCAO <> 5) então
+      se (OPCAO = 1) então 
+        ROTSOMA();          
+      fim-se
+      se (OPCAO = 2) então 
+        ROTSUBTRACAO();     
+      fim-se
+      se (OPCAO = 3) então 
+        ROTMULTIPLICACAO(); 
+      fim-se
+      se (OPCAO = 4) então 
+        ROTDIVISAO();       
+      fim-se
+      se (OPCAO < 1) ou (OPCAO > 5) então
+        imprima("Opcao invalida - Tente novamente");
+      fim-se
+    fim-se
+  fim-enquanto
+fim
+
+// Trecho de sub-rotinas de entrada e saída
+
+função ENTRADA()
+início
+  imprima("Entre o 1o. valor: ");
+  A := leia();
+  imprima("Entre o 2o. valor: ");
+  B := leia();
+fim
+
+função SAIDA()
+início
+  imprima("O resultado da operacao equivale a: ", R);
+fim
+
+// *** Trecho das sub-rotinas de cálculos
+
+função ROTSOMA()
+início
+  imprima("Rotina de Adicao");  
+  ENTRADA();
+  R := A + B;
+  imprima("O resultado da operacao equivale a: ", R);
+fim
+
+função ROTSUBTRACAO()
+início
+  imprima("Rotina de Subtracao");  
+  ENTRADA();
+  R := A - B;
+  SAIDA();
+fim
+
+função ROTMULTIPLICACAO()
+início
+  imprima("Rotina de Multiplicacao");  
+  ENTRADA();
+  R := A * B;
+  SAIDA();
+fim
+
+função ROTDIVISAO()
+início
+  imprima("Rotina de Divisao");  
+  ENTRADA();
+  se (B = 0) então
+    imprima("O resultado da operacao equivale a: ERRO");
+  senão
+    R := A / B;
+    SAIDA();
+  fim-se
+fim

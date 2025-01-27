@@ -1,0 +1,20 @@
+algoritmo CALC_FAT_V4;
+
+variáveis
+  LIMITE : inteiro;
+fim-variáveis
+
+início
+  imprima("Qual fatorial: ");
+  LIMITE := leia();
+  imprima(FATORIAL(LIMITE));
+fim
+
+função FATORIAL(N : inteiro) : inteiro
+início
+  se (N = 0) então
+    retorne 1;
+  senão
+    retorne FATORIAL(N - 1) * N;
+  fim-se
+fim

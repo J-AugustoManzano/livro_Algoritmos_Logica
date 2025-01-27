@@ -1,0 +1,15 @@
+algoritmo TROCA_VALORES_SOLUCAO1;
+
+variáveis
+  X, A, B : inteiro;
+fim-variáveis
+
+início
+  A := leia();
+  B := leia();
+  X := A;
+  A := B;
+  B := X;
+  imprima(A);
+  imprima(B);
+fim

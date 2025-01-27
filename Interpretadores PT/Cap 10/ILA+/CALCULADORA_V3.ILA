@@ -1,0 +1,102 @@
+// CALCULADORA_V2
+// Adaptado.
+
+variaveis
+  numerico R, A, B, OPCAO
+  caracter OPERADOR
+
+  // Trecho de sub-rotinas de entrada e saída
+
+  funcao ENTRADA()
+  inicio
+    escrever "Entre o 1o. valor: " 
+    ler A
+    escrever "Entre o 2o. valor: "
+    ler B
+  fim
+
+  funcao SAIDA()
+  inicio
+    escrever "O resultado da operacao equivale a: ", R
+  fim
+
+  // Trecho com função para o cálculo das operações
+
+  funcao CALCULO(A, B, OPERADOR)
+  inicio
+    faca caso 
+      caso (OPERADOR = "+"): 
+        retornar A + B
+      caso (OPERADOR = "-"): 
+        retornar A - B
+      caso (OPERADOR = "*"): 
+        retornar A * B
+      caso (OPERADOR = "/"): 
+        retornar A / B
+    fim_caso
+  fim
+
+  // Trecho das sub-rotinas de cálculos
+
+  funcao ROTSOMA()
+  inicio
+    escrever "Rotina de Adicao"  
+    ENTRADA()
+    R = CALCULO(A, B, "+")
+    SAIDA()
+  fim
+
+  funcao ROTSUBTRACAO()
+  inicio
+    escrever "Rotina de Subtracao"  
+    ENTRADA()
+    R = CALCULO(A, B, "-")
+    SAIDA()
+  fim
+
+  funcao ROTMULTIPLICACAO()
+  inicio
+    escrever "Rotina de Multiplicacao"  
+    ENTRADA()
+    R = CALCULO(A, B, "*")
+    SAIDA()
+  fim
+
+  funcao ROTDIVISAO()
+  inicio
+    escrever "Rotina de Divisao"  
+    ENTRADA()
+    se (B = 0) entao
+      escrever "O resultado da operacao equivale a: ERRO"
+    senao
+      R = CALCULO(A, B, "/")
+      SAIDA()
+    fim_se
+  fim
+
+inicio
+  OPCAO = 0
+  faca enquanto (OPCAO <> 5)
+    escrever "[1] - Adicao"
+    escrever "[2] - Subtracao"
+    escrever "[3] - Multiplicacao"
+    escrever "[4] - Divisao"
+    escrever "[5] - Fim de Programa"
+    escrever "Escolha uma opcao: " 
+    ler OPCAO
+    se (OPCAO <> 5) entao
+      faca caso 
+        caso (OPCAO = 1): 
+          ROTSOMA()
+        caso (OPCAO = 2):
+          ROTSUBTRACAO()
+        caso (OPCAO = 3):
+          ROTMULTIPLICACAO()
+        caso (OPCAO = 4):
+          ROTDIVISAO()
+      outro_caso: 
+        escrever "Opção inválida - Tente novamente"
+      fim_caso
+    fim_se
+  fim_enquanto
+fim

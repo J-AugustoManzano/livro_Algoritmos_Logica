@@ -1,0 +1,19 @@
+// CALC_FAT_V1
+
+variaveis
+  numerico LIMITE, N, I, FAT
+
+  funcao FATORIAL(N)
+  inicio
+    FAT = 1
+    para I = 1 ate N passo 1 
+      FAT = FAT * I
+    proximo
+    retornar FAT
+  fim
+
+inicio
+  escrever "Qual fatorial: " 
+  ler LIMITE
+  escrever FATORIAL(LIMITE)
+fim

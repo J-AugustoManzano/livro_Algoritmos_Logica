@@ -1,0 +1,128 @@
+// VETOR_FILA
+// Variável "MATRIZ" ajudtada para "MATRIZZ" devido o fato de "MATRIZ" ser
+// um comando da linguagem ILA. O mesmo com as variáveis "FIM_" e "INICIO_".
+// Adaptado.
+
+variaveis
+  numerico FIM_, INICIO_, ELEMENTO, X, I, OPCAO
+  matriz numerico MATRIZZ[10]
+
+  funcao VAZIA()
+  inicio
+    se (INICIO_ = 0) entao
+      retornar verdadeiro
+    senao
+      retornar falso
+    fim_se
+  fim
+
+  funcao CHEIA()
+  inicio
+    se (INICIO_ = FIM_) entao
+      retornar verdadeiro
+    senao
+      retornar falso
+    fim_se
+  fim
+
+  funcao ADICIONAR(ELEMENTO)
+  inicio
+    se (CHEIA()) entao
+      retornar falso
+    senao
+      INICIO_ = INICIO_ + 1
+      MATRIZZ[INICIO_] = ELEMENTO
+      retornar verdadeiro
+    fim_se
+  fim
+
+  funcao RETIRAR(ELEMENTO)
+  inicio
+    se (VAZIA()) entao
+      retornar falso
+    senao
+      ELEMENTO = MATRIZZ[1]
+      para I = 1 ate INICIO_ passo
+        MATRIZZ[I] = MATRIZZ[I + 1]
+      proximo
+      INICIO_ = INICIO_ - 1
+      retornar verdadeiro
+    fim_se
+  fim
+
+  funcao CRIAR()
+  inicio
+    INICIO_ = 0
+    para I = 1 ate FIM_ passo 1
+      MATRIZZ[I] = 0
+    proximo
+  fim
+
+  funcao ENTRADA()
+  inicio
+    ler X
+    se (ADICIONAR(X)) entao
+      escrever "Elemento ", X, " foi inserido na posicao ", INICIO_, " da fila."
+    senao
+      escrever "Impossivel inserir o elemento ", X, " – fila lotada."
+    fim_se
+  fim
+
+  funcao SAIDA()
+  inicio
+    se (RETIRAR(X)) entao
+      escrever "O elemento ", X, " foi retirado do inicio da fila."
+    senao
+      escrever "Impossivel retirar elementos – fila vazia."
+    fim_se
+  fim
+
+  funcao ATUAL()
+  inicio
+    se nao (VAZIA()) entao
+      escrever MATRIZZ[1], " primeiro elemento da fila neste momento."
+    senao
+      escrever "Impossivel apresentar – fila vazia."
+    fim_se
+  fim
+
+  funcao EXIBICAO()
+  inicio
+    se nao (VAZIA()) entao
+      para I = 1 ate INICIO_ passo 1
+        escrever "Posicao: ", I, " possui o elemento ", MATRIZZ[I], "."
+      proximo
+    senao
+      escrever "Impossivel apresentar – fila vazia."
+    fim_se
+  fim
+
+inicio
+  FIM_ = 10
+  CRIAR()
+  OPCAO = 0
+  faca enquanto (OPCAO <> 6)
+    escrever "[1] - Entrada"
+    escrever "[2] - Saida"
+    escrever "[3] - Apresenta 1o. da fila"
+    escrever "[4] - Apresentar a fila"
+    escrever "[5] - Nova fila"
+    escrever "[6] - Sair"
+    escrever "Escolha uma opcao: " 
+    ler OPCAO
+    se (OPCAO <> 6) entao
+      faca caso 
+        caso (OPCAO = 1): 
+          ENTRADA()
+        caso (OPCAO = 2): 
+          SAIDA()
+        caso (OPCAO = 3): 
+          ATUAL()
+        caso (OPCAO = 4): 
+          EXIBICAO()
+        caso (OPCAO = 5): 
+          CRIAR()
+      fim_caso
+    fim_se
+  fim_enquanto
+fim

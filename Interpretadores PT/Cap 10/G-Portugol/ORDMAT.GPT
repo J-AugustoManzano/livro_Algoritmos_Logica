@@ -1,0 +1,54 @@
+// GPT não cria tipos de dados derivados.
+// Não aceita trabalhar com a definição de sub-rotina dentro de sub-rotina.
+// Dados do tipo literal não são classificados.
+algoritmo ORDMAT;
+
+variáveis
+  FIM, I, J : inteiro;
+  TABELA : matriz[10] de literais;
+  X : literal;
+fim-variáveis
+
+início
+  FIM := 10;
+  ENTRADA();
+  PROCESSAMENTO();
+  SAIDA();
+fim
+
+função ENTRADA()
+início
+  para I de 1 até FIM passo 1 faça
+    TABELA[I - 1] := leia();
+  fim-para
+fim
+
+função TROCA(A : literal, B : literal)
+início
+  X := A;
+  A := B;
+  B := X;
+fim
+
+função ORDENACAO()
+início
+  para I de 1 até FIM - 1 passo 1 faça
+    para J de I + 1 até FIM passo 1 faça
+      se (TABELA[I - 1] > TABELA[J - 1]) então
+        TROCA(TABELA[I - 1], TABELA[J - 1]);
+      fim-se
+    fim-para
+  fim-para
+fim
+
+função PROCESSAMENTO()
+início
+  ORDENACAO();
+fim
+
+função SAIDA()
+início
+  para I de 1 até FIM passo 1 faça
+    imprima(TABELA[I - 1]);
+  fim-para
+fim

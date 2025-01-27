@@ -1,0 +1,4 @@
+// CALC_FAT_V2
+// Devido as suas características operacionais ILA
+// não opera com passagem de parâmetro por referência.
+

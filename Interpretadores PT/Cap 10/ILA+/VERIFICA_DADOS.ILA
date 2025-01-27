@@ -1,0 +1,21 @@
+// VERIFICA_DADOS
+
+variaveis
+  numerico A, B, X, Y
+
+  funcao IGUAL(A, B)
+  inicio
+    retornar A = B
+  fim
+
+inicio
+  escrever "Informe o 1o. valor: " 
+  ler X
+  escrever "Informe o 2o. valor: " 
+  ler Y
+  se (IGUAL(X, Y)) entao
+    escrever "Valores sao iguais"
+  senao
+    escrever "Valores sao diferentes"
+  fim_se
+fim

@@ -1,0 +1,32 @@
+// SEQ_FIBONACCI_V2
+// Adaptado.
+
+variaveis
+  numerico N, I, ANTERIOR, ATUAL
+
+  funcao FIBONACCIBASE(N, ANTERIOR, ATUAL)
+  inicio
+    se (N = 0) entao
+      retornar ANTERIOR
+    fim_se
+    se (N = 1) entao
+      retornar ATUAL
+    fim_se
+    se (N = 2) entao
+      retornar ATUAL + ANTERIOR
+    fim_se
+    se (N > 2) entao
+      retornar FIBONACCIBASE(N - 1, ATUAL, ANTERIOR + ATUAL)
+    fim_se
+  fim
+
+  funcao FIBONACCI(N)
+  inicio
+    retornar FIBONACCIBASE(N, 0, 1)
+  fim
+
+inicio
+  para I = 1 ate 14 passo 1  
+    escrever FIBONACCI(I)
+  proximo
+fim
