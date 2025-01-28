@@ -1,0 +1,16 @@
+// ELEMENTO_PAR
+variaveis
+  numerico R, I, SOMA  
+  matriz numerico A[5]
+inicio
+  para I = 1 ate 5 passo 1
+    ler A[I] 
+  proximo
+  para I = 1 ate 5 passo 1
+    R = A[I] - 2 * inteiro(A[I] / 2) 
+    se (R = 0) entao
+      SOMA = SOMA + A[I]
+    fim_se
+  proximo
+  escrever SOMA 
+fim

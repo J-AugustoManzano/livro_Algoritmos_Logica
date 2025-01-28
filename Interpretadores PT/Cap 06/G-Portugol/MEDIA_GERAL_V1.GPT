@@ -1,0 +1,17 @@
+algoritmo MEDIA_GERAL_V1;
+variáveis
+  MD1, MD2, MD3, MD4, MD5, MD6, MD7, MD8, MEDIA : real;
+fim-variáveis
+início
+  MD1 := leia();
+  MD2 := leia();
+  MD3 := leia();
+  MD4 := leia();
+  MD5 := leia();
+  MD6 := leia();
+  MD7 := leia();
+  MD8 := leia();
+  MEDIA := (MD1 + MD2 + MD3 + MD4 + MD5 + MD6 + MD7 + MD8) / 8;
+  imprima(MEDIA);
+fim
+

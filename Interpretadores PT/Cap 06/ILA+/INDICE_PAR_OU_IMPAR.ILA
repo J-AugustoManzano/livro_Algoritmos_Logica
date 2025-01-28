@@ -1,0 +1,21 @@
+// ÍNDICE_PAR_OU_IMPAR
+variaveis
+  numerico I, R  
+  matriz numerico A[8]
+  matriz numerico B[8]
+inicio
+  para I = 1 ate 8 passo 1
+    ler A[I] 
+  proximo
+  para I = 1 ate 8 passo 1
+    R = I - 2 * inteiro(I / 2) 
+    se (R = 0) entao
+      B[I] = A[I] * 5
+    senao
+      B[I] = A[I] + 5
+    fim_se
+  proximo
+  para I = 1 ate 8 passo 1
+    escrever A[I], " ", B[I] 
+  proximo
+fim

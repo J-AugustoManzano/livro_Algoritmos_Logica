@@ -1,0 +1,19 @@
+algoritmo ELEMENTO_IMPAR;
+variáveis
+  R, I, SOMA : inteiro;
+  A : matriz[5] de inteiros;
+fim-variáveis
+início
+  SOMA := 0;
+  para I de 1 até 5 passo 1 faça
+    A[I - 1] := leia(); 
+  fim-para
+  para I de 1 até 5 passo 1 faça
+    R := A[I - 1] - 2 * (A[I - 1] / 2);
+    se (R <> 0) então
+      SOMA := SOMA + A[I - 1];
+    fim-se
+  fim-para
+  imprima(SOMA); 
+fim
+

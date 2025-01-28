@@ -1,0 +1,17 @@
+// Matrizes em GPT são operadas a partir de posições cardinais.
+algoritmo MEDIA_GERAL_V2;
+variáveis
+  I : inteiro;
+  MD : matriz[8] de reais;
+  SOMA, MEDIA : real;
+fim-variáveis
+início
+  SOMA := 0;
+  para I de 1 até 8 passo 1 faça
+    MD[I - 1] := leia(); // [I - 1], onde "I - 1" ajuste de ordinal para cardinal
+    SOMA := SOMA + MD[I - 1];
+  fim-para
+  MEDIA := SOMA / 8;
+  imprima(MEDIA);
+fim
+

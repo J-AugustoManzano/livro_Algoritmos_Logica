@@ -1,0 +1,13 @@
+// MÉDIA_GERAL_V2
+variaveis
+  numerico I, SOMA, MEDIA  
+  matriz numerico MD[8]
+inicio
+  SOMA = 0
+  para I = 1 ate 8 passo 1
+    ler MD[I] 
+    SOMA = SOMA + MD[I]
+  proximo
+  MEDIA = SOMA / 8
+  escrever MEDIA 
+fim
