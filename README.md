@@ -82,4 +82,10 @@ São disponibilizados algoritmos de demonstração do livro em 29 linguagens de 
 
 > (#) - Indica linguagens usadas que não são POO (AWK, C, Fortran-95, Go, Tcl) ou que não dão suporte adeaquado a POO (BASIC, D, Julia, Lua, Pascal |Free Pascal|, Classic Rexx).
 
-Com o tempo outras linguagens poderão ser acrescidas.
+Além das linguagens apresentadas, o repositório "Interpretadores PT" contém scripts de programas desenvolvidos nos interpretadores G-Portugol, ILA+, Portugol Online, Portugol IDE, Portugol Studio e VisuAlg. Essas ferramentas são interpretadores e ambientes de desenvolvimento voltados exclusivamente para apresentar lógica de programação em português. Seu objetivo é introduzir os fundamentos de programação para estudantes, especialmente no ensino médio e em cursos técnicos, que ainda não possuem contato com linguagens mais complexas, devendo ser evitadas no ensino superior. Por utilizarem a língua portuguesa na sintaxe, argumenta-se que elas eliminam barreiras iniciais relacionadas ao idioma, permitindo foco no raciocínio lógico e na estruturação do código.
+
+Com funcionalidades extremamente limitadas, essas ferramentas servem apenas para a introdução de conceitos básicos, como variáveis, condições, laços e funções. No entanto, são completamente inadequadas para o desenvolvimento de sistemas reais e têm aplicação restrita a exercícios simples e práticas iniciais. Apesar disso, são amplamente empregadas por professores que buscam um meio acessível de apresentar lógica de programação em contextos educacionais onde o domínio do inglês ainda é um obstáculo.
+
+Essas ferramentas apresentam como problema a dificuldade na transição para linguagens de programação profissionais, que pode ser um desafio, já que a sintaxe e os conceitos utilizados por essas ferramentas baseadas em português diferem consideravelmente dos padrões das linguagens mais robustas e amplamente utilizadas no mercado.
+
+Com o tempo outras linguagens e ferramnetas de interpretação algoritmica poderão ser acrescidas.
