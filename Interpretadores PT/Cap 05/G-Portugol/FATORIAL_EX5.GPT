@@ -1,0 +1,18 @@
+algoritmo FATORIAL_EX5;
+variáveis
+  CONT, FAT : inteiro;
+  SELETIVO : lógico;
+fim-variáveis
+início
+  FAT := 1;
+  CONT := 1;
+  SELETIVO := verdadeiro;
+  enquanto (SELETIVO) faça
+    FAT := FAT * CONT;
+    se (CONT > 4) então
+      SELETIVO := falso;
+    fim-se
+    CONT := CONT + 1;
+  fim-enquanto
+  imprima("5! = ", FAT);
+fim

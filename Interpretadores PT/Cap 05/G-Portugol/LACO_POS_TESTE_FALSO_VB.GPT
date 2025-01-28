@@ -1,0 +1,20 @@
+algoritmo LACO_POS_TESTE_FALSO_VB;
+variáveis
+  N, R : inteiro;
+  RESP : caractere;
+fim-variáveis
+início
+  RESP := 'S';
+  repita
+    N := leia();
+    R := N * 3;
+    imprima(R);
+    imprima("Deseja continuar? ");
+    RESP := leia();
+  até (RESP <> 'S');
+fim
+
+
+
+
+  

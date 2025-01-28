@@ -1,0 +1,12 @@
+algoritmo LACO_INCONDICIONAL;
+variáveis
+  I, N, R : inteiro;
+fim-variáveis
+início
+  para I de 1 até 5 passo 1 faça
+    N := leia();
+    R := N * 3;
+    imprima(R);
+  fim-para 
+fim
+

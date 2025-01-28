@@ -1,0 +1,20 @@
+// GPT não possui laço "até_seja" sendo apresentado
+// script simulado de ação.
+algoritmo LACO_PRE_TESTE_FALSO_VB;
+variáveis
+  N, R : inteiro;
+  RESP : caractere;
+fim-variáveis
+início
+  RESP := 'S';
+  enquanto não (RESP <> 'S') faça
+    N := leia();
+    R := N * 3;
+    imprima(R);
+    imprima("Deseja conntinuar? ");
+    RESP := leia(); 
+  fim-enquanto
+fim
+
+
+  

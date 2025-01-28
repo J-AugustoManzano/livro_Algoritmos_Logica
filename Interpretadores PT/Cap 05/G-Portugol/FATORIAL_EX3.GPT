@@ -1,0 +1,14 @@
+algoritmo FATORIAL_EX3;
+variáveis
+  CONT, FAT : inteiro;
+fim-variáveis
+início
+  FAT := 1;
+  CONT := 1;
+  repita
+    FAT := FAT * CONT;
+    CONT := CONT + 1;
+  até (CONT > 5);
+  imprima("5! = ", FAT);
+fim
+

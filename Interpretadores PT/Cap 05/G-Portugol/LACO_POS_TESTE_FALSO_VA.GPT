@@ -1,0 +1,18 @@
+algoritmo LACO_POS_TESTE_FALSO_VA;
+variáveis
+  I, N, R : inteiro;
+fim-variáveis
+início
+  I := 1;
+  repita
+    N := leia();
+    R := N * 3;
+    imprima(R);
+    I := I + 1;
+  até (I > 5);
+fim
+
+
+
+
+  

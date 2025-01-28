@@ -1,0 +1,21 @@
+// GPT não possui comando para interrupção de laço.
+// Solução adaptada com variável do tipo lógica.
+algoritmo LACO_SELETIVO;
+variáveis
+  I, N, R : inteiro;
+  RESP : caractere;
+  CONTINUA : lógico;
+fim-variáveis
+início
+  I := 1;
+  CONTINUA := verdadeiro;
+  enquanto (CONTINUA) faça  // LAÇO
+    N := leia();
+    R := N * 3;
+    imprima(R);
+    se (I > 4) então        // SAIA_CASO (I > 4)
+      CONTINUA := falso;
+    fim-se
+    I := I + 1;
+  fim-enquanto              // FIM_LAÇO
+fim

@@ -1,0 +1,17 @@
+algoritmo LACO_PRE_TESTE_VERDADEIRO_VB;
+variáveis
+  N, R : inteiro;
+  RESP : caractere;
+fim-variáveis
+início
+  RESP := 'S';
+  enquanto (RESP = 'S') faça
+    N := leia();
+    R := N * 3;
+    imprima(R);
+    imprima("Deseja continuar? ");
+    RESP := leia();
+  fim-enquanto
+fim
+
+  

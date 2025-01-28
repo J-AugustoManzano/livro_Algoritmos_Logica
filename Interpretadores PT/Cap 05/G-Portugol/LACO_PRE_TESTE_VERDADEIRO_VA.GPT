@@ -1,0 +1,15 @@
+algoritmo LACO_PRE_TESTE_VERDADEIRO_VA;
+variáveis
+  I, N, R : inteiro;
+fim-variáveis
+início
+  I := 1;
+  enquanto (I <= 5) faça
+    N := leia();
+    R := N * 3;
+    imprima(R);
+    I := I + 1;
+  fim-enquanto
+fim
+
+  

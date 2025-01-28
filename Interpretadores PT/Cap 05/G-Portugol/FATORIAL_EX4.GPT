@@ -1,0 +1,14 @@
+algoritmo FATORIAL_EX4;
+variáveis
+  CONT, FAT : inteiro;
+fim-variáveis
+início
+  FAT := 1;
+  CONT := 1;
+  repita // simulação "execute/enquanto_for"
+    FAT := FAT * CONT;
+    CONT := CONT + 1;
+  até não (CONT <= 5);
+  imprima("5! = ", FAT);
+fim
+

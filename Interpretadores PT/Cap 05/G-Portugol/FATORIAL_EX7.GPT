@@ -1,0 +1,19 @@
+algoritmo FATORIAL_EX7;
+variáveis
+  CONT, FAT, N : inteiro;
+  RESP : literal;
+fim-variáveis
+início
+  RESP := "SIM";
+  repita
+    FAT := 1;
+    N := leia();
+    para CONT de 1 até N passo 1 faça
+      FAT := FAT * CONT;
+    fim-para
+    imprima("5! = ", FAT);
+    imprima("Deseja continuar? ");
+    RESP := leia();
+  até (RESP <> "SIM");
+fim
+

@@ -1,0 +1,22 @@
+// GPT não possui laço "execute/enquanto_for" sendo apresentado
+// script simulado de ação.
+algoritmo LACO_POS_TESTE_VERDADEIRO_VB;
+variáveis
+  N, R : inteiro;
+  RESP : caractere;
+fim-variáveis
+início
+  RESP := 'S';
+  repita
+    N := leia();
+    R := N * 3;
+    imprima(R);
+    imprima("Deseja continuar? ");
+    RESP := leia();
+  até não (RESP = 'S');
+fim
+
+
+
+
+  

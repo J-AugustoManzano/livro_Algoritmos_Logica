@@ -1,0 +1,14 @@
+algoritmo FATORIAL_EX2;
+variáveis
+  CONT, FAT : inteiro;
+fim-variáveis
+início
+  FAT := 1;
+  CONT := 1;
+  enquanto não (CONT > 5) faça // simulação "até_seja/fim_até_seja"
+    FAT := FAT * CONT;
+    CONT := CONT + 1;
+  fim-enquanto
+  imprima("5! = ", FAT);
+fim
+
