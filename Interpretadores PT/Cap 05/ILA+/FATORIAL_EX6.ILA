@@ -1,0 +1,11 @@
+// FATORIAL_EX6
+variaveis
+  numerico CONT, FAT
+inicio
+  FAT = 1
+  CONT = 1
+  para CONT = 1 ate 5 passo 1
+    FAT = FAT * CONT 
+  proximo
+  escrever "5! = ", FAT
+fim

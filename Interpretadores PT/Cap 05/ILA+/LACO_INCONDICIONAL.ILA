@@ -1,0 +1,10 @@
+// LAÇO_INCONDICIONAL
+variaveis
+  numerico I, N, R
+inicio
+  para I = 1 ate 5 passo 1
+    ler N
+    R = N * 3
+    escrever R
+  proximo
+fim

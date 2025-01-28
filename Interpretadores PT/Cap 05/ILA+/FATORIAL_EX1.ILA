@@ -1,0 +1,12 @@
+// FATORIAL_EX1
+variaveis
+  numerico CONT, FAT 
+inicio
+  FAT = 1
+  CONT = 1
+  faca enquanto (CONT <= 5)
+    FAT = FAT * CONT
+    CONT = CONT + 1
+  fim_enquanto
+  escrever "5! = ", FAT
+fim

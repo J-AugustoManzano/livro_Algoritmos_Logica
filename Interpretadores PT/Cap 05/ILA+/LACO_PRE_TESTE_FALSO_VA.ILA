@@ -1,0 +1,14 @@
+// LAÇO_PRÉ_TESTE_FALSO_VA
+// ILA não possui ATÉ_SEJA/EFETUE/FIM_ATÉ_SEJA
+// Ação representada de forma simumlada
+variaveis
+  numerico I, N, R
+inicio
+  I = 1
+  faca enquanto nao (I > 5) // "FACA ENQUANTO NAO" = "ATÉ_SEJA"
+    ler N
+    R = N * 3
+    escrever R
+    I = I + 1
+  fim_enquanto
+fim

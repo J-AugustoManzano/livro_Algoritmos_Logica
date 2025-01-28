@@ -1,0 +1,17 @@
+// FATORIAL_EX5
+variaveis
+  numerico CONT, FAT
+  logico SELETIVO
+inicio
+  FAT = 1
+  CONT = 1
+  SELETIVO = verdadeiro
+  faca enquanto (SELETIVO)
+    FAT = FAT * CONT 
+    se (CONT > 4) entao
+      SELETIVO = falso
+    fim_se
+    CONT = CONT + 1
+  fim_enquanto
+  escrever "5! = ", FAT
+fim

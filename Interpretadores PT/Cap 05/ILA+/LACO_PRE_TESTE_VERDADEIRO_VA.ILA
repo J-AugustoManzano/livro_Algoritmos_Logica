@@ -1,0 +1,12 @@
+// LAÇO_PRÉ_TESTE_VERDADEIRO_VA
+variaveis
+  numerico I, N, R
+inicio
+  I = 1
+  faca enquanto (I <= 5)
+    ler N
+    R = N * 3
+    escrever R
+    I = I + 1
+  fim_enquanto
+fim

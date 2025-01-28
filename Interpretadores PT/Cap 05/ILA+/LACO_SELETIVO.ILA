@@ -1,0 +1,21 @@
+// LAÇO_SELETIVO
+// ILA não possui LAÇO/SAIA_CASO/FIM_LAÇO
+// ILA não possui comando de interrupção ao estilo "INTERROMPER"
+// Ação representada de forma simumlada e adaptada com uso
+// de variável lógica (SELETIVO)
+variaveis
+  numerico I, N, R
+  logico SELETIVO
+inicio
+  I = 1
+  SELETIVO = verdadeiro
+  faca enquanto (SELETIVO) // LAÇO
+    ler N
+    R = N * 3
+    escrever R
+    se (I > 4) entao       // SAIA_CASO (I > 4)
+      SELETIVO = falso
+    fim_se
+    I = I + 1
+  fim_enquanto             // FIM_LAÇO
+fim

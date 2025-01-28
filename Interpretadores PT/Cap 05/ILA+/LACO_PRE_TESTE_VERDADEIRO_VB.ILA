@@ -1,0 +1,14 @@
+// LAÇO_PRÉ_TESTE_VERDADEIRO_VB
+variaveis
+  numerico N, R
+  caracter RESP
+inicio
+  RESP = "S"
+  faca enquanto (RESP = "S")
+    ler N
+    R = N * 3
+    escrever R
+    escrever "Deseja continuar?"
+    ler RESP
+  fim_enquanto
+fim
