@@ -1,0 +1,11 @@
+// NOME_SEXO
+variaveis
+  caracter NOME
+  caracter SEXO
+inicio
+  ler NOME
+  ler SEXO
+  escrever NOME
+  escrever SEXO
+fim
+

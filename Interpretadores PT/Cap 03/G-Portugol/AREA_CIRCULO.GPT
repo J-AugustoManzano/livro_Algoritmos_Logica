@@ -1,0 +1,11 @@
+algoritmo AREA_CIRCULO;
+variáveis
+  PI, A, R : real;
+fim-variáveis
+início
+  PI := 3.14159265; // Nao opera com "const"
+  R := leia();
+  A := PI * potencia(R, 2);
+  imprima(A);
+fim
+

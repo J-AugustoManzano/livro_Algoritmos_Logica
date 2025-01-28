@@ -1,0 +1,12 @@
+// AREA_CIRCULO
+variaveis
+  numerico CONST_PI // Nao opera com "const"
+  numerico A
+  numerico R
+inicio
+  CONST_PI = 3.14159265
+  ler R
+  A = CONST_PI * R ^ 2
+  escrever A
+fim
+

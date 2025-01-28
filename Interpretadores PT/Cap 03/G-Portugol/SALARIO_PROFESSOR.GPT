@@ -1,0 +1,15 @@
+algoritmo SALARIO_PROFESSOR;
+variáveis
+  HT : inteiro;
+  VH, PD, TD, SB, SL : real;
+fim-variáveis
+início
+  HT := leia();
+  VH := leia();
+  PD := leia();
+  SB := HT * VH;
+  TD := (PD/100) * SB;
+  SL := SB - TD; 
+  imprima(SB);
+  imprima(SL);
+fim

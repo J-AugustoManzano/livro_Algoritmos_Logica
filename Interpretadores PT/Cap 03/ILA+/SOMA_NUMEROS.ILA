@@ -1,0 +1,12 @@
+// SOMA_NUMEROS
+variaveis
+  numerico X
+  numerico A
+  numerico B
+inicio
+  ler A
+  ler B
+  X = A + B
+  escrever X
+fim
+

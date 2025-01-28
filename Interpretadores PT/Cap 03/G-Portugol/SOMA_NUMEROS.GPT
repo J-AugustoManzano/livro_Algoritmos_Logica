@@ -1,0 +1,12 @@
+algoritmo SOMA_NUMEROS;
+variáveis
+  X : inteiro;
+  A : inteiro;
+  B : inteiro;
+fim-variáveis
+início
+  A := leia();
+  B := leia();
+  X := A + B;
+  imprima(X);
+fim

@@ -1,0 +1,14 @@
+// SALARIO_PROFESSOR
+variaveis
+  numerico HT
+  numerico VH, PD, TD, SB, SL
+inicio
+  ler HT
+  ler VH
+  ler PD
+  SB = HT * VH
+  TD = (PD/100) * SB
+  SL = SB - TD
+  escrever SL
+fim
+

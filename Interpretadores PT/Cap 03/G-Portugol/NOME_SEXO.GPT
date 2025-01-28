@@ -1,0 +1,12 @@
+algoritmo NOME_SEXO;
+variáveis
+  NOME : literal;
+  SEXO : caractere;
+fim-variáveis
+início
+  NOME := leia ();
+  SEXO := leia ();
+  imprima(NOME);
+  imprima(SEXO);
+fim
+
