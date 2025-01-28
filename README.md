@@ -86,6 +86,6 @@ Além das linguagens apresentadas, o repositório "Interpretadores PT" contém s
 
 Com funcionalidades extremamente limitadas, essas ferramentas servem apenas para a introdução de conceitos básicos, como variáveis, condições, laços e funções. No entanto, são completamente inadequadas para o desenvolvimento de sistemas reais e têm aplicação restrita a exercícios simples e práticas iniciais. Apesar disso, são amplamente empregadas por professores que buscam um meio acessível de apresentar lógica de programação em contextos educacionais onde o domínio do inglês ainda é um obstáculo.
 
-Essas ferramentas apresentam como problema a dificuldade na transição para linguagens de programação profissionais, que pode ser um desafio, já que a sintaxe e os conceitos utilizados por essas ferramentas baseadas em português diferem consideravelmente dos padrões das linguagens mais robustas e amplamente utilizadas no mercado.
+Essas ferramentas apresentam como problema a dificuldade na transição para linguagens de programação profissionais, que pode ser um desafio, já que a sintaxe e os conceitos utilizados diferem consideravelmente dos padrões das linguagens mais robustas e amplamente utilizadas no mercado.
 
 Com o tempo outras linguagens e ferramnetas de interpretação algoritmica poderão ser acrescidas.
