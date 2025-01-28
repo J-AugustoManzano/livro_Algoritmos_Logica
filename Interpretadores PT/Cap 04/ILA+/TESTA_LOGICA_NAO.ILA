@@ -1,0 +1,14 @@
+// TESTA_LÓGICA_NÃO
+variaveis
+  numerico A, B, C, X   
+inicio
+  ler A
+  ler B
+  ler X
+  se nao (X > 5) entao
+    C = A + B
+  senao
+    C = A - B
+  fim_se
+  escrever C
+fim

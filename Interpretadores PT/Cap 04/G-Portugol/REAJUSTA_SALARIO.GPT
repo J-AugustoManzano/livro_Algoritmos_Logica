@@ -1,0 +1,20 @@
+algoritmo REAJUSTA_SALARIO;
+variáveis
+  SA, NS : real;
+fim-variáveis
+início
+  SA := leia ();
+  se (SA < 500) então
+    NS := SA * 1.15;
+  senão
+    se (SA <= 1000) então
+      NS := SA * 1.10;
+    senão
+      NS := SA * 1.05;
+    fim-se
+  fim-se
+  imprima(NS);
+fim
+
+
+  

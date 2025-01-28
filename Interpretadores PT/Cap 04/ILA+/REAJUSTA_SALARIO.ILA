@@ -1,0 +1,16 @@
+// REAJUSTA_SALÁRIO
+variaveis
+  numerico SA, NS  
+inicio
+  ler SA
+  se (SA < 500) entao
+    NS = SA * 1.15
+  senao
+    se (SA <= 1000) entao
+      NS = SA * 1.10
+    senao
+      NS = SA * 1.05
+    fim_se
+  fim_se
+  escrever NS
+fim

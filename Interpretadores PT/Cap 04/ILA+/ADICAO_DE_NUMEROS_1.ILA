@@ -1,0 +1,11 @@
+// ADIÇÃO_DE_NÚMEROS_1
+variaveis
+  numerico A, B, X 
+inicio
+  ler A
+  ler B
+  X = A + B
+  se (X > 10) entao
+    escrever X
+  fim_se
+fim

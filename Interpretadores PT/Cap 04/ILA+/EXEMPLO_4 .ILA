@@ -1,0 +1,11 @@
+// EXEMPLO_4 
+variaveis
+  numerico N, R2, R3     
+inicio
+  ler N
+  R2 = N - 2 * inteiro(N / 2)
+  R3 = N - 3 * inteiro(N / 3)
+  se ((R2 = 0) e (nao (R3 = 0))) ou ((nao (R2 = 0)) e (R3 = 0)) entao
+    escrever N 
+  fim_se
+fim

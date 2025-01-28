@@ -1,0 +1,16 @@
+algoritmo ADICAO_DE_NUMEROS_2;
+variáveis
+  A, B, X, R : real;
+fim-variáveis
+início
+  A := leia();
+  B := leia();
+  X := A + B;
+  se (X >= 10) então
+    R := X + 5;
+  senão
+    R := X - 7;
+  fim-se
+  imprima(R);
+fim
+  

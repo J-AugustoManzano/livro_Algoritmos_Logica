@@ -1,0 +1,18 @@
+algoritmo TESTA_LOGICA_OU;
+variáveis
+  SEXO : caractere;
+fim-variáveis
+início
+  SEXO := leia();
+  se (SEXO = 'M') ou (SEXO = 'F') então
+    imprima("Sexo valido");
+  senão
+    imprima("Sexo invalido");
+  fim-se
+fim
+
+
+
+
+
+  

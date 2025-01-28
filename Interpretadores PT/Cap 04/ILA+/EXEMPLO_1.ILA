@@ -1,0 +1,14 @@
+// EXEMPLO_1
+variaveis
+  numerico N, R     
+inicio
+  ler N
+  se nao (N < 0) entao
+    se (N <> 5) entao
+      R = N ^ (1 / 2)
+    senao
+      R = N ^ (1 / 3)
+    fim_se
+    escrever R 
+  fim_se
+fim

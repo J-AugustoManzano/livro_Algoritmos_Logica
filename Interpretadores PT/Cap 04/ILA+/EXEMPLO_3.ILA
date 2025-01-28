@@ -1,0 +1,21 @@
+// EXEMPLO_2
+variaveis
+  numerico A, B, C, X      
+inicio
+  ler A
+  ler B
+  ler C
+  se (A < B + C) e (B < A + C) e (C < A + B) entao
+    se (A = B) e (B = C) entao
+      escrever "Triangulo Equilatero"
+    senao
+      se (A = B) ou (A = C) ou (C = B) entao
+        escrever "Triangulo Isosceles"
+      senao
+        escrever "Triangulo Escaleno"
+      fim_se
+    fim_se
+  senao
+    escrever "As medidas nao formam um triangulo"
+  fim_se
+fim

@@ -1,0 +1,34 @@
+// MÊS_POR_EXTENSO
+variaveis
+  numerico MES  
+inicio
+  ler MES
+  faca caso
+    caso (MES = 1):
+      escrever "Janeiro"
+    caso (MES = 2):
+      escrever "Fevereiro"
+    caso (MES = 3):
+      escrever "Marco"
+    caso (MES = 4):
+      escrever "Abril"
+    caso (MES = 5):
+      escrever "Maio"
+    caso (MES = 6):
+      escrever "Junho"
+    caso (MES = 7):
+      escrever "Julho"
+    caso (MES = 8):
+      escrever "Agosto"
+    caso (MES = 9):
+      escrever "Setembro"
+    caso (MES = 10):
+      escrever "Outubro"
+    caso (MES = 11):
+      escrever "Novembro"
+    caso (MES = 12):
+      escrever "Dezembro"
+    outro_caso:
+      escrever "Valor invalido"
+  fim_caso
+fim

@@ -1,0 +1,22 @@
+algoritmo EXEMPLO_2;
+variáveis
+  A, B, C, X : real;
+fim-variáveis
+início
+  A := leia();
+  B := leia();
+  C := leia();
+  X := A;
+  se (X < B) então
+    X := B;
+  fim-se
+  se (X < C) então
+    X := C;
+  fim-se
+  imprima(X);
+fim
+
+
+
+
+  

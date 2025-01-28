@@ -1,0 +1,12 @@
+algoritmo EXEMPLO_4;
+variáveis
+  N, R2, R3 : inteiro;
+fim-variáveis
+início
+  N := leia();
+  R2 := N - 2 * (N / 2);
+  R3 := N - 3 * (N / 3);
+  se ((R2 = 0) e (não (R3 = 0))) ou ((não (R2 = 0)) e (R3 = 0)) então
+    imprima(N); 
+  fim-se
+fim

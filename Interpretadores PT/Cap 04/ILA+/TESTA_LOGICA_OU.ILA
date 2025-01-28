@@ -1,0 +1,11 @@
+// TESTA_LÓGICA_OU
+variaveis
+  caracter SEXO  
+inicio
+  ler SEXO
+  se (SEXO = "M") ou (SEXO = "F") entao
+    escrever "Sexo valido"
+  senao
+    escrever "Sexo invalido"
+  fim_se
+fim

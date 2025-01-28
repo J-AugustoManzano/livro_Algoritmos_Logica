@@ -1,0 +1,18 @@
+// DECISÃO_SEQUENCIAL
+variaveis
+  numerico N 
+inicio
+  ler N
+  se (N = 1) entao
+    escrever "voce entrou o valor 1"
+  fim_se
+  se (N = 2) entao
+    escrever "voce entrou o valor 2"
+  fim_se
+  se (N < 1) entao
+    escrever "voce entrou valor muito baixo"
+  fim_se
+  se (N > 2) entao
+    escrever "voce entrou valor muito alto"
+  fim_se
+fim

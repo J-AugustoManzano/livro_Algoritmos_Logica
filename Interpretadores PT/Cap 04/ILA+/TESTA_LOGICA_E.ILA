@@ -1,0 +1,11 @@
+// TESTA_LÓGICA_E
+variaveis
+  numerico NUMERO  
+inicio
+  ler NUMERO
+  se (NUMERO >= 20) e (NUMERO <= 90) entao
+    escrever "O numero esta na faixa de 20 a 90"
+  senao
+    escrever "O numero esta fora da faixa de 20 a 90"
+  fim_se
+fim

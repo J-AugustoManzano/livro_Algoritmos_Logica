@@ -1,0 +1,14 @@
+algoritmo DIVISIBILIDADE;
+variáveis
+  N, R4, R5 : inteiro;
+fim-variáveis
+início
+  N := leia();
+  R4 := N - 4 * (N / 4);
+  R5 := N - 5 * (N / 5);
+  se (R4 = 0) e (R5 = 0) então
+    imprima(N); 
+  senão
+    imprima("Valor nao e divisivel por 4 e 5");
+  fim-se
+fim

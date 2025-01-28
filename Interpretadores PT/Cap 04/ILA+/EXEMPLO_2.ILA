@@ -1,0 +1,16 @@
+// EXEMPLO_2
+variaveis
+  numerico A, B, C, X      
+inicio
+  ler A
+  ler B
+  ler C
+  X = A
+  se (X < B) entao
+    X = B
+  fim_se
+  se (X < C) entao
+    X = C
+  fim_se
+  escrever X
+fim

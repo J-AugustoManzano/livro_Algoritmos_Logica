@@ -1,0 +1,16 @@
+// ILA+ não possui operador lógico "xou".
+// Ação adaptada.
+variaveis
+  caracter N1, N2    
+  caracter S1, S2    
+inicio
+  ler N1
+  ler S1
+  ler N2
+  ler S2
+  se ((S1 = "M") e (nao (S2 = "M"))) ou ((nao (S1 = "M")) e (S2 = "M")) entao
+    escrever N1, " pode dancar com ", N2
+  senao
+    escrever N1, " nao pode dancar com ", N2
+  fim_se
+fim

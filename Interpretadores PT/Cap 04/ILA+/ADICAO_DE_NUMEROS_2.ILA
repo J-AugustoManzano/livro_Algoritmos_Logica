@@ -1,0 +1,14 @@
+// ADIÇÃO_DE_NÚMEROS_2
+variaveis
+  numerico A, B, X, R 
+inicio
+  ler A
+  ler B
+  X = A + B
+  se (X >= 10) entao
+    R = X + 5
+  senao
+    R = X - 7
+  fim_se
+  escrever R
+fim

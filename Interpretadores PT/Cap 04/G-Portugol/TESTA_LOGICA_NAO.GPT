@@ -1,0 +1,20 @@
+algoritmo TESTA_LOGICA_NAO;
+variáveis
+  A, B, C, X : inteiro;
+fim-variáveis
+início
+  A := leia();
+  B := leia();
+  X := leia();
+  se não (X > 5) então
+    C := A + B;
+  senão
+    C := A - B;
+  fim-se
+  imprima(C);
+fim
+
+
+
+
+  

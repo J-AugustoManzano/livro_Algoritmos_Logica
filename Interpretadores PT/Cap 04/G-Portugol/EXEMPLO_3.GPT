@@ -1,0 +1,27 @@
+algoritmo EXEMPLO_3;
+variáveis
+  A, B, C : real;
+fim-variáveis
+início
+  A := leia();
+  B := leia();
+  C := leia();
+  se (A < B + C) e (B < A + C) e (C < A + B) então
+    se (A = B) e (B = C) então
+      imprima("Triangulo Equilatero");
+    senão
+      se (A = B) ou (A = C) ou (C = B) então
+        imprima("Triangulo Isosceles");
+      senão
+        imprima("Triangulo Escaleno");
+      fim-se
+    fim-se
+  senão
+    imprima("As medidas nao formam um triangulo");
+  fim-se
+fim
+
+
+
+
+  

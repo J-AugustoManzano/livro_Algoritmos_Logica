@@ -1,0 +1,24 @@
+// Apesar de GPT possuir operador XOR este é usado apenas em operações
+// de manipulação de bits (com o operador "^") não podendo ser usado com 
+// outra finalidade.
+// Script adaptado.
+algoritmo TESTA_LOGICA_XOU;
+variáveis
+  N1, N2 : literal;
+  S1, S2 : caractere;
+fim-variáveis
+início
+  N1 := leia();
+  S1 := leia();
+  N2 := leia();
+  S2 := leia();
+  se ((S1 = 'M') e (não (S2 = 'M'))) ou ((não (S1 = 'M')) e (S2 = 'M')) então
+    imprima(N1, " pode dancar com ", N2);
+  senão
+    imprima(N1, " nao pode dancar com ", N2);
+  fim-se
+fim
+
+
+
+  

@@ -1,0 +1,21 @@
+algoritmo DECISAO_SEQUENCIAL;
+variáveis
+  N : inteiro;
+fim-variáveis
+início
+  N := leia ();
+  se (N = 1) então
+    imprima("voce entrou o valor 1");
+  fim-se
+  se (N = 2) então
+    imprima("voce entrou o valor 2");
+  fim-se
+  se (N < 1) então
+    imprima("voce entrou valor muito baixo");
+  fim-se
+  se (N > 2) então
+    imprima("voce entrou valor muito alto");
+  fim-se
+fim
+
+  

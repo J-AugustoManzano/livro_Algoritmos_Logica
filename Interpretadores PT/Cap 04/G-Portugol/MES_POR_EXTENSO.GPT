@@ -1,0 +1,54 @@
+// GPT nao possui comando para a execução da estrutura de ação
+// "caso/seja". Simulaçao feita com decisao sencadeada.
+algoritmo MES_POR_EXTENSO;
+variáveis
+  MES : inteiro;
+fim-variáveis
+início
+  MES := leia();
+  se (MES = 1) então
+    imprima("Janeiro");
+  senão se (MES = 2) então
+    imprima("Fevereiro");
+  senão se (MES = 3) então
+    imprima("Marco");
+  senão se (MES = 4) então
+    imprima("Abril");
+  senão se (MES = 5) então
+    imprima("Maio");
+  senão se (MES = 6) então
+    imprima("Junho");
+  senão se (MES = 7) então
+    imprima("Julho");
+  senão se (MES = 8) então
+    imprima("Agosto");
+  senão se (MES = 9) então
+    imprima("Setembro");
+  senão se (MES = 10) então
+    imprima("Outubro");
+  senão se (MES = 11) então
+    imprima("Novembro");
+  senão se (MES = 12) então
+    imprima("Dezembro");
+  fim-se
+  fim-se
+  fim-se
+  fim-se
+  fim-se
+  fim-se
+  fim-se
+  fim-se
+  fim-se
+  fim-se
+  fim-se
+  fim-se
+  se (MES < 1) então
+    imprima("Valor invalido");     
+  fim-se
+  se (MES > 12) então
+    imprima("Valor invalido");     
+  fim-se
+fim
+
+
+  

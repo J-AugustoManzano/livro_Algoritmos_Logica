@@ -1,0 +1,23 @@
+// A função "potencia" do GPT não opera adequadamente com valores
+// de expoentes reais.
+// Este script funciona precariamente.
+algoritmo EXEMPLO_1;
+variáveis
+  N, R : real;
+fim-variáveis
+início
+  N := leia();
+  se não (N < 0) então
+    se (N <> 5) então
+      R := potencia(N, (1 / 2));
+    senão
+      R := potencia(N, (1 / 3));
+    fim-se
+    imprima(R);
+  fim-se
+fim
+
+
+
+
+  
