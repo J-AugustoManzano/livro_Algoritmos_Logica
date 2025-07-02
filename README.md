@@ -37,6 +37,7 @@ A organização deste material baseia-se na mesma estrutura de sumário do livro
 
 Os programas aqui apresentados podem ser executados nos serviços Web:
 
+- [Programiz](https://www.programiz.com/)
 - [Replit](https://replit.com/);
 - [Tutorialpoint Online Compilers and Interpreters](https://www.tutorialspoint.com/codingground.htm).
 
