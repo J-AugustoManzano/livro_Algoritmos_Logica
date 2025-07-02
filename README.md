@@ -35,7 +35,7 @@ A organização deste material baseia-se na mesma estrutura de sumário do livro
 - xA - Apêndice A (Resolução de Alguns Exercícios de Fixação)
 - xB - Apêndice B (Exemplos de Codificação Interativo)
 
-Os programas aqui apresentados podem ser executados nos serviços Web:
+Os programas aqui apresentados, em sua maioria, podem ser executados nos serviços Web:
 
 - [Programiz](https://www.programiz.com/)
 - [Replit](https://replit.com/);
