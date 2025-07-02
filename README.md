@@ -41,7 +41,7 @@ Os programas aqui apresentados, em sua maioria, podem ser executados nos serviç
 - [Replit](https://replit.com/);
 - [Tutorialpoint Online Compilers and Interpreters](https://www.tutorialspoint.com/codingground.htm).
 
-O serviço "Replit" possui um conjunto de linguagens maior que o serviço "Tutorialpoint" e se mostra, de certa forma, mais estável. No entanto, o serviço "Tutorialpoint" possui acesso a linguagem BASIC para o compilador FreeBASIC usado para codificar os exemplos deste repositório nesta linguagem.
+O serviço "Replit" possui um conjunto de linguagens maior que o serviço "Tutorialpoint" e "Programiz", mosntrando-se, de certa forma, mais estável. No entanto, o serviço "Tutorialpoint" possui acesso a linguagem BASIC para o compilador FreeBASIC usado para codificar os exemplos deste repositório nesta linguagem.
 
 Mas não há a garantia de que esses programas funcionem como esperado, pois isso depende de diversos fatores de configuração que não se tem como definir, uma vez que os serviços são "online" é oferecem um ambiente pré-configurado. Esforços foram realizados para que os resultados fossem dentro do esperado.
 
