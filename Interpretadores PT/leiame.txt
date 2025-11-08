@@ -1,4 +1,4 @@
-G-Portugol: https://sourceforge.net/projects/gpt.berlios/
+G-Portugol: https://github.com/gportugol/gpt/wiki
 Livro: https://clubedeautores.com.br/livro/gportugol
 
 ILA+: https://www.professores.uff.br/screspo/2017/09/06/ila-interpretador-de-linguagem-algoritmica/
