@@ -6,7 +6,7 @@
  *              Jayr Figueiredo de Oliveira
  * Editora ...: Erica
  *
- * Capitulo ..: Programacao - Topico Programacao.9
+ * Capitulo ..: 3 - Topico 3.9
  *
  * Programa ..: ADICAO DE DOIS NUMEROS INTEIROS
 =#
