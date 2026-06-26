@@ -37,9 +37,10 @@ A organização deste material baseia-se na mesma estrutura de sumário do livro
 
 Os programas aqui apresentados, em sua maioria, podem ser executados nos serviços Web:
 
-- [Programiz](https://www.programiz.com/)
+- [Programiz](https://www.programiz.com/).
 - [Replit](https://replit.com/); - Desde o lançamento deste repositório este serviço mudou sua política e permissões de uso.
-- [Tutorialpoint Online Compilers and Interpreters](https://www.tutorialspoint.com/codingground.htm).
+- [Tutorialpoint Online Compilers and Interpreters](https://www.tutorialspoint.com/codingground.htm); Mudou a estrutura de uso.
+- [Riju](https://riju.codes/) - Um dos melhores, muitas linguagens.
 
 O serviço "Replit" possui um conjunto de linguagens maior que o serviço "Tutorialpoint" e "Programiz", mosntrando-se, de certa forma, mais estável. No entanto, o serviço "Tutorialpoint" possui acesso a linguagem BASIC para o compilador FreeBASIC usado para codificar os exemplos deste repositório nesta linguagem.
 
